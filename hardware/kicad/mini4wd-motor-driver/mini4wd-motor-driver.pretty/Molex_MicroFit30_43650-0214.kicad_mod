@@ -1,0 +1,55 @@
+(footprint "Molex_MicroFit30_43650-0214"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "7a02fbe8-bd4b-4941-aea9-a71bbf81a702")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "Molex_MicroFit30_43650-0214" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "a1f84820-ce86-480a-b65b-e6a489d02b77")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "bfa8fae5-033e-4687-bee2-3dd849f983d0")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -0.5 -0.5)
+    (end 3.5 1)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "4932ca6c-0694-44db-9362-6c795c17dcf7")
+  )
+
+  (fp_rect
+    (start -0.5 -0.5)
+    (end 3.5 1)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "fd060b97-8419-4f7f-a6a3-a13399df8146")
+  )
+
+  (pad "1" smd rect
+    (at 0 0 0)
+    (size 1.5 1)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "7f8b67fb-454d-4ec4-9ae9-0110062e26e5")
+  )
+
+  (pad "2" smd rect
+    (at 3 0 0)
+    (size 1.5 1)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "a8cfa160-2afd-424c-bdff-8484034708ad")
+  )
+
+)

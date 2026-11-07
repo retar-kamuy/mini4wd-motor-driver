@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "mini4wd-motor-driver")(type "KiCad")(uri "c:/Users/hoshi/Repositories/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,35 @@
+# Generic ignore patterns for the repository
+# Version control
+.git
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / editor folders
+.vscode/
+.idea/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js artifacts
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Build artifacts
+build/
+Dist/
+/dist/
+
+# Cache files
+.cache/

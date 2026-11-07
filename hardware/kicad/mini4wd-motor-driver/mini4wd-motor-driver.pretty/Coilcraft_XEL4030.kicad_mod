@@ -1,0 +1,55 @@
+(footprint "Coilcraft_XEL4030"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "e8518bcd-7822-488c-8665-e1db5d49bc3d")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "Coilcraft_XEL4030" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "9aebb19f-9da9-4d54-b362-535ab5311ac3")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "aeb3697e-db8c-4bae-920f-db2244a08428")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -0.5 -0.5)
+    (end 5.12 2.89)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "5893f1c0-a041-4f32-a44a-65e1dc836565")
+  )
+
+  (fp_rect
+    (start -0.5 -0.5)
+    (end 5.12 2.89)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "9c656722-ac58-4462-ac60-ca10d0eb03a6")
+  )
+
+  (pad "1" smd rect
+    (at 0 0 0)
+    (size 1.37 2.39)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "c1237c03-b253-4c2c-afa8-0842c9af5526")
+  )
+
+  (pad "2" smd rect
+    (at 4.62 0 0)
+    (size 1.37 2.39)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "facc80d0-84b6-44b5-9b31-1df95e1926e9")
+  )
+
+)
