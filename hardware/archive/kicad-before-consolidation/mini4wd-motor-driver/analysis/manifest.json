@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "project": "mini4wd-motor-driver.kicad_pro",
+  "current": "2026-11-08_1802",
+  "runs": {
+    "2026-11-08_1755": {
+      "source_hashes": {
+        "mini4wd-motor-driver.kicad_sch": "sha256:135a547f281b98a9c4d988aa01bbdd9467a3996725fcc538ddbc126aa876b245",
+        "mini4wd-motor-driver.kicad_pcb": "sha256:f9dac674b65db54394085863ad1bdc6c243fbb5d9d284d0bdbb2cc3fa4d400fc"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py mini4wd-motor-driver.kicad_sch"
+      },
+      "generated": "2026-11-08T17:55:44+09:00",
+      "pinned": false
+    },
+    "2026-11-08_1800": {
+      "source_hashes": {
+        "mini4wd-motor-driver.kicad_sch": "sha256:135a547f281b98a9c4d988aa01bbdd9467a3996725fcc538ddbc126aa876b245",
+        "mini4wd-motor-driver.kicad_pcb": "sha256:4a87dc45cedfb1deb0aa3ead2aea82c8edc0401759558b71f08a03aff71dc5b9"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py mini4wd-motor-driver.kicad_pcb"
+      },
+      "generated": "2026-11-08T18:00:05+09:00",
+      "pinned": false
+    },
+    "2026-11-08_1802": {
+      "source_hashes": {
+        "mini4wd-motor-driver.kicad_sch": "sha256:135a547f281b98a9c4d988aa01bbdd9467a3996725fcc538ddbc126aa876b245",
+        "mini4wd-motor-driver.kicad_pcb": "sha256:06a63df210093f1ee6ef9740b3270a64cb7c71b13d28ae638740e954f58f1ac5"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py mini4wd-motor-driver.kicad_pcb"
+      },
+      "generated": "2026-11-08T18:02:23+09:00",
+      "pinned": false
+    }
+  }
+}

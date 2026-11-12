@@ -32,4 +32,4 @@
 ## Notes
 
 - All validation criteria passed on initial review.
-- The specification is complete, grounded in repository hardware inputs (`prompt.md`, `hardware_spec.md`, `bom.csv`, `wiring-design.md`), and ready for the planning phase (`/speckit-plan`).
+- The specification is complete, grounded in repository hardware inputs (`specs/001-smt-gerber-board/spec.md`, `hardware_spec.md`, `bom.csv`, `wiring-design.md`), and ready for the planning phase (`/speckit-plan`).

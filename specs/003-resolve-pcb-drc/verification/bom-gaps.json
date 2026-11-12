@@ -1,0 +1,438 @@
+{
+  "schematic": "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch",
+  "convention": {
+    "field_mapping": {},
+    "populated_counts": {},
+    "preferred_distributor": null,
+    "names_canonical": true,
+    "suggested_fields": [
+      "MPN",
+      "Manufacturer"
+    ]
+  },
+  "stats": {
+    "schematic_files": [
+      "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch"
+    ],
+    "total_bom_lines": 18,
+    "total_components": 22,
+    "dnp_lines": 0,
+    "active_lines": 18,
+    "active_components": 22,
+    "with_mpn": 0,
+    "without_mpn": 18,
+    "with_datasheet": 3,
+    "without_datasheet": 15,
+    "with_digikey": 0,
+    "without_digikey": 18,
+    "with_mouser": 0,
+    "without_mouser": 18,
+    "with_lcsc": 0,
+    "without_lcsc": 18,
+    "with_element14": 0,
+    "without_element14": 18
+  },
+  "bom": [
+    {
+      "value": "10uF 10V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "CIN"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "22uF 10V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "COUT1",
+        "COUT2"
+      ],
+      "quantity": 2,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "0.1uF 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "C_BYP"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "SS54-HF",
+      "footprint": "Diode_SMD:D_SMA",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Schottky diode",
+      "bom_comments": [],
+      "references": [
+        "D_FLY"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "diode",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "SS14-E3",
+      "footprint": "Diode_SMD:D_SMA",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Schottky diode",
+      "bom_comments": [],
+      "references": [
+        "D_XIAO"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "diode",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "Micro-Fit 3.0 B+/B-",
+      "footprint": "board-routed:Molex_MicroFit30_43650-0214",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+      "bom_comments": [],
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "connector",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "Micro-Fit 3.0 M+/M-",
+      "footprint": "board-routed:Molex_MicroFit30_43650-0214",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+      "bom_comments": [],
+      "references": [
+        "J2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "connector",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "1.0uH 9A (XEL4030-102ME)",
+      "footprint": "board-routed:Coilcraft_XEL4030",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Inductor",
+      "bom_comments": [],
+      "references": [
+        "L1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "inductor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "XIAO MG24 Sense",
+      "footprint": "board-routed:XIAO_MG24_Castellated_14P",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated",
+      "bom_comments": [],
+      "references": [
+        "MCU1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "motor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "SiSS64DN-T1-GE3",
+      "footprint": "Package_SO:Vishay_PowerPAK_1212-8_Single",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/66707/sis454dn.pdf",
+      "description": "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single",
+      "bom_comments": [],
+      "references": [
+        "Q1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "transistor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "SI7137DP-T1-GE3",
+      "footprint": "board-routed:PowerPAK_SO-8_SI7137DP",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/69063/si7137dp.pdf",
+      "description": "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK-8",
+      "bom_comments": [],
+      "references": [
+        "Q2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "transistor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "732k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R_FB_H"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R_FB_L"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "22k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R_VBAT_H",
+        "R_MID_H"
+      ],
+      "quantity": 2,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R_VBAT_L",
+        "R_MID_L",
+        "R_NTC"
+      ],
+      "quantity": 3,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "NTCG104BH103JT1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "Temperature dependent resistor, negative temperature coefficient",
+      "bom_comments": [],
+      "references": [
+        "TH1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "transformer",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "UCC27511DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ucc27511a.pdf",
+      "description": "Single-Channel High-Speed Low-Side Gate Driver With 4-A Peak Source and 8-A Peak Sink, SOT-23-6",
+      "bom_comments": [],
+      "references": [
+        "U1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": [
+        "mpn"
+      ]
+    },
+    {
+      "value": "TPS61023DRLR",
+      "footprint": "Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6",
+      "mpn": "",
+      "manufacturer": "",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "",
+      "description": "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6",
+      "bom_comments": [],
+      "references": [
+        "U2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": [
+        "mpn"
+      ]
+    }
+  ],
+  "unrecognized_fields": null
+}

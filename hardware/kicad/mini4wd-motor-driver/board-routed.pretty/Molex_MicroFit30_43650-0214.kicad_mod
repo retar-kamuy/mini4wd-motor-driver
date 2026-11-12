@@ -1,0 +1,115 @@
+(footprint "Molex_MicroFit30_43650-0214"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Molex Micro-Fit 3.0 43650-0214 Right-Angle SMT Header with Solder Nails")
+	(tags "connector Molex Micro-Fit 3.0 SMD right-angle 43650-0214")
+	(property "Reference" "J1"
+		(at 0 -3 0)
+		(layer "F.Fab")
+		(uuid "4827ebf8-2a01-4fc8-bcb8-74459990f50a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Micro-Fit 3.0 B+/B-"
+		(at 0 7 0)
+		(layer "F.Fab")
+		(uuid "72dba772-3d63-4759-9b50-eadf2a24aefd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "9cdb4e12-0906-40fe-9854-d039fb02b106")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3353cab9-2e02-47a2-b8f7-8fa5b86d7c54")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -5.5 -2.5)
+		(end 5.5 6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8deb96e9-5934-4f0b-aa30-f91812ee488f")
+	)
+	(fp_rect
+		(start -5 -2)
+		(end 5 5.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "570273e3-e20a-4624-8ff9-7b143547782d")
+	)
+	(fp_rect
+		(start -4.8 -1.8)
+		(end 4.8 5.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "65db9a12-b51c-4c39-b0b7-fb15af9e2ee7")
+	)
+	(pad "1" smd roundrect
+		(at -1.5 0)
+		(size 1.27 2.92)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "18b349ce-cd57-4e3d-a0b0-34ed3a9b609a")
+	)
+	(pad "2" smd roundrect
+		(at 1.5 0)
+		(size 1.27 2.92)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c750f15d-a671-4313-89ea-429ab89f5aaa")
+	)
+	(pad "MP1" smd roundrect
+		(at -3.65 3.55)
+		(size 2.16 2.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "1a1fa1b7-d5bf-4cf5-aa69-50d7696645b8")
+	)
+	(pad "MP2" smd roundrect
+		(at 3.65 3.55)
+		(size 2.16 2.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ce56f5cd-b133-4d33-9572-209e0618b7b8")
+	)
+	(embedded_fonts no)
+)

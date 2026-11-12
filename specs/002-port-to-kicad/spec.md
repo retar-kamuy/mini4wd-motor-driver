@@ -1,3 +1,5 @@
+> **2026-11-10 現状注記**: 本文には旧作業コピーへのパスと当時の設計・検証状態が含まれる。現行の正規設計は `hardware/kicad/mini4wd-motor-driver/`、検証根拠と残作業は `specs/003-resolve-pcb-drc/` を参照する。旧手順や完成の記述を現行基板の検証結果として扱わない。
+
 # Feature Specification: Port Mini 4WD Motor Driver to KiCad
 
 **Feature Branch**: `002-port-to-kicad`
@@ -17,7 +19,7 @@ A hardware engineer needs the Mini 4WD Motor Driver circuit ported from the Easy
 
 **Acceptance Scenarios**:
 
-1. **Given** the approved BOM (`mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv`) and wiring architecture (`wiring-design.md`), **When** the KiCad project and schematic are generated via KiCad MCP server, **Then** all 24 components (XIAO MG24 Sense, UCC27511 gate driver, SiSS64DN N-MOSFET, SI7137DP P-MOSFET, TPS61023 boost converter, Molex Micro-Fit connectors, sense dividers, NTC thermistor, diodes, inductor, and passives) are instantiated with verified symbols, footprints, and designators.
+1. **Given** the approved BOM (`hardware/rev1/manufacturing/bom.csv`) and wiring architecture (`wiring-design.md`), **When** the KiCad project and schematic are generated via KiCad MCP server, **Then** all 24 components (XIAO MG24 Sense, UCC27511 gate driver, SiSS64DN N-MOSFET, SI7137DP P-MOSFET, TPS61023 boost converter, Molex Micro-Fit connectors, sense dividers, NTC thermistor, diodes, inductor, and passives) are instantiated with verified symbols, footprints, and designators.
 2. **Given** the generated schematic, **When** KiCad ERC is executed, **Then** it produces zero critical errors and zero invalid net conflicts.
 3. **Given** the verified schematic, **When** netlist export or schematic-to-board synchronization is performed, **Then** all nets and footprint associations synchronize into the KiCad PCB document without missing footprints or undefined pins.
 
@@ -33,7 +35,7 @@ A PCB layout designer needs a two-layer KiCad board (`.kicad_pcb`) created via t
 
 **Acceptance Scenarios**:
 
-1. **Given** the physical constraints from `prompt.md` and `docs/hardware_spec.md`, **When** the PCB outline is generated in KiCad, **Then** the board outline on `Edge.Cuts` is 55.0 mm × 21.0 mm and stackup thickness is configured to 1.6 mm.
+1. **Given** the physical constraints from `specs/001-smt-gerber-board/spec.md` and `docs/hardware_spec.md`, **When** the PCB outline is generated in KiCad, **Then** the board outline on `Edge.Cuts` is 55.0 mm × 21.0 mm and stackup thickness is configured to 1.6 mm.
 2. **Given** the placement requirements, **When** components are placed, **Then** the Molex Micro-Fit 3.0 power (J1) and motor (J2) connectors are positioned at opposite board edges facing outward, and the XIAO MG24 Sense is placed with its 14 castellated edge pads oriented according to the reference layout.
 3. **Given** the 5A continuous motor drive target, **When** the power nets (`VBAT`, `GND`, `MOTOR_PLUS`, `MOTOR_MINUS`) are routed, **Then** traces are sized to at least 1.5 mm – 2.0 mm width or implemented as dedicated polygon copper pours.
 4. **Given** the battery-mounting safety requirements, **When** the bottom layer (`B.Cu` / `B.Mask`) is inspected, **Then** there are zero through-hole pads, zero exposed component leads, and all bottom vias are covered by solder mask (tented vias).
@@ -62,14 +64,14 @@ A manufacturing engineer needs production-ready fabrication data (Gerber X2 / RS
 - **Custom Footprints Availability**: The Molex Micro-Fit 3.0 SMT right-angle header (`43650-0214`) and Seeed Studio XIAO MG24 Sense castellated footprint might not exist in standard default KiCad footprint libraries. Custom footprints or project-local `.pretty` footprint libraries must be generated or registered using KiCad MCP server tools (`register_footprint_library`, `create_footprint`).
 - **Bottom Layer Solder Mask Tenting**: Standard CAD exporters sometimes default to untented vias. KiCad board design rules and plot settings must explicitly specify solder mask tenting for all vias on the bottom layer to ensure battery contact insulation.
 - **Trace Necking at Small SMT Pads**: 5A power traces (≥ 1.5 mm) connecting to small SMT pads (e.g. SOT-23-6 or PowerPAK pads) must taper/neck down cleanly to pad widths without triggering DRC clearance or minimum-width violations.
-- **KiCad MCP Server Compatibility**: The local environment runs KiCad 10.0 with Python 3.12 (`C:\Program Files\KiCad\10.0\bin\python.exe`). MCP calls and programmatic generation must adhere to KiCad 10 schema and scripting interfaces.
+- **KiCad MCP Server Compatibility**: The development environment is WSL/Linux with KiCad 10.0 and the installed Python/pcbnew. MCP calls and programmatic generation must adhere to the installed KiCad schema and scripting interfaces; PowerShell is not required.
 
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
 
-- **FR-001**: The project MUST establish a native KiCad project structure (`.kicad_pro`, `.kicad_sch`, `.kicad_pcb`) located under `mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/`.
-- **FR-002**: The KiCad schematic MUST implement the complete circuit defined in `mini4wd-motor-driver/docs/hardware_spec.md`, `mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv`, and `mini4wd-motor-driver/hardware/rev1/manufacturing/review/wiring-design.md`, containing:
+- **FR-001**: The project MUST establish a native KiCad project structure (`.kicad_pro`, `.kicad_sch`, `.kicad_pcb`) located under `hardware/kicad/mini4wd-motor-driver/` (canonical target established 2026-11-10).
+- **FR-002**: The KiCad schematic MUST implement the complete circuit defined in `docs/hardware_spec.md`, `hardware/rev1/manufacturing/bom.csv`, and `hardware/rev1/manufacturing/review/wiring-design.md`, containing:
   - Main Controller: Seeed Studio XIAO MG24 Sense (14 castellated edge pads)
   - Gate Driver: TI UCC27511DBVR (SOT-23-6) with 5V drive supply
   - Motor Drive N-ch MOSFET: Vishay SiSS64DN-T1-GE3 (PowerPAK 1212-8S)
@@ -87,7 +89,7 @@ A manufacturing engineer needs production-ready fabrication data (Gerber X2 / RS
 - **FR-008**: Power traces and copper pours for high-current loops (`VBAT`, `GND`, `MOTOR_PLUS`, `MOTOR_MINUS`) MUST have a width of at least 1.5 mm to 2.0 mm (or polygon copper pours) capable of carrying 5A continuous/peak current.
 - **FR-009**: The connectors J1 (Battery Power) and J2 (Motor Output) MUST be placed at opposite board edges facing outward to prevent top-height and cable interference with the vehicle body.
 - **FR-010**: The PCB layout MUST pass KiCad Design Rules Check (DRC) against standard 2-layer PCBA fabrication rules (JLCPCB 2-layer: min trace/space 0.127 mm, min via drill 0.3 mm, min annular ring 0.13 mm) with zero violations.
-- **FR-011**: The KiCad project MUST generate complete production fabrication files under `mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/`, including:
+- **FR-011**: The KiCad project MUST generate complete production fabrication files under `hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/`, including:
   - Gerber files (RS-274X / Gerber X2)
   - Excellon NC drill files
   - BOM in JLCPCB SMT format
@@ -115,8 +117,8 @@ A manufacturing engineer needs production-ready fabrication data (Gerber X2 / RS
 
 ## Assumptions
 
-- **Target CAD Environment**: KiCad 10.0 on Windows, controlled programmatically via the KiCad MCP server (`C:\Users\hoshi\Repositories\KiCAD-MCP-Server\dist\index.js`) and KiCad CLI/Python utilities.
-- **Project Location**: KiCad design files are placed in `mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/` to maintain clean separation from legacy EasyEDA artifacts while preserving version history.
-- **BOM & Circuit Topology Authority**: `mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv`, `mini4wd-motor-driver/docs/hardware_spec.md`, and `mini4wd-motor-driver/hardware/rev1/manufacturing/review/wiring-design.md` serve as the authoritative sources for component selection, pinouts, and network connectivity. The boost inductor L1 is restored to the originally intended Coilcraft XEL4030-102ME (1.0 µH), lifting the EasyEDA library restriction that necessitated substituting Würth 74438357010.
+- **Target CAD Environment**: KiCad 10.0 on WSL/Linux, using the KiCad MCP server when available and Linux KiCad CLI/Python utilities. PowerShell is not required.
+- **Project Location**: KiCad design files are placed in `hardware/kicad/mini4wd-motor-driver/`; the nested legacy copy is historical. See `specs/003-resolve-pcb-drc/plan.md`.
+- **BOM & Circuit Topology Authority**: `hardware/rev1/manufacturing/bom.csv`, `docs/hardware_spec.md`, and `hardware/rev1/manufacturing/review/wiring-design.md` serve as the authoritative sources for component selection, pinouts, and network connectivity. The boost inductor L1 is restored to the originally intended Coilcraft XEL4030-102ME (1.0 µH), lifting the EasyEDA library restriction that necessitated substituting Würth 74438357010.
 - **Thermal & Current Qualification**: The 5A continuous motor drive and 5A connector ratings are design targets achieved through trace geometry and copper pours. No separate physical bench burn-in qualification is required during this CAD porting phase.
 - **Manufacturing Target**: JLCPCB 2-layer PCBA process is the reference target for design rules, layer naming, and SMT assembly output formats.

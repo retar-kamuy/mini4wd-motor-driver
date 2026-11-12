@@ -8,7 +8,7 @@ description: "Implementation task list for the Mini 4WD SMT motor driver board a
 
 **Prerequisites**: [plan.md](plan.md), [spec.md](spec.md), [research.md](research.md), [data-model.md](data-model.md), [contracts/](contracts/), [quickstart.md](quickstart.md)
 
-**Task paths**: Manufacturing artifacts are under `mini4wd-motor-driver/hardware/rev1/`. The editable source is the user-designated active `mini4wd-motor-driver/mini4wd-motor-driver.eprj2`; this supersedes the fresh-project-only instruction. Do not use any other `.eprj2` project as a design source.
+**Task paths**: Manufacturing artifacts are under `hardware/rev1/`. The editable source is the user-designated active `mini4wd-motor-driver/mini4wd-motor-driver.eprj2`; this supersedes the fresh-project-only instruction. Do not use any other `.eprj2` project as a design source.
 
 **Tests**: No standalone software test tasks are included. The specification requires electrical, DRC, mechanical, Gerber-viewer, and fabricator-file checks; these are included as design review and release tasks.
 
@@ -16,9 +16,9 @@ description: "Implementation task list for the Mini 4WD SMT motor driver board a
 
 **Purpose**: Confirm the designated active EasyEDA project and establish manufacturing artifact locations.
 
-- [x] T001 Create `mini4wd-motor-driver/hardware/rev1/` with `manufacturing/gerber/` and `manufacturing/review/` subdirectories.
+- [x] T001 Create `hardware/rev1/` with `manufacturing/gerber/` and `manufacturing/review/` subdirectories.
 - [x] T002 Confirm the user-designated `mini4wd-motor-driver/mini4wd-motor-driver.eprj2` project is the active EasyEDA implementation target; do not use any other `.eprj2` project as a design source.
-- [x] T003 Create `mini4wd-motor-driver/hardware/rev1/README.md` recording revision, source requirements, nominal 1.6 mm board thickness, approximately 55 ﾃ・21 mm outline, and project regeneration notes.
+- [x] T003 Create `hardware/rev1/README.md` recording revision, source requirements, nominal 1.6 mm board thickness, approximately 55 ﾃ・21 mm outline, and project regeneration notes.
 
 ---
 
@@ -26,13 +26,13 @@ description: "Implementation task list for the Mini 4WD SMT motor driver board a
 
 **Purpose**: Establish verified electrical and component inputs before schematic and layout work begins.
 
-- [x] T004 [P] Create `mini4wd-motor-driver/hardware/rev1/design-inputs.md` with the README/prompt/SVG source hierarchy, approved 1.6 mm thickness, no-existing-EPRJ2 rule, and unresolved assumptions to be closed before release.
-- [x] T005 [P] Verify XIAO MG24 Sense castellated pad numbering, pitch, outline, and orientation against Seeed source files; preserve the user-confirmed `D0 -> D0:VBAT SENSE` assignment and record the complete edge-pad map in `mini4wd-motor-driver/hardware/rev1/manufacturing/review/xiao-interface-review.md`.
-- [x] T006 [P] Verify the Molex Micro-Fit 3.0 two-circuit SMD right-angle header drawing, 43650-0214 footprint/land data, 1.60 mm recommended PCB thickness, maximum contact rating, and mating housing/terminal pair; record exact manufacturer numbers and source links in `mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv`.
-- [X] T007 Select manufacturer parts and packages for every circuit block in the README hardware specification; record values, ratings, footprints, and source documents in `mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv` and unresolved design assumptions in `mini4wd-motor-driver/hardware/rev1/design-inputs.md`.
-- [X] T027 Complete datasheet-based passive design for the documented circuit functions; record selected values, candidate MPNs, and any recommendations that conflict with the no-additions constraint in `mini4wd-motor-driver/hardware/rev1/manufacturing/review/passive-design-review.md`. Do not add resistor/capacitor placements.
+- [x] T004 [P] Create `hardware/rev1/design-inputs.md` with the README/prompt/SVG source hierarchy, approved 1.6 mm thickness, no-existing-EPRJ2 rule, and unresolved assumptions to be closed before release.
+- [x] T005 [P] Verify XIAO MG24 Sense castellated pad numbering, pitch, outline, and orientation against Seeed source files; preserve the user-confirmed `D0 -> D0:VBAT SENSE` assignment and record the complete edge-pad map in `hardware/rev1/manufacturing/review/xiao-interface-review.md`.
+- [x] T006 [P] Verify the Molex Micro-Fit 3.0 two-circuit SMD right-angle header drawing, 43650-0214 footprint/land data, 1.60 mm recommended PCB thickness, maximum contact rating, and mating housing/terminal pair; record exact manufacturer numbers and source links in `hardware/rev1/manufacturing/bom.csv`.
+- [X] T007 Select manufacturer parts and packages for every circuit block in the README hardware specification; record values, ratings, footprints, and source documents in `hardware/rev1/manufacturing/bom.csv` and unresolved design assumptions in `hardware/rev1/design-inputs.md`.
+- [X] T027 Complete datasheet-based passive design for the documented circuit functions; record selected values, candidate MPNs, and any recommendations that conflict with the no-additions constraint in `hardware/rev1/manufacturing/review/passive-design-review.md`. Do not add resistor/capacitor placements.
 - [X] T008 Create the complete schematic and net assignments in `mini4wd-motor-driver/mini4wd-motor-driver.eprj2`, preserving the documented N-channel low-side drive, P-channel short brake, power sensing, temperature sensing, and XIAO signal mapping.
-- [X] T009 Review the schematic connectivity and component ratings against `specs/001-smt-gerber-board/contracts/board-interface-and-fabrication.md`; record the reviewed netlist and any closed assumptions in `mini4wd-motor-driver/hardware/rev1/manufacturing/review/schematic-review.md`.
+- [X] T009 Review the schematic connectivity and component ratings against `specs/001-smt-gerber-board/contracts/board-interface-and-fabrication.md`; record the reviewed netlist and any closed assumptions in `hardware/rev1/manufacturing/review/schematic-review.md`.
 
 **Checkpoint**: The source project and verified circuit inputs are ready for PCB layout.
 
@@ -52,9 +52,9 @@ description: "Implementation task list for the Mini 4WD SMT motor driver board a
 - [X] T013 [US1] Route B+, B竏・ M竏・ and other high-current paths with documented copper geometry, and route gate-drive, PWM, sensing, and 5 V nets in `mini4wd-motor-driver/mini4wd-motor-driver.eprj2`.
 - [X] T014 [US1] Complete schematic/netlist checks and PCB DRC; resolve connectivity, short, clearance, footprint, mask, and outline findings in `mini4wd-motor-driver/mini4wd-motor-driver.eprj2`.
 - [x] T015 [US1] Record the user's decision to inherit the existing toy-board current/thermal design without a separate 5 A qualification gate; do not claim independent qualification evidence.
-- [X] T016 [US1] Export the complete two-layer Gerber and required drill files from the saved project to `mini4wd-motor-driver/hardware/rev1/manufacturing/gerber/`.
-- [X] T017 [US1] Export matching assembly BOM and pick-and-place files to `mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv` and `mini4wd-motor-driver/hardware/rev1/manufacturing/pick-and-place.csv`.
-- [X] T018 [US1] Inspect every exported layer together in a Gerber viewer and record scale, registration, board outline, masks, silkscreen, and drill review in `mini4wd-motor-driver/hardware/rev1/manufacturing/review/gerber-review.md`.
+- [X] T016 [US1] Export the complete two-layer Gerber and required drill files from the saved project to `hardware/rev1/manufacturing/gerber/`.
+- [X] T017 [US1] Export matching assembly BOM and pick-and-place files to `hardware/rev1/manufacturing/bom.csv` and `hardware/rev1/manufacturing/pick-and-place.csv`.
+- [X] T018 [US1] Inspect every exported layer together in a Gerber viewer and record scale, registration, board outline, masks, silkscreen, and drill review in `hardware/rev1/manufacturing/review/gerber-review.md`.
 
 **Checkpoint**: The editable board and fabrication outputs are internally reviewed and ready for vehicle-envelope validation.
 
@@ -81,10 +81,10 @@ description: "Implementation task list for the Mini 4WD SMT motor driver board a
 
 **Purpose**: Freeze one reviewed project revision and validate the complete manufacturing package.
 
-- [X] T023 Create `mini4wd-motor-driver/hardware/rev1/manufacturing/layer-map.md` mapping every exported file to the selected fabricator's layer input.
-- [X] T024 Re-export Gerber, drill, BOM, and pick-and-place files from the final saved project revision to `mini4wd-motor-driver/hardware/rev1/manufacturing/` after all electrical or mechanical revisions.
-- [X] T025 Upload the Gerber archive for the final revision to the selected fabricator's file checker and save the result and final review renders in `mini4wd-motor-driver/hardware/rev1/manufacturing/review/`.
-- [X] T026 Update `mini4wd-motor-driver/hardware/rev1/README.md` with final revision identifiers, source requirements, manufacturing outputs, passed release gates, and regeneration instructions.
+- [X] T023 Create `hardware/rev1/manufacturing/layer-map.md` mapping every exported file to the selected fabricator's layer input.
+- [X] T024 Re-export Gerber, drill, BOM, and pick-and-place files from the final saved project revision to `hardware/rev1/manufacturing/` after all electrical or mechanical revisions.
+- [X] T025 Upload the Gerber archive for the final revision to the selected fabricator's file checker and save the result and final review renders in `hardware/rev1/manufacturing/review/`.
+- [X] T026 Update `hardware/rev1/README.md` with final revision identifiers, source requirements, manufacturing outputs, passed release gates, and regeneration instructions.
 
 ---
 
@@ -112,9 +112,9 @@ description: "Implementation task list for the Mini 4WD SMT motor driver board a
 ## Parallel Example: Foundational Input Verification
 
 ```text
-Task: T004 Record authoritative requirements and unresolved assumptions in mini4wd-motor-driver/hardware/rev1/design-inputs.md
-Task: T005 Verify the XIAO MG24 Sense pad geometry and mapping in mini4wd-motor-driver/hardware/rev1/manufacturing/review/xiao-interface-review.md
-Task: T006 Verify Molex Micro-Fit part, footprint, rating, and mating parts in mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv
+Task: T004 Record authoritative requirements and unresolved assumptions in hardware/rev1/design-inputs.md
+Task: T005 Verify the XIAO MG24 Sense pad geometry and mapping in hardware/rev1/manufacturing/review/xiao-interface-review.md
+Task: T006 Verify Molex Micro-Fit part, footprint, rating, and mating parts in hardware/rev1/manufacturing/bom.csv
 ```
 
 ## Implementation Strategy
@@ -137,8 +137,8 @@ Task: T006 Verify Molex Micro-Fit part, footprint, rating, and mating parts in m
 
 - Every task has a checkbox, unique sequential ID, and a concrete artifact path.
 - `[P]` marks only independent input-verification work on separate artifacts.
-- T006 manufacturer data is recorded in `mini4wd-motor-driver/hardware/rev1/manufacturing/bom.csv` and `manufacturing/review/molex-interface-review.md`. EasyEDA footprint placement and visual fit are part of T010 and later mechanical review.
+- T006 manufacturer data is recorded in `hardware/rev1/manufacturing/bom.csv` and `manufacturing/review/molex-interface-review.md`. EasyEDA footprint placement and visual fit are part of T010 and later mechanical review.
 - T027 is a datasheet-design and scope gate: passive values must follow documented functions and manufacturer guidance, while the explicit no-additions constraint on resistor/capacitor placements remains in force. See `passive-design-review.md` for resolved values and remaining conflicts.
 - The active project was confirmed through the EasyEDA bridge. Only this user-designated target is in scope; other `.eprj2` files remain excluded.
-- The legacy `mini4wd-motor-driver/docs/hardware_spec.md` remains an input record for the existing board; new revision thickness is 1.6 mm as recorded in `prompt.md` and `spec.md`.
+- The legacy `docs/hardware_spec.md` remains an input record for the existing board; new revision thickness is 1.6 mm as recorded in `specs/001-smt-gerber-board/spec.md` and `spec.md`.
 - Do not release Gerbers until circuit/netlist, DRC, viewer, and fabricator checks are recorded. Mechanical vehicle clearance and independent thermal qualification are waived per user decision.

@@ -1,7 +1,9 @@
+> **2026-11-10 現状注記**: 本文の旧作業コピー、チェック状態、24部品、5 A配線完了、Q2ピン記述および古いDRC件数は当時の履歴であり、現行設計の達成証拠ではない。正規設計は `hardware/kicad/mini4wd-motor-driver/`。全チェック有効のDRC/ERCは0件だが、主電流・反対端コネクタ・部品数/資料・製造検証は未完了。最新の根拠と作業は [`003`](../003-resolve-pcb-drc/plan.md) および [`tasks.md`](../003-resolve-pcb-drc/tasks.md) を参照。
+
 # 進捗サマリー & 作業引き継ぎ書 (Progress Summary & Handoff)
 
 **プロジェクト**: Mini 4WD Motor Driver KiCad Port  
-**対象ブランチ/ディレクトリ**: `mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/`  
+**対象ブランチ/ディレクトリ**: `hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/`  
 **記録日時**: 2026-11-07  
 **ステータス**: 回路図・外形・全部品配置・全ネット配線完了、DRCエラー解消スクリプト作成完了（実行・製造ファイル出力待ち）
 
@@ -14,7 +16,7 @@
    - 回路検証結果: **ERC エラー 0 件**。全24コンポーネントのフットプリント割り当てとネット接続が完了。
 
 2. **基板外形およびコンポーネント配置の完全準拠**:
-   - `mini4wd-motor-driver/docs/pcb_front.svg` の外観・レイアウトを徹底的に精査し、すべての部品位置・回転角を完全一致させました。
+   - `docs/pcb_front.svg` の外観・レイアウトを徹底的に精査し、すべての部品位置・回転角を完全一致させました。
    - **受動部品の向き修正**: `COUT1`, `COUT2`, `C_BYP`, `R_FB_H`, `R_FB_L`, `R_MID_H`, `R_MID_L`, `R_NTC`, `TH1`, `R_VBAT_H`, `R_VBAT_L` をすべて **縦向き（rot: 90°）** に配置修正。部品パッド間の干渉を解消。
    - **Q2 (PowerPAK SO-8)**: 5番ピン（ドレイン端子×4 + サーマルパッド）の全ネット割り当て（`MOTOR_MINUS`）を完了。
 
@@ -54,17 +56,17 @@ DRCチェックにより検出された短絡（`shorting_items`）および交�
 & 'C:\Program Files\KiCad\10.0\bin\python.exe' tmp/step10_master_fix.py
 
 # 2. DRC チェックの実行と確認（エラー0件を確認）
-& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb drc 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' --output drc_step10.rpt
+& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb drc 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' --output drc_step10.rpt
 
 # 3. JLCPCB向け製造ファイル（Gerber, Drill, POS/CPL）のエクスポート
 # Gerber出力
-& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb export gerbers 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' -o 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/gerber/' --layers F.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,Edge.Cuts
+& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb export gerbers 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' -o 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/gerber/' --layers F.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,Edge.Cuts
 
 # Drill出力
-& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb export drill 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' -o 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/gerber/'
+& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb export drill 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' -o 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/gerber/'
 
 # POS / CPL (部品重心・配置ファイル) 出力
-& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb export pos 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' -o 'mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/cpl.csv' --format csv --units mm
+& 'C:\Program Files\KiCad\10.0\bin\kicad-cli.exe' pcb export pos 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb' -o 'hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/cpl.csv' --format csv --units mm
 
 # 4. BOM (部品表) の確認・出力
 # (回路図から JLCPCB 形式 BOM を出力)

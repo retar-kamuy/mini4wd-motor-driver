@@ -1,0 +1,2359 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\hoshi\\Repositories\\mini4wd-motor-driver\\mini4wd-motor-driver\\hardware\\kicad\\mini4wd-motor-driver\\mini4wd-motor-driver.kicad_sch")
+		(date "2026-11-08T18:48:16")
+		(tool "Eeschema 10.0.7")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "mini4wd-motor-driver.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "CIN")
+			(value "10uF 10V")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e6d233fb-8ae8-4c19-83c5-580cd315088c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "COUT1")
+			(value "22uF 10V")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1efdf8e0-7b40-4149-9afd-557a38499ae8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "COUT2")
+			(value "22uF 10V")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bd3f72f4-5518-4835-8679-b9c1eba85058")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C_BYP")
+			(value "0.1uF 10V")
+			(footprint "Capacitor_SMD:C_0402_1005Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a99bf0d2-d13e-4318-a650-afa5e49eac6d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D_FLY")
+			(value "SS54-HF")
+			(footprint "Diode_SMD:D_SMA")
+			(description "Schottky diode")
+			(fields
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a823a995-ec1b-42aa-b6b7-409c0e8f4255")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D_XIAO")
+			(value "SS14-E3")
+			(footprint "Diode_SMD:D_SMA")
+			(description "Schottky diode")
+			(fields
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "908edad4-d941-4c3c-b285-9cfb763cd3a4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "Micro-Fit 3.0 B+/B-")
+			(footprint "mini4wd-motor-driver:Molex_MicroFit30_43650-0214")
+			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "Footprint") "mini4wd-motor-driver:Molex_MicroFit30_43650-0214")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5bbdd42d-1359-41ae-b755-54500726c121")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "Micro-Fit 3.0 M+/M-")
+			(footprint "mini4wd-motor-driver:Molex_MicroFit30_43650-0214")
+			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "Footprint") "mini4wd-motor-driver:Molex_MicroFit30_43650-0214")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "37fa488a-716f-45e1-894a-3a99bccff40a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L1")
+			(value "1.0uH 9A (XEL4030-102ME)")
+			(footprint "mini4wd-motor-driver:Coilcraft_XEL4030")
+			(description "Inductor")
+			(fields
+				(field
+					(name "Footprint") "mini4wd-motor-driver:Coilcraft_XEL4030")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Inductor")
+			)
+			(libsource
+				(lib "Device")
+				(part "L")
+				(description "Inductor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "inductor choke coil reactor magnetic")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Choke_* *Coil* Inductor_* L_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "082489df-06c8-46b7-9aa4-3f1682fcf152")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "MCU1")
+			(value "XIAO MG24 Sense")
+			(footprint "mini4wd-motor-driver:XIAO_MG24_Castellated_14P")
+			(description "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated")
+			(fields
+				(field
+					(name "Footprint") "mini4wd-motor-driver:XIAO_MG24_Castellated_14P")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated")
+			)
+			(libsource
+				(lib "mini4wd-motor-driver")
+				(part "XIAO_MG24_Sense")
+				(description "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ac6322a3-47d2-4e8f-83bd-0b89f7b0f0bf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "SiSS64DN-T1-GE3")
+			(footprint "Package_SO:Vishay_PowerPAK_1212-8_Single")
+			(datasheet "https://www.vishay.com/docs/66707/sis454dn.pdf")
+			(description "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:Vishay_PowerPAK_1212-8_Single")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/66707/sis454dn.pdf")
+				(field
+					(name "Description") "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single")
+			)
+			(libsource
+				(lib "Transistor_FET")
+				(part "SiS454DN")
+				(description "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "N-Channel MOSFET")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Vishay*PowerPAK*1212*Single*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ec2321ba-d0c7-4df7-8bc6-ccca7156829c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q2")
+			(value "SI7137DP-T1-GE3")
+			(footprint "mini4wd-motor-driver:PowerPAK_SO-8_SI7137DP")
+			(datasheet "https://www.vishay.com/docs/69063/si7137dp.pdf")
+			(description "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK-8")
+			(fields
+				(field
+					(name "Footprint") "mini4wd-motor-driver:PowerPAK_SO-8_SI7137DP")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/69063/si7137dp.pdf")
+				(field
+					(name "Description") "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK-8")
+			)
+			(libsource
+				(lib "mini4wd-motor-driver")
+				(part "SI7137DP")
+				(description "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK SO-8")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "P-Channel MOSFET")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "PowerPAK*SO*Single*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5fac1a5f-bbe8-4f13-af73-398bb10e7278")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_FB_H")
+			(value "732k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "589c7375-6a94-4525-af3a-ff0b941b89ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_FB_L")
+			(value "100k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2f81e2f2-ae4f-4134-8513-e2b690a393e5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_MID_H")
+			(value "22k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9c5ee12b-913a-4abe-8976-a942af31aec0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_MID_L")
+			(value "10k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "67a469c9-5b43-45f3-9187-261672194ecf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_NTC")
+			(value "10k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "69dd52e3-a79d-4a8b-8dde-1225b21a414b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_VBAT_H")
+			(value "22k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "64afc0da-b8e1-4eca-8fb4-d3f8b45961da")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_VBAT_L")
+			(value "10k 1%")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ebd1e770-c363-4a45-94e5-759edacf64cb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TH1")
+			(value "NTCG104BH103JT1")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
+			(description "Temperature dependent resistor, negative temperature coefficient")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Temperature dependent resistor, negative temperature coefficient")
+			)
+			(libsource
+				(lib "Device")
+				(part "Thermistor_NTC")
+				(description "Temperature dependent resistor, negative temperature coefficient")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "thermistor NTC resistor sensor RTD")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_* RV_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "25e386c6-85a0-4ade-bad2-21c02470b10a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "UCC27511DBVR")
+			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ucc27511a.pdf")
+			(description "Single-Channel High-Speed Low-Side Gate Driver With 4-A Peak Source and 8-A Peak Sink, SOT-23-6")
+			(fields
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ucc27511a.pdf")
+				(field
+					(name "Description") "Single-Channel High-Speed Low-Side Gate Driver With 4-A Peak Source and 8-A Peak Sink, SOT-23-6")
+			)
+			(libsource
+				(lib "mini4wd-motor-driver")
+				(part "UCC27511DBVR")
+				(description "Single-Channel High-Speed Low-Side Gate Driver SOT-23-6")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "dfb53909-ffa4-4d9d-9193-fd852c5c33a0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "TPS61023DRLR")
+			(footprint "Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6")
+			(description "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6")
+			(fields
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6")
+			)
+			(libsource
+				(lib "mini4wd-motor-driver")
+				(part "TPS61023DRLR")
+				(description "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6")
+			)
+			(property
+				(name "Sheetname")
+				(value "mini4wd-motor-driver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mini4wd-motor-driver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "078784b2-1952-4143-aef8-14420211eacf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x02")
+			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x02")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "D_Schottky")
+			(description "Schottky diode")
+			(footprints
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "D_Schottky")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "L")
+			(description "Inductor")
+			(footprints
+				(fp "Choke_*")
+				(fp "*Coil*")
+				(fp "Inductor_*")
+				(fp "L_*")
+			)
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "L")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Inductor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "Thermistor_NTC")
+			(description "Temperature dependent resistor, negative temperature coefficient")
+			(footprints
+				(fp "R_*")
+				(fp "RV_*")
+			)
+			(fields
+				(field
+					(name "Reference") "TH")
+				(field
+					(name "Value") "Thermistor_NTC")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Temperature dependent resistor, negative temperature coefficient")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Transistor_FET")
+			(part "SiS454DN")
+			(description "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single")
+			(docs "https://www.vishay.com/docs/66707/sis454dn.pdf")
+			(footprints
+				(fp "Vishay*PowerPAK*1212*Single*")
+			)
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "SiS454DN")
+				(field
+					(name "Footprint") "Package_SO:Vishay_PowerPAK_1212-8_Single")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/66707/sis454dn.pdf")
+				(field
+					(name "Description") "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mini4wd-motor-driver")
+			(part "SI7137DP")
+			(description "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK SO-8")
+			(docs "https://www.vishay.com/docs/69063/si7137dp.pdf")
+			(footprints
+				(fp "PowerPAK*SO*Single*")
+			)
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "SI7137DP")
+				(field
+					(name "Footprint") "mini4wd-motor-driver:PowerPAK_SO-8_SI7137DP")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/69063/si7137dp.pdf")
+				(field
+					(name "Description") "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK SO-8")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mini4wd-motor-driver")
+			(part "TPS61023DRLR")
+			(description "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TPS61023DRLR")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-5X3")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "FB")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "SW")
+					(type "power_out")
+				)
+				(pin
+					(num "6")
+					(name "VOUT")
+					(type "power_out")
+				)
+			)
+		)
+		(libpart
+			(lib "mini4wd-motor-driver")
+			(part "UCC27511DBVR")
+			(description "Single-Channel High-Speed Low-Side Gate Driver SOT-23-6")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "UCC27511DBVR")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Single-Channel High-Speed Low-Side Gate Driver SOT-23-6")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "OUTH")
+					(type "output")
+				)
+				(pin
+					(num "3")
+					(name "OUTL")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "IN+")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "mini4wd-motor-driver")
+			(part "XIAO_MG24_Sense")
+			(description "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "XIAO_MG24_Sense")
+				(field
+					(name "Footprint") "mini4wd-motor-driver:XIAO_MG24_Castellated_14P")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "5V")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "3V3")
+					(type "power_out")
+				)
+				(pin
+					(num "4")
+					(name "D10")
+					(type "bidirectional")
+				)
+				(pin
+					(num "5")
+					(name "D9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "D8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "D7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "D6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "D5_SCL")
+					(type "bidirectional")
+				)
+				(pin
+					(num "10")
+					(name "D4_SDA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "11")
+					(name "D3_MID")
+					(type "bidirectional")
+				)
+				(pin
+					(num "12")
+					(name "D2_PWM")
+					(type "bidirectional")
+				)
+				(pin
+					(num "13")
+					(name "D1_TEMP")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "D0_VBAT")
+					(type "bidirectional")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector_Generic")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "Transistor_FET")
+			(uri "${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym")
+		)
+		(library
+			(logical "mini4wd-motor-driver")
+			(uri "c:/Users/hoshi/Repositories/mini4wd-motor-driver/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "BOOST_5V")
+			(class "Default")
+			(node
+				(ref "COUT1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "COUT2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C_BYP")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D_XIAO")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_FB_H")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "VDD_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "VOUT_6")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "2")
+			(name "FB_BOOST")
+			(class "Default")
+			(node
+				(ref "R_FB_H")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_FB_L")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "FB_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "3")
+			(name "GATE_DRIVE")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "Q2")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "OUTH_2")
+				(pintype "output")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "OUTL_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "CIN")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "COUT1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "COUT2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C_BYP")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "MCU1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_FB_L")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_MID_L")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_VBAT_L")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TH1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "IN-_5")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "5")
+			(name "I2C_SCL")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "5")
+				(pinfunction "D9_5")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "6")
+			(name "I2C_SDA")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "4")
+				(pinfunction "D10_4")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "7")
+			(name "MCU_3V3")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "3")
+				(pinfunction "3V3_3")
+				(pintype "power_out")
+			)
+			(node
+				(ref "R_NTC")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "MID_SENSE")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "11")
+				(pinfunction "D3_MID_11")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R_MID_H")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_MID_L")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "MOTOR_MINUS")
+			(class "Default")
+			(node
+				(ref "D_FLY")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_MID_H")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "PWM_DRIVE")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "12")
+				(pinfunction "D2_PWM_12")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "IN+_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "11")
+			(name "SW_BOOST")
+			(class "Default")
+			(node
+				(ref "L1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "SW_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "12")
+			(name "TEMP_SENSE")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "13")
+				(pinfunction "D1_TEMP_13")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R_NTC")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TH1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "VBAT")
+			(class "Default")
+			(node
+				(ref "CIN")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D_FLY")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "5")
+				(pinfunction "S_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_VBAT_H")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "EN_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "VIN_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "14")
+			(name "VBAT_SENSE")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "14")
+				(pinfunction "D0_VBAT_14")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R_VBAT_H")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_VBAT_L")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "XIAO_5V")
+			(class "Default")
+			(node
+				(ref "D_XIAO")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "MCU1")
+				(pin "1")
+				(pinfunction "5V_1")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "16")
+			(name "unconnected-(MCU1-D4_SDA-Pad10)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "10")
+				(pinfunction "D4_SDA_10")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "17")
+			(name "unconnected-(MCU1-D5_SCL-Pad9)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "9")
+				(pinfunction "D5_SCL_9")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "18")
+			(name "unconnected-(MCU1-D6-Pad8)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "8")
+				(pinfunction "D6_8")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "19")
+			(name "unconnected-(MCU1-D7-Pad7)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "7")
+				(pinfunction "D7_7")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "20")
+			(name "unconnected-(MCU1-D8-Pad6)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "6")
+				(pinfunction "D8_6")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+	)
+)

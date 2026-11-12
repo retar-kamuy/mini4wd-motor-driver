@@ -1,3 +1,5 @@
+> **2026-11-10 現状注記**: 本文には旧作業コピーへのパスと当時の設計・検証状態が含まれる。現行の正規設計は `hardware/kicad/mini4wd-motor-driver/`、検証根拠と残作業は `specs/003-resolve-pcb-drc/` を参照する。旧手順や完成の記述を現行基板の検証結果として扱わない。
+
 # Implementation Plan: Port Mini 4WD Motor Driver to KiCad
 
 **Branch**: `002-port-to-kicad` | **Date**: 2026-10-25 | **Spec**: [spec.md](spec.md)
@@ -14,7 +16,7 @@ Port the Mini 4WD Motor Driver Expansion Board from EasyEDA to a native KiCad 10
 
 **Primary Dependencies**: KiCad 10.0; KiCad MCP Server (`C:\Users\hoshi\Repositories\KiCAD-MCP-Server\dist\index.js`); Seeed Studio XIAO MG24 Sense hardware assets; Molex Micro-Fit 3.0 connector drawings; Coilcraft / TI component datasheets; JLCPCB 2-layer manufacturing design rules.
 
-**Storage**: Project repository directory at `mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/` and its `manufacturing/` release directory.
+**Storage**: Project repository directory at `hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/` and its `manufacturing/` release directory.
 
 **Testing**: KiCad Electrical Rules Check (ERC); KiCad Design Rules Check (DRC); Bottom-side via tenting and planar clearance inspection; Gerber, drill, and centroid inspection; JLCPCB automated SMT pre-order check.
 
@@ -35,7 +37,7 @@ Port the Mini 4WD Motor Driver Expansion Board from EasyEDA to a native KiCad 10
 
 ## Constitution Check
 
-The repository constitution (`.specify/memory/constitution.md`) currently contains standard template placeholders without ratified restrictive gates. Antigravity language rules (`GEMINI.md` and `.agents/rules/language.md`) require reports and documentation summaries in Japanese. This plan fully adheres to all specified electrical, mechanical, and safety requirements.
+The repository constitution (`.specify/memory/constitution.md`) currently contains standard template placeholders without ratified restrictive gates. Antigravity language rules (`AGENTS.md` and `.agents/rules/language.md`) require reports and documentation summaries in Japanese. This plan fully adheres to all specified electrical, mechanical, and safety requirements.
 
 **Gate Status**: Pass.
 
@@ -59,7 +61,7 @@ specs/002-port-to-kicad/
 
 ```text
 mini4wd-motor-driver/
-├── GEMINI.md                                    # Antigravity Japanese language rules
+├── AGENTS.md                                    # Antigravity Japanese language rules
 ├── hardware/
 │   ├── rev1/                                    # Legacy EasyEDA rev1 artifacts (preserved as reference)
 │   └── kicad/

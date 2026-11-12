@@ -1,6 +1,6 @@
 ﻿# Board Interface and Fabrication Contract
 
-This contract records externally visible board connections and manufacturing package expectations. It is derived from `mini4wd-motor-driver/README.md`, `docs/hardware_spec.md`, and `prompt.md`.
+This contract records externally visible board connections and manufacturing package expectations. It is derived from `mini4wd-motor-driver/README.md`, `docs/hardware_spec.md`, and `specs/001-smt-gerber-board/spec.md`.
 
 ## Board Stackup and Mechanical Envelope
 

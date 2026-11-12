@@ -7,7 +7,7 @@
 
 ### 1. Use the user-designated active EasyEDA project; do not use other `.eprj2` contents
 
-- **Decision**: Reconstruct the board in the user-designated active EasyEDA project. Treat `README.md`, `prompt.md`, and the two SVGs as the design inputs. Do not use any other `.eprj2` contents as a design source.
+- **Decision**: Reconstruct the board in the user-designated active EasyEDA project. Treat `README.md`, `specs/001-smt-gerber-board/spec.md`, and the two SVGs as the design inputs. Do not use any other `.eprj2` contents as a design source.
 - **Rationale**: This follows the explicit project instruction and keeps the design traceable to the agreed written specification and visual references.
 - **Alternatives considered**: Use a different `.eprj2` as a source; rejected because the user designated the active project as the implementation target.
 - **Source**: [EasyEDA Pro project format reference](https://prodocs.easyeda.com/en/api/reference/pro-api.edmt_projectfileformat.html) describes EPRJ2 and EPRJ3 project formats.
@@ -36,10 +36,10 @@
 
 ### 5. Keep the existing board's documented circuit behavior and pin map
 
-- **Decision**: Follow `mini4wd-motor-driver/README.md` and `docs/hardware_spec.md` for the circuit: forward-only motor operation, N-channel low-side drive, P-channel short braking, UCC27511 gate drive, TPS61023 5 V boost, battery/MID voltage sensing, and NTC temperature sensing. Use `prompt.md` for the agreed module mounting, SMT connector family, and current targets.
+- **Decision**: Follow `mini4wd-motor-driver/README.md` and `docs/hardware_spec.md` for the circuit: forward-only motor operation, N-channel low-side drive, P-channel short braking, UCC27511 gate drive, TPS61023 5 V boost, battery/MID voltage sensing, and NTC temperature sensing. Use `specs/001-smt-gerber-board/spec.md` for the agreed module mounting, SMT connector family, and current targets.
 - **Rationale**: The README describes the behavior of the board represented by the SVG layout references; the prompt records the newer assembly and connection decisions.
 - **Alternatives considered**: H-bridge/dual-NMOS topology; not selected because it conflicts with the README's existing forward-only driver behavior.
-- **Sources**: Project [README](../../mini4wd-motor-driver/README.md), [hardware specification](../../mini4wd-motor-driver/docs/hardware_spec.md), [Vishay SiSS64DN datasheet](https://www.vishay.com/docs/67294/siss64dn.pdf), [TI TPS61023 datasheet](https://www.ti.com/lit/ds/symlink/tps61023.pdf), [TI UCC27511 product page](https://www.ti.com/product/UCC27511).
+- **Sources**: Project [README](../../mini4wd-motor-driver/README.md), [hardware specification](../../docs/hardware_spec.md), [Vishay SiSS64DN datasheet](https://www.vishay.com/docs/67294/siss64dn.pdf), [TI TPS61023 datasheet](https://www.ti.com/lit/ds/symlink/tps61023.pdf), [TI UCC27511 product page](https://www.ti.com/product/UCC27511).
 
 ### 6. Review generated Gerbers outside the source editor
 

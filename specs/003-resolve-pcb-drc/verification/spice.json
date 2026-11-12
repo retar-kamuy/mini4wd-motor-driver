@@ -1,0 +1,229 @@
+{
+  "analyzer_type": "spice",
+  "schema_version": "1.4.0",
+  "summary": {
+    "total": 8,
+    "total_findings": 0,
+    "pass": 5,
+    "warn": 0,
+    "fail": 0,
+    "skip": 0,
+    "info": 3,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 8
+    }
+  },
+  "findings": [],
+  "simulation_results": [
+    {
+      "subcircuit_type": "voltage_divider",
+      "components": [
+        "R_FB_H",
+        "R_FB_L"
+      ],
+      "expected": {
+        "ratio": 0.120192,
+        "vout_V": 0.3966336
+      },
+      "simulated": {
+        "vout_V": 0.396635
+      },
+      "delta": {
+        "vout_error_pct": 0.0
+      },
+      "status": "pass",
+      "cir_file": "/tmp/spice_sim_jecorg2_/voltage-divider_R_FB_H_R_FB_L.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/voltage-divider_R_FB_H_R_FB_L.log",
+      "elapsed_s": 0.161,
+      "reference": "R_FB_H/R_FB_L"
+    },
+    {
+      "subcircuit_type": "voltage_divider",
+      "components": [
+        "R_MID_H",
+        "R_MID_L"
+      ],
+      "expected": {
+        "ratio": 0.3125,
+        "vout_V": 1.03125
+      },
+      "simulated": {
+        "vout_V": 1.03125
+      },
+      "delta": {
+        "vout_error_pct": 0.0
+      },
+      "status": "pass",
+      "cir_file": "/tmp/spice_sim_jecorg2_/voltage-divider_R_MID_H_R_MID_L.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/voltage-divider_R_MID_H_R_MID_L.log",
+      "elapsed_s": 0.014,
+      "reference": "R_MID_H/R_MID_L"
+    },
+    {
+      "subcircuit_type": "voltage_divider",
+      "components": [
+        "R_VBAT_H",
+        "R_VBAT_L"
+      ],
+      "expected": {
+        "ratio": 0.3125,
+        "vout_V": 1.15625
+      },
+      "simulated": {
+        "vout_V": 1.15625
+      },
+      "delta": {
+        "vout_error_pct": 0.0
+      },
+      "status": "pass",
+      "cir_file": "/tmp/spice_sim_jecorg2_/voltage-divider_R_VBAT_H_R_VBAT_L.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/voltage-divider_R_VBAT_H_R_VBAT_L.log",
+      "elapsed_s": 0.015,
+      "reference": "R_VBAT_H/R_VBAT_L"
+    },
+    {
+      "subcircuit_type": "transistor_circuit",
+      "components": [
+        "Q1"
+      ],
+      "transistor_type": "mosfet",
+      "value": "SiSS64DN-T1-GE3",
+      "expected": {},
+      "simulated": {
+        "vth_V": 1.542,
+        "i_on_mA": 3.3
+      },
+      "delta": {},
+      "model_note": "generic NMOS model \u2014 real threshold depends on part",
+      "status": "info",
+      "note": "FET turns on in the generic model; not compared against the part",
+      "cir_file": "/tmp/spice_sim_jecorg2_/transistor-circuit_Q1.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/transistor-circuit_Q1.log",
+      "elapsed_s": 0.013,
+      "reference": "Q1"
+    },
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "CIN"
+      ],
+      "rail": "VBAT",
+      "cap_count": 1,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.0316,
+        "z_at_1MHz_ohms": 0.0336,
+        "z_at_100kHz_ohms": 0.1618
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.034\u03a9 at 1MHz",
+      "cir_file": "/tmp/spice_sim_jecorg2_/decoupling_CIN.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/decoupling_CIN.log",
+      "elapsed_s": 0.018,
+      "reference": "CIN"
+    },
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "COUT1",
+        "COUT2",
+        "C_BYP"
+      ],
+      "rail": "BOOST_5V",
+      "cap_count": 3,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.0106,
+        "z_at_1MHz_ohms": 0.0107,
+        "z_at_100kHz_ohms": 0.0374
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.011\u03a9 at 1MHz",
+      "cir_file": "/tmp/spice_sim_jecorg2_/decoupling_COUT1_COUT2_C_BYP.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/decoupling_COUT1_COUT2_C_BYP.log",
+      "elapsed_s": 0.013,
+      "reference": "COUT1/COUT2/C_BYP"
+    },
+    {
+      "subcircuit_type": "regulator_feedback",
+      "components": [
+        "R_FB_H",
+        "R_FB_L"
+      ],
+      "regulator": "U2",
+      "expected": {
+        "ratio": 0.120192,
+        "vref_V": 0.595,
+        "vfb_V": 0.6009599999999999,
+        "vin_V": 5.0
+      },
+      "simulated": {
+        "vfb_V": 0.601
+      },
+      "delta": {},
+      "status": "info",
+      "note": "Divider simulated; not compared against Vref (Vref 0.595 V is a family default (TPS6102), not this part's own value)",
+      "cir_file": "/tmp/spice_sim_jecorg2_/regulator-feedback_U2_R_FB_H_R_FB_L.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/regulator-feedback_U2_R_FB_H_R_FB_L.log",
+      "elapsed_s": 0.008,
+      "reference": "R_FB_H/R_FB_L"
+    },
+    {
+      "subcircuit_type": "inrush",
+      "components": [
+        "COUT1",
+        "COUT2",
+        "C_BYP"
+      ],
+      "regulator": "U2",
+      "expected": {
+        "v_target_V": 4.95,
+        "estimated_inrush_A": 0.218
+      },
+      "simulated": {
+        "i_peak_A": 0.2184,
+        "t_peak_us": 12.3,
+        "v_settled_V": 4.95
+      },
+      "delta": {
+        "v_settle_error_pct": 0.0
+      },
+      "status": "info",
+      "note": "Peak inrush 218.4mA at 12\u00b5s on the assumed soft-start; not compared against a limit",
+      "cir_file": "/tmp/spice_sim_jecorg2_/inrush_idx0.cir",
+      "log_file": "/tmp/spice_sim_jecorg2_/inrush_idx0.log",
+      "elapsed_s": 0.018,
+      "reference": "COUT1/COUT2/C_BYP"
+    }
+  ],
+  "diagnostics": [],
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "workdir": "/tmp/spice_sim_jecorg2_",
+  "total_elapsed_s": 0.259,
+  "simulator": "/usr/bin/ngspice",
+  "ngspice": "/usr/bin/ngspice"
+}

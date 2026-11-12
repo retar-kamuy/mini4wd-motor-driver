@@ -1,0 +1,1559 @@
+{
+  "analyzer_type": "emc",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      "specs/003-resolve-pcb-drc/verification/schematic.json",
+      "specs/003-resolve-pcb-drc/verification/pcb.json"
+    ],
+    "source_hashes": {
+      "specs/003-resolve-pcb-drc/verification/schematic.json": "e87358172913206073cb4bfbd431ca637778271f80498634524769a6fa8691d2",
+      "specs/003-resolve-pcb-drc/verification/pcb.json": "d1e129c1814a7202bb94e992c2a9a7f3d520fa7ea692bed39596445425a58a7e"
+    },
+    "run_id": "20261110T140911Z-036a42",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": "specs/003-resolve-pcb-drc/verification/schematic.json",
+        "sha256": "e87358172913206073cb4bfbd431ca637778271f80498634524769a6fa8691d2",
+        "schema_version": "1.4.0",
+        "run_id": "20261110T140911Z-036a42"
+      },
+      "pcb": {
+        "path": "specs/003-resolve-pcb-drc/verification/pcb.json",
+        "sha256": "d1e129c1814a7202bb94e992c2a9a7f3d520fa7ea692bed39596445425a58a7e",
+        "schema_version": "1.4.0",
+        "run_id": "20261110T140911Z-036a42"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "summary": {
+    "total_findings": 23,
+    "categories_checked": 6,
+    "active": 23,
+    "suppressed": 0,
+    "by_severity": {
+      "error": 8,
+      "warning": 10,
+      "info": 5
+    },
+    "emc_risk_score": 58.0
+  },
+  "target_standard": "fcc-class-b",
+  "findings": [
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has major reference plane gap",
+      "description": "Net PWM_DRIVE has 25% reference plane coverage over 51.3mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "PWM_DRIVE"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "PWM_DRIVE",
+      "coverage_pct": 25.0,
+      "trace_mm": 51.3,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:pwm_drive"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has major reference plane gap",
+      "description": "Net SW_BOOST has 30% reference plane coverage over 31.4mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "SW_BOOST"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "SW_BOOST",
+      "coverage_pct": 30.0,
+      "trace_mm": 31.4,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:sw_boost"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has major reference plane gap",
+      "description": "Net MID_SENSE has 32% reference plane coverage over 29.2mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "MID_SENSE"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "MID_SENSE",
+      "coverage_pct": 31.6,
+      "trace_mm": 29.2,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:mid_sense"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has major reference plane gap",
+      "description": "Net TEMP_SENSE has 43% reference plane coverage over 28.7mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "TEMP_SENSE"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "TEMP_SENSE",
+      "coverage_pct": 42.9,
+      "trace_mm": 28.7,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:temp_sense"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has significant reference plane gap",
+      "description": "Net VBAT_SENSE has 61% reference plane coverage over 54.5mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "VBAT_SENSE"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "VBAT_SENSE",
+      "coverage_pct": 61.4,
+      "trace_mm": 54.5,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:vbat_sense"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has significant reference plane gap",
+      "description": "Net MOTOR_MINUS has 74% reference plane coverage over 45.0mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "MOTOR_MINUS"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "MOTOR_MINUS",
+      "coverage_pct": 74.1,
+      "trace_mm": 45.0,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:motor_minus"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has partial reference plane gap",
+      "description": "Net FB_BOOST has 93% reference plane coverage over 12.7mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "FB_BOOST"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "FB_BOOST",
+      "coverage_pct": 92.9,
+      "trace_mm": 12.7,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:fb_boost"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Signal has partial reference plane gap",
+      "description": "Net GATE_DRIVE has 94% reference plane coverage over 33.3mm of routing. Return current must detour around the gap, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "GATE_DRIVE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "signal_net": "GATE_DRIVE",
+      "coverage_pct": 94.4,
+      "trace_mm": 33.3,
+      "is_high_speed_or_clock": false,
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:gate_drive"
+    },
+    {
+      "detector": "emc_decoupling",
+      "rule_id": "DC-002",
+      "category": "decoupling",
+      "summary": "No decoupling cap found near U2",
+      "description": "U2 (TPS61023DRLR) has no capacitor within 10mm. Every IC with power pins needs at least one decoupling capacitor.",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Add 100nF X7R 0402 + 1\u00b5F X5R 0603 close to U2 power pins. For high-speed ICs, add 10nF C0G for high-frequency decoupling. Place caps on the same side as U2 with short, wide traces to vias.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "capacitor",
+            "value": "100n"
+          }
+        ],
+        "basis": "Standard 100nF decoupling per IC"
+      },
+      "report_context": {
+        "section": "Decoupling",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:DC-002:u2"
+    },
+    {
+      "detector": "emc_decoupling",
+      "rule_id": "DC-002",
+      "category": "decoupling",
+      "summary": "No decoupling cap found near U1",
+      "description": "U1 (UCC27511DBVR) has no capacitor within 10mm. Every IC with power pins needs at least one decoupling capacitor.",
+      "components": [
+        "U1"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "error",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Add 100nF X7R 0402 + 1\u00b5F X5R 0603 close to U1 power pins. For high-speed ICs, add 10nF C0G for high-frequency decoupling. Place caps on the same side as U1 with short, wide traces to vias.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "capacitor",
+            "value": "100n"
+          }
+        ],
+        "basis": "Standard 100nF decoupling per IC"
+      },
+      "report_context": {
+        "section": "Decoupling",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:DC-002:u1"
+    },
+    {
+      "detector": "emc_io_filtering",
+      "rule_id": "IO-001",
+      "category": "io_filtering",
+      "summary": "No EMC filtering near J1",
+      "description": "Connector J1 (Micro-Fit 3.0 B+/B-) has no ferrite bead, CM choke, or ESD protection within 25mm. Unfiltered I/O cables are the dominant source of radiated emissions \u2014 common-mode current as low as 5 \u00b5A can exceed FCC Class B.",
+      "components": [
+        "J1"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "J1 appears to be a power-only connector (all pins are power/ground rails). A board-level ferrite bead would saturate at typical power-supply currents. If radiated EMI is a concern on the cable, add a system-level common-mode choke or use shielded cable with chassis termination.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "ferrite_bead"
+          }
+        ],
+        "basis": "EMI filter on external I/O"
+      },
+      "report_context": {
+        "section": "Io Filtering",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "emc:IO-001:j1"
+    },
+    {
+      "detector": "emc_io_filtering",
+      "rule_id": "IO-001",
+      "category": "io_filtering",
+      "summary": "No EMC filtering near J2",
+      "description": "Connector J2 (Micro-Fit 3.0 M+/M-) has no ferrite bead, CM choke, or ESD protection within 25mm. Unfiltered I/O cables are the dominant source of radiated emissions \u2014 common-mode current as low as 5 \u00b5A can exceed FCC Class B.",
+      "components": [
+        "J2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Add a ferrite bead (e.g., BLM18AG601SN1D, 600\u03a9@100MHz) on signal lines near J2. Add ESD/TVS protection for external interfaces.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "ferrite_bead"
+          }
+        ],
+        "basis": "EMI filter on external I/O"
+      },
+      "report_context": {
+        "section": "Io Filtering",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "emc:IO-001:j2"
+    },
+    {
+      "detector": "emc_emission_estimate",
+      "rule_id": "EE-001",
+      "category": "emission_estimate",
+      "summary": "Board cavity resonance frequencies",
+      "description": "Board (55\u00d721mm, \u03b5r=4.4) cavity resonances: (1,0) at 1299 MHz; (2,0) at 2599 MHz. PDN impedance spikes at these frequencies. Ensure adequate decoupling at and around these frequencies.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Add decoupling capacitors with SRF near these frequencies.",
+      "report_context": {
+        "section": "Emission Estimate",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:EE-001:14ba23cdf0dc"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: MOTOR_MINUS",
+      "description": "Net MOTOR_MINUS has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "MOTOR_MINUS"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:motor_minus"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: VBAT_SENSE",
+      "description": "Net VBAT_SENSE has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "VBAT_SENSE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:vbat_sense"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: GATE_DRIVE",
+      "description": "Net GATE_DRIVE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "GATE_DRIVE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:gate_drive"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: MID_SENSE",
+      "description": "Net MID_SENSE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "MID_SENSE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:mid_sense"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: PWM_DRIVE",
+      "description": "Net PWM_DRIVE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "PWM_DRIVE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:pwm_drive"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: SW_BOOST",
+      "description": "Net SW_BOOST has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "SW_BOOST"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:sw_boost"
+    },
+    {
+      "detector": "emc_switching_emc",
+      "rule_id": "SW-001",
+      "category": "switching_emc",
+      "summary": "U2 harmonics in 30-88 MHz band",
+      "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 59 harmonics in the 30-88 MHz band (harmonics 30-88). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+      "report_context": {
+        "section": "Switching Emc",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:SW-001:u2"
+    },
+    {
+      "detector": "emc_switching_emc",
+      "rule_id": "SW-001",
+      "category": "switching_emc",
+      "summary": "U2 harmonics in 88-216 MHz band",
+      "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 129 harmonics in the 88-216 MHz band (harmonics 88-216). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+      "report_context": {
+        "section": "Switching Emc",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:SW-001:u2#1"
+    },
+    {
+      "detector": "emc_switching_emc",
+      "rule_id": "SW-001",
+      "category": "switching_emc",
+      "summary": "U2 harmonics in 216-960 MHz band",
+      "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 745 harmonics in the 216-960 MHz band (harmonics 216-960). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+      "report_context": {
+        "section": "Switching Emc",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:SW-001:u2#2"
+    },
+    {
+      "detector": "emc_emission_estimate",
+      "rule_id": "EE-002",
+      "category": "emission_estimate",
+      "summary": "U2 harmonic envelope",
+      "description": "U2 (TPS61023DRLR) switching at 1.00 MHz, duty \u224850%. Harmonic envelope: flat to 0.6 MHz, -20 dB/dec to 32 MHz, -40 dB/dec above. Harmonics extend into FCC test range starting at 30th harmonic.",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize the hot loop area (input cap \u2192 high-side switch \u2192 inductor \u2192 low-side switch \u2192 input cap). Every halving of loop area reduces emissions by 6 dB.",
+      "report_context": {
+        "section": "Emission Estimate",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:EE-002:u2"
+    }
+  ],
+  "assessments": [],
+  "per_net_scores": [
+    {
+      "net": "PWM_DRIVE",
+      "score": 91.0,
+      "finding_count": 2,
+      "rules": [
+        "GP-001",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "SW_BOOST",
+      "score": 91.0,
+      "finding_count": 2,
+      "rules": [
+        "GP-001",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "MID_SENSE",
+      "score": 91.0,
+      "finding_count": 2,
+      "rules": [
+        "GP-001",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "VBAT_SENSE",
+      "score": 91.0,
+      "finding_count": 2,
+      "rules": [
+        "GP-001",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "MOTOR_MINUS",
+      "score": 91.0,
+      "finding_count": 2,
+      "rules": [
+        "GP-001",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "TEMP_SENSE",
+      "score": 94.0,
+      "finding_count": 1,
+      "rules": [
+        "GP-001"
+      ]
+    },
+    {
+      "net": "GATE_DRIVE",
+      "score": 95.5,
+      "finding_count": 2,
+      "rules": [
+        "GP-001",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "FB_BOOST",
+      "score": 98.5,
+      "finding_count": 1,
+      "rules": [
+        "GP-001"
+      ]
+    }
+  ],
+  "test_plan": {
+    "frequency_bands": [
+      {
+        "band": "30-88 MHz",
+        "freq_min_hz": 30000000.0,
+        "freq_max_hz": 88000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 30-88"
+        ]
+      },
+      {
+        "band": "88-216 MHz",
+        "freq_min_hz": 88000000.0,
+        "freq_max_hz": 216000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 88-216"
+        ]
+      },
+      {
+        "band": "216-960 MHz",
+        "freq_min_hz": 216000000.0,
+        "freq_max_hz": 960000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 216-960"
+        ]
+      },
+      {
+        "band": "960-40000 MHz",
+        "freq_min_hz": 960000000.0,
+        "freq_max_hz": 40000000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 960-40000"
+        ]
+      }
+    ],
+    "interface_risks": [
+      {
+        "connector": "J1",
+        "value": "Micro-Fit 3.0 B+/B-",
+        "protocol": "unknown",
+        "risk_score": 5,
+        "reasons": [
+          "No EMC filtering detected"
+        ]
+      },
+      {
+        "connector": "J2",
+        "value": "Micro-Fit 3.0 M+/M-",
+        "protocol": "unknown",
+        "risk_score": 5,
+        "reasons": [
+          "No EMC filtering detected"
+        ]
+      }
+    ],
+    "probe_points": [
+      {
+        "x": 37.0,
+        "y": 10.2,
+        "type": "inductor",
+        "ref": "L1",
+        "reason": "Switching inductor \u2014 highest dI/dt source"
+      },
+      {
+        "x": 49.5,
+        "y": 5.0,
+        "type": "unfiltered_connector",
+        "ref": "J1",
+        "reason": "Unfiltered I/O \u2014 cable radiation risk"
+      },
+      {
+        "x": 49.5,
+        "y": 16.0,
+        "type": "unfiltered_connector",
+        "ref": "J2",
+        "reason": "Unfiltered I/O \u2014 cable radiation risk"
+      }
+    ]
+  },
+  "regulatory_coverage": {
+    "market": "us",
+    "applicable_standards": [
+      "FCC Part 15 Class B",
+      "FCC Part 15 Class B"
+    ],
+    "coverage_matrix": [
+      {
+        "standard": "FCC Part 15 Class B",
+        "test_type": "radiated",
+        "coverage": "minimal",
+        "checked_rules": [
+          "GP-001",
+          "DC-002",
+          "SW-001",
+          "IO-001",
+          "EE-001",
+          "EE-002"
+        ],
+        "total_applicable_rules": 23,
+        "note": "Design rule checks identify common radiation sources. Cannot predict absolute emission levels."
+      },
+      {
+        "standard": "FCC Part 15 Class B",
+        "test_type": "conducted",
+        "coverage": "partial",
+        "checked_rules": [
+          "SW-001",
+          "DC-002",
+          "EE-002"
+        ],
+        "total_applicable_rules": 4,
+        "note": "Switching harmonic analysis and decoupling checks. EMI filter verification not yet implemented."
+      }
+    ]
+  },
+  "category_summary": {
+    "ground_plane": {
+      "count": 8,
+      "max_severity": "error",
+      "severities": {
+        "error": 6,
+        "warning": 2,
+        "info": 0
+      },
+      "suppressed_count": 0
+    },
+    "decoupling": {
+      "count": 2,
+      "max_severity": "error",
+      "severities": {
+        "error": 2,
+        "warning": 0,
+        "info": 0
+      },
+      "suppressed_count": 0
+    },
+    "io_filtering": {
+      "count": 2,
+      "max_severity": "info",
+      "severities": {
+        "error": 0,
+        "warning": 0,
+        "info": 2
+      },
+      "suppressed_count": 0
+    },
+    "emission_estimate": {
+      "count": 2,
+      "max_severity": "info",
+      "severities": {
+        "error": 0,
+        "warning": 0,
+        "info": 2
+      },
+      "suppressed_count": 0
+    },
+    "return_path": {
+      "count": 6,
+      "max_severity": "warning",
+      "severities": {
+        "error": 0,
+        "warning": 6,
+        "info": 0
+      },
+      "suppressed_count": 0
+    },
+    "switching_emc": {
+      "count": 3,
+      "max_severity": "warning",
+      "severities": {
+        "error": 0,
+        "warning": 2,
+        "info": 1
+      },
+      "suppressed_count": 0
+    }
+  },
+  "board_info": {
+    "board_width_mm": 55.0,
+    "board_height_mm": 21.0,
+    "layer_count": 2,
+    "footprint_count": 22,
+    "via_count": 45,
+    "has_stackup": false,
+    "total_components": 22,
+    "total_nets": 20,
+    "switching_frequencies_hz": [
+      1000000.0
+    ]
+  },
+  "elapsed_s": 0.011,
+  "audience_summary": {
+    "designer": {
+      "total_findings": 23,
+      "by_severity": {
+        "error": 8,
+        "warning": 10,
+        "info": 5
+      },
+      "by_category": {
+        "ground_plane": 8,
+        "decoupling": 2,
+        "io_filtering": 2,
+        "emission_estimate": 2,
+        "return_path": 6,
+        "switching_emc": 3
+      },
+      "top_issues": [
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has major reference plane gap",
+          "description": "Net PWM_DRIVE has 25% reference plane coverage over 51.3mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "PWM_DRIVE"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "PWM_DRIVE",
+          "coverage_pct": 25.0,
+          "trace_mm": 51.3,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:pwm_drive"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has major reference plane gap",
+          "description": "Net SW_BOOST has 30% reference plane coverage over 31.4mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "SW_BOOST"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "SW_BOOST",
+          "coverage_pct": 30.0,
+          "trace_mm": 31.4,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:sw_boost"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has major reference plane gap",
+          "description": "Net MID_SENSE has 32% reference plane coverage over 29.2mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "MID_SENSE"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "MID_SENSE",
+          "coverage_pct": 31.6,
+          "trace_mm": 29.2,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:mid_sense"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has major reference plane gap",
+          "description": "Net TEMP_SENSE has 43% reference plane coverage over 28.7mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "TEMP_SENSE"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "TEMP_SENSE",
+          "coverage_pct": 42.9,
+          "trace_mm": 28.7,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:temp_sense"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has significant reference plane gap",
+          "description": "Net VBAT_SENSE has 61% reference plane coverage over 54.5mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "VBAT_SENSE"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "VBAT_SENSE",
+          "coverage_pct": 61.4,
+          "trace_mm": 54.5,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:vbat_sense"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has significant reference plane gap",
+          "description": "Net MOTOR_MINUS has 74% reference plane coverage over 45.0mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "MOTOR_MINUS"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "MOTOR_MINUS",
+          "coverage_pct": 74.1,
+          "trace_mm": 45.0,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:motor_minus"
+        },
+        {
+          "detector": "emc_decoupling",
+          "rule_id": "DC-002",
+          "category": "decoupling",
+          "summary": "No decoupling cap found near U2",
+          "description": "U2 (TPS61023DRLR) has no capacitor within 10mm. Every IC with power pins needs at least one decoupling capacitor.",
+          "components": [
+            "U2"
+          ],
+          "nets": [],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Add 100nF X7R 0402 + 1\u00b5F X5R 0603 close to U2 power pins. For high-speed ICs, add 10nF C0G for high-frequency decoupling. Place caps on the same side as U2 with short, wide traces to vias.",
+          "fix_params": {
+            "type": "add_component",
+            "components": [
+              {
+                "type": "capacitor",
+                "value": "100n"
+              }
+            ],
+            "basis": "Standard 100nF decoupling per IC"
+          },
+          "report_context": {
+            "section": "Decoupling",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:DC-002:u2"
+        },
+        {
+          "detector": "emc_decoupling",
+          "rule_id": "DC-002",
+          "category": "decoupling",
+          "summary": "No decoupling cap found near U1",
+          "description": "U1 (UCC27511DBVR) has no capacitor within 10mm. Every IC with power pins needs at least one decoupling capacitor.",
+          "components": [
+            "U1"
+          ],
+          "nets": [],
+          "pins": [],
+          "severity": "error",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Add 100nF X7R 0402 + 1\u00b5F X5R 0603 close to U1 power pins. For high-speed ICs, add 10nF C0G for high-frequency decoupling. Place caps on the same side as U1 with short, wide traces to vias.",
+          "fix_params": {
+            "type": "add_component",
+            "components": [
+              {
+                "type": "capacitor",
+                "value": "100n"
+              }
+            ],
+            "basis": "Standard 100nF decoupling per IC"
+          },
+          "report_context": {
+            "section": "Decoupling",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:DC-002:u1"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has partial reference plane gap",
+          "description": "Net FB_BOOST has 93% reference plane coverage over 12.7mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "FB_BOOST"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "FB_BOOST",
+          "coverage_pct": 92.9,
+          "trace_mm": 12.7,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:fb_boost"
+        },
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-001",
+          "category": "ground_plane",
+          "summary": "Signal has partial reference plane gap",
+          "description": "Net GATE_DRIVE has 94% reference plane coverage over 33.3mm of routing. Return current must detour around the gap, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "GATE_DRIVE"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "signal_net": "GATE_DRIVE",
+          "coverage_pct": 94.4,
+          "trace_mm": 33.3,
+          "is_high_speed_or_clock": false,
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-001:gate_drive"
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 18,
+      "by_category": {
+        "ground_plane": 8,
+        "decoupling": 2,
+        "return_path": 6,
+        "switching_emc": 2
+      },
+      "top_issues": [
+        {
+          "rule_id": "GP-001",
+          "severity": "error",
+          "summary": "Signal has major reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "error",
+          "summary": "Signal has major reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "error",
+          "summary": "Signal has major reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "error",
+          "summary": "Signal has major reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "error",
+          "summary": "Signal has significant reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "error",
+          "summary": "Signal has significant reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "DC-002",
+          "severity": "error",
+          "summary": "No decoupling cap found near U2",
+          "recommendation": "Add 100nF X7R 0402 + 1\u00b5F X5R 0603 close to U2 power pins. For high-speed ICs, add 10nF C0G for high-frequency decoupling. Place caps on the same side as U2 with short, wide traces to vias.",
+          "category": "decoupling"
+        },
+        {
+          "rule_id": "DC-002",
+          "severity": "error",
+          "summary": "No decoupling cap found near U1",
+          "recommendation": "Add 100nF X7R 0402 + 1\u00b5F X5R 0603 close to U1 power pins. For high-speed ICs, add 10nF C0G for high-frequency decoupling. Place caps on the same side as U1 with short, wide traces to vias.",
+          "category": "decoupling"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "warning",
+          "summary": "Signal has partial reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "GP-001",
+          "severity": "warning",
+          "summary": "Signal has partial reference plane gap",
+          "recommendation": "Route this signal to avoid ground plane gaps, or fill the void. If a split is intentional, add a bridge capacitor across the gap.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: MOTOR_MINUS",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: VBAT_SENSE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: GATE_DRIVE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: MID_SENSE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: PWM_DRIVE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: SW_BOOST",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "SW-001",
+          "severity": "warning",
+          "summary": "U2 harmonics in 30-88 MHz band",
+          "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+          "category": "switching_emc"
+        },
+        {
+          "rule_id": "SW-001",
+          "severity": "warning",
+          "summary": "U2 harmonics in 88-216 MHz band",
+          "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+          "category": "switching_emc"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "high",
+      "blocker_count": 8,
+      "warning_count": 10,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "needs_work",
+        "pre_fab": "pass",
+        "bring_up": "pass"
+      },
+      "one_liner": "8 errors, 10 warnings across 4 categories. Layout stage has blockers."
+    }
+  },
+  "trust_summary": {
+    "total_findings": 23,
+    "trust_level": "low",
+    "by_confidence": {
+      "deterministic": 6,
+      "heuristic": 17,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 6,
+      "heuristic_rule": 17,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261110T140911Z-036a42"
+  }
+}

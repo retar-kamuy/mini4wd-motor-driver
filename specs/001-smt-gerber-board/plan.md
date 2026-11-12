@@ -6,7 +6,7 @@
 
 ## Summary
 
-Use the user-designated active EasyEDA project as the editable implementation target and manufacturing package for the 55 × 21 mm, two-layer Mini 4WD motor driver using nominal 1.6 mm PCB thickness. Copy the existing circuit using only confirmed source-board features and apply compatible improvements explicitly listed in `prompt.md`; treat unconfirmed source features as unimplemented. Place and route the design with two opposite-facing Molex Micro-Fit connectors (candidate `43650-0214`) and direct castellated-pad XIAO MG24 Sense mounting. The source SVGs guide visual layout only. Per user decision, no vehicle-clearance assessment or independent 5 A thermal qualification is required. Do not use any other `.eprj2` project as a design source. Release Gerber data after circuit definition, electrical/PCB DRC, and Gerber-viewer checks are complete.
+Use the user-designated active EasyEDA project as the editable implementation target and manufacturing package for the 55 × 21 mm, two-layer Mini 4WD motor driver using nominal 1.6 mm PCB thickness. Copy the existing circuit using only confirmed source-board features and apply compatible improvements explicitly listed in `specs/001-smt-gerber-board/spec.md`; treat unconfirmed source features as unimplemented. Place and route the design with two opposite-facing Molex Micro-Fit connectors (candidate `43650-0214`) and direct castellated-pad XIAO MG24 Sense mounting. The source SVGs guide visual layout only. Per user decision, no vehicle-clearance assessment or independent 5 A thermal qualification is required. Do not use any other `.eprj2` project as a design source. Release Gerber data after circuit definition, electrical/PCB DRC, and Gerber-viewer checks are complete.
 
 ## Technical Context
 
@@ -75,8 +75,8 @@ See [research.md](research.md). Decisions include reconstructing rev1 in the use
 
 See [data-model.md](data-model.md), [contracts/board-interface-and-fabrication.md](contracts/board-interface-and-fabrication.md), and [quickstart.md](quickstart.md).
 
-1. Continue in the user-designated active `mini4wd-motor-driver.eprj2` project. Reconstruct the rev1 design from the README, `prompt.md`, and reference SVGs; do not use another `.eprj2` as a source.
-2. Reconstruct the existing schematic from the README hardware specification and connection contract. Record each existing component value, manufacturer part number, package, and source. Preserve existing resistor/capacitor positions and quantities; do not add passive positions. Keep the README's forward-only low-side N-MOSFET drive and P-MOSFET short-brake behavior. Only apply changes explicitly listed in `prompt.md`.
+1. Continue in the user-designated active `mini4wd-motor-driver.eprj2` project. Reconstruct the rev1 design from the README, `specs/001-smt-gerber-board/spec.md`, and reference SVGs; do not use another `.eprj2` as a source.
+2. Reconstruct the existing schematic from the README hardware specification and connection contract. Record each existing component value, manufacturer part number, package, and source. Preserve existing resistor/capacitor positions and quantities; do not add passive positions. Keep the README's forward-only low-side N-MOSFET drive and P-MOSFET short-brake behavior. Only apply changes explicitly listed in `specs/001-smt-gerber-board/spec.md`.
 3. Verify the XIAO MG24 Sense pinout and castellated pad geometry against Seeed's official hardware materials. Add only the interfaces in the contract, including 5 V, GND, VBAT sense, NTC temperature, motor PWM, and MID sense.
 4. Select footprints from manufacturer drawings. Confirm the Micro-Fit mating housing and terminal family, SMT solder-tab lands, connector orientation, and recommended 1.60 mm PCB thickness before placement.
 5. Place components on the top side. Keep the battery-facing bottom surface flat, tent bottom vias, and maintain the 55 ﾃ・21 mm outline and outward-facing connectors on opposite ends.
@@ -90,7 +90,7 @@ See [data-model.md](data-model.md), [contracts/board-interface-and-fabrication.m
 
 - **Circuit gate**: Schematic connectivity agrees with the contract; no unresolved net names or pin assignments.
 - **Part gate**: Each selected part has a verified manufacturer number, package/footprint source, electrical rating, and assembly suitability.
-- **Copy-fidelity gate**: Existing resistor and capacitor positions and quantities match the reference board one-to-one. No passive positions are added; any exception must be an explicit `prompt.md` improvement.
+- **Copy-fidelity gate**: Existing resistor and capacitor positions and quantities match the reference board one-to-one. No passive positions are added; any exception must be an explicit `specs/001-smt-gerber-board/spec.md` improvement.
 - **Board-definition gate**: Record the 55 × 21 mm outline, nominal board thickness, connector orientation, and battery-facing SMT surface.
 - **Current requirement**: Record the 5 A continuous motor target and 5 A peak connector target. Per user decision, independent thermal/overcurrent qualification of the inherited toy-board design is not a rev1 release gate; do not claim qualification without evidence.
 - **Fabrication gate**: Two copper layers, solder masks, silkscreens, outline, and needed drill outputs are correctly mapped and viewer-checked; fabricator file validation passes.

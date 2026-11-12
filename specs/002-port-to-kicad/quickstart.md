@@ -1,3 +1,5 @@
+> **2026-11-10 現状注記**: 本文には旧作業コピーへのパスと当時の設計・検証状態が含まれる。現行の正規設計は `hardware/kicad/mini4wd-motor-driver/`、検証根拠と残作業は `specs/003-resolve-pcb-drc/` を参照する。旧手順や完成の記述を現行基板の検証結果として扱わない。
+
 # Quickstart Validation Guide: Mini 4WD Motor Driver KiCad Port
 
 **Branch**: `002-port-to-kicad` | **Date**: 2026-10-25 | **Spec**: [spec.md](spec.md)
@@ -22,7 +24,7 @@ Validate that the ported schematic contains all 24 components, correct net label
 Invoke the `run_erc` tool on the active project:
 ```json
 {
-  "project_path": "c:/Users/hoshi/Repositories/mini4wd-motor-driver/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pro"
+  "project_path": "c:/Users/hoshi/Repositories/mini4wd-motor-driver/hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pro"
 }
 ```
 
@@ -32,7 +34,7 @@ Execute `kicad-cli` from PowerShell:
 & "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" sch erc `
   --severity-all `
   --exit-code-violations `
-  "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch"
+  "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch"
 ```
 
 ### Expected Outcome
@@ -52,7 +54,7 @@ Validate that the physical board conforms to the 55.0 mm × 21.0 mm outline, adh
 Invoke the `run_drc` tool:
 ```json
 {
-  "project_path": "c:/Users/hoshi/Repositories/mini4wd-motor-driver/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pro"
+  "project_path": "c:/Users/hoshi/Repositories/mini4wd-motor-driver/hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pro"
 }
 ```
 
@@ -61,8 +63,8 @@ Invoke the `run_drc` tool:
 & "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" pcb drc `
   --severity-all `
   --exit-code-violations `
-  --output "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/drc-report.txt" `
-  "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
+  --output "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/drc-report.txt" `
+  "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
 ```
 
 ### Expected Outcome
@@ -103,19 +105,19 @@ Invoke:
 
 ### Alternative CLI Validation
 ```powershell
-$outDir = "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/gerber"
+$outDir = "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/gerber"
 & "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" pcb export gerbers `
   --output $outDir `
-  "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
+  "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
 
 & "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" pcb export drill `
   --output $outDir `
-  "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
+  "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
 
 & "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" pcb export pos `
-  --output "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/cpl.csv" `
+  --output "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/cpl.csv" `
   --format csv --units mm --side top `
-  "mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
+  "hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb"
 ```
 
 ### Expected Outcome

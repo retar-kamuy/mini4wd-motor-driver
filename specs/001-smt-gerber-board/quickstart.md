@@ -9,8 +9,8 @@
 
 ## Create and review the source design
 
-1. Open the user-designated `mini4wd-motor-driver.eprj2` project and reconstruct rev1 from the README, `prompt.md`, and reference SVGs.
-2. Build the schematic and board from the spec, project README, `prompt.md`, and reference SVGs. Do not use another `.eprj2` project as a design source.
+1. Open the user-designated `mini4wd-motor-driver.eprj2` project and reconstruct rev1 from the README, `specs/001-smt-gerber-board/spec.md`, and reference SVGs.
+2. Build the schematic and board from the spec, project README, `specs/001-smt-gerber-board/spec.md`, and reference SVGs. Do not use another `.eprj2` project as a design source.
 3. Confirm the schematic pin/net table against [the interface contract](contracts/board-interface-and-fabrication.md).
 4. Run the schematic/netlist checks and PCB DRC. Expected result: no unresolved connections, shorts, or unwaived DRC findings.
 5. Inspect the 2D and 3D views. Expected result: approximately 55 ﾃ・21 mm outline, two outward-facing connectors at opposite ends, direct castellated MG24 placement, no underside leads, and a battery-facing underside with tented vias.

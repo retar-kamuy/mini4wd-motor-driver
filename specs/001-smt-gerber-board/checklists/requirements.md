@@ -31,5 +31,5 @@
 
 ## Notes
 
-- README outline, circuit topology, and signal assignments resolve the main layout and electrical questions. `prompt.md` defines the MG24 mounting, SMD connector choices, 5 A current targets, and the approved 1.6 mm board thickness, which supersedes the legacy 1.2 mm thickness. The rev1 board is reconstructed from approved requirements in the user-designated active project; no other `.eprj2` content is a design source.
+- README outline, circuit topology, and signal assignments resolve the main layout and electrical questions. `specs/001-smt-gerber-board/spec.md` defines the MG24 mounting, SMD connector choices, 5 A current targets, and the approved 1.6 mm board thickness, which supersedes the legacy 1.2 mm thickness. The rev1 board is reconstructed from approved requirements in the user-designated active project; no other `.eprj2` content is a design source.
 - The fabrication package remains future implementation work; this checklist validates specification readiness only.

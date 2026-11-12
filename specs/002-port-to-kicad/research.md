@@ -1,3 +1,5 @@
+> **2026-11-10 現状注記**: 本文には旧作業コピーへのパスと当時の設計・検証状態が含まれる。現行の正規設計は `hardware/kicad/mini4wd-motor-driver/`、検証根拠と残作業は `specs/003-resolve-pcb-drc/` を参照する。旧手順や完成の記述を現行基板の検証結果として扱わない。
+
 # Phase 0 Research: Porting Mini 4WD Motor Driver to KiCad
 
 **Branch**: `002-port-to-kicad` | **Date**: 2026-10-25 | **Spec**: [spec.md](spec.md)
@@ -73,7 +75,7 @@ The Mini 4WD Motor Driver requires 24 surface-mount components, some of which re
 
 ### Decision
 Create and register a project-specific footprint library:
-`mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.pretty/`
+`hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/mini4wd-motor-driver.pretty/`
 containing:
 - `Molex_Micro-Fit_3.0_43650-0214_SMD_RA.kicad_mod`
 - `XIAO_MG24_Castellated_14P.kicad_mod`
@@ -131,5 +133,5 @@ Requirements:
 
 ### Decision
 Export all fabrication artifacts directly from KiCad using the KiCad MCP server export tools (`export_gerbers`, `export_drill`, `export_pos`, `export_bom`) into:
-`mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/manufacturing/`
+`hardware/archive/kicad-before-consolidation/mini4wd-motor-driver/manufacturing/`
 with JLCPCB-compatible file naming and coordinate standards.
