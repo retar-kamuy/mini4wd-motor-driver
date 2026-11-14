@@ -1,0 +1,74 @@
+[
+  {
+    "pulse_width": "0.2u",
+    "resistor": "8k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "0.2u",
+    "resistor": "10k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "0.2u",
+    "resistor": "12k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "1u",
+    "resistor": "8k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "1u",
+    "resistor": "10k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "1u",
+    "resistor": "12k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "20u",
+    "resistor": "8k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "20u",
+    "resistor": "10k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "20u",
+    "resistor": "12k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "39u",
+    "resistor": "8k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "39u",
+    "resistor": "10k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  },
+  {
+    "pulse_width": "39u",
+    "resistor": "12k",
+    "overlap_max": 0.0,
+    "note": "logic-only, no device timing/hysteresis"
+  }
+]

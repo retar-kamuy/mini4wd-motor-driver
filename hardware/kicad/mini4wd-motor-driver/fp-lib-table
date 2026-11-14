@@ -2,4 +2,8 @@
   (version 7)
   (lib (name "mini4wd-motor-driver")(type "KiCad")(uri "${KIPRJMOD}/mini4wd-motor-driver.pretty")(options "")(descr ""))
   (lib (name "board-routed")(type "KiCad")(uri "${KIPRJMOD}/board-routed.pretty")(options "")(descr "Footprints derived from the routed board"))
+ (lib (name "Capacitor_SMD") (type "KiCad") (uri "${KICAD10_FOOTPRINT_DIR}/Capacitor_SMD.pretty") (options "") (descr "KiCad standard"))
+ (lib (name "Resistor_SMD") (type "KiCad") (uri "${KICAD10_FOOTPRINT_DIR}/Resistor_SMD.pretty") (options "") (descr "KiCad standard"))
+ (lib (name "Package_TO_SOT_SMD") (type "KiCad") (uri "${KICAD10_FOOTPRINT_DIR}/Package_TO_SOT_SMD.pretty") (options "") (descr "KiCad standard"))
+ (lib (name "Package_SO") (type "KiCad") (uri "${KICAD10_FOOTPRINT_DIR}/Package_SO.pretty") (options "") (descr "KiCad standard"))
 )

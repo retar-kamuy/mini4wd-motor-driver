@@ -1,0 +1,28 @@
+{
+  "model": "retriggered inertial both-edge qualifier; AND/OR; initially brake",
+  "time_unit": "us",
+  "delay": 10,
+  "input_sequences": 3125,
+  "timing_cases": 3,
+  "total_cases": 9375,
+  "overlap_cases": 0,
+  "assumed_driver_and_FET_latencies_us": [
+    [
+      0,
+      0.5
+    ],
+    [
+      0.5,
+      0
+    ],
+    [
+      0.1,
+      0.1
+    ]
+  ],
+  "limitations": [
+    "Not an LTC6994 or MOSFET electrical model",
+    "No supply ramp, metastability, jitter, or parasitics",
+    "Chosen latency envelope is an assumption, not a verified device bound"
+  ]
+}

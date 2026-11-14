@@ -2,7 +2,7 @@
 
 **入力**: [spec.md](spec.md)、[plan.md](plan.md)、[research.md](research.md)、[data-model.md](data-model.md)、[契約](contracts/design-and-verification.md)  
 **設計正本**: `hardware/kicad/mini4wd-motor-driver/`。一時ファイルは操作の検証に限り使用し、正本と取り違えない。  
-**現状**: 過去のDRC/ERC 0件は変更前の基準値。Q2の回路図とPCBの端子修正後、暫定DRC/ERCとパッド照合は0件。5 A、機構、部品照合などは未完了で、旧Gerberプレビューは製造不可。未実施の項目を完了扱いにしない。
+**現状（2026-11-14）**: 正規設計へ35部品の配置・配線を反映。旧C4をC104/C105へ整理し、C105は2.2 µF・16 Vの候補へ更新。全113パッドのネット照合一致。正規ファイルでERC・DRC・未接続・パリティ不一致0件。記録は `verification/layout-decisions.md`。5 A評価、起動停止、部品・機構・EMCおよび製造データは未完了。旧Gerberプレビューは製造不可。以後CADを変更した場合は接続検査を再実行する。
 
 ## Phase 1: Setup
 
@@ -13,9 +13,9 @@
 
 ## Phase 2: Foundational
 
-- [ ] T005 元BOMと現回路図の部品を突き合わせ、24部品の記述と基板実装22部品との差、アノテーション警告、Q1/U1の資料URL修正を `specs/003-resolve-pcb-drc/verification/parts-evidence.md` に根拠とともに記録する
+- [x] T005 元BOMと現回路図の部品を突き合わせ、24部品の記述と基板実装22部品との差、アノテーション警告、Q1/U1の資料URL修正を `specs/003-resolve-pcb-drc/verification/parts-evidence.md` に根拠とともに記録する
 - [ ] T006 [P] 実装候補全品のメーカー・MPN・定格・資料を照合し、未選定品とL1の型番相違を `specs/003-resolve-pcb-drc/verification/bom-selection.md` に記録する
-- [ ] T007 [P] 1 oz前提、製造銅厚・ビアめっき、動作波形と許容温度上昇の条件・不足情報を `specs/003-resolve-pcb-drc/verification/current-budget.md` に記録する
+- [x] T007 [P] 1 oz前提、製造銅厚・ビアめっき、動作波形と許容温度上昇の条件・不足情報を `specs/003-resolve-pcb-drc/verification/current-budget.md` に記録する
 - [x] T008 [P] Q2の1–3=S、4=G、5–8=Drainというメーカー端子と現回路図・PCBを照合し、5番の修正途中状態と必要な配線変更を `specs/003-resolve-pcb-drc/verification/q2-repair.md` に記録する
 - [x] T009 `specs/003-resolve-pcb-drc/verification/q2-repair.md` に、MCP `sync_schematic_to_board` が `/I2C_SDA`・`/I2C_SCL` の先頭スラッシュを落とす問題と、正規設計に適用する前の局所修正・ネット比較手順を記録する
 
@@ -27,7 +27,7 @@
 - [ ] T010 [US1] `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sym` と `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch` のQ2シンボルについて、5番をDrainに変更した既存修正をメーカー端子と図記号の見やすさまで照合する
 - [x] T011 [US1] `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` のQ2 pad 5をMOTOR_MINUSに接続し、既存VBAT配線との接触を除去してMOTOR_MINUS側へ再配線する。I²Cなど他ネットは意図せず変更しない
 - [x] T012 [US1] Q2 1–3=VBAT、4=GATE_DRIVE、5–8・重複Drainパッド=MOTOR_MINUS、および他の全パッドの対応を `specs/003-resolve-pcb-drc/verification/q2-repair.md` に記録する
-- [ ] T013 [US1] 再配置・再配線後に `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` で全DRCを実行し、`specs/003-resolve-pcb-drc/verification/drc-final.rpt` にエラー・警告・未接続・パリティ不一致0件を記録する
+- [x] T013 [US1] 再配置・再配線後の正規PCBで全DRCを実行し、`verification/drc-layout.rpt` にエラー・警告・未接続・パリティ不一致0件を記録する。現版の接続検査であり、製造承認ではない。後続のCAD変更後は再検査する
 
 ## Phase 4: US2 修正を確認できる（P2）
 
@@ -47,7 +47,7 @@
 - [ ] T018 [US3] 主経路の幅・銅厚・狭窄・層・実際に並列分担するビア・めっき・温度前提を `specs/003-resolve-pcb-drc/verification/current-budget.md` に示し、5 A目標を評価する
 - [ ] T019 [US3] Q1/Q2の共有ゲートについて電池電圧範囲、起動・停止、切替時の同時導通、駆動能力と損失を `specs/003-resolve-pcb-drc/verification/drive-review.md` に評価し、必要な回路変更を正規回路図へ反映する
 - [ ] T020 [US3] J1/J2とU2/L1/CIN/COUT/U1を共同で再配置し、メーカー推奨ループ・帰路を `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` と `specs/003-resolve-pcb-drc/verification/layout-decisions.md` に反映する
-- [ ] T021 [US3] 主電流経路を1.5～2.0 mm幅または専用銅箔で再設計し、端子の狭窄と層間遷移を `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` と `specs/003-resolve-pcb-drc/verification/current-budget.md` に反映する
+- [x] T021 [US3] 主電流経路を1.5～2.0 mm幅で再配線し、端子の狭窄と層間遷移を正規PCB、`verification/layout-power-routing.csv` と `verification/current-budget.md` に反映する。5 A適合の評価はT018に残す
 - [ ] T022 [US3] SW_BOOST、FB_BOOST、GATE_DRIVEおよび検出信号を再配線し、ループ・帰路・分離の根拠を `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` と `specs/003-resolve-pcb-drc/verification/layout-decisions.md` に記録する
 - [ ] T023 [US3] 最新設計でEMC解析を再実行し、各指摘の対応・誤検出・未測定を `specs/003-resolve-pcb-drc/verification/emc-review.md` に記録する
 
@@ -60,18 +60,18 @@
 - [ ] T025 [US4] `hardware/kicad/mini4wd-motor-driver/board-routed.pretty/` のXIAO、Molex、L1、Q2を優先してランド・マスク・Courtyard・端子をメーカー図面と比較し、必要な修正と根拠を `specs/003-resolve-pcb-drc/verification/parts-evidence.md` に反映する
 - [ ] T026 [US4] T020の共同配置でJ1/J2を反対端・外向きとし、基板端・嵌合・保持タブ・禁止銅の条件を `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` と `specs/003-resolve-pcb-drc/verification/layout-decisions.md` に反映する
 - [ ] T027 [US4] 照合済みメーカー・MPNを `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch` に反映し、調達・実装可否を `specs/003-resolve-pcb-drc/verification/bom-selection.md` に記録する
-- [ ] T028 [US4] 55 × 21 mm、1.6 mm厚、2銅層、表面実装と裏面テントを `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` で確認し、`specs/003-resolve-pcb-drc/verification/final-review.md` に記録する
+- [x] T028 [US4] 正規PCBで55 × 21 mm、1.6 mm厚、2銅層、35部品の表面実装と全65ビアの裏面テント指定を確認し、`verification/layout-audit.json` と `verification/layout-decisions.md` に記録する。ビア実装方式の製造照合は残る
 
 ## Phase 7: US5 検証して製造用データを整える（P2）
 
 **目標**: 同じ最終設計版から検証済み製造データを整える。  
 **独立検証**: 全ERC/DRC・ネット照合とGerber・穴・BOM・CPLの一致を再現できる。
 
-- [ ] T029 [US5] 正規回路図と基板の全チェック有効ERC・DRC・パリティを再実行し、`specs/003-resolve-pcb-drc/verification/erc-final.rpt` と `specs/003-resolve-pcb-drc/verification/drc-final.rpt` に結果を記録する
+- [x] T029 [US5] 正規回路図と基板の全チェック有効ERC・DRC・パリティを再実行し、`verification/erc-layout.rpt` と `verification/drc-layout.rpt` に現版の合格を記録する。後続の部品・回路・配線変更後には再実行する
 - [ ] T030 [US5] 最終回路図ネットリストとPCB全パッドをメーカー端子と照合し、Q2の根拠ある変更とI²C名を含む差分を `specs/003-resolve-pcb-drc/verification/final-review.md` に記録する
 - [ ] T031 [US5] 同一最終版から `hardware/kicad/mini4wd-motor-driver/manufacturing/gerber/` にGerber・Excellonを生成し、ビューアで層・穴・外形・底面マスクを照合する
 - [ ] T032 [US5] 確定した部品から `hardware/kicad/mini4wd-motor-driver/manufacturing/bom.csv` と `hardware/kicad/mini4wd-motor-driver/manufacturing/cpl.csv` を生成し、座標・回転・JLCPCB供給と組立可否を照合する
-- [ ] T033 [P] [US5] 既存FR-011のIPC-D-356要求と出力可否を調査し、必要な `hardware/kicad/mini4wd-motor-driver/manufacturing/mini4wd-motor-driver.ipc` または未解決理由を `specs/003-resolve-pcb-drc/verification/ipc-d356.md` に記録する
+- [x] T033 [P] [US5] 既存FR-011のIPC-D-356要求と出力可否を調査し、必要な `hardware/kicad/mini4wd-motor-driver/manufacturing/mini4wd-motor-driver.ipc` または未解決理由を `specs/003-resolve-pcb-drc/verification/ipc-d356.md` に記録する
 - [ ] T034 [US5] 同一版で回路図・PCB・相互照合・熱・SPICE・Gerber解析を実施し、適用範囲・実行できない項目・誤検出を `specs/003-resolve-pcb-drc/verification/final-review.md` に記録する
 - [ ] T035 [US5] 製造先のファイル検証、EMC・電流・部品の限界、未実施実測、成果物ハッシュを `specs/003-resolve-pcb-drc/verification/final-review.md` に記録する
 
@@ -82,7 +82,7 @@
 
 ## 依存関係と並行作業
 
-- 基準 T001–T004 → 基礎調査 T005–T009 → Q2復旧 T010–T012。Q2は回路図だけ修正済みのため、PCBとの一致を回復するまで製造データを使わない。
+- 基準 T001–T004 → 基礎調査 T005–T009 → Q2復旧 T010–T012。Q2の回路図・PCB整合性は回復済み。以後の設計変更後に再検査し、残課題が完了するまで途中版の製造データを使わない。
 - T006・T007・T008は別ファイルで並行調査できる。T009はT008とMCP同期の調査結果に依存する。
 - T017–T019とT024–T025の資料調査を先に行い、T020/T026の共同配置 → T021/T022配線 → T023/T028検証の順に進める。同じPCBまたは記録ファイルへの編集は直列化する。
 - 最終配置・配線完了後にT013・T029/T030を実行し、T031/T032/T034/T035で同一版の製造・解析結果を揃える。T033の出力可否調査は他のUS5作業と並行可能。

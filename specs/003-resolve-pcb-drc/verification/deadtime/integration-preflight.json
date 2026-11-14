@@ -1,0 +1,44 @@
+{
+  "components": 36,
+  "expectation_checks": [
+    {
+      "reference": "Q1",
+      "pin": "4",
+      "net": "GATE_N"
+    },
+    {
+      "reference": "Q2",
+      "pin": "4",
+      "net": "GATE_P"
+    },
+    {
+      "reference": "U104",
+      "pin": "7",
+      "net": "GATE_N"
+    },
+    {
+      "reference": "U104",
+      "pin": "5",
+      "net": "GATE_P"
+    },
+    {
+      "reference": "U104",
+      "pin": "1",
+      "net": "DRIVE_ENABLE"
+    },
+    {
+      "reference": "U105",
+      "pin": "2",
+      "net": "RESET_OK"
+    },
+    {
+      "reference": "U101",
+      "pin": "1",
+      "net": "PWM_DRIVE"
+    }
+  ],
+  "old_driver_removed": true,
+  "test_interface_removed": true,
+  "pcb_integrated": false,
+  "note": "Preflight only; canonical main source not replaced by candidate"
+}

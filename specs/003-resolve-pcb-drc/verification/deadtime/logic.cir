@@ -1,0 +1,16 @@
+* Preliminary logic-only nonoverlap model; not a MOSFET/device model
+Vlogic vcc 0 3.3
+Vpwm pwm 0 PULSE(0 3.3 10u 5n 5n 20u 40u)
+Rdelay pwm delayed 10k
+Cdelay delayed 0 1n
+* Simplified threshold comparator (no device hysteresis or propagation delay)
+Bdel d 0 V= ternary_fcn(V(delayed)>1.65,3.3,0)
+Bn ncmd 0 V= ternary_fcn((V(pwm)>1.65)&&(V(d)>1.65),1,0)
+Bpg pcmd 0 V= ternary_fcn((V(pwm)>1.65)||(V(d)>1.65),1,0)
+* N on when ncmd high, P on when pcmd low
+Bover overlap 0 V=V(ncmd)*(1-V(pcmd))
+.tran 20n 200u
+.measure tran overlap_max MAX V(overlap)
+.measure tran dead_rise TRIG V(pcmd) VAL=0.5 RISE=1 TARG V(ncmd) VAL=0.5 RISE=1
+.measure tran dead_fall TRIG V(ncmd) VAL=0.5 FALL=1 TARG V(pcmd) VAL=0.5 FALL=1
+.end

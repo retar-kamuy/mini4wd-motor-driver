@@ -1,0 +1,30 @@
+ERC report (2026-11-12T23:14:29, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(60.96 mm, 43.18 mm): Symbol U101 Pin 5 [V+, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(60.96 mm, 58.42 mm): Symbol U101 Pin 2 [GND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(172.72 mm, 50.80 mm): Symbol U104 Pin 6 [V_{DD}, Power input, Line]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'gate-study'
+    ; warning
+    @(60.96 mm, 182.88 mm): Symbol U105 [TLV809EA30DBZR]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(182.88 mm, 58.42 mm): Global Label 'GATE_N'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(182.88 mm, 63.50 mm): Global Label 'GATE_P'
+
+ ** ERC messages: 6  Errors 3  Warnings 3
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

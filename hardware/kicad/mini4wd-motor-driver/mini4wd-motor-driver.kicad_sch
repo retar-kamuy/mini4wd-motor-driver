@@ -2952,7 +2952,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6d233fb-8ae8-4c19-83c5-580cd315088c")
-		(property "Reference" "CIN"
+		(property "Reference" "C1"
 			(at 57.15 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3016,7 +3016,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "CIN")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -3033,7 +3033,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1efdf8e0-7b40-4149-9afd-557a38499ae8")
-		(property "Reference" "COUT1"
+		(property "Reference" "C2"
 			(at 97.79 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3097,7 +3097,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "COUT1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3114,7 +3114,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd3f72f4-5518-4835-8679-b9c1eba85058")
-		(property "Reference" "COUT2"
+		(property "Reference" "C3"
 			(at 105.41 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3178,7 +3178,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "COUT2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -3195,7 +3195,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "589c7375-6a94-4525-af3a-ff0b941b89ba")
-		(property "Reference" "R_FB_H"
+		(property "Reference" "R1"
 			(at 92.71 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3257,7 +3257,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_FB_H")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3274,7 +3274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f81e2f2-ae4f-4134-8513-e2b690a393e5")
-		(property "Reference" "R_FB_L"
+		(property "Reference" "R2"
 			(at 92.71 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3336,7 +3336,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_FB_L")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3353,7 +3353,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "908edad4-d941-4c3c-b285-9cfb763cd3a4")
-		(property "Reference" "D_XIAO"
+		(property "Reference" "D2"
 			(at 119.38 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3415,88 +3415,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "D_XIAO")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 139.7 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a99bf0d2-d13e-4318-a650-afa5e49eac6d")
-		(property "Reference" "C_BYP"
-			(at 137.16 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF 10V"
-			(at 142.24 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 140.665 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 139.7 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13fdedca-8611-4dd5-9e57-ef834681b229")
-		)
-		(pin "2"
-			(uuid "a0046fae-fe77-453d-947b-6fe502dd8431")
-		)
-		(instances
-			(project "mini4wd-motor-driver"
-				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "C_BYP")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3708,7 +3627,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a823a995-ec1b-42aa-b6b7-409c0e8f4255")
-		(property "Reference" "D_FLY"
+		(property "Reference" "D1"
 			(at 209.55 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3770,7 +3689,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "D_FLY")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3787,7 +3706,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64afc0da-b8e1-4eca-8fb4-d3f8b45961da")
-		(property "Reference" "R_VBAT_H"
+		(property "Reference" "R3"
 			(at 36.83 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3849,7 +3768,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_VBAT_H")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3866,7 +3785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ebd1e770-c363-4a45-94e5-759edacf64cb")
-		(property "Reference" "R_VBAT_L"
+		(property "Reference" "R4"
 			(at 36.83 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3928,7 +3847,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_VBAT_L")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3945,7 +3864,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c5ee12b-913a-4abe-8976-a942af31aec0")
-		(property "Reference" "R_MID_H"
+		(property "Reference" "R5"
 			(at 57.15 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4007,7 +3926,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_MID_H")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4024,7 +3943,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67a469c9-5b43-45f3-9187-261672194ecf")
-		(property "Reference" "R_MID_L"
+		(property "Reference" "R6"
 			(at 57.15 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4086,7 +4005,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_MID_L")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4103,7 +4022,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69dd52e3-a79d-4a8b-8dde-1225b21a414b")
-		(property "Reference" "R_NTC"
+		(property "Reference" "R7"
 			(at 77.47 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4165,7 +4084,7 @@
 		(instances
 			(project "mini4wd-motor-driver"
 				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "R_NTC")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4425,26 +4344,6 @@
 		)
 		(uuid "cdef9388-57f6-44ad-9baf-90b8f6436524")
 	)
-	(global_label "BOOST_5V"
-		(at 139.7 40.64 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "47004a5e-446b-42b9-be4c-56b4b8284b90")
-	)
-	(global_label "GND"
-		(at 139.7 48.260000000000005 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7aafa2bc-732b-4eca-9cd0-0e1b9a1ecdef")
-	)
 	(global_label "VBAT"
 		(at 205.74 49.53 180)
 		(effects
@@ -4555,7 +4454,7 @@
 		)
 		(uuid "cbf42028-5b79-4626-aaad-0d6d28681f47")
 	)
-	(global_label "GATE_DRIVE"
+	(global_label "GATE_N"
 		(at 180.33999999999997 69.85 180)
 		(effects
 			(font
@@ -4585,7 +4484,7 @@
 		)
 		(uuid "55300188-4542-4d8c-830d-579811e86c0d")
 	)
-	(global_label "GATE_DRIVE"
+	(global_label "GATE_P"
 		(at 180.33999999999997 39.37 180)
 		(effects
 			(font
@@ -4844,97 +4743,6 @@
 	(no_connect
 		(at 152.39999999999998 132.07999999999998)
 		(uuid "a89d421d-9a3c-4c59-ba04-87b3f10c608d")
-	)
-	(symbol
-		(lib_id "mini4wd-motor-driver:UCC27511DBVR")
-		(at 149.86 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dfb53909-ffa4-4d9d-9193-fd852c5c33a0")
-		(property "Reference" "U1"
-			(at 152.4 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UCC27511DBVR"
-			(at 149.86 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 149.86 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27511.pdf"
-			(at 149.86 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single-Channel High-Speed Low-Side Gate Driver With 4-A Peak Source and 8-A Peak Sink, SOT-23-6"
-			(at 149.86 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9b8aaf14-32dd-4707-b70b-63444a7c5294")
-		)
-		(pin "2"
-			(uuid "0613ec64-827d-4315-9814-0c6056238753")
-		)
-		(pin "3"
-			(uuid "f9b94470-0559-4ae2-9be3-e16d0098671f")
-		)
-		(pin "4"
-			(uuid "3922615e-c42a-4543-a60a-f6dd7d148fae")
-		)
-		(pin "6"
-			(uuid "9ee40eea-1255-440f-a507-0b3da41c3ff4")
-		)
-		(pin "5"
-			(uuid "cc04fed1-e3f5-4156-82f3-46785f22e7d1")
-		)
-		(instances
-			(project "mini4wd-motor-driver"
-				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -5309,64 +5117,42 @@
 		)
 		(uuid "mcu-label-vbatsense-fixed")
 	)
-	(global_label "GND"
-		(at 139.7 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(sheet
+		(at 241.3 99.06)
+		(size 35.56 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(uuid "u1-label-vdd-fixed")
-	)
-	(global_label "PWM_DRIVE"
-		(at 139.7 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+		(fill
+			(color 0 0 0 0)
 		)
-		(uuid "u1-label-inplus-fixed")
-	)
-	(global_label "GND"
-		(at 139.7 62.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "e89a7c8b-5277-4820-a071-a54e3bb71c65")
+		(property "Sheetname" "GateControl"
+			(at 241.3 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
 			)
-			(justify right)
 		)
-		(uuid "u1-label-inminus-fixed")
-	)
-	(global_label "BOOST_5V"
-		(at 139.7 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(property "Sheetfile" "gate-control.kicad_sch"
+			(at 241.3 120.0916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 			)
-			(justify right)
 		)
-		(uuid "u1-label-gnd-fixed")
-	)
-	(global_label "GATE_DRIVE"
-		(at 160.02 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(instances
+			(project "mini4wd-motor-driver"
+				(path "/f136800b-632f-4d6c-be5f-f29d533fdb52"
+					(page "2")
+				)
 			)
-			(justify left)
 		)
-		(uuid "u1-label-outh-fixed")
-	)
-	(global_label "GATE_DRIVE"
-		(at 160.02 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "u1-label-outl-fixed")
 	)
 )

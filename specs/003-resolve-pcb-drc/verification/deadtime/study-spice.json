@@ -1,0 +1,94 @@
+{
+  "analyzer_type": "spice",
+  "schema_version": "1.4.0",
+  "summary": {
+    "total": 2,
+    "total_findings": 0,
+    "pass": 2,
+    "warn": 0,
+    "fail": 0,
+    "skip": 0,
+    "info": 0,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 2
+    }
+  },
+  "findings": [],
+  "simulation_results": [
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "C101",
+        "C102",
+        "C103",
+        "C106"
+      ],
+      "rail": "MCU_3V3",
+      "cap_count": 4,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.2372,
+        "f_at_zmin_hz": 22378200.0,
+        "z_at_1MHz_ohms": 0.4625,
+        "z_at_100kHz_ohms": 3.9859
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.463\u03a9 at 1MHz",
+      "cir_file": "/tmp/spice_sim_9b47kxt3/decoupling_C101_C102_C103_C106.cir",
+      "log_file": "/tmp/spice_sim_9b47kxt3/decoupling_C101_C102_C103_C106.log",
+      "elapsed_s": 0.075,
+      "reference": "C101/C102/C103/C106"
+    },
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "C104",
+        "C105"
+      ],
+      "rail": "BOOST_5V",
+      "cap_count": 2,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.091,
+        "z_at_1MHz_ohms": 0.1676,
+        "z_at_100kHz_ohms": 1.4493
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.168\u03a9 at 1MHz",
+      "cir_file": "/tmp/spice_sim_9b47kxt3/decoupling_C104_C105.cir",
+      "log_file": "/tmp/spice_sim_9b47kxt3/decoupling_C104_C105.log",
+      "elapsed_s": 0.017,
+      "reference": "C104/C105"
+    }
+  ],
+  "diagnostics": [],
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "workdir": "/tmp/spice_sim_9b47kxt3",
+  "total_elapsed_s": 0.092,
+  "simulator": "/usr/bin/ngspice",
+  "ngspice": "/usr/bin/ngspice"
+}

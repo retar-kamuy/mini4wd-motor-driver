@@ -31,3 +31,11 @@ KiCad 10.0.8 の `kicad-cli sch export netlist` は「schematic has annotation e
 [Si7137DP データシート](https://www.vishay.com/docs/69063/si7137dp.pdf) p.1 は 1–3 = Source、4 = Gate、5–8 および放熱部 = Drain と定義する。基準PCBを pcbnew で列挙すると、Q2 pad 1–3 は VBAT、4 は GATE_DRIVE、**5 は VBAT**、6–8 および中央パッドは MOTOR_MINUS。物理部品の Drain 5 番と 6–8 番は内部で同一であり、実装すると VBAT と MOTOR_MINUS の意図しない短絡経路を作る。一般的なDRCと回路図パリティ0件では、このメーカー端子との不整合を検出できない。
 
 対応には回路図側の Q2 の端子定義、PCBの pad 5 接続および関連配線を一体で修正し、実部品端子・ネット・パッドを再照合する必要がある。Q2の回路図・PCB側の修正および検査結果は [q2-repair.md](q2-repair.md) を参照。旧版のGerberプレビューは製造・実装に使用しない。
+
+## 2026-11-12以降の調査状況
+
+元BOMは `hardware/rev1/manufacturing/bom.csv` に移設された。旧24部品の根拠は未確認、現行22個と元BOMの関係は上記の通り。Q1/U1のインスタンス側URLは訂正済み。アノテーション警告の原因は引き続き未特定で、未解決として扱う。
+
+## アノテーション警告の解消済み更新
+
+参照番号13件を変更し、主回路のネットリスト出力は警告なしとなった。回路図・PCBの接続は同一で、ERC/DRC/パリティも0件。以前の未解決記述は調査時点の履歴である。現行の対応表と結果は [annotation-repair.md](annotation-repair.md) を参照。

@@ -34,3 +34,19 @@ DRCは電流容量、熱、EMC、部品の実寸、製造適合性を保証し�
 正規プロジェクトで、Q2 pad 5のMOTOR_MINUS接続、残ったVBATの孤立ビア・行き止まり配線の除去、およびI²Cネット名・Q1/U1資料URLの回路図とPCBの整合を確認した。MCP操作とpcbnewを使用した。銅箔再充填後の全チェック有効DRC、ERCとパリティは0件、ネットリストに対応する74パッドは一致。詳細とハッシュは [verification/q2-repair.md](verification/q2-repair.md)。
 
 これは途中版であり、5 A電流経路、ゲート駆動、部品資料とランド、コネクタの反対端配置、昇圧ループ、EMC、製造データの最終照合は未完了。旧Gerberプレビューは使用しない。
+
+## アノテーション警告の修正
+
+主回路とPCBの参照番号13件を揃えて更新した。ネット集合と配線・ビアの接続は不変で、最新ERC/DRC/パリティ0件。警告なしでネットリスト出力できる。対応表とハッシュは [verification/annotation-repair.md](verification/annotation-repair.md)。
+
+## 分離ゲート回路を正規設計へ反映
+
+主回路にGateControlシート（gate-control.kicad_sch）を追加し、旧U1を削除。Q1 gateはGATE_N、Q2 gateはGATE_Pに分離した。検査用J101と電源フラグは子シートから除いた。gate-studyライブラリを正規プロジェクトへ登録し、MCPでPCBへ15部品を追加。PCBは36部品、115パッドのネット照合に不一致なし。旧GATE_DRIVEのトラック・ビアは除去済み。
+
+追加15部品は基板外の配置待ち領域に仮置き。配置・配線は未完了。ERC 0、DRC 4、未接続41、パリティ不一致0（verification/erc-after-gate-integration.rpt、verification/drc-after-gate-integration.rpt）。以前のDRC 0件を現行PCBの結果として使わない。製造出力の再生成はレイアウト完了後。
+
+## 2026-11-14 正規設計の再配置・再配線
+
+上の仮置き状態から再配置・再配線し、KiCad MCPで正規PCBへ反映した。旧C4を削除し、ゲートドライバのバイパスをC104とC105へ整理。C105は2.2 µF・16 Vの候補に更新した。35部品・113パッドのネット照合一致、正規ファイルのERC・DRC・未接続・パリティ不一致は全て0件。主電流経路には1.5～2.0 mm幅と複数ビアを使用した。板厚1.6 mm、外形55 × 21 mm、2銅層、全65ビアの裏面テント指定を確認した。
+
+検査結果、設計対象、ハッシュ、方法と残件は [verification/layout-decisions.md](verification/layout-decisions.md)。5 Aの電流容量・熱、起動停止、部品・ランド、昇圧とゲートの帰路・EMC、製造適合性の確認は未完了。DRC合格を製造承認とは扱わず、旧製造データも更新していない。
