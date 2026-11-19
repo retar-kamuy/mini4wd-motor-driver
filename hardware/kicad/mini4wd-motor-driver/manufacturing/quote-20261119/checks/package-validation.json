@@ -1,0 +1,16 @@
+{
+  "pcb_sha256": "a7aaab20cce23e1311411c16d31d7868e5d10233389f3a2941676cce5c175094",
+  "source_files_checked": 20,
+  "source_mismatches": 0,
+  "preview_artifacts_hash_checked": true,
+  "bom_rows": 28,
+  "bom_components": 38,
+  "cpl_components": 38,
+  "bom_cpl_pcb_references_equal": true,
+  "bom_value_mpn_manufacturer_pcb_mismatches": 0,
+  "cpl_position_rotation_side_pcb_mismatches": 0,
+  "pad_rows": 130,
+  "q1_pad_vias": 6,
+  "procurement_and_vendor_rotation": "UNCONFIRMED",
+  "scope": "Quote package assembly and CAD consistency only; no new electrical/thermal approval"
+}

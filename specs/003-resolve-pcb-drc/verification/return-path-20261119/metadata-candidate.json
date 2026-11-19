@@ -1,0 +1,66 @@
+{
+  "source": ".cache/return-path-20261119/candidate/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "899c8cb741324b55790111650b9224285c9b90ee239a51c8006c693eb2d370bb",
+  "candidate": ".cache/return-path-20261119/meta/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "236b8aca5d4cc9e47853623a2b81dd0ca4b54557ff67dd5a151e7b0615841a93",
+  "source_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "candidate_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "changed_fields": [
+    {
+      "reference": "C105",
+      "field": "Datasheet",
+      "old": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61C225KE15%23",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A226ME15%23"
+    },
+    {
+      "reference": "C105",
+      "field": "MPN",
+      "old": "GRM188R61C225KE15D",
+      "new": "GRM188R61A226ME15D"
+    },
+    {
+      "reference": "C105",
+      "field": "SelectionStatus",
+      "old": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R106",
+      "field": "MPN",
+      "old": "CRCW040222R0FKED",
+      "new": "CRCW040233R0FKED"
+    },
+    {
+      "reference": "R106",
+      "field": "SelectionStatus",
+      "old": "Selected for limited hobby prototype; pulse/average power envelope assessed; provider supply confirmation pending",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R107",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R107",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW04022K20FKED"
+    },
+    {
+      "reference": "R107",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R107",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "N_COMMAND discharge pull-down; supplier and assembly acceptance pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required"
+}

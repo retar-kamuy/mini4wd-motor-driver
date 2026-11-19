@@ -1,0 +1,6558 @@
+{
+  "pcb_sha256": "a7aaab20cce23e1311411c16d31d7868e5d10233389f3a2941676cce5c175094",
+  "status": "explicit_boundary_and_current_sensitivity_not_product_temperature_prediction",
+  "material_and_boundary_assumptions": {
+    "board_area_m2": 0.001155,
+    "copper_temperature_coefficient_K": 0.00393,
+    "ambient_C": 40,
+    "module_temperature_analysis_ceiling_C": 70,
+    "auxiliary_MCU_boost_power_W": 0.15,
+    "deadtime_each_edge_budget_s": 1.1e-05,
+    "Q1_Rds_25C_max_4_5V_ohm": 0.00286,
+    "Q2_Rds_25C_max_minus1_5V_ohm": 0.017,
+    "MOSFET_hot_resistance_multiplier_sensitivity": 2,
+    "contact_resistance_each_initial_ohm": 0.01,
+    "D1_Vf_at5A_25C_max_V": 0.55
+  },
+  "dc_copper": {
+    "drive_35um_20C_ohm": 0.030625923168103565,
+    "drive_70um_20C_ohm": 0.016291318275588787,
+    "brake_35um_20C_ohm": 0.01871076988996933
+  },
+  "diode_pwm": [
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0242,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 1.452
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0242,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 3.3154
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0242,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 6.05
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0242,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 9.68
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.030799999999999998,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 1.8479999999999999
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.030799999999999998,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 4.2196
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.030799999999999998,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 7.699999999999999
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.030799999999999998,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 12.319999999999999
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.12100000000000001,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 7.260000000000001
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.12100000000000001,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 16.577
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.12100000000000001,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 30.250000000000004
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.12100000000000001,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 48.400000000000006
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.154,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 9.24
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.154,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 21.098
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.154,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 38.5
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.154,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 61.6
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.24200000000000002,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 14.520000000000001
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.24200000000000002,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 33.154
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.24200000000000002,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 60.50000000000001
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.24200000000000002,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 96.80000000000001
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.308,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 18.48
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.308,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 42.196
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.308,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 77.0
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.308,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 123.2
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.48400000000000004,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 29.040000000000003
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.48400000000000004,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 66.308
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.48400000000000004,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 121.00000000000001
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.48400000000000004,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 193.60000000000002
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.616,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 36.96
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.616,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 84.392
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.616,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 154.0
+    },
+    {
+      "constant_current_A": 2,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.616,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 246.4
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.042350000000000006,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 2.5410000000000004
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.042350000000000006,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 5.801950000000001
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.042350000000000006,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 10.587500000000002
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.042350000000000006,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 16.94
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.05389999999999999,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 3.2339999999999995
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.05389999999999999,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 7.384299999999999
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.05389999999999999,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 13.474999999999998
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.05389999999999999,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 21.559999999999995
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.21175000000000002,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 12.705000000000002
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.21175000000000002,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 29.009750000000004
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.21175000000000002,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 52.93750000000001
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.21175000000000002,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 84.7
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.26949999999999996,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 16.169999999999998
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.26949999999999996,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 36.921499999999995
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.26949999999999996,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 67.37499999999999
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.26949999999999996,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 107.79999999999998
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.42350000000000004,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 25.410000000000004
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.42350000000000004,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 58.01950000000001
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.42350000000000004,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 105.87500000000001
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.42350000000000004,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 169.4
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.5389999999999999,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 32.339999999999996
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.5389999999999999,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 73.84299999999999
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.5389999999999999,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 134.74999999999997
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.5389999999999999,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 215.59999999999997
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.8470000000000001,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 50.82000000000001
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.8470000000000001,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 116.03900000000002
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.8470000000000001,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 211.75000000000003
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 0.8470000000000001,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 338.8
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.0779999999999998,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 64.67999999999999
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.0779999999999998,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 147.68599999999998
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.0779999999999998,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 269.49999999999994
+    },
+    {
+      "constant_current_A": 3.5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.0779999999999998,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 431.19999999999993
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0605,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 3.63
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0605,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 8.288499999999999
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0605,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 15.125
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.0605,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 24.2
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.077,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 4.62
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.077,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 10.549
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.077,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 19.25
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 1000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.022,
+      "average_loss_W": 0.077,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 30.8
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.3025,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 18.15
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.3025,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 41.442499999999995
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.3025,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 75.625
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.3025,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 121.0
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.385,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 23.1
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.385,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 52.745000000000005
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.385,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 96.25
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 5000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.11,
+      "average_loss_W": 0.385,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 154.0
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.605,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 36.3
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.605,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 82.88499999999999
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.605,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 151.25
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.605,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 242.0
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.77,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 46.2
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.77,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 105.49000000000001
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.77,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 192.5
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 10000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.22,
+      "average_loss_W": 0.77,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 308.0
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.21,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 72.6
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.21,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 165.76999999999998
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.21,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 302.5
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.55,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.21,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 484.0
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.54,
+      "assumed_Rtheta_C_W": 60,
+      "temperature_rise_K_sensitivity": 92.4
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.54,
+      "assumed_Rtheta_C_W": 137,
+      "temperature_rise_K_sensitivity": 210.98000000000002
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.54,
+      "assumed_Rtheta_C_W": 250,
+      "temperature_rise_K_sensitivity": 385.0
+    },
+    {
+      "constant_current_A": 5,
+      "PWM_Hz": 20000,
+      "Vf_budget_V": 0.7,
+      "diode_on_fraction_upper_sensitivity": 0.44,
+      "average_loss_W": 1.54,
+      "assumed_Rtheta_C_W": 400,
+      "temperature_rise_K_sensitivity": 616.0
+    }
+  ],
+  "board_equilibrium_sensitivity": [
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 102.19112517470211,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 117.30382676457042,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 61.5262157676848,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 66.75717556045714,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 50.8674080436691,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 53.50823331187172,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 69.74302604926882,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 76.9707048506989,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 55.625770118805264,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 59.422897124531865,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 49.12740842617892,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 51.34540656411584,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 69.74302604926882,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 76.9707048506989,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 55.625770118805264,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 59.422897124531865,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 49.12740842617892,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 51.34540656411584,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.55497060009961,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 58.09188887759829,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 50.09279618699372,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 52.54538755839799,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 46.91353286500185,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 48.593550051168165,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.55497060009961,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 58.09188887759829,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 50.09279618699372,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 52.54538755839799,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 46.91353286500185,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 48.593550051168165,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 47.20084970751288,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 48.95068607914038,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 45.90848866220377,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 47.34427593487605,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 44.65524864541427,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 45.78649339146371,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 195.11255367570533,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 252.08146140588013,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 86.64672291472525,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 103.778881406551,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 62.76663012318433,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 71.12823606725466,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 106.20710350721272,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 130.52329379230176,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 73.22819799033309,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 85.43207253493581,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 59.01823178229444,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 66.00314606500157,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 106.20710350721272,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 130.52329379230176,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 73.22819799033309,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 85.43207253493581,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 59.01823178229444,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 66.00314606500157,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 70.84658882604305,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 82.1757587157702,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 61.09290917328059,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 68.83979985348856,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.3070727374953,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 59.56169776530134,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 70.84658882604305,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 82.1757587157702,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 61.09290917328059,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 68.83979985348856,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.3070727374953,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 59.56169776530134,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.91485538034667,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 60.39270356114774,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 52.18946585540847,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 56.666347572208196,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 49.56715769116469,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 53.08093211388157,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 466.36540793683,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 647.131658440018,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 132.38036476459106,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 171.5468915225172,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 82.47381289118212,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 100.48144615126708,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 178.07839799363424,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 236.61953152877837,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 103.60648424079999,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 130.57374155076226,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 75.16078563644602,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 90.06791287034295,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 178.07839799363424,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 236.61953152877837,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 103.60648424079999,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 130.57374155076226,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 75.16078563644602,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 90.06791287034295,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 98.69931010250065,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 123.58607154428496,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 79.19204741423655,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 95.80830972992692,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 66.15439751813258,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 77.2430840895891,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 98.69931010250065,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 123.58607154428496,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 79.19204741423655,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 95.80830972992692,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 66.15439751813258,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 77.2430840895891,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 67.30494628469819,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 78.88143130950378,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 62.17156945033368,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 71.57165539234718,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 57.29448117055979,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 35,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 64.62682675349053,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 88.44574833277227,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 102.9413893282271,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 57.22849269956275,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 62.383497084059684,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 48.76071088380976,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 51.38203729958468,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 63.67359833917536,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 70.75706787788698,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 52.5560492715113,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 56.312993664461175,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 47.366727192625326,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 49.570954320303194,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 63.67359833917536,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 70.75706787788698,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 52.5560492715113,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 56.312993664461175,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 47.366727192625326,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 49.570954320303194,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 51.70409859913438,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 55.206127514098796,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 48.14054541901355,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 50.576309711282505,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 45.588324967325036,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 47.26042944047407,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 51.70409859913438,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 55.206127514098796,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 48.14054541901355,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 50.576309711282505,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 45.588324967325036,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 47.26042944047407,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 45.81942892949953,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 47.56068291903744,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 44.77920311758596,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 46.209207091536754,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 43.768713896073166,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 2,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 44.89636545543824,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 135.71306693471925,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 184.80442388898447,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 71.86474929872469,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 88.20822080349615,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 55.927431536153705,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 64.09663195932302,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 84.37007878855557,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 107.12755011045437,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 63.00307020058163,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 74.80137492976743,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 53.355667822868405,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 60.20580728086121,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 84.37007878855557,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 107.12755011045437,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 63.00307020058163,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 74.80137492976743,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 53.355667822868405,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 60.20580728086121,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 61.405326618071335,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 72.38414657843349,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.78150915753835,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 62.36296449707291,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 50.09548190211293,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 55.27346774619808,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 61.405326618071335,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 72.38414657843349,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.78150915753835,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 62.36296449707291,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 50.09548190211293,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 55.27346774619808,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 50.51783403225991,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 55.91244483514594,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 48.61984574709669,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 53.04097588129292,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 46.78364025596294,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 3.5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 50.262978197165204,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 229.91940864223295,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 349.69773309311654,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 95.93158292040282,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 131.20649944413583,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 67.17437190470378,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 84.31269788212987,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 119.68291072475637,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 169.93730864129594,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 79.74035672284987,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 104.80379481679547,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 62.68410607387672,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 76.99051233651113,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 119.68291072475637,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 169.93730864129594,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 79.74035672284987,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 104.80379481679547,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 62.68410607387672,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 76.99051233651113,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 76.87527137110754,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 100.13175816242493,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 65.16860484734448,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 81.04193416599387,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 57.04959145156897,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 67.80242346195107,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 76.87527137110754,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 100.13175816242493,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 65.16860484734448,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 81.04193416599387,
+      "comparison_to70C": false
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 57.04959145156897,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 67.80242346195107,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 57.775929468501104,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 68.9868481550954,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 54.52022764068903,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 63.67784112464544,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "temperature_C": 51.39084026779142,
+      "comparison_to70C": true
+    },
+    {
+      "assumed_copper_um": 70,
+      "constant_current_A": 5,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "temperature_C": 58.574812517483394,
+      "comparison_to70C": true
+    }
+  ],
+  "board_current_for70C_sensitivity": [
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 0.6116504310943625
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 0.5212305647766359
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 2.6231812922049556
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 2.181737748533091
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.131877637648643
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.425545778850049
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 2.0156095889665937
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 1.6807040588429747
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 3.2835981374721235
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 2.726239667914379
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.586092555888775
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.7999692170072246
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 2.0156095889665937
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 1.6807040588429747
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 3.2835981374721235
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 2.726239667914379
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.586092555888775
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.7999692170072246
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 3.440192214610054
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 2.8553385290622018
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.32030579922174
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.580874450811345
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.383639981450223
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.457388187155384
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 3.440192214610054
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 2.8553385290622018
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.32030579922174
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.580874450811345
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.383639981450223
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.457388187155384
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.260537555258686
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.35591634575224
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.880284111911927
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.866761324629543
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 6.7055408629704845
+    },
+    {
+      "assumed_copper_um": 35,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 5.546989916532184
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 0.7498584340509854
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 0.5956692018913395
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 3.3487127554292533
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 2.5434002433988026
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.303217659992818
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.003874591355838
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 2.562059976443873
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 1.955216826255788
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.204153755493861
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.1827169895386906
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.891792878242615
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 5,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.443561659340193
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 2.562059976443873
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 1.955216826255788
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.204153755493861
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.1827169895386906
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.891792878242615
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.443561659340193
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.407024599657125
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.334305594258372
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.547379348610447
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.186276312184063
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 6.925341310168946
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 10,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 5.215594347807935
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 4.407024599657125
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 3.334305594258372
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 5.547379348610447
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 4.186276312184063
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 6.925341310168946
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 1,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 5.215594347807935
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 6.765806555496768
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 5.096430518360445
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 7.56898331673819
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.01,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 5.696347548720883
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0,
+      "max_constant_current_A_under_assumptions": 8.638544474047677
+    },
+    {
+      "assumed_copper_um": 70,
+      "h_W_m2K": 20,
+      "exposed_faces": 2,
+      "wire_heat_exit_W_K": 0.025,
+      "fraction_contact_heat_to_board": 0.5,
+      "max_constant_current_A_under_assumptions": 6.495195903283167
+    }
+  ],
+  "brake_repeated_sensitivity": [
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.93154051722722
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.92493829128983
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.92493799355535
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.92488989543785
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.92488959829825
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.92436447508962
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 45.47820203643266
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 45.41449892724702
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.41449606538546
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 45.41444952457263
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.414446201664425
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.414446201664425
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 51.882780569838005
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 51.757775213092
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.7577696545882
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 51.75871449619721
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.757752289240294
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.75775229142059
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.26924642562058
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.13590269134512
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.10742210486654
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.13590095389058
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.107419872113184
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.107419872113184
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 42.43375731630083
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.20018538254221
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.942706221223744
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.20652226029861
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.94311218065445
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.94310843680982
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 46.77774447810771
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 43.432794673747296
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.71659074350388
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.7054931688239
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.491785357635095
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.49602518057526
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.22153142905986
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.0775245065036
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.03274051627978
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.07752448683942
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.03274044253146
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.03274043006063
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 42.155915922418345
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.7521841068695
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.31753748218793
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.764541391032026
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.321628399588775
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.321628400082375
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 46.04482604832574
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.11648619643541
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.89422981781231
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 43.65321647018252
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.51585873630987
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.53723874913647
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 42.4542509780794
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.43685665205204
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.43685586763621
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.43672914759588
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.43672836474731
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.43534486706303
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 54.43295536521682
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 54.265122173708484
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 54.265114633804
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 54.264992016662504
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 54.26498326207743
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 54.26498326207743
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 71.30655650130399
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 70.97721546526162
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 70.977200820742
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 70.9796901149811
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 70.97715506972924
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 70.97715507547346
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.70936077519268
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.35805132142849
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.283015930129146
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.35804674390402
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.28301004768281
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.28301004768281
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 46.412014467946406
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 43.1620268732362
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.4836683136087
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 43.17872210886365
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.48473786057038
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.48472799697973
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 57.85674987501454
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 49.044093659680364
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.15717176653906
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 52.39716469478604
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 49.199511423000146
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 49.210681725746355
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.583650111176944
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.20424725751909
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.08625866789096
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.20424720571155
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.0862584735925
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.086258440736664
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 45.68000925714064
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.98171582002158
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.836589135764356
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.014272510988214
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.84736712968581
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.84736713098625
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 55.92579170424281
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 45.57612709445483
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.35595163539013
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 49.624820315673176
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.993704747585625
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 44.05003285830185
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 43.582848143181614
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 43.55745496649933
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.557453821366735
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 43.55726882860712
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.5572676857625
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.55524798111391
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 61.07000783243332
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 60.82499587402698
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 60.82498486686715
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 60.82480586374088
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 60.824793083324714
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 60.824793083324714
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 85.70300219168465
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 85.22221235804616
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 85.2221909791854
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 85.22582498537386
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 85.22212418938574
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 85.22212419777148
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 41.035563175463764
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.5227026590197
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.41316194179437
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.52269597650222
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.41315335428148
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.41315335428148
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 49.360605062695484
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.61609762516233
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.62579315855285
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.64047023191774
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.62735454097866
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.62734014157625
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 66.06824799272196
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 53.203056437489586
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 50.44842593655338
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 58.09805064932269
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 53.429943683211896
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 53.44625069452023
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.85204395792254
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.29817117885999
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.125925062614535
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.29817110322854
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.12592477896715
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.12592473100243
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 48.291984316993634
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.893015795651934
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.22129800841512
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.94054381166163
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.23703230611066
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.23703230800913
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 63.249330955099
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 48.14033152475158
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.43934545312427
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 54.05083257762508
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.830225908884124
+    },
+    {
+      "initial_current_A": 3.5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.91245672744796
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 41.90110309638208
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.8876291658976
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.887628558276226
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.88753039885275
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.887529792445406
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.88645811242779
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 51.180004155985024
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 51.04999781070819
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.0499919701744
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 51.04989698892373
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.04989020747842
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.04989020747842
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 64.25057259150614
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 63.9954596185551
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 63.995448274669805
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 63.99737652285144
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 63.99541283518427
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 63.99541283963385
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.54948250126649
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.27735243131657
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.21922878544191
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.27734888549097
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.21922422880242
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.21922422880242
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 44.96685166592005
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.449357923555525
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.92389024739539
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 42.462290327140025
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.92471873602949
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.924711095530256
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 53.832131587974914
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 47.0057034158108
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.54406274184465
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 49.60304728331408
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.12609256660223
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.134745266480124
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 40.45210495726502
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.15821327857877
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.06681738016282
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.1582132384478
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.06681722965604
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.06681720420537
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 44.39982841309866
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.53506960585613
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.64803567793455
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.560288553126576
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.65638448895668
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.656384489964026
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 52.33637969046069
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.319359584562065
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.824958811861855
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 47.45554381669902
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.09358925777525
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 52,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 43.1372219370132
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 45.00867546546817
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.973176840922534
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 44.9731752400739
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.972916627746685
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 44.97291503009656
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 44.97009156543475
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 69.45501094942209
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 69.11249423205814
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 69.11247884449796
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 69.11222860543367
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 69.11221073893353
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 69.11221073893353
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 103.89093163531425
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 103.21880707196249
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 103.21877718518775
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 103.22385737751245
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 103.21868381577394
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 103.21868382749687
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 41.44767505141363
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.730716982507126
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.5775835308758
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.730707640620444
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.577571525883286
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.577571525883286
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 53.08574381213552
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 46.45311606782897
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.0687108440994
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 46.48718797727276
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.070893593000775
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 45.07087346322394
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 76.44234668370315
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 58.45733399934769
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 54.60647299293686
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 65.30033611180825
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 58.77451310816357
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 58.79730964438032
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 41.191122675871306
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.41683113779407
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.17603809773665
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.41683103206439
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.17603770120918
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.17603763415645
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 51.591855626817626
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.04431800004403
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.70732476686603
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 44.110760226506564
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.72932067282817
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 41.72932067548214
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 72.50161572294454
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 51.379851213173126
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 44.80806456202066
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 59.642490440149345
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 48.150417852215554
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 137,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 48.26537318020786
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 47.31193498608492
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 47.26011217652924
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.26010983952395
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 47.25973230327983
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.25972997094388
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.25560812472226
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 83.00001598455779
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 82.4999915796469
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 82.49996911605541
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 82.49960380355282
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 82.49957772107084
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 82.49957772107084
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 133.2714330442544
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 132.290229302135
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 132.29018567180694
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 132.29760201096707
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 132.29004936609334
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 1,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 132.29004938320713
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 42.11339423564034
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.066740120448365
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.84318763631504
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 41.066726482657586
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.84317011077852
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.84317011077852
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 59.103275638154045
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 49.42060739829047
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.39957787459766
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 49.47034741207702
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.4027643693442
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.402734982808674
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 93.20050610759583
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 66.94501313773385
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 61.32331823786403
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 76.93479724351569
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 67.4080483330855
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 10,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 67.44132794800046
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 41.738865220250084
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.60851260991834
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.25698992370314
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 40.60851245556845
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.25698934483093
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 0.1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 40.256989246943725
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 56.92241697345639
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 45.90411386867741
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.49244491513289
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 46.001109819717605
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.52455572675646
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 1,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 42.524555730630865
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 5,
+      "periodic_peak_temperature_C_at40C": 87.44761419407959
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 56.61292147908486
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 2,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 47.01907235331484
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 15,
+      "periodic_peak_temperature_C_at40C": 68.67516852576547
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 10,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 51.89842022221249
+    },
+    {
+      "initial_current_A": 5,
+      "assumed_Rtheta_C_W": 200,
+      "assumed_thermal_tau_s": 100,
+      "assumed_current_decay_tau_s": 5,
+      "brake_command_s": 30,
+      "repeat_period_s": 40,
+      "periodic_peak_temperature_C_at40C": 52.066238219281544
+    }
+  ],
+  "steady_Q2_5A_hot_sensitivity_W": 0.8500000000000001,
+  "required_effective_Rtheta_Q2_at5A_for125C_at40C_C_W": 99.99999999999999,
+  "limitations": [
+    "Centerline R omits pad spreading and zones; a 2D copper mesh is needed for actual via allocation.",
+    "Molex10mohm is initial low-level contact requirement, not a guaranteed hot5A value; crimp, wires, aging are separate.",
+    "Convection coefficient, exposed faces, wire heat sinking and contact heat fraction are assumed; board is not isothermal in practice.",
+    "70um copper is a sensitivity, not selected fabrication; 0.127mm routes require vendor DFM before changing copper specification.",
+    "D1 .55V is a25C5A limit; .7V and Rtheta values are sensitivities, not full-temperature guaranteed data.",
+    "D1 Rtheta60C/W uses50x50mm copper, much larger than this PCB; cannot transplant that value.",
+    "Q2 repeated thermal model assumes exponentially decaying current; a30s brake command is not30s constant5A.",
+    "No temperature feedback, calibrated thermal time constants, EMC or measured5A qualification is implied."
+  ]
+}

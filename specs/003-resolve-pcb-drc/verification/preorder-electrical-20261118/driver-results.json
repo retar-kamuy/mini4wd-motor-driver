@@ -1,0 +1,298 @@
+{
+  "status": "vendor_typical_model_sensitivity_not_power_sequence_or_PVT_guarantee",
+  "source_pcb_sha256": "e7152f915355a188716b45264bc74a34fdb6dc9e5e9074a5caea470124906ac7",
+  "cases": [
+    {
+      "case": "stable-5.212886364-pwm-0",
+      "scenario": "pwm",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.414121,
+        "vgn_min": -0.4190687,
+        "vgp_max": 1.978304,
+        "vgp_min": -3.401927,
+        "vdn_max": 7.028118,
+        "vdn_min": -0.002176431,
+        "vdp_max": 0.5475824,
+        "vdp_min": -6.721703
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.860849954,
+        "cross_current_indicator_charge_C": 2.2151497247966924e-08,
+        "full_waveform_points": 55079,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 5.212886364
+    },
+    {
+      "case": "stable-4.903554936-pwm-0",
+      "scenario": "pwm",
+      "vbat_V": 1.8,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.084639,
+        "vgn_min": -0.4164453,
+        "vgp_max": 3.19232,
+        "vgp_min": -1.800936,
+        "vdn_max": 4.42613,
+        "vdn_min": -0.001383613,
+        "vdp_max": 0.5196,
+        "vdp_min": -3.975459
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.610196335,
+        "cross_current_indicator_charge_C": 1.6472274911271405e-08,
+        "full_waveform_points": 55079,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 4.903554936
+    },
+    {
+      "case": "stable-5.212886364-startup-0",
+      "scenario": "startup",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.414497,
+        "vgn_min": -0.05553363,
+        "vgp_max": 1.887671,
+        "vgp_min": -3.40001,
+        "vdn_max": 3.85423,
+        "vdn_min": -0.00233337,
+        "vdp_max": 0.3910218,
+        "vdp_min": -6.953294
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.881547667,
+        "cross_current_indicator_charge_C": 4.95407559915696e-08,
+        "full_waveform_points": 55047,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 5.212886364
+    },
+    {
+      "case": "stable-5.212886364-battery_open-0",
+      "scenario": "battery_open",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.257664,
+        "vgn_min": -0.4050462,
+        "vgp_max": 5.768893,
+        "vgp_min": 0.4937305,
+        "vdn_max": 0.1885832,
+        "vdn_min": -0.517014,
+        "vdp_max": 0.5493342,
+        "vdp_min": -2.773044
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 2.12301754e-09,
+        "cross_current_indicator_charge_C": 1.1839513432015233e-13,
+        "full_waveform_points": 55060,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 5.212886364
+    },
+    {
+      "case": "stable-5.212886364-vdd_loss-0",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.206128,
+        "vgn_min": -0.4094091,
+        "vgp_max": 1.812886,
+        "vgp_min": -3.404534,
+        "vdn_max": 7.420137,
+        "vdn_min": 0.01382278,
+        "vdp_max": 0.5480658,
+        "vdp_min": -3.479124
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.00546037764,
+        "cross_current_indicator_charge_C": 4.0157117640016074e-11,
+        "full_waveform_points": 55032,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 5.212886364
+    },
+    {
+      "case": "stable-5.212886364-mcu_loss-0",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.206128,
+        "vgn_min": -0.4131157,
+        "vgp_max": 1.826208,
+        "vgp_min": -3.40453,
+        "vdn_max": 7.458441,
+        "vdn_min": 0.01382278,
+        "vdp_max": 0.5496051,
+        "vdp_min": -3.742388
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.0565058968,
+        "cross_current_indicator_charge_C": 3.512881978154075e-10,
+        "full_waveform_points": 55051,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 5.212886364
+    },
+    {
+      "case": "stable-4.903554936-vdd_loss-1.8e-09",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.896797,
+        "vgn_min": -0.1896592,
+        "vgp_max": 1.503555,
+        "vgp_min": -3.404539,
+        "vdn_max": 7.263182,
+        "vdn_min": 0.01424529,
+        "vdp_max": 0.545506,
+        "vdp_min": -3.479334
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 2.0000000000043854e-09,
+        "cross_current_indicator_peak_A": 0.00519087381,
+        "cross_current_indicator_charge_C": 3.901458261559035e-11,
+        "full_waveform_points": 55033,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 4.903554936
+    },
+    {
+      "case": "stable-4.903554936-mcu_loss-1.8e-09",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.896797,
+        "vgn_min": -0.1912304,
+        "vgp_max": 1.515481,
+        "vgp_min": -3.404534,
+        "vdn_max": 7.267487,
+        "vdn_min": 0.01424529,
+        "vdp_max": 0.5477901,
+        "vdp_min": -3.721708
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.0534745683,
+        "cross_current_indicator_charge_C": 3.408589651519043e-10,
+        "full_waveform_points": 55050,
+        "final_time_s": 0.00011
+      },
+      "prescribed_boost_rail_V": 4.903554936
+    }
+  ],
+  "model_hashes": {
+    "UCC27524.lib": "e34088366aaaaa124f3c39d9a5dcbedbf432114187017fa4f18d4d72ea1d2665",
+    "SiSS64DN.lib": "7994c7c089126e84bb16c2edc78086b64148706ecbdb165808c3911177072e63",
+    "DMP2008UFG-stable.lib": "b4e12a727458ea028399747e26ed73031e80dfbecd37fe174df5ce81b6333653"
+  },
+  "limitations": [
+    "UCC27524 macro is not a guaranteed UCC27524A/SOIC model; fixed internal UVLO4.25V and ideal internal supplies remain.",
+    "Prescribed rails and ENA waveforms, fixed27C, generic diode,0.5ohm/10uH motor,100nH gate/5nH source assumptions; no self-heating or full PVT.",
+    "Threshold overlap is25C minimum-threshold indicator, not separated shoot-through current.",
+    "1.8nF extra Q1 capacitance is a sensitivity knob; not an added physical component.",
+    "TPS61023 startup/control loop is NOT simulated."
+  ]
+}

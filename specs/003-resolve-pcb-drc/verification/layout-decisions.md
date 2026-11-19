@@ -1,8 +1,12 @@
 # 2026-11-14 配置・配線の正規設計への反映
 
+**2026-11-19の現版:** L1を同中心で180°回転、SWを3.1814mm/0ビアへ短縮し、局所F/B GND面と接続を追加。38品全F.Cu、33電力ビアを保全。GATE_Pは17.925mm/4ビアで帰路リスクは残る。 [検査・根拠・未保証事項](return-path-20261119/README.md)。以下の旧版数値/部品は履歴として扱う。
+
+2026-11-17追記: 正規37品版のMolex/XIAOランド修正、pin1正極を維持した両端外向き配置、電力ビア33個と表面バス補強は [最終検査記録](final-review.md)・[メーカー2D照合](pcba-bom-stage/mechanical-findings.md)・[電力ビア比較](pcba-bom-stage/power-via-review.md)。以下の35品版数値は履歴。
+
 設計対象は `hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb` と同ディレクトリの主回路図・`gate-control.kicad_sch`。KiCad MCP 2.8.3の `open_board` / `save_board`（既存正本を上書きするSave As）で検証結果を正本へ反映し、その正本で再検査した。設計正本は存在しており、`.cache/routing/` は検証・復旧専用である。
 
-**現版の接続検査は合格。製造承認は未完了。** 部品・電流容量・駆動条件・EMCなどの残件は `tasks.md` の未完了項目を引き続き適用する。旧Gerberプレビューは使用しない。
+**現版の接続検査は合格。製造承認は未完了。** その後Q2シンボルの表示を修正したため、この記録の回路図・ライブラリのハッシュは修正前の版。最新版のハッシュと再検査は [q2-repair.md](q2-repair.md) を参照。 部品・電流容量・駆動条件・EMCなどの残件は `tasks.md` の未完了項目を引き続き適用する。旧Gerberプレビューは使用しない。
 
 ## 検査結果と変更差分
 

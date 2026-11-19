@@ -1,0 +1,60 @@
+{
+  "source": ".cache/prototype-stage/candidate/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "8cf2db2c3ee7993c7677e0018f650cff25728c61459ac5fdaf1c8175e9a7e4f8",
+  "candidate": ".cache/prototype-stage/metadata/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "d30a78885d61bf46985807b4bef80d9ec5c87c17c42a706838dd5583515c1f23",
+  "source_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "candidate_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "changed_fields": [
+    {
+      "reference": "R105",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R105",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW04024R70FKED"
+    },
+    {
+      "reference": "R105",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R105",
+      "field": "SelectionStatus",
+      "old": "Prototype gate damping; representative transient model; pulse rating/provider check required",
+      "new": "Selected for limited hobby prototype; pulse/average power envelope assessed; provider supply confirmation pending"
+    },
+    {
+      "reference": "R106",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R106",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW040222R0FKED"
+    },
+    {
+      "reference": "R106",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R106",
+      "field": "SelectionStatus",
+      "old": "Prototype gate damping; representative transient model; pulse rating/provider check required",
+      "new": "Selected for limited hobby prototype; pulse/average power envelope assessed; provider supply confirmation pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required"
+}

@@ -1,0 +1,36 @@
+{
+  "source": ".cache/sol-q2-lowvoltage/working/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "d22eb1107fb0d52bf0b772ef765bcc45bc9436e54f6b829b84019ed7a7e91bab",
+  "candidate": ".cache/sol-q2-lowvoltage/metadata/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "d060c9c9ecea5a70fa3a860818585b1bb3d88992ae2a287ca8929fbd239cc454",
+  "source_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "candidate_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "changed_fields": [
+    {
+      "reference": "Q2",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.diodes.com/datasheet/download/DMP2008UFG.pdf"
+    },
+    {
+      "reference": "Q2",
+      "field": "MPN",
+      "old": "",
+      "new": "DMP2008UFG-7"
+    },
+    {
+      "reference": "Q2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Diodes Incorporated"
+    },
+    {
+      "reference": "Q2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Low-voltage candidate; CAD and electrical validation pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required"
+}

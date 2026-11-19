@@ -1,0 +1,17 @@
+* Auto-generated testbench for voltage divider: R5/R6
+* Expected Vout = 3.3 * 0.312500 = 1.0312 V
+* Model: ideal passives (exact, unloaded)
+
+VIN MOTOR_MINUS 0 DC 3.3
+R5 MOTOR_MINUS MID_SENSE 22k
+R6 MID_SENSE 0 10k
+
+.control
+op 
+let vout_sim = v(MID_SENSE)
+let error_pct = abs(vout_sim - 1.03125) / 1.03125 * 100
+echo "vout_sim=$&vout_sim error_pct=$&error_pct expected=1.03125" > voltage-divider_R5_R6.out
+quit
+.endc
+
+.end

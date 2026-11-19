@@ -1,0 +1,23 @@
+[
+  {
+    "file": "mcp-schematic-apply.log",
+    "tool_results": 17,
+    "explicit_json_success_results": 2,
+    "plain_text_results": 15,
+    "failures": []
+  },
+  {
+    "file": "mcp-schematic-cosmetic.log",
+    "tool_results": 3,
+    "explicit_json_success_results": 0,
+    "plain_text_results": 3,
+    "failures": []
+  },
+  {
+    "file": "mcp-board-apply.log",
+    "tool_results": 2,
+    "explicit_json_success_results": 2,
+    "plain_text_results": 0,
+    "failures": []
+  }
+]

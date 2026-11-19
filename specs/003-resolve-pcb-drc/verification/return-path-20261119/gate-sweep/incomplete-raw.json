@@ -1,0 +1,8 @@
+{
+  "case": "stable-Rgp33-4.903554936-mcu_loss",
+  "status": "incomplete_not_accepted",
+  "bytes": 25333760,
+  "sha256": "27a194754e66c62750e28813f1ea2f69e3bae060f169fc507fd51f01a66c69dc",
+  "raw_retained_in_cache": ".cache/return-path-20261119/partial-waveform.dat",
+  "note": "Failed-case full raw waveform is not needed for accepted results; deck, log and failure result remain in this directory."
+}

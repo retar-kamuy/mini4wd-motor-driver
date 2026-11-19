@@ -5,6 +5,11 @@
 - Respond to the user, provide progress updates, and explain plans, designs, reports, and summaries in Japanese by default.
 - Keep technical terms, component part numbers, and standards in their accurate original forms where appropriate.
 
+## PCB design delegation
+
+- Delegate PCB design, KiCad schematic or layout changes, and hardware design validation to the `pcb_design` subagent, which uses GPT-6.1 Sol. Give it clear ownership and coordinate shared files.
+- Use the `git_ops` subagent for Git operations as already requested by the user.
+
 When creating, editing, reviewing, or validating a KiCad project in this repository, use the installed `kicad` skill. Read its `SKILL.md` before starting the KiCad work and follow its analysis and validation workflow.
 
 Also use the installed supporting skills when their scope applies:

@@ -1,0 +1,325 @@
+{
+  "status": "calculated_static_bounds_and_thermal_sensitivity_only",
+  "VBAT_analysis_range_V": [
+    1.8,
+    3.4
+  ],
+  "boost_static_feedback_range_V": [
+    4.782403960396039,
+    5.207745454545454
+  ],
+  "UCC27524ADR_D_SOIC_UVLO_rising_max_V_at_minus40_to140C": 4.65,
+  "static_lower_boost_minus_UVLO_margin_V": 0.1324039603960383,
+  "low_VGS_guarantee_magnitude_V": 1.5,
+  "maximum_OUTB_LOW_plus_reference_error_V_at_VBAT1_8": 0.3,
+  "Q2_pin_mapping": {
+    "1": "VBAT",
+    "2": "VBAT",
+    "3": "VBAT",
+    "4": "GATE_P",
+    "5": "MOTOR_MINUS",
+    "6": "MOTOR_MINUS",
+    "7": "MOTOR_MINUS",
+    "8": "MOTOR_MINUS"
+  },
+  "static_VGS_corners": [
+    {
+      "VBAT_V": 0,
+      "OUTB_V": 0,
+      "VGS_V": 0,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 0,
+      "OUTB_V": 4.782403960396039,
+      "VGS_V": 4.782403960396039,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 0,
+      "OUTB_V": 5.207745454545454,
+      "VGS_V": 5.207745454545454,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 1.8,
+      "OUTB_V": 0,
+      "VGS_V": -1.8,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 1.8,
+      "OUTB_V": 4.782403960396039,
+      "VGS_V": 2.982403960396039,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 1.8,
+      "OUTB_V": 5.207745454545454,
+      "VGS_V": 3.407745454545454,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 2.4,
+      "OUTB_V": 0,
+      "VGS_V": -2.4,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 2.4,
+      "OUTB_V": 4.782403960396039,
+      "VGS_V": 2.3824039603960387,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 2.4,
+      "OUTB_V": 5.207745454545454,
+      "VGS_V": 2.807745454545454,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 3.4,
+      "OUTB_V": 0,
+      "VGS_V": -3.4,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 3.4,
+      "OUTB_V": 4.782403960396039,
+      "VGS_V": 1.3824039603960387,
+      "absolute_rating_8V_exceeded": false
+    },
+    {
+      "VBAT_V": 3.4,
+      "OUTB_V": 5.207745454545454,
+      "VGS_V": 1.8077454545454539,
+      "absolute_rating_8V_exceeded": false
+    }
+  ],
+  "thermal_sensitivity": [
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1,
+      "brake_Irms_A": 3,
+      "conduction_loss_W": 0.15300000000000002,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 47.956,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1,
+      "brake_Irms_A": 5,
+      "conduction_loss_W": 0.42500000000000004,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 62.1,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1,
+      "brake_Irms_A": 10,
+      "conduction_loss_W": 1.7000000000000002,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 128.4,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1.5,
+      "brake_Irms_A": 3,
+      "conduction_loss_W": 0.22950000000000004,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 51.934,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1.5,
+      "brake_Irms_A": 5,
+      "conduction_loss_W": 0.6375000000000001,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 73.15,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1.5,
+      "brake_Irms_A": 10,
+      "conduction_loss_W": 2.5500000000000003,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 172.60000000000002,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 2,
+      "brake_Irms_A": 3,
+      "conduction_loss_W": 0.30600000000000005,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 55.912000000000006,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 2,
+      "brake_Irms_A": 5,
+      "conduction_loss_W": 0.8500000000000001,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 84.2,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 2,
+      "brake_Irms_A": 10,
+      "conduction_loss_W": 3.4000000000000004,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 216.8,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1,
+      "brake_Irms_A": 3,
+      "conduction_loss_W": 0.15300000000000002,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 60.961,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1,
+      "brake_Irms_A": 5,
+      "conduction_loss_W": 0.42500000000000004,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 98.22500000000001,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1,
+      "brake_Irms_A": 10,
+      "conduction_loss_W": 1.7000000000000002,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 272.90000000000003,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1.5,
+      "brake_Irms_A": 3,
+      "conduction_loss_W": 0.22950000000000004,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 71.4415,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1.5,
+      "brake_Irms_A": 5,
+      "conduction_loss_W": 0.6375000000000001,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 127.3375,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1.5,
+      "brake_Irms_A": 10,
+      "conduction_loss_W": 2.5500000000000003,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 389.35,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 2,
+      "brake_Irms_A": 3,
+      "conduction_loss_W": 0.30600000000000005,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 81.922,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 2,
+      "brake_Irms_A": 5,
+      "conduction_loss_W": 0.8500000000000001,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 156.45000000000002,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 2,
+      "brake_Irms_A": 10,
+      "conduction_loss_W": 3.4000000000000004,
+      "assumed_Tambient_C": 40,
+      "steady_Tj_estimate_C": 505.80000000000007,
+      "status": "fixture-dependent sensitivity, not this PCB prediction"
+    }
+  ],
+  "illustrative_continuous_Irms_limits": [
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1,
+      "illustrative_Tj_target_C": 125,
+      "assumed_Tambient_C": 40,
+      "continuous_Irms_A": 9.8058067569092
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 1.5,
+      "illustrative_Tj_target_C": 125,
+      "assumed_Tambient_C": 40,
+      "continuous_Irms_A": 8.006407690254356
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 52,
+      "assumed_Rds_temperature_factor": 2,
+      "illustrative_Tj_target_C": 125,
+      "assumed_Tambient_C": 40,
+      "continuous_Irms_A": 6.933752452815364
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1,
+      "illustrative_Tj_target_C": 125,
+      "assumed_Tambient_C": 40,
+      "continuous_Irms_A": 6.041220933301769
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 1.5,
+      "illustrative_Tj_target_C": 125,
+      "assumed_Tambient_C": 40,
+      "continuous_Irms_A": 4.932636236669901
+    },
+    {
+      "assumed_RthetaJA_C_per_W": 137,
+      "assumed_Rds_temperature_factor": 2,
+      "illustrative_Tj_target_C": 125,
+      "assumed_Tambient_C": 40,
+      "continuous_Irms_A": 4.271788288583805
+    }
+  ],
+  "additional_source_branch_estimate": {
+    "assumed_copper_um": 35,
+    "assumed_resistivity_ohm_m": 1.724e-08,
+    "parallel_branches": 3,
+    "each_length_mm": 1.17,
+    "each_width_mm": 0.42,
+    "equivalent_R_ohm": 0.0004573877551020409,
+    "not_included": "pad neck, original buses, contacts, vias, temperature rise"
+  },
+  "limitations": [
+    "No ripple/load/start-up model for the boost converter; 132mV static margin is not an enable guarantee.",
+    "RthetaJA 52/137C/W refer to datasheet test fixtures; neither is established for this PCB.",
+    "Temperature factor 1/1.5/2 is a sensitivity assumption, not a manufacturer guaranteed maximum.",
+    "125C is an illustrative engineering target, not an enforced protection threshold.",
+    "No fixed brake duration/Irms is asserted for every Mini4WD-compatible motor.",
+    "No guaranteed 5V full-temperature UCC output impedance substituted from 12V test conditions.",
+    "Reverse battery, battery regeneration, gate overshoot and logic below minimum VCC remain outside the static corners."
+  ]
+}

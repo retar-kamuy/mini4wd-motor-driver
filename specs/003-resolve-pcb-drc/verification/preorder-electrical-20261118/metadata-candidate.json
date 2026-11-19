@@ -1,0 +1,60 @@
+{
+  "source": ".cache/preorder-electrical/candidate/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "836140ba6ece4e2ccf0ad93570c5136c02d8778dfc5daedff46fd5ea3cb11033",
+  "candidate": ".cache/preorder-electrical/candidate-meta/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "e7152f915355a188716b45264bc74a34fdb6dc9e5e9074a5caea470124906ac7",
+  "source_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "candidate_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "changed_fields": [
+    {
+      "reference": "R1",
+      "field": "Datasheet",
+      "old": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "new": "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0775KL"
+    },
+    {
+      "reference": "R1",
+      "field": "MPN",
+      "old": "CRCW0603732KFKEA",
+      "new": "RT0603BRD0775KL"
+    },
+    {
+      "reference": "R1",
+      "field": "Manufacturer",
+      "old": "Vishay",
+      "new": "Yageo"
+    },
+    {
+      "reference": "R1",
+      "field": "SelectionStatus",
+      "old": "Selected candidate; supplier and assembly DFM pending",
+      "new": "Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending"
+    },
+    {
+      "reference": "R2",
+      "field": "Datasheet",
+      "old": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "new": "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL"
+    },
+    {
+      "reference": "R2",
+      "field": "MPN",
+      "old": "CRCW0603100KFKEA",
+      "new": "RT0603BRD0710KL"
+    },
+    {
+      "reference": "R2",
+      "field": "Manufacturer",
+      "old": "Vishay",
+      "new": "Yageo"
+    },
+    {
+      "reference": "R2",
+      "field": "SelectionStatus",
+      "old": "Selected candidate; supplier and assembly DFM pending",
+      "new": "Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required"
+}

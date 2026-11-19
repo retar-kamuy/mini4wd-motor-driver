@@ -1,0 +1,132 @@
+{
+  "status": "constant_cap_constant_current_budget_not_regulator_startup_simulation",
+  "cases": [
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.05,
+      "assumed_startup_load_A": 0,
+      "time_to5_213V_s": 0.005213,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.05,
+      "assumed_startup_load_A": 0.02,
+      "time_to5_213V_s": 0.008688333333333333,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.05,
+      "assumed_startup_load_A": 0.05,
+      "time_to5_213V_s": null,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.1,
+      "assumed_startup_load_A": 0,
+      "time_to5_213V_s": 0.0026065,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.1,
+      "assumed_startup_load_A": 0.02,
+      "time_to5_213V_s": 0.003258125,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.1,
+      "assumed_startup_load_A": 0.05,
+      "time_to5_213V_s": 0.005213,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.2,
+      "assumed_startup_load_A": 0,
+      "time_to5_213V_s": 0.00130325,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.2,
+      "assumed_startup_load_A": 0.02,
+      "time_to5_213V_s": 0.0014480555555555555,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 5e-05,
+      "assumed_boost_output_available_A": 0.2,
+      "assumed_startup_load_A": 0.05,
+      "time_to5_213V_s": 0.0017376666666666664,
+      "energy_at5_213V_J": 0.0006793842250000001
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.05,
+      "assumed_startup_load_A": 0,
+      "time_to5_213V_s": 0.011468599999999999,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.05,
+      "assumed_startup_load_A": 0.02,
+      "time_to5_213V_s": 0.01911433333333333,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.05,
+      "assumed_startup_load_A": 0.05,
+      "time_to5_213V_s": null,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.1,
+      "assumed_startup_load_A": 0,
+      "time_to5_213V_s": 0.0057342999999999995,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.1,
+      "assumed_startup_load_A": 0.02,
+      "time_to5_213V_s": 0.007167875,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.1,
+      "assumed_startup_load_A": 0.05,
+      "time_to5_213V_s": 0.011468599999999999,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.2,
+      "assumed_startup_load_A": 0,
+      "time_to5_213V_s": 0.0028671499999999997,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.2,
+      "assumed_startup_load_A": 0.02,
+      "time_to5_213V_s": 0.0031857222222222217,
+      "energy_at5_213V_J": 0.001494645295
+    },
+    {
+      "C_load_upper_F": 0.00011,
+      "assumed_boost_output_available_A": 0.2,
+      "assumed_startup_load_A": 0.05,
+      "time_to5_213V_s": 0.003822866666666666,
+      "energy_at5_213V_J": 0.001494645295
+    }
+  ],
+  "note": "50/110uF cover external capacitor nominal/tolerance/temperature and approximate module loading as sensitivity bounds. Available output currents and loads are assumptions, not TPS61023 guaranteed startup currents."
+}

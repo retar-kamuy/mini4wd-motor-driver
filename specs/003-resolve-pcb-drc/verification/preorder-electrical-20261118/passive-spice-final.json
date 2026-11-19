@@ -1,0 +1,258 @@
+{
+  "analyzer_type": "spice",
+  "schema_version": "1.4.0",
+  "summary": {
+    "total": 9,
+    "total_findings": 0,
+    "pass": 6,
+    "warn": 0,
+    "fail": 0,
+    "skip": 0,
+    "info": 3,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 9
+    }
+  },
+  "findings": [],
+  "simulation_results": [
+    {
+      "subcircuit_type": "voltage_divider",
+      "components": [
+        "R1",
+        "R2"
+      ],
+      "expected": {
+        "ratio": 0.117647,
+        "vout_V": 0.3882351
+      },
+      "simulated": {
+        "vout_V": 0.388235
+      },
+      "delta": {
+        "vout_error_pct": 0.0
+      },
+      "status": "pass",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/voltage-divider_R1_R2.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/voltage-divider_R1_R2.log",
+      "elapsed_s": 0.052,
+      "reference": "R1/R2"
+    },
+    {
+      "subcircuit_type": "voltage_divider",
+      "components": [
+        "R3",
+        "R4"
+      ],
+      "expected": {
+        "ratio": 0.3125,
+        "vout_V": 1.15625
+      },
+      "simulated": {
+        "vout_V": 1.15625
+      },
+      "delta": {
+        "vout_error_pct": 0.0
+      },
+      "status": "pass",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/voltage-divider_R3_R4.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/voltage-divider_R3_R4.log",
+      "elapsed_s": 0.011,
+      "reference": "R3/R4"
+    },
+    {
+      "subcircuit_type": "voltage_divider",
+      "components": [
+        "R5",
+        "R6"
+      ],
+      "expected": {
+        "ratio": 0.3125,
+        "vout_V": 1.03125
+      },
+      "simulated": {
+        "vout_V": 1.03125
+      },
+      "delta": {
+        "vout_error_pct": 0.0
+      },
+      "status": "pass",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/voltage-divider_R5_R6.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/voltage-divider_R5_R6.log",
+      "elapsed_s": 0.009,
+      "reference": "R5/R6"
+    },
+    {
+      "subcircuit_type": "transistor_circuit",
+      "components": [
+        "Q1"
+      ],
+      "transistor_type": "mosfet",
+      "value": "SiSS64DN-T1-GE3",
+      "expected": {},
+      "simulated": {
+        "vth_V": 1.542,
+        "i_on_mA": 3.3
+      },
+      "delta": {},
+      "model_note": "generic NMOS model \u2014 real threshold depends on part",
+      "status": "info",
+      "note": "FET turns on in the generic model; not compared against the part",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/transistor-circuit_Q1.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/transistor-circuit_Q1.log",
+      "elapsed_s": 0.021,
+      "reference": "Q1"
+    },
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "C1"
+      ],
+      "rail": "VBAT",
+      "cap_count": 1,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.0316,
+        "z_at_1MHz_ohms": 0.0336,
+        "z_at_100kHz_ohms": 0.1618
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.034\u03a9 at 1MHz",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/decoupling_C1.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/decoupling_C1.log",
+      "elapsed_s": 0.022,
+      "reference": "C1"
+    },
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "C101",
+        "C102",
+        "C103",
+        "C106"
+      ],
+      "rail": "MCU_3V3",
+      "cap_count": 4,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.2372,
+        "f_at_zmin_hz": 22378200.0,
+        "z_at_1MHz_ohms": 0.4625,
+        "z_at_100kHz_ohms": 3.9859
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.463\u03a9 at 1MHz",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/decoupling_C101_C102_C103_C106.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/decoupling_C101_C102_C103_C106.log",
+      "elapsed_s": 0.021,
+      "reference": "C101/C102/C103/C106"
+    },
+    {
+      "subcircuit_type": "decoupling",
+      "components": [
+        "C2",
+        "C3",
+        "C104",
+        "C105"
+      ],
+      "rail": "BOOST_5V",
+      "cap_count": 4,
+      "expected": {},
+      "simulated": {
+        "z_min_ohms": 0.0096,
+        "f_at_zmin_hz": 1513540.0,
+        "z_at_1MHz_ohms": 0.0098,
+        "z_at_100kHz_ohms": 0.0356
+      },
+      "delta": {},
+      "model_note": "generic ESR + parasitic L from self-resonant frequency",
+      "status": "pass",
+      "note": "Z=0.010\u03a9 at 1MHz",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/decoupling_C2_C3_C104_C105.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/decoupling_C2_C3_C104_C105.log",
+      "elapsed_s": 0.011,
+      "reference": "C2/C3/C104/C105"
+    },
+    {
+      "subcircuit_type": "regulator_feedback",
+      "components": [
+        "R1",
+        "R2"
+      ],
+      "regulator": "U2",
+      "expected": {
+        "ratio": 0.117647,
+        "vref_V": 0.595,
+        "vfb_V": 0.5882350000000001,
+        "vin_V": 5.0
+      },
+      "simulated": {
+        "vfb_V": 0.5882
+      },
+      "delta": {},
+      "status": "info",
+      "note": "Divider simulated; not compared against Vref (Vref 0.595 V is a family default (TPS6102), not this part's own value)",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/regulator-feedback_U2_R1_R2.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/regulator-feedback_U2_R1_R2.log",
+      "elapsed_s": 0.008,
+      "reference": "R1/R2"
+    },
+    {
+      "subcircuit_type": "inrush",
+      "components": [
+        "C2",
+        "C3",
+        "C104",
+        "C105"
+      ],
+      "regulator": "U2",
+      "expected": {
+        "v_target_V": 5.058,
+        "estimated_inrush_A": 0.234
+      },
+      "simulated": {
+        "i_peak_A": 0.2342,
+        "t_peak_us": 12.4,
+        "v_settled_V": 5.058
+      },
+      "delta": {
+        "v_settle_error_pct": 0.0
+      },
+      "status": "info",
+      "note": "Peak inrush 234.2mA at 12\u00b5s on the assumed soft-start; not compared against a limit",
+      "cir_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/inrush_idx0.cir",
+      "log_file": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf/inrush_idx0.log",
+      "elapsed_s": 0.012,
+      "reference": "C2/C3/C104/C105"
+    }
+  ],
+  "diagnostics": [],
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "workdir": "/home/ubuntu/Repositories/mini4wd-motor-driver/specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/passive-final-runs/spice_sim_tamjztvf",
+  "total_elapsed_s": 0.166,
+  "simulator": "/usr/bin/ngspice",
+  "ngspice": "/usr/bin/ngspice"
+}

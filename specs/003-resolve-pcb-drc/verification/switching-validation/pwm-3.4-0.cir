@@ -1,0 +1,51 @@
+Q1 Q2 UCC27524 switching validation: pwm-3.4-0
+.include UCC27524.lib
+.include SiSS64DN.lib
+.include DMP2008UFG.lib
+Vbat batt 0 3.4
+Vdd dd 0 5.208
+Vlogic logic 0 3.3
+Vena ena 0 3.3
+Va a 0 PWL(0 0 29.314u 0 29.315u 3.3 60u 3.3 60.001u 0)
+Vb b 0 PWL(0 0 20u 0 20.001u 3.3 69.314u 3.3 69.315u 0)
+Xdrv a b oa ob dd ena logic 0 UCC27524
+Rgn oa lgn 0.001
+Rgp ob lgp 0.001
+Lgn lgn gn 1e-07
+Lgp lgp gp 1e-07
+Lsn sn 0 5n
+Lsp sp batt 5n
+Vqn m dn 0
+Vqp m dp 0
+Xn dn gn sn SiSS64DN
+Xp dp gp sp DMP2008UFG
+Rmotor batt wind .5
+Lmotor wind m 10u
+Dfly m batt Dfree
+.model Dfree D(Is=1e-8 N=1 Rs=.01 BV=40)
+BvgN vgn 0 V=V(gn,sn)
+BvgP vgp 0 V=V(gp,sp)
+BvdN vdn 0 V=V(dn,sn)
+BvdP vdp 0 V=V(dp,sp)
+Bover over 0 V=ternary_fcn(V(gn,sn)>1.1 && V(sp,gp)>.4,1,0)
+Bcross cross 0 V=min(max(I(Vqn),0),max(-I(Vqp),0))
+.options method=gear reltol=.001
+.tran 2n 110u 0 2n
+.measure tran vgn_max MAX V(vgn)
+.measure tran vgn_min MIN V(vgn)
+.measure tran vgp_max MAX V(vgp)
+.measure tran vgp_min MIN V(vgp)
+.measure tran vdn_max MAX V(vdn)
+.measure tran vdn_min MIN V(vdn)
+.measure tran vdp_max MAX V(vdp)
+.measure tran vdp_min MIN V(vdp)
+.measure tran conservative_gate_overlap_s INTEG V(over)
+.measure tran cross_current_peak MAX V(cross)
+.measure tran cross_charge_C INTEG V(cross)
+.control
+run
+set wr_singlescale
+set wr_vecnames
+wrdata pwm-3.4-0.dat v(vgn) v(vgp) v(vdn) v(vdp) v(over) v(cross) i(vqn) i(vqp)
+.endc
+.end

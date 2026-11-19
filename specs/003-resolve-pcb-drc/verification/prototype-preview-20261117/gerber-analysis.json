@@ -1,0 +1,688 @@
+{
+  "analyzer_type": "gerber",
+  "schema_version": "1.4.0",
+  "directory": "/tmp/mini4wd-pcba-preview-20261117",
+  "generator": "Pcbnew 10.0.8-10.0.8~ubuntu26.04.1",
+  "layer_count": 2,
+  "board_dimensions": {
+    "width_mm": 55.1,
+    "height_mm": 21.1,
+    "area_mm2": 1162.6,
+    "source": "gbrjob"
+  },
+  "statistics": {
+    "gerber_files": 8,
+    "drill_files": 1,
+    "total_holes": 75,
+    "total_flashes": 511,
+    "total_draws": 695
+  },
+  "completeness": {
+    "found_layers": [
+      "B.Cu",
+      "B.Mask",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask",
+      "F.Paste",
+      "F.SilkS"
+    ],
+    "expected_layers": [
+      "B.Cu",
+      "B.Mask",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask",
+      "F.Paste",
+      "F.SilkS"
+    ],
+    "missing": [],
+    "extra": [],
+    "has_pth_drill": true,
+    "has_npth_drill": true,
+    "complete": true,
+    "source": "gbrjob"
+  },
+  "alignment": {
+    "aligned": true,
+    "issues": [],
+    "layer_extents": {
+      "B.Cu": {
+        "width": 49.3,
+        "height": 19.947
+      },
+      "B.Mask": {
+        "width": 0,
+        "height": 0
+      },
+      "B.SilkS": {
+        "width": 0,
+        "height": 0
+      },
+      "Edge.Cuts": {
+        "width": 55.0,
+        "height": 21.0
+      },
+      "F.Cu": {
+        "width": 52.84,
+        "height": 20.006
+      },
+      "F.Mask": {
+        "width": 52.84,
+        "height": 18.885
+      },
+      "F.Paste": {
+        "width": 52.84,
+        "height": 18.885
+      },
+      "F.SilkS": {
+        "width": 49.977,
+        "height": 20.28
+      },
+      "drill_mixed": {
+        "width": 49.3,
+        "height": 19.84
+      }
+    }
+  },
+  "drill_classification": {
+    "vias": {
+      "count": 75,
+      "tools": [
+        {
+          "diameter_mm": 0.3,
+          "count": 42
+        },
+        {
+          "diameter_mm": 0.4,
+          "count": 33
+        }
+      ]
+    },
+    "component_holes": {
+      "count": 0,
+      "tools": []
+    },
+    "mounting_holes": {
+      "count": 0,
+      "tools": []
+    },
+    "classification_method": "x2_attributes"
+  },
+  "pad_summary": {
+    "smd_apertures": 120,
+    "via_apertures": 150,
+    "heatsink_apertures": 0,
+    "tht_holes": 0,
+    "smd_source": "x2_aperture_function",
+    "smd_ratio": 1.0
+  },
+  "trace_widths": {
+    "unique_widths_mm": [
+      0.127,
+      0.15,
+      0.2,
+      0.4,
+      0.5,
+      0.6,
+      1.2,
+      1.4,
+      1.5,
+      2.0
+    ],
+    "min_trace_mm": 0.127,
+    "max_trace_mm": 2.0,
+    "width_count": 10,
+    "min_feature_mm": 0.1
+  },
+  "component_analysis": {
+    "total_unique": 37,
+    "front_side": 37,
+    "back_side": 0,
+    "component_refs": [
+      "C1",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C2",
+      "C3",
+      "D1",
+      "D2",
+      "J1",
+      "J2",
+      "L1",
+      "MCU1",
+      "Q1",
+      "Q2",
+      "R1",
+      "R101",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "TH1",
+      "U101",
+      "U102",
+      "U103",
+      "U104",
+      "U105",
+      "U2"
+    ],
+    "has_x2_data": true,
+    "pads_per_component": {
+      "C1": 2,
+      "C101": 2,
+      "C102": 2,
+      "C103": 2,
+      "C104": 2,
+      "C105": 2,
+      "C106": 2,
+      "C2": 2,
+      "C3": 2,
+      "D1": 2,
+      "D2": 2,
+      "J1": 4,
+      "J2": 4,
+      "L1": 2,
+      "MCU1": 14,
+      "Q1": 5,
+      "Q2": 12,
+      "R1": 2,
+      "R101": 2,
+      "R102": 2,
+      "R103": 2,
+      "R104": 2,
+      "R105": 2,
+      "R106": 2,
+      "R2": 2,
+      "R3": 2,
+      "R4": 2,
+      "R5": 2,
+      "R6": 2,
+      "R7": 2,
+      "TH1": 2,
+      "U101": 6,
+      "U102": 5,
+      "U103": 5,
+      "U104": 8,
+      "U105": 3,
+      "U2": 6
+    },
+    "total_pads": 124
+  },
+  "net_analysis": {
+    "total_unique": 30,
+    "named_nets": 25,
+    "unnamed_nets": 5,
+    "power_nets": [
+      "GND",
+      "VBAT"
+    ],
+    "signal_nets": [
+      "/I2C_SCL",
+      "/I2C_SDA",
+      "BOOST_5V",
+      "DELAY_SET",
+      "DRIVE_ENABLE",
+      "FB_BOOST",
+      "GATE_N",
+      "GATE_P",
+      "MCU_3V3",
+      "MID_SENSE",
+      "MOTOR_MINUS",
+      "N/C",
+      "N_COMMAND",
+      "PWM_DRIVE",
+      "PWM_QUALIFIED",
+      "P_COMMAND",
+      "Q1_GATE",
+      "Q2_GATE",
+      "RESET_OK",
+      "SW_BOOST",
+      "TEMP_SENSE",
+      "VBAT_SENSE",
+      "XIAO_5V"
+    ],
+    "total_pins": 120
+  },
+  "gerbers": [
+    {
+      "filename": "mini4wd-motor-driver-B_Cu.gbl",
+      "layer_type": "B.Cu",
+      "units": "mm",
+      "aperture_count": 8,
+      "flash_count": 75,
+      "draw_count": 142,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L2,Bot",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ViaPad": 2,
+          "Conductor": 6
+        },
+        "by_function_flashes": {
+          "ViaPad": 75,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.127,
+          0.15,
+          0.2,
+          1.2,
+          1.5,
+          2.0
+        ],
+        "min_feature_mm": 0.127
+      },
+      "x2_component_count": 0,
+      "x2_net_count": 16,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "mini4wd-motor-driver-B_Mask.gbs",
+      "layer_type": "B.Mask",
+      "units": "mm",
+      "aperture_count": 0,
+      "flash_count": 0,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Soldermask,Bot",
+        "FilePolarity": "Negative"
+      }
+    },
+    {
+      "filename": "mini4wd-motor-driver-B_Silkscreen.gbo",
+      "layer_type": "B.SilkS",
+      "units": "mm",
+      "aperture_count": 0,
+      "flash_count": 0,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Legend,Bot",
+        "FilePolarity": "Positive"
+      }
+    },
+    {
+      "filename": "mini4wd-motor-driver-Edge_Cuts.gm1",
+      "layer_type": "Edge.Cuts",
+      "units": "mm",
+      "aperture_count": 1,
+      "flash_count": 0,
+      "draw_count": 8,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Profile,NP"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "Profile": 1
+        },
+        "by_function_flashes": {
+          "Profile": 0
+        },
+        "min_feature_mm": 0.1
+      }
+    },
+    {
+      "filename": "mini4wd-motor-driver-F_Cu.gtl",
+      "layer_type": "F.Cu",
+      "units": "mm",
+      "aperture_count": 33,
+      "flash_count": 195,
+      "draw_count": 364,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L1,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "SMDPad": 22,
+          "ViaPad": 2,
+          "Conductor": 9
+        },
+        "by_function_flashes": {
+          "SMDPad": 120,
+          "ViaPad": 75,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.127,
+          0.15,
+          0.2,
+          0.4,
+          0.5,
+          0.6,
+          1.2,
+          1.4,
+          1.5
+        ],
+        "min_feature_mm": 0.1
+      },
+      "x2_component_count": 37,
+      "x2_net_count": 30,
+      "x2_pin_count": 120
+    },
+    {
+      "filename": "mini4wd-motor-driver-F_Mask.gts",
+      "layer_type": "F.Mask",
+      "units": "mm",
+      "aperture_count": 21,
+      "flash_count": 117,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Soldermask,Top",
+        "FilePolarity": "Negative"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.1
+      },
+      "x2_component_count": 37,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "mini4wd-motor-driver-F_Paste.gtp",
+      "layer_type": "F.Paste",
+      "units": "mm",
+      "aperture_count": 21,
+      "flash_count": 124,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Paste,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.1
+      },
+      "x2_component_count": 37,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "mini4wd-motor-driver-F_Silkscreen.gto",
+      "layer_type": "F.SilkS",
+      "units": "mm",
+      "aperture_count": 2,
+      "flash_count": 0,
+      "draw_count": 181,
+      "region_count": 8,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "CreationDate": "2026-11-17T22:13:17+09:00",
+        "ProjectId": "mini4wd-motor-driver,6d696e69-3477-4642-9d6d-6f746f722d64,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Legend,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.12
+      },
+      "x2_component_count": 30,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    }
+  ],
+  "drills": [
+    {
+      "filename": "mini4wd-motor-driver.drl",
+      "type": "mixed",
+      "units": "mm",
+      "hole_count": 75,
+      "tools": {
+        "T1": {
+          "diameter_mm": 0.3,
+          "hole_count": 42,
+          "aper_function": "Plated,PTH,ViaDrill"
+        },
+        "T2": {
+          "diameter_mm": 0.4,
+          "hole_count": 33,
+          "aper_function": "Plated,PTH,ViaDrill"
+        }
+      },
+      "layer_span": [
+        1,
+        2
+      ],
+      "x2_attributes": {
+        "CreationDate": "2026-11-17T22:13:18+09:00",
+        "GenerationSoftware": "Kicad,Pcbnew,10.0.8-10.0.8~ubuntu26.04.1",
+        "FileFunction": "MixedPlating,1,2"
+      }
+    }
+  ],
+  "drill_tools": {
+    "0.3mm": {
+      "diameter_mm": 0.3,
+      "count": 42,
+      "type": "mixed"
+    },
+    "0.4mm": {
+      "diameter_mm": 0.4,
+      "count": 33,
+      "type": "mixed"
+    }
+  },
+  "job_file": {
+    "generator": "Pcbnew 10.0.8-10.0.8~ubuntu26.04.1",
+    "vendor": "KiCad",
+    "creation_date": "2026-11-17T22:13:17+09:00",
+    "board_width_mm": 55.1,
+    "board_height_mm": 21.1,
+    "layer_count": 2,
+    "board_thickness_mm": 1.6,
+    "finish": "None",
+    "project_name": "mini4wd-motor-driver",
+    "design_rules": [
+      {
+        "layers": "Outer",
+        "PadToPad": 0.127,
+        "PadToTrack": 0.127,
+        "TrackToTrack": 0.127,
+        "MinLineWidth": 0.127
+      }
+    ],
+    "expected_files": [
+      {
+        "path": "mini4wd-motor-driver-F_Cu.gtl",
+        "function": "Copper,L1,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "mini4wd-motor-driver-B_Cu.gbl",
+        "function": "Copper,L2,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "mini4wd-motor-driver-F_Paste.gtp",
+        "function": "SolderPaste,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "mini4wd-motor-driver-F_Silkscreen.gto",
+        "function": "Legend,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "mini4wd-motor-driver-B_Silkscreen.gbo",
+        "function": "Legend,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "mini4wd-motor-driver-F_Mask.gts",
+        "function": "SolderMask,Top",
+        "polarity": "Negative"
+      },
+      {
+        "path": "mini4wd-motor-driver-B_Mask.gbs",
+        "function": "SolderMask,Bot",
+        "polarity": "Negative"
+      },
+      {
+        "path": "mini4wd-motor-driver-Edge_Cuts.gm1",
+        "function": "Profile",
+        "polarity": "Positive"
+      }
+    ],
+    "stackup": [
+      {
+        "type": "Legend",
+        "name": "Top Silk Screen"
+      },
+      {
+        "type": "SolderPaste",
+        "name": "Top Solder Paste"
+      },
+      {
+        "type": "SolderMask",
+        "name": "Top Solder Mask",
+        "thickness_mm": 0.01
+      },
+      {
+        "type": "Copper",
+        "name": "F.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "Dielectric",
+        "name": "F.Cu/B.Cu",
+        "thickness_mm": 1.51,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "B.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "SolderMask",
+        "name": "Bottom Solder Mask",
+        "thickness_mm": 0.01
+      },
+      {
+        "type": "SolderPaste",
+        "name": "Bottom Solder Paste"
+      },
+      {
+        "type": "Legend",
+        "name": "Bottom Silk Screen"
+      }
+    ]
+  },
+  "findings": [],
+  "assessments": [],
+  "summary": {
+    "total_findings": 0,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 0
+    }
+  },
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "inputs": {
+    "source_files": [
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-B_Cu.gbl",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-B_Mask.gbs",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-B_Silkscreen.gbo",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-Edge_Cuts.gm1",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Cu.gtl",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Mask.gts",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Paste.gtp",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Silkscreen.gto",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-job.gbrjob",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver.drl"
+    ],
+    "source_hashes": {
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-B_Cu.gbl": "061d157024fd3acefbd416ec76209181f9fd69aa1136c38844c54bfff67ba891",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-B_Mask.gbs": "f296070d730c2ccba0d745c67c733419a010e1cfbc76570d448205992e5fbc9c",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-B_Silkscreen.gbo": "7f573a6d576e2635668334632ce4b2e743e9503d5dbe2642b6bd3d162e9580c6",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-Edge_Cuts.gm1": "1ca62d07c863a5e90b81d855990f64319c6a0ed4394778792c0352b42c4f6c54",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Cu.gtl": "e01811584dab4b029474834077a5a9a9212c43b98a4c15b63b07c78f39ac6e9b",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Mask.gts": "1da1b4b91513f96ed59f74305e2e9bb4783438af423a74eea8221c190f05aff7",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Paste.gtp": "aaa1f6d65647442bf8711de498f41636af9d7a882be336c8204bedac49fc17af",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-F_Silkscreen.gto": "6b8ec16934558ea0fe7c2de894bff609df2e9a646984fde444d8dc8c3680ed35",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver-job.gbrjob": "da30d7d6a698190daa74b3ff3393447dc3817e982cc5976106dda7c85e80d3e3",
+      "/tmp/mini4wd-pcba-preview-20261117/mini4wd-motor-driver.drl": "9e75f97ee64cb1c63a1b1a85dbedce498765046ffdb539d7309f1621e896f048"
+    },
+    "run_id": "20261116T133654Z-9443a3",
+    "config_hash": null,
+    "upstream_artifacts": {}
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261116T133654Z-9443a3"
+  }
+}

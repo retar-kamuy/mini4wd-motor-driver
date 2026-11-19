@@ -58,7 +58,6 @@ _autosave-*
 /Microsoft/
 /KiCad/
 /.aws/
-/.codex/
 /drc_*.rpt
 /mini4wd-motor-driver-drc.rpt
 /mini4wd-motor-driver-erc.rpt

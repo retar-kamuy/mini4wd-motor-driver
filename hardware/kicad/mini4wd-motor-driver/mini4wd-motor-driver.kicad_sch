@@ -1532,6 +1532,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "mini4wd-motor-driver:SI7137DP"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1590,6 +1593,32 @@
 						(type none)
 					)
 				)
+				(text "1,2,3"
+					(at 5.08 -3.81 0)
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+						(justify left)
+					)
+				)
+				(text "5,6,7,8"
+					(at 5.08 3.81 0)
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+						(justify left)
+					)
+				)
+				(text "4"
+					(at -3.81 0.9 0)
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
 			)
 			(symbol "SI7137DP_1_1"
 				(pin passive line
@@ -1605,8 +1634,9 @@
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -1623,8 +1653,9 @@
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -1641,8 +1672,9 @@
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -1677,8 +1709,9 @@
 					(number "5"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -1695,8 +1728,9 @@
 					(number "6"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -1713,8 +1747,9 @@
 					(number "7"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -1731,8 +1766,9 @@
 					(number "8"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.01 0.01)
 							)
+							(hide yes)
 						)
 					)
 				)
@@ -2655,7 +2691,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline="
 			(at 39.37 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -2677,6 +2713,15 @@
 				)
 			)
 		)
+    (property "MPN" "43650-0214" (at 39.37 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Molex" (at 39.37 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected; manufacturer land pattern checked; vendor DFM/sourcing pending" (at 39.37 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a77dc295-3553-4427-b143-f5bad9392a6f")
 		)
@@ -2734,7 +2779,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline="
 			(at 229.87 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -2756,6 +2801,15 @@
 				)
 			)
 		)
+    (property "MPN" "43650-0214" (at 229.87 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Molex" (at 229.87 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected; manufacturer land pattern checked; vendor DFM/sourcing pending" (at 229.87 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "67b68705-2f02-4483-a08f-da3d143450ce")
 		)
@@ -2813,7 +2867,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61023.pdf"
 			(at 80.01 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2833,6 +2887,33 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "TPS61023DRLR"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SelectionStatus" "Existing design candidate; power/layout/vendor acceptance pending"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "3"
@@ -2904,7 +2985,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel4030/xel4030-102/"
 			(at 69.85 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -2926,6 +3007,15 @@
 				)
 			)
 		)
+    (property "MPN" "XEL4030-102MEC" (at 69.85 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Coilcraft" (at 69.85 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 69.85 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "351f1078-6b34-4465-988c-f011f6c6b3c4")
 		)
@@ -2985,7 +3075,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A106MAAL%23"
 			(at 59.69 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3007,6 +3097,15 @@
 				)
 			)
 		)
+    (property "MPN" "GRM188R61A106MAALD" (at 59.69 69.85 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Murata" (at 59.69 69.85 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending" (at 59.69 69.85 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2f7f28e7-3371-48f3-a793-e1bf113df9c8")
 		)
@@ -3066,7 +3165,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A226ME15%23"
 			(at 100.33 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -3088,6 +3187,15 @@
 				)
 			)
 		)
+    (property "MPN" "GRM188R61A226ME15D" (at 100.33 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Murata" (at 100.33 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending" (at 100.33 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "045d11b8-80f1-4b1b-be08-9c3259c0a13e")
 		)
@@ -3147,7 +3255,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A226ME15%23"
 			(at 107.95 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -3169,6 +3277,15 @@
 				)
 			)
 		)
+    (property "MPN" "GRM188R61A226ME15D" (at 107.95 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Murata" (at 107.95 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending" (at 107.95 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b7648574-1c5b-425b-a228-e81a13df88d1")
 		)
@@ -3205,7 +3322,7 @@
 				)
 			)
 		)
-		(property "Value" "732k 1%"
+		(property "Value" "75k 0.1%"
 			(at 97.79 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3226,7 +3343,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0775KL"
 			(at 95.25 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3248,6 +3365,15 @@
 				)
 			)
 		)
+    (property "MPN" "RT0603BRD0775KL" (at 95.25 80.01 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Yageo" (at 95.25 80.01 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending" (at 95.25 80.01 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7cfa2ff6-5f11-4b62-93d2-7df42976d0de")
 		)
@@ -3284,7 +3410,7 @@
 				)
 			)
 		)
-		(property "Value" "100k 1%"
+		(property "Value" "10k 0.1%"
 			(at 97.79 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3305,7 +3431,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL"
 			(at 95.25 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -3327,6 +3453,15 @@
 				)
 			)
 		)
+    (property "MPN" "RT0603BRD0710KL" (at 95.25 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Yageo" (at 95.25 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending" (at 95.25 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2d3b2822-90a3-4653-992c-7151b726a63e")
 		)
@@ -3373,7 +3508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "board-routed:D_SMA_Edge_Assembly"
 			(at 119.38 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3384,7 +3519,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 119.38 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3406,6 +3541,15 @@
 				)
 			)
 		)
+    (property "MPN" "SS14-E3/61T" (at 119.38 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 119.38 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 119.38 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7bd99cd8-dec2-4234-a81e-4751f1034a9b")
 		)
@@ -3490,6 +3634,33 @@
 				)
 			)
 		)
+		(property "MPN" "SiSS64DN-T1-GE3"
+			(at 185.42 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 185.42 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SelectionStatus" "Existing design candidate; power/land/vendor acceptance pending"
+			(at 185.42 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a153d6c-4cc4-4508-8ed1-f33dba320fcb")
 		)
@@ -3526,7 +3697,7 @@
 		(dnp no)
 		(uuid "5fac1a5f-bbe8-4f13-af73-398bb10e7278")
 		(property "Reference" "Q2"
-			(at 185.42 31.75 0)
+			(at 180 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3536,8 +3707,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SI7137DP-T1-GE3"
-			(at 185.42 46.99 0)
+		(property "Value" "DMP2008UFG-7"
+			(at 192 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3547,7 +3718,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "board-routed:PowerPAK_SO-8_SI7137DP"
+		(property "Footprint" "board-routed:Diodes_PowerDI3333-8_DMP2008UFG"
 			(at 190.5 37.465 0)
 			(hide yes)
 			(show_name no)
@@ -3560,7 +3731,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/69063/si7137dp.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMP2008UFG.pdf"
 			(at 190.5 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -3572,7 +3743,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "-60A Id, -20V Vds, 1.9 mOhm Ron, PowerPAK-8"
+		(property "Description" "20 V P-MOSFET; PowerDI3333-8; S=1,2,3 G=4 D=5,6,7,8; RDSmax17mOhm atVGS=-1.5V25C"
 			(at 185.42 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3581,6 +3752,33 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "DMP2008UFG-7"
+			(at 185.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 185.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SelectionStatus" "Prototype selection; low-voltage/static and representative transient analysis complete; bench acceptance pending"
+			(at 185.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3647,7 +3845,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "board-routed:D_SMA_Edge_Assembly"
 			(at 209.55 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3658,7 +3856,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/20190806165140.pdf"
 			(at 209.55 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3680,6 +3878,15 @@
 				)
 			)
 		)
+    (property "MPN" "SS54-HF" (at 209.55 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Comchip Technology" (at 209.55 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 209.55 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "31b4142f-72e1-4e21-b3c3-2168aed37246")
 		)
@@ -3737,7 +3944,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 39.37 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3759,6 +3966,15 @@
 				)
 			)
 		)
+    (property "MPN" "CRCW060322K0FKEA" (at 39.37 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 39.37 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 39.37 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "31c55076-e844-4cdd-b7fe-062a2833e77d")
 		)
@@ -3816,7 +4032,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 39.37 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -3838,6 +4054,15 @@
 				)
 			)
 		)
+    (property "MPN" "CRCW060310K0FKEA" (at 39.37 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 39.37 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 39.37 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7dbe4f26-89e6-4dcd-ac7d-4e2c39a4b971")
 		)
@@ -3895,7 +4120,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 59.69 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3917,6 +4142,15 @@
 				)
 			)
 		)
+    (property "MPN" "CRCW060322K0FKEA" (at 59.69 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 59.69 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 59.69 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "6f762045-5cf0-4f37-ac4d-fcb6cc02091a")
 		)
@@ -3974,7 +4208,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 59.69 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -3996,6 +4230,15 @@
 				)
 			)
 		)
+    (property "MPN" "CRCW060310K0FKEA" (at 59.69 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 59.69 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 59.69 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "dad5bfdc-d20a-408f-9394-51f1b1447489")
 		)
@@ -4053,7 +4296,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 80.01 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -4075,6 +4318,15 @@
 				)
 			)
 		)
+    (property "MPN" "CRCW060310K0FKEA" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "ac6f73bd-4983-4d8b-9b8d-85894e4dbb9d")
 		)
@@ -4132,7 +4384,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://wiki.seeedstudio.com/xiao_mg24_getting_started/"
 			(at 139.7 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -4154,6 +4406,15 @@
 				)
 			)
 		)
+    (property "MPN" "102010610" (at 139.7 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Seeed Studio" (at 139.7 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending; no pin headers; castellated assembly acceptance pending" (at 139.7 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f733d411-ac03-49dc-857c-3bfabdcecd24")
 		)
@@ -4247,7 +4508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/sensor/ntc/chip-ntc-thermistor/info?part_no=NTCG104BH103JT1"
 			(at 80.01 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -4269,6 +4530,15 @@
 				)
 			)
 		)
+    (property "MPN" "NTCG104BH103JT1" (at 80.01 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "TDK" (at 80.01 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "SelectionStatus" "Selected candidate; supplier and assembly DFM pending" (at 80.01 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "4721bc63-a072-4b2e-bfa0-878e1d164ecf")
 		)
@@ -4454,16 +4724,6 @@
 		)
 		(uuid "cbf42028-5b79-4626-aaad-0d6d28681f47")
 	)
-	(global_label "GATE_N"
-		(at 180.33999999999997 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dd95f9cf-e24a-407b-9dd6-138b30104736")
-	)
 	(global_label "MOTOR_MINUS"
 		(at 187.95999999999998 64.77 90)
 		(effects
@@ -4483,16 +4743,6 @@
 			(justify right)
 		)
 		(uuid "55300188-4542-4d8c-830d-579811e86c0d")
-	)
-	(global_label "GATE_P"
-		(at 180.33999999999997 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec4cb7d5-0b5b-48b1-87d9-46989fc33123")
 	)
 	(global_label "MOTOR_MINUS"
 		(at 187.95999999999998 34.29 90)
@@ -5001,6 +5251,26 @@
 			(justify right)
 		)
 		(uuid "c0861716-1165-4305-8d7c-6065585c952f")
+	)
+	(global_label "Q1_GATE"
+		(at 180.33999999999997 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8fc94788-b71e-4b6f-b0dd-fde01759216a")
+	)
+	(global_label "Q2_GATE"
+		(at 180.33999999999997 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "718bdb97-d085-4b36-93b3-da8a3f3c11c4")
 	)
 	(sheet_instances
 		(path "/"

@@ -1,0 +1,3 @@
+f08db05cf3e73aa4165bf1399ac8172568f59454d1888b83a02aa33275a57eb9  mini4wd-motor-driver.kicad_pcb
+2076b543e7da85a3c056e5cf065159f749c07bea8cd76d38e96ad3344e02bbb8  mini4wd-motor-driver.kicad_sch
+b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2  mini4wd-motor-driver.kicad_pro

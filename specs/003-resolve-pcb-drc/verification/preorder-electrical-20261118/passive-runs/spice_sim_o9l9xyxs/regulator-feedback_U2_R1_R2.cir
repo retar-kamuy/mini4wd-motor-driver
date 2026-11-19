@@ -1,0 +1,18 @@
+* Auto-generated testbench for regulator feedback: U2
+* Divider: R1/R2, ratio=0.1202
+* Expected Vout=5.0V, Vfb=0.6010V (Vref=0.595V)
+* Topology: standard
+* Model: ideal passives (exact for DC divider)
+
+VIN out_rail 0 DC 5.0
+R1 out_rail fb_net 732k
+R2 fb_net 0 100k
+
+.control
+op 
+let vfb_sim = v(fb_net)
+echo "vfb_sim=$&vfb_sim expected=0.6009599999999999 vin=5.0 vref=0.595 vin_from=rail_name" > regulator-feedback_U2_R1_R2.out
+quit
+.endc
+
+.end

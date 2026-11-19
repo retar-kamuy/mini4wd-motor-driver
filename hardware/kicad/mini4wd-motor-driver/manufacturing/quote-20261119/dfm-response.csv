@@ -1,0 +1,11 @@
+﻿ID,Requirement,Status,Supplier answer,Evidence/preview,Extra cost,Required change (approval needed)
+DFM01,All 38 exact MPNs procured and factory assembled,UNANSWERED,,,,
+DFM02,Seeed 102010610 headerless castellated module: supply/handling/reflow,UNANSWERED,,,,
+DFM03,Q1 six overlapping drain vias: fill/cap/planarity/inspection,UNANSWERED,,,,
+DFM04,Finished copper >=35um each side; minimum via wall copper >=20um,UNANSWERED,,,,
+DFM05,Drill/board/outline tolerances; ENIG/lead-free/mask/stackup,UNANSWERED,,,,
+DFM06,82 bottom-tented vias; no bottom components or mask openings,UNANSWERED,,,,
+DFM07,Panel/carrier/fiducials/support/connector overhang/depanelization,UNANSWERED,,,,
+DFM08,All 38 library rotations/origins/polarities: preview and revised CPL,UNANSWERED,,,,
+DFM09,PCB electrical inspection/AOI/hidden-joint X-ray proposal,UNANSWERED,,,,
+DFM10,2/5/10 boards total price/MOQ/losses/surplus/shipping/tax/lead time,UNANSWERED,,,,

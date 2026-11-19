@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/ubuntu/Repositories/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch</source>
+    <date>2026-11-19T00:54:11</date>
+    <tool>Eeschema 10.0.8-10.0.8~ubuntu26.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>mini4wd-motor-driver.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>gate-control.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A106MAAL%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM188R61A106MAALD</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A106MAAL%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R61A106MAALD"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6d233fb-8ae8-4c19-83c5-580cd315088c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>22uF 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A226ME15%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM188R61A226ME15D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A226ME15%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R61A226ME15D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1efdf8e0-7b40-4149-9afd-557a38499ae8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>22uF 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A226ME15%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM188R61A226ME15D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A226ME15%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R61A226ME15D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd3f72f4-5518-4835-8679-b9c1eba85058</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>SS54-HF</value>
+      <footprint>board-routed:D_SMA_Edge_Assembly</footprint>
+      <datasheet>https://www.comchiptech.com/admin/files/product/20190806165140.pdf</datasheet>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="MPN">SS54-HF</field>
+        <field name="Manufacturer">Comchip Technology</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">board-routed:D_SMA_Edge_Assembly</field>
+        <field name="Datasheet">https://www.comchiptech.com/admin/files/product/20190806165140.pdf</field>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS54-HF"/>
+      <property name="Manufacturer" value="Comchip Technology"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a823a995-ec1b-42aa-b6b7-409c0e8f4255</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SS14-E3</value>
+      <footprint>board-routed:D_SMA_Edge_Assembly</footprint>
+      <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="MPN">SS14-E3/61T</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">board-routed:D_SMA_Edge_Assembly</field>
+        <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS14-E3/61T"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>908edad4-d941-4c3c-b285-9cfb763cd3a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>Micro-Fit 3.0 B+/B-</value>
+      <footprint>board-routed:Molex_MicroFit30_43650-0214</footprint>
+      <datasheet>https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=</datasheet>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="MPN">43650-0214</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="SelectionStatus">Selected; manufacturer land pattern checked; vendor DFM/sourcing pending</field>
+        <field name="Footprint">board-routed:Molex_MicroFit30_43650-0214</field>
+        <field name="Datasheet">https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=</field>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="mini4wd-motor-driver" part="Conn_01x02_MicroFit" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="43650-0214"/>
+      <property name="Manufacturer" value="Molex"/>
+      <property name="SelectionStatus" value="Selected; manufacturer land pattern checked; vendor DFM/sourcing pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="*Molex_MicroFit30_43650-0214*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5bbdd42d-1359-41ae-b755-54500726c121</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>Micro-Fit 3.0 M+/M-</value>
+      <footprint>board-routed:Molex_MicroFit30_43650-0214</footprint>
+      <datasheet>https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=</datasheet>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="MPN">43650-0214</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="SelectionStatus">Selected; manufacturer land pattern checked; vendor DFM/sourcing pending</field>
+        <field name="Footprint">board-routed:Molex_MicroFit30_43650-0214</field>
+        <field name="Datasheet">https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=</field>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="mini4wd-motor-driver" part="Conn_01x02_MicroFit" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="43650-0214"/>
+      <property name="Manufacturer" value="Molex"/>
+      <property name="SelectionStatus" value="Selected; manufacturer land pattern checked; vendor DFM/sourcing pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="*Molex_MicroFit30_43650-0214*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37fa488a-716f-45e1-894a-3a99bccff40a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>1.0uH 9A (XEL4030-102ME)</value>
+      <footprint>board-routed:Coilcraft_XEL4030</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel4030/xel4030-102/</datasheet>
+      <description>Inductor</description>
+      <fields>
+        <field name="MPN">XEL4030-102MEC</field>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">board-routed:Coilcraft_XEL4030</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel4030/xel4030-102/</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="XEL4030-102MEC"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>082489df-06c8-46b7-9aa4-3f1682fcf152</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MCU1">
+      <value>XIAO MG24 Sense</value>
+      <footprint>board-routed:XIAO_MG24_Castellated_14P</footprint>
+      <datasheet>https://wiki.seeedstudio.com/xiao_mg24_getting_started/</datasheet>
+      <description>Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated</description>
+      <fields>
+        <field name="MPN">102010610</field>
+        <field name="Manufacturer">Seeed Studio</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; no pin headers; castellated assembly acceptance pending</field>
+        <field name="Footprint">board-routed:XIAO_MG24_Castellated_14P</field>
+        <field name="Datasheet">https://wiki.seeedstudio.com/xiao_mg24_getting_started/</field>
+        <field name="Description">Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated</field>
+      </fields>
+      <libsource lib="mini4wd-motor-driver" part="XIAO_MG24_Sense" description="Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated"/>
+      <property name="MPN" value="102010610"/>
+      <property name="Manufacturer" value="Seeed Studio"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; no pin headers; castellated assembly acceptance pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac6322a3-47d2-4e8f-83bd-0b89f7b0f0bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>SiSS64DN-T1-GE3</value>
+      <footprint>Package_SO:Vishay_PowerPAK_1212-8_Single</footprint>
+      <datasheet>https://www.vishay.com/docs/67294/siss64dn.pdf</datasheet>
+      <description>35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single</description>
+      <fields>
+        <field name="MPN">SiSS64DN-T1-GE3</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Existing design candidate; power/land/vendor acceptance pending</field>
+        <field name="Footprint">Package_SO:Vishay_PowerPAK_1212-8_Single</field>
+        <field name="Datasheet">https://www.vishay.com/docs/67294/siss64dn.pdf</field>
+        <field name="Description">35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="SiS454DN" description="35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single"/>
+      <property name="MPN" value="SiSS64DN-T1-GE3"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Existing design candidate; power/land/vendor acceptance pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="Vishay*PowerPAK*1212*Single*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec2321ba-d0c7-4df7-8bc6-ccca7156829c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>DMP2008UFG-7</value>
+      <footprint>board-routed:Diodes_PowerDI3333-8_DMP2008UFG</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/DMP2008UFG.pdf</datasheet>
+      <description>20 V P-MOSFET; PowerDI3333-8; S=1,2,3 G=4 D=5,6,7,8; RDSmax17mOhm atVGS=-1.5V25C</description>
+      <fields>
+        <field name="MPN">DMP2008UFG-7</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="SelectionStatus">Prototype selection; low-voltage/static and representative transient analysis complete; bench acceptance pending</field>
+        <field name="Footprint">board-routed:Diodes_PowerDI3333-8_DMP2008UFG</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/DMP2008UFG.pdf</field>
+        <field name="Description">20 V P-MOSFET; PowerDI3333-8; S=1,2,3 G=4 D=5,6,7,8; RDSmax17mOhm atVGS=-1.5V25C</field>
+      </fields>
+      <libsource lib="mini4wd-motor-driver" part="SI7137DP" description="P-channel MOSFET Si7137DP"/>
+      <property name="MPN" value="DMP2008UFG-7"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="SelectionStatus" value="Prototype selection; low-voltage/static and representative transient analysis complete; bench acceptance pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5fac1a5f-bbe8-4f13-af73-398bb10e7278</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>75k 0.1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0775KL</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">RT0603BRD0775KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="SelectionStatus">Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0775KL</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0775KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="SelectionStatus" value="Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>589c7375-6a94-4525-af3a-ff0b941b89ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">RT0603BRD0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="SelectionStatus">Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="SelectionStatus" value="Selected precision feedback candidate; 0.1%,25ppm/K; supplier and assembly acceptance pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f81e2f2-ae4f-4134-8513-e2b690a393e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>22k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW060322K0FKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW060322K0FKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>64afc0da-b8e1-4eca-8fb4-d3f8b45961da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW060310K0FKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW060310K0FKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ebd1e770-c363-4a45-94e5-759edacf64cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>22k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW060322K0FKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW060322K0FKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c5ee12b-913a-4abe-8976-a942af31aec0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW060310K0FKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW060310K0FKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67a469c9-5b43-45f3-9187-261672194ecf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW060310K0FKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW060310K0FKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69dd52e3-a79d-4a8b-8dde-1225b21a414b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TH1">
+      <value>NTCG104BH103JT1</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://product.tdk.com/en/search/sensor/ntc/chip-ntc-thermistor/info?part_no=NTCG104BH103JT1</datasheet>
+      <description>Temperature dependent resistor, negative temperature coefficient</description>
+      <fields>
+        <field name="MPN">NTCG104BH103JT1</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/sensor/ntc/chip-ntc-thermistor/info?part_no=NTCG104BH103JT1</field>
+        <field name="Description">Temperature dependent resistor, negative temperature coefficient</field>
+      </fields>
+      <libsource lib="Device" part="Thermistor_NTC" description="Temperature dependent resistor, negative temperature coefficient"/>
+      <property name="MPN" value="NTCG104BH103JT1"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <property name="ki_keywords" value="thermistor NTC resistor sensor RTD"/>
+      <property name="ki_fp_filters" value="R_* RV_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25e386c6-85a0-4ade-bad2-21c02470b10a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TPS61023DRLR</value>
+      <footprint>Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps61023.pdf</datasheet>
+      <description>TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6</description>
+      <fields>
+        <field name="MPN">TPS61023DRLR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="SelectionStatus">Existing design candidate; power/layout/vendor acceptance pending</field>
+        <field name="Footprint">Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps61023.pdf</field>
+        <field name="Description">TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6</field>
+      </fields>
+      <libsource lib="mini4wd-motor-driver" part="TPS61023DRLR" description="TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6"/>
+      <property name="MPN" value="TPS61023DRLR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="SelectionStatus" value="Existing design candidate; power/layout/vendor acceptance pending"/>
+      <property name="Sheetname" value="mini4wd-motor-driver"/>
+      <property name="Sheetfile" value="mini4wd-motor-driver.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>078784b2-1952-4143-aef8-14420211eacf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C101">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>782789a2-3434-442b-8c8c-65b9596c3e36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C102">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>a25b0551-2a1f-4c2b-8e5f-b5bcc8ceefe2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C103">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>18bb3cb3-dcb8-4535-b941-b59807030e41</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C104">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>a50e505b-eea0-47fb-a76e-f2655d3a5a10</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C105">
+      <value>22uF 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A226ME15%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM188R61A226ME15D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM188R61A226ME15%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R61A226ME15D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>6d22f58f-7caa-45cf-be6f-53297fa632f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C106">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&amp;partno=GRM155R61A104KA01%23</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>3e0ff153-d609-4e22-947b-2b12ee2f31b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R101">
+      <value>499k 0.5%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">RT0603BRD07499KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD07499KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>c92c66be-2734-46c9-8129-cdda8ac8fae2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R102">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW0402100KFKED</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW0402100KFKED"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>941efda9-c49e-4eb7-88d6-fc1966a97b28</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R103">
+      <value>0 (link)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW04020000Z0ED</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW04020000Z0ED"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>833c99b3-f148-4b2e-b341-f5d7453e03c5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R104">
+      <value>2.2k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW04022K20FKED</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW04022K20FKED"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>5c269337-cbbe-4872-bd76-2f8aefdcdeba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R105">
+      <value>4.7 1%</value>
+      <footprint>board-routed:R_0402_Gate_NoSilk</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="SelectionStatus">Selected for limited hobby prototype; pulse/average power envelope assessed; provider supply confirmation pending</field>
+        <field name="BOM Comments">SMT assembly only; 1% or better; verify sub-us gate pulse capability; not a current-sense resistor</field>
+        <field name="MPN">CRCW04024R70FKED</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Footprint">board-routed:R_0402_Gate_NoSilk</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="SelectionStatus" value="Selected for limited hobby prototype; pulse/average power envelope assessed; provider supply confirmation pending"/>
+      <property name="BOM Comments" value="SMT assembly only; 1% or better; verify sub-us gate pulse capability; not a current-sense resistor"/>
+      <property name="MPN" value="CRCW04024R70FKED"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>26f35481-3ef6-42b7-b078-7a6dbda854eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R106">
+      <value>33 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="SelectionStatus">Selected candidate; supplier and assembly DFM pending</field>
+        <field name="BOM Comments">SMT assembly only; 1% or better; verify sub-us gate pulse capability; not a current-sense resistor</field>
+        <field name="MPN">CRCW040233R0FKED</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="SelectionStatus" value="Selected candidate; supplier and assembly DFM pending"/>
+      <property name="BOM Comments" value="SMT assembly only; 1% or better; verify sub-us gate pulse capability; not a current-sense resistor"/>
+      <property name="MPN" value="CRCW040233R0FKED"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>cd10b572-4608-4dd5-b814-59ab6a9df156</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R107">
+      <value>2.2k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">CRCW04022K20FKED</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="SelectionStatus">N_COMMAND discharge pull-down; supplier and assembly acceptance pending</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW04022K20FKED"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="SelectionStatus" value="N_COMMAND discharge pull-down; supplier and assembly acceptance pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>6eb3827a-f7ca-44c6-89d5-de8f65b512c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U101">
+      <value>LTC6994-2 (candidate)</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/699412fb.pdf</datasheet>
+      <description>TimerBlox Debouncer, Programmable, Noise Discriminator, Rising and Falling Edges, TSOT-23-6</description>
+      <fields>
+        <field name="MPN">LTC6994IS6-2#TRMPBF</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="SelectionStatus">TSOT-23-6 candidate; timing/layout/vendor acceptance pending</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/699412fb.pdf</field>
+        <field name="Description">TimerBlox Debouncer, Programmable, Noise Discriminator, Rising and Falling Edges, TSOT-23-6</field>
+      </fields>
+      <libsource lib="Timer" part="LTC6994xS6-2" description="TimerBlox Debouncer, Programmable, Noise Discriminator, Rising and Falling Edges, TSOT-23-6"/>
+      <property name="MPN" value="LTC6994IS6-2#TRMPBF"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="SelectionStatus" value="TSOT-23-6 candidate; timing/layout/vendor acceptance pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="TimerBlox debouncer noise discriminator"/>
+      <property name="ki_fp_filters" value="TSOT*23*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>f7ae4499-386f-449c-a259-5aeea3abfb99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U102">
+      <value>SN74LVC1G08DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</datasheet>
+      <description>Single AND Gate, Low-Voltage CMOS</description>
+      <fields>
+        <field name="MPN">SN74LVC1G08DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="SelectionStatus">Existing design candidate; layout/vendor acceptance pending</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</field>
+        <field name="Description">Single AND Gate, Low-Voltage CMOS</field>
+      </fields>
+      <libsource lib="74xGxx" part="74LVC1G08" description="Single AND Gate, Low-Voltage CMOS"/>
+      <property name="MPN" value="SN74LVC1G08DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="SelectionStatus" value="Existing design candidate; layout/vendor acceptance pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="Single Gate AND LVC CMOS"/>
+      <property name="ki_fp_filters" value="SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>b20fa458-2667-4ede-9f6c-8f8263306bd5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U103">
+      <value>SN74LVC1G32DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf</datasheet>
+      <description>Single OR Gate, Low-Voltage CMOS</description>
+      <fields>
+        <field name="MPN">SN74LVC1G32DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="SelectionStatus">Existing design candidate; layout/vendor acceptance pending</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf</field>
+        <field name="Description">Single OR Gate, Low-Voltage CMOS</field>
+      </fields>
+      <libsource lib="74xGxx" part="74LVC1G32" description="Single OR Gate, Low-Voltage CMOS"/>
+      <property name="MPN" value="SN74LVC1G32DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="SelectionStatus" value="Existing design candidate; layout/vendor acceptance pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="Single Gate OR LVC CMOS"/>
+      <property name="ki_fp_filters" value="SOT* SG-*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>76807857-8ed7-4b08-b9a3-396cd7d34f13</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U104">
+      <value>UCC27524ADR (candidate)</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ucc27524a.pdf</datasheet>
+      <description>Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8</description>
+      <fields>
+        <field name="MPN">UCC27524ADR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="SelectionStatus">SOIC-8 D package; preserve A suffix; power/layout/vendor acceptance pending</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ucc27524a.pdf</field>
+        <field name="Description">Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8</field>
+      </fields>
+      <libsource lib="Driver_FET" part="UCC27524D" description="Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8"/>
+      <property name="MPN" value="UCC27524ADR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="SelectionStatus" value="SOIC-8 D package; preserve A suffix; power/layout/vendor acceptance pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <property name="ki_keywords" value="high-speed low-side negative-input-voltage-capability"/>
+      <property name="ki_fp_filters" value="*SOIC*3.9x4.9mm*P1.27mm*"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>2ce279e6-343a-4e8e-8e79-b4cb80759873</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="7"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U105">
+      <value>TLV809EA30DBZR (candidate)</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</datasheet>
+      <fields>
+        <field name="MPN">TLV809EA30DBZR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="SelectionStatus">Existing 3.08V 200ms supervisor candidate; startup/vendor acceptance pending</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="gate-study" part="TLV809EA30DBZR" description="3.08V push-pull reset supervisor, 200ms candidate"/>
+      <property name="MPN" value="TLV809EA30DBZR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="SelectionStatus" value="Existing 3.08V 200ms supervisor candidate; startup/vendor acceptance pending"/>
+      <property name="Sheetname" value="GateControl"/>
+      <property name="Sheetfile" value="gate-control.kicad_sch"/>
+      <sheetpath names="/GateControl/" tstamps="/e89a7c8b-5277-4820-a071-a54e3bb71c65/"/>
+      <tstamps>9ab1a47a-0d0f-4aed-a51c-a71b417511d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xGxx" part="74LVC1G08">
+      <description>Single AND Gate, Low-Voltage CMOS</description>
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+        <fp>Texas?R-PDSO-G5?DCK*</fp>
+        <fp>Texas?R-PDSO-N5?DRL*</fp>
+        <fp>Texas?X2SON*0.8x0.8mm*P0.48mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</field>
+        <field name="Description">Single AND Gate, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xGxx" part="74LVC1G32">
+      <description>Single OR Gate, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SOT*</fp>
+        <fp>SG-*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G32</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">Single OR Gate, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Thermistor_NTC">
+      <description>Temperature dependent resistor, negative temperature coefficient</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>RV_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">Thermistor_NTC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Temperature dependent resistor, negative temperature coefficient</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver_FET" part="UCC27524D">
+      <description>Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8</description>
+      <docs>https://www.ti.com/lit/ds/symlink/ucc27524.pdf</docs>
+      <footprints>
+        <fp>*SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">UCC27524D</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ucc27524.pdf</field>
+        <field name="Description">Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ENA" type="input"/>
+        <pin num="2" name="INA" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="INB" type="input"/>
+        <pin num="5" name="OUTB" type="output"/>
+        <pin num="6" name="V_{DD}" type="power_in"/>
+        <pin num="7" name="OUTA" type="output"/>
+        <pin num="8" name="ENB" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Timer" part="LTC6994xS6-2">
+      <description>TimerBlox Debouncer, Programmable, Noise Discriminator, Rising and Falling Edges, TSOT-23-6</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/699412fb.pdf</docs>
+      <footprints>
+        <fp>TSOT*23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC6994xS6-2</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/699412fb.pdf</field>
+        <field name="Description">TimerBlox Debouncer, Programmable, Noise Discriminator, Rising and Falling Edges, TSOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="SET" type="passive"/>
+        <pin num="4" name="DIV" type="input"/>
+        <pin num="5" name="V+" type="power_in"/>
+        <pin num="6" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="SiS454DN">
+      <description>35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single</description>
+      <docs>https://www.vishay.com/docs/66707/sis454dn.pdf</docs>
+      <footprints>
+        <fp>Vishay*PowerPAK*1212*Single*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SiS454DN</field>
+        <field name="Footprint">Package_SO:Vishay_PowerPAK_1212-8_Single</field>
+        <field name="Datasheet">https://www.vishay.com/docs/66707/sis454dn.pdf</field>
+        <field name="Description">35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="gate-study" part="TLV809EA30DBZR">
+      <description>3.08V push-pull reset supervisor, 200ms candidate</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV809EA30DBZR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
+        <field name="Description">3.08V push-pull reset supervisor, 200ms candidate</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="~{RESET}" type="output"/>
+        <pin num="3" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="mini4wd-motor-driver" part="Conn_01x02_MicroFit">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>*Molex_MicroFit30_43650-0214*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mini4wd-motor-driver" part="SI7137DP">
+      <description>P-channel MOSFET Si7137DP</description>
+      <docs>https://www.vishay.com/docs/69063/si7137dp.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SI7137DP</field>
+        <field name="Footprint">board-routed:PowerPAK_SO-8_SI7137DP</field>
+        <field name="Datasheet">https://www.vishay.com/docs/69063/si7137dp.pdf</field>
+        <field name="Description">P-channel MOSFET Si7137DP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mini4wd-motor-driver" part="TPS61023DRLR">
+      <description>TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61023DRLR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-5X3</field>
+        <field name="Datasheet"/>
+        <field name="Description">TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="VIN" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SW" type="power_out"/>
+        <pin num="6" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="mini4wd-motor-driver" part="XIAO_MG24_Sense">
+      <description>Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XIAO_MG24_Sense</field>
+        <field name="Footprint">board-routed:XIAO_MG24_Castellated_14P</field>
+        <field name="Datasheet"/>
+        <field name="Description">Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="3V3" type="power_out"/>
+        <pin num="4" name="D10" type="bidirectional"/>
+        <pin num="5" name="D9" type="bidirectional"/>
+        <pin num="6" name="D8" type="bidirectional"/>
+        <pin num="7" name="D7" type="bidirectional"/>
+        <pin num="8" name="D6" type="bidirectional"/>
+        <pin num="9" name="D5_SCL" type="bidirectional"/>
+        <pin num="10" name="D4_SDA" type="bidirectional"/>
+        <pin num="11" name="D3_MID" type="bidirectional"/>
+        <pin num="12" name="D2_PWM" type="bidirectional"/>
+        <pin num="13" name="D1_TEMP" type="bidirectional"/>
+        <pin num="14" name="D0_VBAT" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xGxx">
+      <uri>${KICAD10_SYMBOL_DIR}/74xGxx.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="Driver_FET">
+      <uri>${KICAD10_SYMBOL_DIR}/Driver_FET.kicad_sym</uri>
+    </library>
+    <library logical="Timer">
+      <uri>${KICAD10_SYMBOL_DIR}/Timer.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym</uri>
+    </library>
+    <library logical="gate-study">
+      <uri>${KIPRJMOD}/gate-study.kicad_sym</uri>
+    </library>
+    <library logical="mini4wd-motor-driver">
+      <uri>${KIPRJMOD}/mini4wd-motor-driver.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/I2C_SCL" class="Default">
+      <node ref="MCU1" pin="5" pinfunction="D9_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="2" name="/I2C_SDA" class="Default">
+      <node ref="MCU1" pin="4" pinfunction="D10_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="3" name="BOOST_5V" class="Default">
+      <node ref="C104" pin="1" pintype="passive"/>
+      <node ref="C105" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U104" pin="6" pinfunction="V_{DD}_6" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="4" name="DELAY_SET" class="Default">
+      <node ref="R101" pin="1" pintype="passive"/>
+      <node ref="U101" pin="3" pinfunction="SET_3" pintype="passive"/>
+    </net>
+    <net code="5" name="DRIVE_ENABLE" class="Default">
+      <node ref="R103" pin="2" pintype="passive"/>
+      <node ref="R104" pin="1" pintype="passive"/>
+      <node ref="U104" pin="1" pinfunction="ENA_1" pintype="input"/>
+    </net>
+    <net code="6" name="FB_BOOST" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="FB_1" pintype="input"/>
+    </net>
+    <net code="7" name="GATE_N" class="Default">
+      <node ref="R105" pin="1" pintype="passive"/>
+      <node ref="U104" pin="7" pinfunction="OUTA_7" pintype="output"/>
+    </net>
+    <net code="8" name="GATE_P" class="Default">
+      <node ref="R106" pin="1" pintype="passive"/>
+      <node ref="U104" pin="5" pinfunction="OUTB_5" pintype="output"/>
+    </net>
+    <net code="9" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C101" pin="2" pintype="passive"/>
+      <node ref="C102" pin="2" pintype="passive"/>
+      <node ref="C103" pin="2" pintype="passive"/>
+      <node ref="C104" pin="2" pintype="passive"/>
+      <node ref="C105" pin="2" pintype="passive"/>
+      <node ref="C106" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="MCU1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="Q1" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="R101" pin="2" pintype="passive"/>
+      <node ref="R102" pin="2" pintype="passive"/>
+      <node ref="R104" pin="2" pintype="passive"/>
+      <node ref="R107" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="TH1" pin="2" pintype="passive"/>
+      <node ref="U101" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U101" pin="4" pinfunction="DIV_4" pintype="input"/>
+      <node ref="U102" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U103" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U104" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U105" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="GND_4" pintype="power_in"/>
+    </net>
+    <net code="10" name="MCU_3V3" class="Default">
+      <node ref="C101" pin="1" pintype="passive"/>
+      <node ref="C102" pin="1" pintype="passive"/>
+      <node ref="C103" pin="1" pintype="passive"/>
+      <node ref="C106" pin="1" pintype="passive"/>
+      <node ref="MCU1" pin="3" pinfunction="3V3_3" pintype="power_out"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U101" pin="5" pinfunction="V+_5" pintype="power_in"/>
+      <node ref="U102" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U103" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U104" pin="8" pinfunction="ENB_8" pintype="input"/>
+      <node ref="U105" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+    </net>
+    <net code="11" name="MID_SENSE" class="Default">
+      <node ref="MCU1" pin="11" pinfunction="D3_MID_11" pintype="bidirectional"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="MOTOR_MINUS" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="Q1" pin="5" pinfunction="D_5" pintype="passive"/>
+      <node ref="Q2" pin="5" pinfunction="D_5" pintype="passive"/>
+      <node ref="Q2" pin="6" pinfunction="D_6" pintype="passive"/>
+      <node ref="Q2" pin="7" pinfunction="D_7" pintype="passive"/>
+      <node ref="Q2" pin="8" pinfunction="D_8" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="N_COMMAND" class="Default">
+      <node ref="R107" pin="1" pintype="passive"/>
+      <node ref="U102" pin="4" pintype="output"/>
+      <node ref="U104" pin="2" pinfunction="INA_2" pintype="input"/>
+    </net>
+    <net code="14" name="PWM_DRIVE" class="Default">
+      <node ref="MCU1" pin="12" pinfunction="D2_PWM_12" pintype="bidirectional"/>
+      <node ref="R102" pin="1" pintype="passive"/>
+      <node ref="U101" pin="1" pinfunction="IN_1" pintype="input"/>
+      <node ref="U102" pin="1" pintype="input"/>
+      <node ref="U103" pin="1" pintype="input"/>
+    </net>
+    <net code="15" name="PWM_QUALIFIED" class="Default">
+      <node ref="U101" pin="6" pinfunction="OUT_6" pintype="output"/>
+      <node ref="U102" pin="2" pintype="input"/>
+      <node ref="U103" pin="2" pintype="input"/>
+    </net>
+    <net code="16" name="P_COMMAND" class="Default">
+      <node ref="U103" pin="4" pintype="output"/>
+      <node ref="U104" pin="4" pinfunction="INB_4" pintype="input"/>
+    </net>
+    <net code="17" name="Q1_GATE" class="Default">
+      <node ref="Q1" pin="4" pinfunction="G_4" pintype="input"/>
+      <node ref="R105" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="Q2_GATE" class="Default">
+      <node ref="Q2" pin="4" pinfunction="G_4" pintype="input"/>
+      <node ref="R106" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="RESET_OK" class="Default">
+      <node ref="R103" pin="1" pintype="passive"/>
+      <node ref="U105" pin="2" pinfunction="~{RESET}_2" pintype="output"/>
+    </net>
+    <net code="20" name="SW_BOOST" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="SW_5" pintype="power_out"/>
+    </net>
+    <net code="21" name="TEMP_SENSE" class="Default">
+      <node ref="MCU1" pin="13" pinfunction="D1_TEMP_13" pintype="bidirectional"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="TH1" pin="1" pintype="passive"/>
+    </net>
+    <net code="22" name="VBAT" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="EN_2" pintype="input"/>
+      <node ref="U2" pin="3" pinfunction="VIN_3" pintype="power_in"/>
+    </net>
+    <net code="23" name="VBAT_SENSE" class="Default">
+      <node ref="MCU1" pin="14" pinfunction="D0_VBAT_14" pintype="bidirectional"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="24" name="XIAO_5V" class="Default">
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="MCU1" pin="1" pinfunction="5V_1" pintype="power_in"/>
+    </net>
+    <net code="25" name="unconnected-(MCU1-D4_SDA-Pad10)" class="Default">
+      <node ref="MCU1" pin="10" pinfunction="D4_SDA_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(MCU1-D5_SCL-Pad9)" class="Default">
+      <node ref="MCU1" pin="9" pinfunction="D5_SCL_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(MCU1-D6-Pad8)" class="Default">
+      <node ref="MCU1" pin="8" pinfunction="D6_8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(MCU1-D7-Pad7)" class="Default">
+      <node ref="MCU1" pin="7" pinfunction="D7_7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(MCU1-D8-Pad6)" class="Default">
+      <node ref="MCU1" pin="6" pinfunction="D8_6" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

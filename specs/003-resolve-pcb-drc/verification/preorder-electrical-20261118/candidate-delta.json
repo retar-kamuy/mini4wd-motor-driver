@@ -1,0 +1,14 @@
+{
+  ".kicad_pcb": {
+    "all_except_R1_R2_value_and_four_metadata_fields_equal": true,
+    "before": "514754f50fb7f77a5c9a6e01ddd9abdfa236c773fb83a3be6b39d33ad1f26724",
+    "candidate": "e7152f915355a188716b45264bc74a34fdb6dc9e5e9074a5caea470124906ac7"
+  },
+  ".kicad_sch": {
+    "all_except_R1_R2_value_and_four_metadata_fields_equal": true,
+    "before": "44f1c93561f4130e0eda929441b3dda7395c9d0fb4fbb5348ba569c1eaadc2ee",
+    "candidate": "69b27526b4bdc798ac94619ea124a66edb5856b3723356b5395e6ddcfc25b414"
+  },
+  "project_settings_equal": true,
+  "hierarchical_sheet_equal": true
+}

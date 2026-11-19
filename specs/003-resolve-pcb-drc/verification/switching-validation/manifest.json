@@ -1,0 +1,108 @@
+{
+  "scope": "SPICE and analytical studies only; no CAD changes in this stage",
+  "canonical_CAD_unchanged_since_Q2_candidate_start": true,
+  "canonical_changed_files": {},
+  "models": [
+    {
+      "file": "UCC27524.lib",
+      "sha256": "e34088366aaaaa124f3c39d9a5dcbedbf432114187017fa4f18d4d72ea1d2665"
+    },
+    {
+      "file": "SiSS64DN.lib",
+      "sha256": "7994c7c089126e84bb16c2edc78086b64148706ecbdb165808c3911177072e63"
+    },
+    {
+      "file": "DMP2008UFG.lib",
+      "sha256": "f3d996f8ca596b0f7985811720346f3b7931f13c593a351291e4826ce495d615"
+    },
+    {
+      "file": "DMP2008UFG-stable.lib",
+      "sha256": "b4e12a727458ea028399747e26ed73031e80dfbecd37fe174df5ce81b6333653"
+    },
+    {
+      "file": "TPS61023-original.lib",
+      "sha256": "bf575c936aefa99f2a838b8c6a8471796cffb87e3682bd607aa625a7eb66d4f2"
+    }
+  ],
+  "vendor_archives": [
+    {
+      "file": "ucc27524.zip",
+      "sha256": "9c46593a841647293f45118417a8d6923e54132807c06f77d300bc0212c1598e"
+    },
+    {
+      "file": "tps61023.zip",
+      "sha256": "82d3996e813e134d703f32908b63f260def2064837810ac84c2c353883ec9363"
+    },
+    {
+      "file": "siss64dn.zip",
+      "sha256": "8b39ef14057c419f76a4e64fb67126c238ece5498beb93817e2bb66feb0f0a66"
+    }
+  ],
+  "results": {
+    "results.json": {
+      "attempted": 14,
+      "completed": 0,
+      "failed_cases": [
+        "pwm-1.8-0",
+        "pwm-1.8-4.7",
+        "pwm-2.4-0",
+        "pwm-2.4-4.7",
+        "pwm-3.4-0",
+        "pwm-3.4-4.7",
+        "vdd_loss-0",
+        "vdd_loss-4.7",
+        "mcu_loss-0",
+        "mcu_loss-4.7",
+        "startup-0",
+        "startup-4.7",
+        "battery_loss-0",
+        "battery_loss-4.7"
+      ]
+    },
+    "results-stable.json": {
+      "attempted": 14,
+      "completed": 14,
+      "failed_cases": []
+    },
+    "results-additional.json": {
+      "attempted": 6,
+      "completed": 5,
+      "failed_cases": [
+        "stable-hot85-pwm"
+      ]
+    },
+    "results-damping.json": {
+      "attempted": 6,
+      "completed": 6,
+      "failed_cases": []
+    }
+  },
+  "removed_invalid_or_exploratory_full_data_files": [
+    "vdd_loss-0.dat",
+    "pwm-3.4-0.dat",
+    "pwm-1.8-0.dat",
+    "mcu_loss-0.dat",
+    "battery_loss-0.dat",
+    "test-floor.dat",
+    "pwm-2.4-0.dat",
+    "pwm-3.4-4.7.dat",
+    "startup-4.7.dat",
+    "vdd_loss-4.7.dat",
+    "pwm-1.8-4.7.dat",
+    "mcu_loss-4.7.dat",
+    "stable-hot85-pwm.dat",
+    "pwm-2.4-4.7.dat",
+    "battery_loss-4.7.dat",
+    "test-smooth.dat",
+    "test-resistive-source.dat",
+    "startup-0.dat",
+    "test-sourceL.dat"
+  ],
+  "other_simulators_checked_not_found": [
+    "Xyce",
+    "xyce",
+    "ltspice",
+    "wine",
+    "qucsator"
+  ]
+}

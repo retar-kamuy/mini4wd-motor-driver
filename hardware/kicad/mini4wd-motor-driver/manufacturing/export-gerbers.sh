@@ -48,7 +48,24 @@ with ZipFile(archive, 'x', ZIP_DEFLATED) as bundle:
         bundle.write(path, path.name)
 PY
 
-(cd "$project_dir" && sha256sum mini4wd-motor-driver.kicad_pcb \
-    mini4wd-motor-driver.kicad_sch mini4wd-motor-driver.kicad_pro) \
-    > "$output_dir/source-sha256.txt"
+python3 - "$project_dir" "$output_dir/source-sha256.txt" <<'PY'
+from hashlib import sha256
+from pathlib import Path
+import sys
+
+project, destination = map(Path, sys.argv[1:])
+# Hierarchical sheets and project-local libraries are part of the design source.
+# Do not include previous manufacturing outputs, locks, or backup directories.
+extensions = {'.kicad_pcb', '.kicad_sch', '.kicad_pro', '.kicad_sym', '.kicad_dru'}
+paths = [p for p in project.iterdir()
+         if p.is_file() and (p.suffix in extensions
+                             or p.name in {'fp-lib-table', 'sym-lib-table'})]
+for library in project.glob('*.pretty'):
+    paths.extend(library.glob('*.kicad_mod'))
+for models in project.glob('*.3dshapes'):
+    paths.extend(p for p in models.rglob('*') if p.is_file())
+destination.write_text(''.join(
+    f'{sha256(p.read_bytes()).hexdigest()}  {p.relative_to(project).as_posix()}\n'
+    for p in sorted(paths)), encoding='utf-8')
+PY
 printf 'Generated preview: %s\n' "$archive"

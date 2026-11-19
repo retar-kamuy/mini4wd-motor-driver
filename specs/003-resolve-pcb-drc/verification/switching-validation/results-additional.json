@@ -1,0 +1,188 @@
+{
+  "status": "additional_assumed_corner_models_not_guaranteed_corners",
+  "cases": [
+    {
+      "case": "stable-open-0",
+      "scenario": "battery_open",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.253129,
+        "vgn_min": -3.19384,
+        "vgp_max": 5.775308,
+        "vgp_min": 0.333881,
+        "vdn_max": 0.4933786,
+        "vdn_min": -0.5171699,
+        "vdp_max": 0.5493374,
+        "vdp_min": -2.77304
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 2.19130425e-09,
+        "cross_current_indicator_charge_C": 1.1839516016857447e-13,
+        "full_waveform_points": 55060,
+        "final_time_s": 0.00011
+      }
+    },
+    {
+      "case": "stable-open-4.7",
+      "scenario": "battery_open",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.252781,
+        "vgn_min": -0.4047074,
+        "vgp_max": 5.773969,
+        "vgp_min": 0.5016136,
+        "vdn_max": 0.1885813,
+        "vdn_min": -0.5170916,
+        "vdp_max": 0.5493362,
+        "vdp_min": -2.77304
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 2.19140683e-09,
+        "cross_current_indicator_charge_C": 1.18395407097934e-13,
+        "full_waveform_points": 55060,
+        "final_time_s": 0.00011
+      }
+    },
+    {
+      "case": "stable-vdd-UVLO-high",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524-UVLO-high.lib",
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.201241,
+        "vgn_min": -0.4147331,
+        "vgp_max": 1.808,
+        "vgp_min": -3.405341,
+        "vdn_max": 7.411858,
+        "vdn_min": 0.01382878,
+        "vdp_max": 0.5295846,
+        "vdp_min": -3.447461
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 4.5755299999997146e-08,
+        "cross_current_indicator_peak_A": 0.00204970321,
+        "cross_current_indicator_charge_C": 8.501797326986585e-12,
+        "full_waveform_points": 55033,
+        "final_time_s": 0.00011
+      }
+    },
+    {
+      "case": "stable-vdd-UVLO-low",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524-UVLO-low.lib",
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.201241,
+        "vgn_min": -0.4168861,
+        "vgp_max": 1.808,
+        "vgp_min": -3.405306,
+        "vdn_max": 7.416944,
+        "vdn_min": 0.01382878,
+        "vdp_max": 0.5293484,
+        "vdp_min": -3.429117
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 4.3398499999999513e-08,
+        "cross_current_indicator_peak_A": 0.00202129638,
+        "cross_current_indicator_charge_C": 8.60282546034082e-12,
+        "full_waveform_points": 55032,
+        "final_time_s": 0.00011
+      }
+    },
+    {
+      "case": "stable-hot85-pwm",
+      "scenario": "pwm",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 85,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {},
+      "completed": false,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 6.93526e-05, timestep = 2.5e-21: trouble with xp:dlim-instance d.xp.d1"
+      ]
+    },
+    {
+      "case": "stable-hot85-vdd_loss",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 85,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.201248,
+        "vgn_min": -0.3316438,
+        "vgp_max": 1.808,
+        "vgp_min": -3.404775,
+        "vdn_max": 6.996542,
+        "vdn_min": 0.01726232,
+        "vdp_max": 0.4024024,
+        "vdp_min": -3.430559
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 4.632539999999461e-08,
+        "cross_current_indicator_peak_A": 0.00204305456,
+        "cross_current_indicator_charge_C": 1.6807837642605677e-10,
+        "full_waveform_points": 55033,
+        "final_time_s": 0.00011
+      }
+    }
+  ],
+  "limitations": [
+    "Open-switch test has10uF battery-side input capacitor,0.11ohm source impedance, prescribed retained5V/3.3V rails.",
+    "UVLO high4.65V falling4.40V and low3.70V falling3.40V are model variants based on SOIC table endpoints; other model parameters remain typical.",
+    "27/85C model temperatures do not include self heating.",
+    "Minimum25C gate thresholds used for the overlap indicator are not full-temperature minimum thresholds."
+  ]
+}

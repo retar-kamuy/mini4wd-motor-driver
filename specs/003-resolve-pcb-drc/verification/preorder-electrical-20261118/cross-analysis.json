@@ -1,0 +1,293 @@
+{
+  "analyzer_type": "cross_analysis",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      "specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/schematic-analysis.json",
+      "specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/pcb-analysis.json"
+    ],
+    "source_hashes": {
+      "specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/schematic-analysis.json": "75b5515b2a18baf99bfe6b3dd8d0b58b3310d11fb50751bcbb8deacf228989f3",
+      "specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/pcb-analysis.json": "79368ad9b5523df85c4f41249e13aba8450ffe6214f1a16f62a9cf8139406551"
+    },
+    "run_id": "20261118T143753Z-86300a",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": "specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/schematic-analysis.json",
+        "sha256": "75b5515b2a18baf99bfe6b3dd8d0b58b3310d11fb50751bcbb8deacf228989f3",
+        "schema_version": "1.4.0",
+        "run_id": "20261118T143753Z-86300a"
+      },
+      "pcb": {
+        "path": "specs/003-resolve-pcb-drc/verification/preorder-electrical-20261118/pcb-analysis.json",
+        "sha256": "79368ad9b5523df85c4f41249e13aba8450ffe6214f1a16f62a9cf8139406551",
+        "schema_version": "1.4.0",
+        "run_id": "20261118T143753Z-86300a"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "elapsed_s": 0.021,
+  "summary": {
+    "total_findings": 2,
+    "by_severity": {
+      "error": 0,
+      "warning": 1,
+      "info": 1
+    }
+  },
+  "findings": [
+    {
+      "detector": "check_decoupling_adequacy",
+      "rule_id": "DA-001",
+      "category": "power_integrity",
+      "summary": "Rail MCU_3V3: 4 caps for 5 ICs",
+      "description": "Power rail MCU_3V3 has 4 decoupling cap(s) for 5 IC(s). Best practice: at least one 100nF per IC.",
+      "components": [],
+      "nets": [
+        "MCU_3V3"
+      ],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "topology",
+      "recommendation": "Add 1 more 100nF caps on MCU_3V3.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "capacitor",
+            "value": "100n",
+            "net_from": "MCU_3V3",
+            "net_to": "GND"
+          }
+        ],
+        "basis": "One 100nF per IC power pin pair minimum"
+      },
+      "report_context": {
+        "section": "Power Integrity",
+        "impact": "Increased power supply noise and EMI",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "finding_id": "cross_analysis:DA-001:mcu_3v3",
+      "stages": [
+        "pre_fab"
+      ]
+    },
+    {
+      "detector": "check_trace_width_power",
+      "rule_id": "TW-001",
+      "category": "current_capacity",
+      "summary": "Power net BOOST_5V: trace 0.15mm too narrow for ~0.5A",
+      "description": "Power net BOOST_5V carries ~0.5A (estimated from regulator output capacitance) but narrowest trace is 0.15mm. IPC-2152 recommends >= 0.23mm.",
+      "components": [],
+      "nets": [
+        "BOOST_5V"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "topology",
+      "recommendation": "Widen BOOST_5V traces to >= 0.2mm or use copper pour.",
+      "fix_params": {
+        "type": "resistor_value_change",
+        "change": "trace width -> 0.2mm",
+        "basis": "IPC-2152: 0.5A"
+      },
+      "report_context": {
+        "section": "Current Capacity",
+        "impact": "Trace overheating and voltage drop",
+        "standard_ref": "IPC-2152"
+      },
+      "schema_era": "v3.0",
+      "finding_id": "cross_analysis:TW-001:boost_5v",
+      "stages": [
+        "layout"
+      ]
+    }
+  ],
+  "assessments": [],
+  "checks_run": [
+    {
+      "check": "CC-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 2,
+      "findings": 0
+    },
+    {
+      "check": "EG-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 2,
+      "findings": 0
+    },
+    {
+      "check": "DA-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 3,
+      "findings": 1
+    },
+    {
+      "check": "XV-001..003",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 37,
+      "findings": 0
+    },
+    {
+      "check": "XV-004",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 37,
+      "findings": 0
+    },
+    {
+      "check": "NR-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 506,
+      "findings": 0
+    },
+    {
+      "check": "RP-002",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 506,
+      "findings": 0
+    },
+    {
+      "check": "TW-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 2,
+      "findings": 1
+    },
+    {
+      "check": "PS-002",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 29,
+      "findings": 0
+    },
+    {
+      "check": "VS-002",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 75,
+      "findings": 0
+    },
+    {
+      "check": "DP-005",
+      "ran": false,
+      "reason_skipped": "no differential pairs classified in schematic net_classifications",
+      "items_examined": 0,
+      "findings": 0
+    }
+  ],
+  "trust_summary": {
+    "total_findings": 2,
+    "trust_level": "low",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 2,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 2,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "audience_summary": {
+    "designer": {
+      "total_findings": 2,
+      "by_severity": {
+        "error": 0,
+        "warning": 1,
+        "info": 1
+      },
+      "by_category": {
+        "power_integrity": 1,
+        "current_capacity": 1
+      },
+      "top_issues": [
+        {
+          "detector": "check_trace_width_power",
+          "rule_id": "TW-001",
+          "category": "current_capacity",
+          "summary": "Power net BOOST_5V: trace 0.15mm too narrow for ~0.5A",
+          "description": "Power net BOOST_5V carries ~0.5A (estimated from regulator output capacitance) but narrowest trace is 0.15mm. IPC-2152 recommends >= 0.23mm.",
+          "components": [],
+          "nets": [
+            "BOOST_5V"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "heuristic",
+          "evidence_source": "topology",
+          "recommendation": "Widen BOOST_5V traces to >= 0.2mm or use copper pour.",
+          "fix_params": {
+            "type": "resistor_value_change",
+            "change": "trace width -> 0.2mm",
+            "basis": "IPC-2152: 0.5A"
+          },
+          "report_context": {
+            "section": "Current Capacity",
+            "impact": "Trace overheating and voltage drop",
+            "standard_ref": "IPC-2152"
+          },
+          "schema_era": "v3.0",
+          "finding_id": "cross_analysis:TW-001:boost_5v",
+          "stages": [
+            "layout"
+          ]
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 1,
+      "by_category": {
+        "current_capacity": 1
+      },
+      "top_issues": [
+        {
+          "rule_id": "TW-001",
+          "severity": "warning",
+          "summary": "Power net BOOST_5V: trace 0.15mm too narrow for ~0.5A",
+          "recommendation": "Widen BOOST_5V traces to >= 0.2mm or use copper pour.",
+          "category": "current_capacity"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "low",
+      "blocker_count": 0,
+      "warning_count": 1,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "needs_review",
+        "pre_fab": "pass",
+        "bring_up": "pass"
+      },
+      "one_liner": "1 warning across 1 category."
+    }
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261118T143753Z-86300a"
+  }
+}

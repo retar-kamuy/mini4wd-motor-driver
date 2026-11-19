@@ -1,5 +1,9 @@
 # 部品候補台帳（照合途中）
 
+**2026-11-19の現版:** C105はGRM188R61A226ME15D/22µF10V、R106はCRCW040233R0FKED/33Ω、R107はCRCW04022K20FKED/2.2kΩ。現BOM28行/38個。 [検査・根拠・未保証事項](return-path-20261119/README.md)。以下の旧版数値/部品は履歴として扱う。
+
+2026-11-17の正規37品版は29 BOM行すべてにメーカー・MPN・資料を反映済み。旧表は履歴として残す。2026-11-18にR1/R2を高精度75kΩ/10kΩへ改版。最新版は [BOM CSV](preorder-electrical-20261118/bom-candidates.csv)、[BOM解析](preorder-electrical-20261118/bom-analysis.json)、[抵抗選定と電源評価](preorder-electrical-20261118/README.md)、[発注条件](order-readiness.md)。業者調達/実装受入、実効容量などの未確認は未確認のまま管理する。
+
 回路図の22実装品を元BOM候補と対応させた一覧。型番・定格・ランド・実装可否・供給の確認前であり、発注用BOMではない。回路図のMPNとManufacturer属性も未反映。
 
 | 参照 | 回路図の値 | メーカー候補 | MPN候補 | 出典 | 状態 |

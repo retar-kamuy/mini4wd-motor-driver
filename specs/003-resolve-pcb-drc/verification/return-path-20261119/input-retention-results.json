@@ -1,0 +1,227 @@
+{
+  "status": "explicit_power_loss_input_retention_sensitivity_not_device_guarantee",
+  "cases": [
+    {
+      "case": "stable-C1e-11-R1000000000000.0",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.898852,
+        "vgn_min": -0.1097494,
+        "vgp_max": 2.067302,
+        "vgp_min": -3.403343,
+        "vdn_max": 7.036401,
+        "vdn_min": 0.01180206,
+        "vdp_max": 0.1093957,
+        "vdp_min": -2.905263
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 3.989967100000002e-06,
+        "cross_current_indicator_peak_A": 15.9574003,
+        "cross_current_indicator_charge_C": 5.792673074598635e-05,
+        "full_waveform_points": 110041,
+        "final_time_s": 0.00011
+      },
+      "assumed_N_command_retained_cap_F": 1e-11,
+      "external_pulldown_ohm": 1000000000000.0
+    },
+    {
+      "case": "stable-C1e-11-R2200",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.898767,
+        "vgn_min": -0.1291257,
+        "vgp_max": 2.067302,
+        "vgp_min": -3.403666,
+        "vdn_max": 6.626681,
+        "vdn_min": 0.01180171,
+        "vdp_max": 0.545573,
+        "vdp_min": -3.227008
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.0700107636,
+        "cross_current_indicator_charge_C": 6.393489365904571e-10,
+        "full_waveform_points": 110039,
+        "final_time_s": 0.00011
+      },
+      "assumed_N_command_retained_cap_F": 1e-11,
+      "external_pulldown_ohm": 2200
+    },
+    {
+      "case": "stable-C1e-11-R1000",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.897917,
+        "vgn_min": -0.1291698,
+        "vgp_max": 2.070459,
+        "vgp_min": -3.403664,
+        "vdn_max": 6.651052,
+        "vdn_min": 0.01188114,
+        "vdp_max": 0.5459427,
+        "vdp_min": -3.032766
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.0381026168,
+        "cross_current_indicator_charge_C": 1.6613170684170163e-10,
+        "full_waveform_points": 110034,
+        "final_time_s": 0.00011
+      },
+      "assumed_N_command_retained_cap_F": 1e-11,
+      "external_pulldown_ohm": 1000
+    },
+    {
+      "case": "stable-C5e-11-R1000000000000.0",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.898852,
+        "vgn_min": -0.1126116,
+        "vgp_max": 2.067302,
+        "vgp_min": -3.402377,
+        "vdn_max": 7.049911,
+        "vdn_min": 0.01180206,
+        "vdp_max": 0.08831581,
+        "vdp_min": -2.905263
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 2.0174967099999997e-05,
+        "cross_current_indicator_peak_A": 17.1652132,
+        "cross_current_indicator_charge_C": 0.00032447839623512295,
+        "full_waveform_points": 110041,
+        "final_time_s": 0.00011
+      },
+      "assumed_N_command_retained_cap_F": 5e-11,
+      "external_pulldown_ohm": 1000000000000.0
+    },
+    {
+      "case": "stable-C5e-11-R2200",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.898852,
+        "vgn_min": -0.1290439,
+        "vgp_max": 2.067302,
+        "vgp_min": -3.403682,
+        "vdn_max": 6.637736,
+        "vdn_min": 0.01180206,
+        "vdp_max": 0.5419129,
+        "vdp_min": -3.161432
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.0579261311,
+        "cross_current_indicator_charge_C": 6.499614548681442e-10,
+        "full_waveform_points": 110042,
+        "final_time_s": 0.00011
+      },
+      "assumed_N_command_retained_cap_F": 5e-11,
+      "external_pulldown_ohm": 2200
+    },
+    {
+      "case": "stable-C5e-11-R1000",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 1.8e-09,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 4.898852,
+        "vgn_min": -0.1291724,
+        "vgp_max": 2.067302,
+        "vgp_min": -3.403671,
+        "vdn_max": 6.642147,
+        "vdn_min": 0.01180206,
+        "vdp_max": 0.5445749,
+        "vdp_min": -3.13666
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.0491430336,
+        "cross_current_indicator_charge_C": 5.30366611902626e-10,
+        "full_waveform_points": 110041,
+        "final_time_s": 0.00011
+      },
+      "assumed_N_command_retained_cap_F": 5e-11,
+      "external_pulldown_ohm": 1000
+    }
+  ],
+  "limitations": [
+    "ENA held high for entire test represents delayed reset; actual supervisor has finite response.",
+    "N_COMMAND output is assumed high-Z with10/50pF stored charge at rail loss, not a guaranteed LVC behavior.",
+    "0.1ohm battery source assumption limits otherwise ideal source shoot-through; no heating/SOA model.",
+    "UCC27524 typical macro input400k pull-down, not guaranteed UCC27524A corners."
+  ]
+}

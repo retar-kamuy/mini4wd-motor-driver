@@ -1,0 +1,119 @@
+{
+  "pcb_sha256": "a7aaab20cce23e1311411c16d31d7868e5d10233389f3a2941676cce5c175094",
+  "footprint_count": 38,
+  "all_parts_front": true,
+  "pcb_size_mm": [
+    55,
+    21
+  ],
+  "pcb_thickness_mm": 1.6,
+  "mounting_hole_footprints": [],
+  "NPTH_pads": 0,
+  "components": [
+    {
+      "reference": "J1",
+      "position_mm": [
+        6.55,
+        10.7
+      ],
+      "rotation_deg": -90.0,
+      "fab_graphics_bbox_with_stroke_mm": [
+        -3.57,
+        5.825,
+        6.43,
+        15.575
+      ],
+      "courtyard_graphics_bbox_with_stroke_mm": [
+        -4.045,
+        3.075,
+        8.535,
+        18.325
+      ]
+    },
+    {
+      "reference": "J2",
+      "position_mm": [
+        48.45,
+        10.7
+      ],
+      "rotation_deg": 90.0,
+      "fab_graphics_bbox_with_stroke_mm": [
+        48.57,
+        5.825,
+        58.57,
+        15.575
+      ],
+      "courtyard_graphics_bbox_with_stroke_mm": [
+        46.465,
+        3.075,
+        59.045,
+        18.325
+      ]
+    },
+    {
+      "reference": "MCU1",
+      "position_mm": [
+        19.5,
+        10.5
+      ],
+      "rotation_deg": 0.0,
+      "fab_graphics_bbox_with_stroke_mm": [
+        8.94,
+        1.54,
+        30.06,
+        19.46
+      ],
+      "courtyard_graphics_bbox_with_stroke_mm": [
+        8.975,
+        0.975,
+        30.025,
+        20.025
+      ]
+    }
+  ],
+  "nominal_connector_body_x_limits_excluding_graphics_stroke_mm": [
+    -3.52,
+    58.52
+  ],
+  "nominal_connector_body_total_length_mm": 62.04,
+  "proposed_lips": [
+    {
+      "proposed_lip_roi_mm": [
+        12.5,
+        0,
+        15.5,
+        0.3
+      ],
+      "courtyard_bbox_intersections": []
+    },
+    {
+      "proposed_lip_roi_mm": [
+        12.5,
+        20.7,
+        15.5,
+        21
+      ],
+      "courtyard_bbox_intersections": []
+    },
+    {
+      "proposed_lip_roi_mm": [
+        23.5,
+        0,
+        26.5,
+        0.3
+      ],
+      "courtyard_bbox_intersections": []
+    },
+    {
+      "proposed_lip_roi_mm": [
+        23.5,
+        20.7,
+        26.5,
+        21
+      ],
+      "courtyard_bbox_intersections": []
+    }
+  ],
+  "usb_service_note": "MCU USB faces left; MCU fab left~9mm and J1 body right~6.38mm leave~2.6mm; standard plug access is an unverified3D interference concern, not solved by changing carrier alone.",
+  "scope": "No CAD mutation. Courtyard bbox checks for upper lips only do not establish strength, actual3D connector height, wire clearance or chassis fit."
+}

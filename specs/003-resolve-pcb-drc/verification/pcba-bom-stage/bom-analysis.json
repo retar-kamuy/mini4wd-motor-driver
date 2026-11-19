@@ -1,0 +1,637 @@
+{
+  "schematic": "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch",
+  "convention": {
+    "field_mapping": {
+      "mpn": "MPN",
+      "manufacturer": "Manufacturer"
+    },
+    "populated_counts": {
+      "mpn": 37,
+      "manufacturer": 37
+    },
+    "preferred_distributor": null,
+    "names_canonical": true,
+    "suggested_fields": [
+      "MPN",
+      "Manufacturer"
+    ]
+  },
+  "stats": {
+    "schematic_files": [
+      "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch",
+      "hardware/kicad/mini4wd-motor-driver/gate-control.kicad_sch"
+    ],
+    "total_bom_lines": 29,
+    "total_components": 37,
+    "dnp_lines": 0,
+    "active_lines": 29,
+    "active_components": 37,
+    "with_mpn": 29,
+    "without_mpn": 0,
+    "with_datasheet": 29,
+    "without_datasheet": 0,
+    "with_digikey": 0,
+    "without_digikey": 29,
+    "with_mouser": 0,
+    "without_mouser": 29,
+    "with_lcsc": 0,
+    "without_lcsc": 29,
+    "with_element14": 0,
+    "without_element14": 29
+  },
+  "bom": [
+    {
+      "value": "10uF 10V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R61A106MAALD",
+      "manufacturer": "Murata",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A106MAAL%23",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "C1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": []
+    },
+    {
+      "value": "22uF 10V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R61A226ME15D",
+      "manufacturer": "Murata",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A226ME15%23",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "C2",
+        "C3"
+      ],
+      "quantity": 2,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": []
+    },
+    {
+      "value": "100nF 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "GRM155R61A104KA01D",
+      "manufacturer": "Murata",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R61A104KA01%23",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "C101",
+        "C102",
+        "C103",
+        "C104",
+        "C106"
+      ],
+      "quantity": 5,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": []
+    },
+    {
+      "value": "2.2uF 16V (candidate)",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R61C225KE15D",
+      "manufacturer": "Murata",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61C225KE15%23",
+      "description": "Unpolarized capacitor",
+      "bom_comments": [],
+      "references": [
+        "C105"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "capacitor",
+      "gaps": []
+    },
+    {
+      "value": "SS54-HF",
+      "footprint": "board-routed:D_SMA_Edge_Assembly",
+      "mpn": "SS54-HF",
+      "manufacturer": "Comchip Technology",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.comchiptech.com/admin/files/product/20190806165140.pdf",
+      "description": "Schottky diode",
+      "bom_comments": [],
+      "references": [
+        "D1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "diode",
+      "gaps": []
+    },
+    {
+      "value": "SS14-E3",
+      "footprint": "board-routed:D_SMA_Edge_Assembly",
+      "mpn": "SS14-E3/61T",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/88746/ss12.pdf",
+      "description": "Schottky diode",
+      "bom_comments": [],
+      "references": [
+        "D2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "diode",
+      "gaps": []
+    },
+    {
+      "value": "Micro-Fit 3.0 B+/B-",
+      "footprint": "board-routed:Molex_MicroFit30_43650-0214",
+      "mpn": "43650-0214",
+      "manufacturer": "Molex",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=",
+      "description": "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+      "bom_comments": [],
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "connector",
+      "gaps": []
+    },
+    {
+      "value": "Micro-Fit 3.0 M+/M-",
+      "footprint": "board-routed:Molex_MicroFit30_43650-0214",
+      "mpn": "43650-0214",
+      "manufacturer": "Molex",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=",
+      "description": "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+      "bom_comments": [],
+      "references": [
+        "J2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "connector",
+      "gaps": []
+    },
+    {
+      "value": "1.0uH 9A (XEL4030-102ME)",
+      "footprint": "board-routed:Coilcraft_XEL4030",
+      "mpn": "XEL4030-102MEC",
+      "manufacturer": "Coilcraft",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel4030/xel4030-102/",
+      "description": "Inductor",
+      "bom_comments": [],
+      "references": [
+        "L1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "inductor",
+      "gaps": []
+    },
+    {
+      "value": "XIAO MG24 Sense",
+      "footprint": "board-routed:XIAO_MG24_Castellated_14P",
+      "mpn": "102010610",
+      "manufacturer": "Seeed Studio",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://wiki.seeedstudio.com/xiao_mg24_getting_started/",
+      "description": "Seeed Studio XIAO MG24 Sense Controller Module 14-pin Castellated",
+      "bom_comments": [],
+      "references": [
+        "MCU1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "motor",
+      "gaps": []
+    },
+    {
+      "value": "SiSS64DN-T1-GE3",
+      "footprint": "Package_SO:Vishay_PowerPAK_1212-8_Single",
+      "mpn": "SiSS64DN-T1-GE3",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/67294/siss64dn.pdf",
+      "description": "35A Id, 20V Vds, N-Channel MOSFET, PowerPAK 1212-8 Single",
+      "bom_comments": [],
+      "references": [
+        "Q1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "transistor",
+      "gaps": []
+    },
+    {
+      "value": "DMP2008UFG-7",
+      "footprint": "board-routed:Diodes_PowerDI3333-8_DMP2008UFG",
+      "mpn": "DMP2008UFG-7",
+      "manufacturer": "Diodes Incorporated",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.diodes.com/datasheet/download/DMP2008UFG.pdf",
+      "description": "20 V P-MOSFET; PowerDI3333-8; S=1,2,3 G=4 D=5,6,7,8; RDSmax17mOhm atVGS=-1.5V25C",
+      "bom_comments": [],
+      "references": [
+        "Q2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "transistor",
+      "gaps": []
+    },
+    {
+      "value": "732k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "CRCW0603732KFKEA",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "CRCW0603100KFKEA",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "22k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "CRCW060322K0FKEA",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R3",
+        "R5"
+      ],
+      "quantity": 2,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "CRCW060310K0FKEA",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R4",
+        "R6",
+        "R7"
+      ],
+      "quantity": 3,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "499k 0.5%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD07499KL",
+      "manufacturer": "Yageo",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R101"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "CRCW0402100KFKED",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R102"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "0 (link)",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "CRCW04020000Z0ED",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R103"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "2.2k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "CRCW04022K20FKED",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [],
+      "references": [
+        "R104"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "4.7 1%",
+      "footprint": "board-routed:R_0402_Gate_NoSilk",
+      "mpn": "CRCW04024R70FKED",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [
+        "SMT assembly only; 1% or better; verify sub-us gate pulse capability; not a current-sense resistor"
+      ],
+      "references": [
+        "R105"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "22 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "CRCW040222R0FKED",
+      "manufacturer": "Vishay",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "description": "Resistor",
+      "bom_comments": [
+        "SMT assembly only; 1% or better; verify sub-us gate pulse capability; not a current-sense resistor"
+      ],
+      "references": [
+        "R106"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "resistor",
+      "gaps": []
+    },
+    {
+      "value": "NTCG104BH103JT1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "NTCG104BH103JT1",
+      "manufacturer": "TDK",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://product.tdk.com/en/search/sensor/ntc/chip-ntc-thermistor/info?part_no=NTCG104BH103JT1",
+      "description": "Temperature dependent resistor, negative temperature coefficient",
+      "bom_comments": [],
+      "references": [
+        "TH1"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "transformer",
+      "gaps": []
+    },
+    {
+      "value": "TPS61023DRLR",
+      "footprint": "Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6",
+      "mpn": "TPS61023DRLR",
+      "manufacturer": "Texas Instruments",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+      "description": "TI TPS61023 Synchronous Boost Converter SOT-5X3 DRL-6",
+      "bom_comments": [],
+      "references": [
+        "U2"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": []
+    },
+    {
+      "value": "LTC6994-2 (candidate)",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "mpn": "LTC6994IS6-2#TRMPBF",
+      "manufacturer": "Analog Devices",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/699412fb.pdf",
+      "description": "TimerBlox Debouncer, Programmable, Noise Discriminator, Rising and Falling Edges, TSOT-23-6",
+      "bom_comments": [],
+      "references": [
+        "U101"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": []
+    },
+    {
+      "value": "SN74LVC1G08DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "mpn": "SN74LVC1G08DBVR",
+      "manufacturer": "Texas Instruments",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "description": "Single AND Gate, Low-Voltage CMOS",
+      "bom_comments": [],
+      "references": [
+        "U102"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": []
+    },
+    {
+      "value": "SN74LVC1G32DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "mpn": "SN74LVC1G32DBVR",
+      "manufacturer": "Texas Instruments",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf",
+      "description": "Single OR Gate, Low-Voltage CMOS",
+      "bom_comments": [],
+      "references": [
+        "U103"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": []
+    },
+    {
+      "value": "UCC27524ADR (candidate)",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "mpn": "UCC27524ADR",
+      "manufacturer": "Texas Instruments",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ucc27524a.pdf",
+      "description": "Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8",
+      "bom_comments": [],
+      "references": [
+        "U104"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": []
+    },
+    {
+      "value": "TLV809EA30DBZR (candidate)",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "TLV809EA30DBZR",
+      "manufacturer": "Texas Instruments",
+      "digikey": "",
+      "mouser": "",
+      "lcsc": "",
+      "element14": "",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+      "description": "",
+      "bom_comments": [],
+      "references": [
+        "U105"
+      ],
+      "quantity": 1,
+      "dnp": false,
+      "type": "ic",
+      "gaps": []
+    }
+  ],
+  "unrecognized_fields": null
+}

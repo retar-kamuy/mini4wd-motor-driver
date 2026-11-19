@@ -1,0 +1,53 @@
+{
+  "kicad_version": "10.0.8",
+  "pcb_sha256": "9a80c9646bf08f6803e79dfa157b7b7942aab570a7cec6d3d0a79a22b7fac519",
+  "xml_sha256": "3254c2287a9b780a1655d75bfdae73dc9f97aa8eaf75f8654699471cf0e69850",
+  "compared_pads": 113,
+  "mismatches": [],
+  "footprint_count": 35,
+  "all_footprints_front": true,
+  "board_thickness_mm": 1.6,
+  "copper_layer_count": 2,
+  "outline_centerline_extent_mm": [
+    55.0,
+    21.0
+  ],
+  "via_count": 65,
+  "back_tented_vias": 65,
+  "via_diameter_drill_counts_mm": {
+    "0.6/0.3": 40,
+    "0.8/0.4": 25
+  },
+  "track_count": 463,
+  "track_length_mm_by_net_and_width_mm": {
+    "VBAT": {
+      "1.5": 17.9,
+      "0.2": 33.9479,
+      "0.6": 3.98,
+      "2.0": 44.1926
+    },
+    "GND": {
+      "0.2": 129.838,
+      "1.5": 3.65,
+      "0.8": 3.09,
+      "1.2": 1.8,
+      "0.6": 1.32,
+      "2.0": 45.9705
+    },
+    "MOTOR_MINUS": {
+      "0.2": 61.394,
+      "0.6": 4.875,
+      "1.5": 7.4,
+      "2.0": 29.1953
+    },
+    "SW_BOOST": {
+      "0.2": 12.6396
+    },
+    "GATE_N": {
+      "0.2": 26.409
+    },
+    "GATE_P": {
+      "0.2": 22.3136
+    }
+  }
+}

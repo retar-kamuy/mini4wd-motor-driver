@@ -1,0 +1,122 @@
+{
+  "status": "conversion_sensitivity_only_not_Q2_junction_temperature",
+  "TDK_source": "https://product.tdk.com/en/search/sensor/ntc/chip-ntc-thermistor/info?part_no=NTCG104BH103JT1",
+  "assumptions": [
+    "10k NTC R25+/-5%, B25/85=4100+/-3%, fixed pullup10k+/-1%",
+    "Ideal ratiometric12bit ADC; ADC offset/gain/reference/acquisition/noise not included",
+    "Constant beta approximation; real R-T curve/model error not included",
+    "Dissipation1mW/K is25C product figure, not actual PCB measured thermal coupling"
+  ],
+  "examples": [
+    {
+      "actual_NTC_temperature_C": 25,
+      "nominal_R_ohm": 10000.0,
+      "ideal12bit_ADC_code": 2047.5,
+      "calculated_C_from_R25_B_Rpull_corners": [
+        23.729695584525473,
+        26.33378293808022
+      ],
+      "errors_C": [
+        -1.270304415474527,
+        1.333782938080219
+      ],
+      "nominal_power_mW": 0.27224999999999994,
+      "ideal_C_per_ADC_count": 0.021178337055898028
+    },
+    {
+      "actual_NTC_temperature_C": 60,
+      "nominal_R_ohm": 2358.1712712643025,
+      "ideal12bit_ADC_code": 781.4029393071673,
+      "calculated_C_from_R25_B_Rpull_corners": [
+        57.256677411626015,
+        62.85541949759482
+      ],
+      "errors_C": [
+        -2.743322588373985,
+        2.8554194975948235
+      ],
+      "nominal_power_mW": 0.1681491996036449,
+      "ideal_C_per_ADC_count": 0.042812929701339174
+    },
+    {
+      "actual_NTC_temperature_C": 85,
+      "nominal_R_ohm": 998.8358258091863,
+      "ideal12bit_ADC_code": 371.8786943878853,
+      "calculated_C_from_R25_B_Rpull_corners": [
+        81.04114797258245,
+        89.12525891643509
+      ],
+      "errors_C": [
+        -3.9588520274175494,
+        4.125258916435087
+      ],
+      "nominal_power_mW": 0.08991425528941965,
+      "ideal_C_per_ADC_count": 0.09253189925297313
+    }
+  ],
+  "nominal_NTC_power_max_mW": 0.27224999999999994,
+  "selfheating_at25C_using1mWperK_C": 0.27225,
+  "source_hashes": {
+    "docs/hardware_spec.md": "a2f2c24c55dd15716902ae1cec088e5706f95e0022307e0711455de4eba8ed04",
+    "firmware/mini4ai_v358/mini4ai_v358.ino": "0d83436d385cdaba6ecb6a7a6a61a134ae5a26b25a592898f3e3a99e01a406d1",
+    "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb": "9a80c9646bf08f6803e79dfa157b7b7942aab570a7cec6d3d0a79a22b7fac519",
+    "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch": "e48593f0b339bf89ae78aba32c3809d11e9f7507ed26d9239f0bcba305956e2a"
+  },
+  "canonical_firmware": "firmware/mini4ai_v358/mini4ai_v358.ino",
+  "firmware_version": "v3.58-r10",
+  "geometry_mm": {
+    "TH1": [
+      36.45,
+      14.05
+    ],
+    "Q2": [
+      33.85,
+      3.35
+    ],
+    "Q1": [
+      49.48,
+      18.18
+    ],
+    "U2": [
+      35.23,
+      7.35
+    ],
+    "TH1_to_Q2_centres": 11.01135777277262,
+    "TH1_to_Q1_centres": 13.668862425234954,
+    "TH1_to_U2_centres": 6.8101688672161425,
+    "copper_zone_count": 0
+  },
+  "canonical_connectivity": {
+    "R7.1": "MCU_3V3",
+    "R7.2": "TEMP_SENSE",
+    "TH1.1": "TEMP_SENSE",
+    "TH1.2": "GND",
+    "MCU1.13": "TEMP_SENSE",
+    "TEMP_SENSE_nodes": [
+      "R7.2",
+      "TH1.1",
+      "MCU1.13"
+    ],
+    "ADC_pin": "D1/PC1"
+  },
+  "firmware_observations": {
+    "ADC_bits": 12,
+    "average_samples": 8,
+    "temperature_sample_interval_ms": 1000,
+    "temperature_output_scale_C": 0.1,
+    "invalid_marker": -32768,
+    "temperature_based_motor_protection_found": false,
+    "invalid_sensor_shutdown_found": false,
+    "motorBrake_PWM_duty": 0,
+    "PWM0_means_Q2_short_brake": true,
+    "scope": "source inspection only; no build, flash or physical ADC read"
+  },
+  "not_verified": [
+    "Actual ADC reference/fullscale, gain/offset and acquisition settling",
+    "NTC R-T calibration and ADC temperature accuracy",
+    "Physical TH1-to-Q2 thermal gradient or response time",
+    "Q2 junction temperature",
+    "Real sensor samples or measured board temperature",
+    "Temperature cutoff/coast hardware and firmware function"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "before_pcb_sha256": "e7152f915355a188716b45264bc74a34fdb6dc9e5e9074a5caea470124906ac7",
+  "after_pcb_sha256": "a7aaab20cce23e1311411c16d31d7868e5d10233389f3a2941676cce5c175094",
+  "placement_changes": [
+    {
+      "reference": "L1",
+      "before": [
+        40.3,
+        8.5,
+        0.0
+      ],
+      "after": [
+        40.3,
+        8.5,
+        180.0
+      ]
+    }
+  ],
+  "added_footprints": [
+    "R107"
+  ],
+  "removed_tracks_by_net": {
+    "BOOST_5V": 33,
+    "FB_BOOST": 7,
+    "VBAT": 5,
+    "GATE_P": 17,
+    "SW_BOOST": 9
+  },
+  "added_tracks_by_net": {
+    "GND": 28,
+    "BOOST_5V": 152,
+    "FB_BOOST": 15,
+    "VBAT": 3,
+    "GATE_P": 52,
+    "SW_BOOST": 4,
+    "N_COMMAND": 18
+  },
+  "modified_existing_tracks": {},
+  "power_vias_33_identical_uuid_net_position_size_drill": true,
+  "project_settings_unchanged": true,
+  "root_schematic_unchanged": true,
+  "J1_J2_pad_positions_nets_unchanged": true,
+  "BOM_changes": [
+    "C105 22uF10V GRM188R61A226ME15D",
+    "R106 33ohm CRCW040233R0FKED",
+    "R107 2.2kohm CRCW04022K20FKED"
+  ],
+  "zones": [
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "outline_bbox_mm": [
+        33.3,
+        6.2,
+        37.2,
+        11.8
+      ],
+      "filled_polygon_count": 2
+    },
+    {
+      "net": "GND",
+      "layer": "B.Cu",
+      "outline_bbox_mm": [
+        33.3,
+        0.3,
+        54.7,
+        20.7
+      ],
+      "filled_polygon_count": 4
+    }
+  ]
+}

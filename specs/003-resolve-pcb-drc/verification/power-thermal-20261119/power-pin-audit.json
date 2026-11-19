@@ -1,0 +1,102 @@
+{
+  "pcb_sha256": "a7aaab20cce23e1311411c16d31d7868e5d10233389f3a2941676cce5c175094",
+  "rows": [
+    {
+      "reference": "J1",
+      "expected_electrical_pins": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "actual_electrical_pins": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "separate_unconnected_mechanical_tabs": {
+        "MP1": "",
+        "MP2": ""
+      },
+      "match": true
+    },
+    {
+      "reference": "J2",
+      "expected_electrical_pins": {
+        "1": "VBAT",
+        "2": "MOTOR_MINUS"
+      },
+      "actual_electrical_pins": {
+        "1": "VBAT",
+        "2": "MOTOR_MINUS"
+      },
+      "separate_unconnected_mechanical_tabs": {
+        "MP1": "",
+        "MP2": ""
+      },
+      "match": true
+    },
+    {
+      "reference": "Q1",
+      "expected_electrical_pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "Q1_GATE",
+        "5": "MOTOR_MINUS"
+      },
+      "actual_electrical_pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "Q1_GATE",
+        "5": "MOTOR_MINUS"
+      },
+      "separate_unconnected_mechanical_tabs": {},
+      "match": true
+    },
+    {
+      "reference": "Q2",
+      "expected_electrical_pins": {
+        "1": "VBAT",
+        "2": "VBAT",
+        "3": "VBAT",
+        "4": "Q2_GATE",
+        "5": "MOTOR_MINUS",
+        "6": "MOTOR_MINUS",
+        "7": "MOTOR_MINUS",
+        "8": "MOTOR_MINUS"
+      },
+      "actual_electrical_pins": {
+        "1": "VBAT",
+        "2": "VBAT",
+        "3": "VBAT",
+        "4": "Q2_GATE",
+        "5": "MOTOR_MINUS",
+        "6": "MOTOR_MINUS",
+        "7": "MOTOR_MINUS",
+        "8": "MOTOR_MINUS"
+      },
+      "separate_unconnected_mechanical_tabs": {},
+      "match": true
+    },
+    {
+      "reference": "D1",
+      "expected_electrical_pins": {
+        "1": "VBAT",
+        "2": "MOTOR_MINUS"
+      },
+      "actual_electrical_pins": {
+        "1": "VBAT",
+        "2": "MOTOR_MINUS"
+      },
+      "separate_unconnected_mechanical_tabs": {},
+      "match": true
+    }
+  ],
+  "Q1_package_drain_mapping": "PCB pad5 common drain land covers physical5-8; prior mechanical audit retained",
+  "D1_band": "manufacturer cathode band corresponds to PCB pad1/VBAT",
+  "sources": [
+    "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline=",
+    "https://www.vishay.com/docs/67294/siss64dn.pdf",
+    "https://www.diodes.com/datasheet/download/DMP2008UFG.pdf",
+    "https://www.comchiptech.com/admin/files/product/20190806165140.pdf"
+  ]
+}

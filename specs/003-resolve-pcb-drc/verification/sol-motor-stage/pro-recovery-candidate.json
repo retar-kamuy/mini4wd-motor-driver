@@ -1,0 +1,12 @@
+{
+  "canonical_pro_sha256_after_mcp": "2d6bfbe0d6746d2297c2febe268c1f454996ab7028996e96e96ebb64c70ba45b",
+  "baseline_recovery_candidate_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "pre_sync_pro_hash_known": false,
+  "canonical_pro_restored": true,
+  "baseline_evidence": "design-baseline.md and four cached projects share candidate SHA; pre-sync git status had no pro change; direct pre-sync hash was not captured",
+  "candidate_directory": ".cache/sol-design/metadata-sync-validated",
+  "overwritten_pro_preserved": ".cache/sol-design/metadata-sync/overwritten-canonical.kicad_pro",
+  "baseline_candidate_preserved": ".cache/sol-design/metadata-sync/baseline-recovery-candidate.kicad_pro",
+  "canonical_pro_restored_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "recovery_basis": "Parent relayed Luna Git agent verification: tracked HEAD pro SHA equals b45ff...; pre-sync git status showed no pro changes; restored from matching cached copy."
+}

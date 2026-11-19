@@ -1,0 +1,22 @@
+Gate supply passive charge-delivery envelope (not TPS61023 control model)
+Vsource src 0 4.903554936103582
+Vcut ctl 0 PWL(0 1 15u 1 15.001u 0)
+Ssrc src bulk ctl 0 CUT
+.model CUT SW(Ron=.001 Roff=1e12 Vt=.5 Vh=.05)
+Rbulk bulk cb .01
+Cbulk cb 0 4e-06
+Rtrace bulk li 0.05
+Ltrace li pin 1e-07
+Rlocal pin cl .02
+Llocal cl cc 1n
+Clocal cc 0 1e-06
+Rfast pin cf .02
+Lfast cf cff 1n
+Cfast cff 0 60n
+Iload pin 0 PWL(0 0 20u 0 2.0300000000000002e-05 1.0 2.0600000000000003e-05 0 29.314u 0 3.0514e-05 0.25 3.1714e-05 0)
+Rdc pin 0 1G
+.options method=gear reltol=.0005
+.tran 1n 40u
+.meas tran vmin MIN v(pin) FROM=19u TO=40u
+.meas tran vmax MAX v(pin) FROM=19u TO=40u
+.end

@@ -1,0 +1,88 @@
+{
+  "analyzer_type": "thermal",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      ".cache/sol-q2-lowvoltage/schematic.json",
+      ".cache/sol-q2-lowvoltage/pcb.json"
+    ],
+    "source_hashes": {
+      ".cache/sol-q2-lowvoltage/schematic.json": "f9c3c9513a2e06a50c7ea0d4e569333a0ab00fd73efc7416575c5758652923cd",
+      ".cache/sol-q2-lowvoltage/pcb.json": "594033941b5b07cb031dd3691d392302a8c45217846bd59a418434f86d8df1b5"
+    },
+    "run_id": "20261115T064617Z-d4e33f",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": ".cache/sol-q2-lowvoltage/schematic.json",
+        "sha256": "f9c3c9513a2e06a50c7ea0d4e569333a0ab00fd73efc7416575c5758652923cd",
+        "schema_version": "1.4.0",
+        "run_id": "20261115T064617Z-d4e33f"
+      },
+      "pcb": {
+        "path": ".cache/sol-q2-lowvoltage/pcb.json",
+        "sha256": "594033941b5b07cb031dd3691d392302a8c45217846bd59a418434f86d8df1b5",
+        "schema_version": "1.4.0",
+        "run_id": "20261115T064617Z-d4e33f"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "summary": {
+    "total_findings": 0,
+    "components_assessed": 0,
+    "components_skipped": 1,
+    "active": 0,
+    "suppressed": 0,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 0
+    },
+    "thermal_score": null,
+    "skipped_reason": "No components had quantifiable power dissipation data (missing MPNs or no datasheet extraction cache)",
+    "total_board_dissipation_w": 0,
+    "components_analyzed": 0,
+    "components_above_85c": 0,
+    "components_above_tjmax": 0,
+    "ambient_c": 40.0
+  },
+  "findings": [],
+  "assessments": [],
+  "elapsed_s": 0.0,
+  "skipped_components": [
+    {
+      "ref": "U2",
+      "value": "TPS61023DRLR",
+      "reason": "below_min_pdiss"
+    }
+  ],
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261115T064617Z-d4e33f"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "existing_linear_passive_model_postprocessing_not_new_converter_simulation",
+  "source_initial_min_V": 4.903554936103582,
+  "static_initial_high_V_assumption": 5.212886364,
+  "initial_offset_V": 0.3093314278964181,
+  "rows": [
+    {
+      "C105_effective_F": 1e-06,
+      "completed_cases": 32,
+      "min_at_original_low_initial_V": 4.52711,
+      "margin_to_recommended4_5V": 0.02711000000000041,
+      "max_at_original_low_initial_V": 5.15619,
+      "high_initial_linear_offset_estimate_max_V": 5.465521427896418,
+      "margin_to5_5V_under_linear_offset_V": 0.034478572103582295
+    },
+    {
+      "C105_effective_F": 2e-06,
+      "completed_cases": 32,
+      "min_at_original_low_initial_V": 4.588202,
+      "margin_to_recommended4_5V": 0.08820199999999989,
+      "max_at_original_low_initial_V": 5.0848,
+      "high_initial_linear_offset_estimate_max_V": 5.3941314278964185,
+      "margin_to5_5V_under_linear_offset_V": 0.10586857210358147
+    },
+    {
+      "C105_effective_F": 4e-06,
+      "completed_cases": 32,
+      "min_at_original_low_initial_V": 4.664232,
+      "margin_to_recommended4_5V": 0.16423200000000016,
+      "max_at_original_low_initial_V": 5.012142,
+      "high_initial_linear_offset_estimate_max_V": 5.321473427896418,
+      "margin_to5_5V_under_linear_offset_V": 0.17852657210358203
+    }
+  ],
+  "limitations": [
+    "Only constant-C, constant-current passive circuit superposition; no converter, nonlinear cap or full-temperature leakage guarantee.",
+    "VON4.65V is startup; VOFF4.4V after startup differs; recommended VDDmin4.5V is retained."
+  ]
+}

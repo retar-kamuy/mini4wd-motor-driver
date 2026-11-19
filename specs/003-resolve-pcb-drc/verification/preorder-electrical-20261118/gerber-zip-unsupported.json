@@ -1,0 +1,511 @@
+{
+  "analyzer_type": "gerber",
+  "schema_version": "1.4.0",
+  "directory": ".cache/preorder-electrical/gerber-20261118-preview.zip",
+  "generator": null,
+  "layer_count": 0,
+  "board_dimensions": {},
+  "statistics": {
+    "gerber_files": 0,
+    "drill_files": 0,
+    "total_holes": 0,
+    "total_flashes": 0,
+    "total_draws": 0
+  },
+  "completeness": {
+    "found_layers": [],
+    "expected_layers": [],
+    "missing_required": [
+      "B.Cu",
+      "B.Mask",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask"
+    ],
+    "missing_recommended": [
+      "F.Paste",
+      "F.SilkS"
+    ],
+    "has_pth_drill": false,
+    "has_npth_drill": false,
+    "complete": false,
+    "source": "defaults"
+  },
+  "alignment": {
+    "aligned": true,
+    "issues": [],
+    "layer_extents": {}
+  },
+  "drill_classification": {
+    "vias": {
+      "count": 0,
+      "tools": []
+    },
+    "component_holes": {
+      "count": 0,
+      "tools": []
+    },
+    "mounting_holes": {
+      "count": 0,
+      "tools": []
+    },
+    "classification_method": "diameter_heuristic"
+  },
+  "pad_summary": {
+    "smd_apertures": 0,
+    "via_apertures": 0,
+    "heatsink_apertures": 0,
+    "tht_holes": 0,
+    "smd_source": "x2_aperture_function",
+    "smd_ratio": 0.0
+  },
+  "gerbers": [],
+  "drills": [],
+  "drill_tools": {},
+  "findings": [
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: B.Cu",
+      "description": "Expected required layer B.Cu not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add B.Cu to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Fab may reject",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:1ba641c5a02d"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: B.Mask",
+      "description": "Expected required layer B.Mask not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add B.Mask to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Fab may reject",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:2b16c7d650dd"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: Edge.Cuts",
+      "description": "Expected required layer Edge.Cuts not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add Edge.Cuts to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Fab may reject",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:653daf56c42a"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: F.Cu",
+      "description": "Expected required layer F.Cu not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add F.Cu to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Fab may reject",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:a5c8b7b468af"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: F.Mask",
+      "description": "Expected required layer F.Mask not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add F.Mask to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Fab may reject",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:dc3b8aa2d008"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: F.Paste",
+      "description": "Expected recommended layer F.Paste not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add F.Paste to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Assembly quality",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:78ae84de7b01"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-001",
+      "category": "gerber_completeness",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Missing layer: F.SilkS",
+      "description": "Expected recommended layer F.SilkS not found in gerber set.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Add F.SilkS to gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Assembly quality",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-001:4c92573caff5"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-003",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "No drill file in gerber set",
+      "description": "No Excellon drill file found. PCB fabrication requires drill data.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Include drill file(s) in gerber export.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Fab will reject",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-003:9c5dc808cf4f"
+    }
+  ],
+  "assessments": [],
+  "summary": {
+    "total_findings": 8,
+    "by_severity": {
+      "error": 0,
+      "warning": 6,
+      "info": 2
+    }
+  },
+  "trust_summary": {
+    "total_findings": 8,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 8,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 8,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "inputs": {
+    "source_files": [],
+    "source_hashes": {},
+    "run_id": "20261118T143753Z-86300a",
+    "config_hash": null,
+    "upstream_artifacts": {}
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "audience_summary": {
+    "designer": {
+      "total_findings": 8,
+      "by_severity": {
+        "error": 0,
+        "warning": 6,
+        "info": 2
+      },
+      "by_category": {
+        "gerber_completeness": 8
+      },
+      "top_issues": [
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-001",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Missing layer: B.Cu",
+          "description": "Expected required layer B.Cu not found in gerber set.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Add B.Cu to gerber export.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Fab may reject",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-001:1ba641c5a02d"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-001",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Missing layer: B.Mask",
+          "description": "Expected required layer B.Mask not found in gerber set.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Add B.Mask to gerber export.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Fab may reject",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-001:2b16c7d650dd"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-001",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Missing layer: Edge.Cuts",
+          "description": "Expected required layer Edge.Cuts not found in gerber set.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Add Edge.Cuts to gerber export.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Fab may reject",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-001:653daf56c42a"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-001",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Missing layer: F.Cu",
+          "description": "Expected required layer F.Cu not found in gerber set.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Add F.Cu to gerber export.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Fab may reject",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-001:a5c8b7b468af"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-001",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Missing layer: F.Mask",
+          "description": "Expected required layer F.Mask not found in gerber set.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Add F.Mask to gerber export.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Fab may reject",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-001:dc3b8aa2d008"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-003",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "No drill file in gerber set",
+          "description": "No Excellon drill file found. PCB fabrication requires drill data.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Include drill file(s) in gerber export.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Fab will reject",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-003:9c5dc808cf4f"
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 6,
+      "by_category": {
+        "gerber_completeness": 6
+      },
+      "top_issues": [
+        {
+          "rule_id": "GR-001",
+          "severity": "warning",
+          "summary": "Missing layer: B.Cu",
+          "recommendation": "Add B.Cu to gerber export.",
+          "category": "gerber_completeness"
+        },
+        {
+          "rule_id": "GR-001",
+          "severity": "warning",
+          "summary": "Missing layer: B.Mask",
+          "recommendation": "Add B.Mask to gerber export.",
+          "category": "gerber_completeness"
+        },
+        {
+          "rule_id": "GR-001",
+          "severity": "warning",
+          "summary": "Missing layer: Edge.Cuts",
+          "recommendation": "Add Edge.Cuts to gerber export.",
+          "category": "gerber_completeness"
+        },
+        {
+          "rule_id": "GR-001",
+          "severity": "warning",
+          "summary": "Missing layer: F.Cu",
+          "recommendation": "Add F.Cu to gerber export.",
+          "category": "gerber_completeness"
+        },
+        {
+          "rule_id": "GR-001",
+          "severity": "warning",
+          "summary": "Missing layer: F.Mask",
+          "recommendation": "Add F.Mask to gerber export.",
+          "category": "gerber_completeness"
+        },
+        {
+          "rule_id": "GR-003",
+          "severity": "warning",
+          "summary": "No drill file in gerber set",
+          "recommendation": "Include drill file(s) in gerber export.",
+          "category": "gerber_completeness"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "low",
+      "blocker_count": 0,
+      "warning_count": 6,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "pass",
+        "pre_fab": "needs_review",
+        "bring_up": "pass"
+      },
+      "one_liner": "6 warnings across 1 category."
+    }
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261118T143753Z-86300a"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "analyzer_type": "thermal",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      "specs/003-resolve-pcb-drc/verification/return-path-20261119/schematic.json",
+      "specs/003-resolve-pcb-drc/verification/return-path-20261119/pcb.json"
+    ],
+    "source_hashes": {
+      "specs/003-resolve-pcb-drc/verification/return-path-20261119/schematic.json": "e1144125bcf53110c3e9d02ae337681ada762ebecbd09d0232a85f17e2f596d1",
+      "specs/003-resolve-pcb-drc/verification/return-path-20261119/pcb.json": "16cc5a3a9c47c4b5b3ae72aa476cfe20dd8afe7eb781687a3660105c8bd8ab39"
+    },
+    "run_id": "20261118T152543Z-799441",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": "specs/003-resolve-pcb-drc/verification/return-path-20261119/schematic.json",
+        "sha256": "e1144125bcf53110c3e9d02ae337681ada762ebecbd09d0232a85f17e2f596d1",
+        "schema_version": "1.4.0",
+        "run_id": "20261118T152543Z-799441"
+      },
+      "pcb": {
+        "path": "specs/003-resolve-pcb-drc/verification/return-path-20261119/pcb.json",
+        "sha256": "16cc5a3a9c47c4b5b3ae72aa476cfe20dd8afe7eb781687a3660105c8bd8ab39",
+        "schema_version": "1.4.0",
+        "run_id": "20261118T152543Z-799441"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "summary": {
+    "total_findings": 0,
+    "components_assessed": 0,
+    "components_skipped": 1,
+    "active": 0,
+    "suppressed": 0,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 0
+    },
+    "thermal_score": null,
+    "skipped_reason": "No components had quantifiable power dissipation data (missing MPNs or no datasheet extraction cache)",
+    "total_board_dissipation_w": 0,
+    "components_analyzed": 0,
+    "components_above_85c": 0,
+    "components_above_tjmax": 0,
+    "ambient_c": 40.0
+  },
+  "findings": [],
+  "assessments": [],
+  "elapsed_s": 0.0,
+  "skipped_components": [
+    {
+      "ref": "U2",
+      "value": "TPS61023DRLR",
+      "reason": "below_min_pdiss"
+    }
+  ],
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261118T152543Z-799441"
+  }
+}

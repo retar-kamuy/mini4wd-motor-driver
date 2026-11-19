@@ -1,0 +1,41 @@
+{
+  "status": "engineering_envelopes_for_limited_prototype_not_full_load_qualification",
+  "gate_resistor_source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf pp1-2,5",
+  "gate_assumptions": {
+    "peak_voltage_envelope_V": 6,
+    "pulse_duration_envelope_s": 1e-06,
+    "repetition_frequency_ceiling_Hz": 20000,
+    "gate_charge_budget_each_C": 3e-07,
+    "gate_supply_static_upper_V": 5.207745454545454,
+    "local_resistor_temperature_analysis_ceiling_C": 100
+  },
+  "resistor_peak_power_W": {
+    "R105_at4_7ohm": 7.659574468085106,
+    "R106_at22ohm": 1.6363636363636365
+  },
+  "average_gate_loss_budget_each_W": 0.031246472727272722,
+  "CRCW0402_standard_rating_W_at70C": 0.063,
+  "CRCW0402_standard_derated_W_at100C": 0.04076470588235294,
+  "Q2_Rds_25C_max_minus1_5V_ohm": 0.017,
+  "Q2_loss_W_at_current_A": {
+    "2": {
+      "cold_25C_max_Rds": 0.068,
+      "sensitivity_Rds_times2": 0.136
+    },
+    "3.5": {
+      "cold_25C_max_Rds": 0.20825000000000002,
+      "sensitivity_Rds_times2": 0.41650000000000004
+    },
+    "5": {
+      "cold_25C_max_Rds": 0.42500000000000004,
+      "sensitivity_Rds_times2": 0.8500000000000001
+    }
+  },
+  "limitations": [
+    "Gate-charge0.3uC is an explicit prototype design budget, not a DMP manufacturer maximum guarantee.",
+    "6V/1us pulse envelope and20kHz are prototype analysis conditions; actual gate waveform/frequency/temperature are checked after assembly.",
+    "No current measurement/current limit or automatic thermal cutoff is added.",
+    "5A remains a design target; universal continuous5A thermal qualification is not claimed.",
+    "Motor startup/stall/brake currents are not inferred from manufacturer recommended load currents."
+  ]
+}

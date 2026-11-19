@@ -1,0 +1,13 @@
+{
+  "bottom_mask_objects": 0,
+  "graphics": {
+    "('top', 'copper')": 559,
+    "('top', 'mask')": 117,
+    "('top', 'silk')": 165,
+    "('top', 'paste')": 124,
+    "('bottom', 'copper')": 217,
+    "('bottom', 'mask')": 0,
+    "('bottom', 'silk')": 0,
+    "('mechanical', 'outline')": 8
+  }
+}

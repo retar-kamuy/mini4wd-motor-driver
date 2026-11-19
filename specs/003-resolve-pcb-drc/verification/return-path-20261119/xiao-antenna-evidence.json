@@ -1,0 +1,23 @@
+{
+  "official_zip": "https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_v1.0_KiCad_260114.zip",
+  "download_sha256": "159126a47d860c280e76d52b77adacd6a31bb296a3eee2e62ed887e9772ad70a",
+  "original_module_center_mm": [
+    108.3977,
+    72.876
+  ],
+  "canonical_module_center_mm": [
+    19.5,
+    10.5
+  ],
+  "transform": "canonical=(19.5-(x-108.3977),10.5-(y-72.876)); USB faces left",
+  "antenna_ANT1_MPN": "KH5220-A36",
+  "antenna_fab_projection_canonical_mm": [
+    27.9139,
+    4.2204,
+    29.9139,
+    9.4204
+  ],
+  "new_zone_left_mm": 33.3,
+  "zone_to_antenna_body_horizontal_gap_mm": 3.3861,
+  "manufacturer_required_keepout_dimension": "not established; body projection gap is not an RF guarantee"
+}

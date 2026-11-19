@@ -1,0 +1,114 @@
+***
+*$
+*  UCC27524 Model
+*****************************************************************************
+*  (C) Copyright 2011 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warrenties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+** Released by: Analog eLab Design Center, Texas Instruments Inc.
+* Part: UCC27524
+* Date: 10/11/2011
+* Model Type: TRANSIENT
+* Simulator: PSPICE
+* Simulator Version: 16.0.0.p001
+* EVM Order Number: 
+* EVM Users Guide: 
+* Datasheet: SLUSAQ3 � NOVEMBER 2011
+*
+* Model Version: Final 1.00
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Final 1.00
+* Release to Web.
+*
+*****************************************************************************
+* source UCC27524
+.SUBCKT UCC27524 
++ INA
++ INB
++ OUTA
++ OUTB
++ VDD
++ ENA
++ ENB
++ GND
+R_U1a_R3 INA GND 400k
+E_U1a_ABM2 U1a_N00160 0 
++ VALUE { IF(V(VDD, GND) + 0.30*V(N202492) > 3.70 &
++ V(INA, GND) + 0.9*V(N202492) > 2.1 &
++ V(ENA, GND) + 0.95*V(N202492) > 2.1, 1, 0) }
+R_U1a_R1 U1a_N00160 N202492 1
+C_U1a_C1 N202492 0 1n
+R_U1a_R2 VDD ENA 200k
+R_U1a2_R3 INB GND 400k
+E_U1a2_ABM2 U1a2_N00160 0 
++ VALUE { IF(V(VDD, GND) + 0.30*V(N202569) > 3.70 &
++ V(INB, GND) + 0.9*V(N202569) > 2.1 &
++ V(ENB, GND) + 0.95*V(N202569) > 2.1, 1, 0) }
+R_U1a2_R1 U1a2_N00160 N202569 1
+C_U1a2_C1 N202569 0 1n
+R_U1a2_R2 VDD ENB 200k
+C_U2a_C1 U2a_N201287 U2a_N205106 1pF
+R_U2a_R1 VDD U2a_N205106 1.2
+C_U2a_C4 GND OUTA 1pF
+C_U2a_C2 U2a_N205640 U2a_N201287 1pF
+X_U2a_D1 VDD U2a_N205106 D_IDEAL PARAMS: RS=.1 VTH=0.7
+E_U2a_E1 U2a_N201459 OUTA 
++ VALUE { IF(V(U2a_N201553, 0) > 0.5, 12, -12) }
+R_U2a_R2 U2a_N205640 GND 0.4
+X_U2a_U1 N202492 U2a_N201553 DELAY PARAMS: RINP=1K DELAY=10n
+X_U2a_D2 U2a_N205640 GND D_IDEAL PARAMS: RS=.1 VTH=0.7
+C_U2a_C3 OUTA U2a_N201287 5p
+M_U2a_M1 U2a_N205106 U2a_N201287 OUTA OUTA NMOS01
+M_U2a_M2 U2a_N205640 U2a_N201287 OUTA OUTA PMOS01
+R_U2a_R3 U2a_N201287 U2a_N201459 10
+C_U2b_C1 U2b_N201287 U2b_N205106 1pF
+R_U2b_R1 VDD U2b_N205106 1.2
+C_U2b_C4 GND OUTB 1pF
+C_U2b_C2 U2b_N205640 U2b_N201287 1pF
+X_U2b_D1 VDD U2b_N205106 D_IDEAL PARAMS: RS=.1 VTH=0.7
+E_U2b_E1 U2b_N201459 OUTB 
++ VALUE { IF(V(U2b_N201553, 0) > 0.5, 12, -12) }
+R_U2b_R2 U2b_N205640 GND 0.4
+X_U2b_U1 N202569 U2b_N201553 DELAY PARAMS: RINP=1K DELAY=10n
+X_U2b_D2 U2b_N205640 GND D_IDEAL PARAMS: RS=.1 VTH=0.7
+C_U2b_C3 OUTB U2b_N201287 5p
+M_U2b_M1 U2b_N205106 U2b_N201287 OUTB OUTB NMOS01
+M_U2b_M2 U2b_N205640 U2b_N201287 OUTB OUTB PMOS01
+R_U2b_R3 U2b_N201287 U2b_N201459 10
+.ENDS UCC27524 
+
+
+*$
+.MODEL NMOS01 NMOS
++ VTO = .1
++ KP = .075
+*$
+.MODEL PMOS01 PMOS
++ VTO = -0.1
++ KP = .08
+*$
+.SUBCKT DELAY INP OUT PARAMS: RINP = 1k DELAY = 10n
+R1 INP 101 {RINP}
+C1 101 102 { 1.4427 * DELAY / RINP }
+E1 102 0 OUT 0 0.5
+E2 103 0 VALUE {IF(V(101) > 0.5, 1, 0)}
+R2 103 OUT 1
+C2 OUT 0 1n
+.ENDS DELAY
+*$
+.SUBCKT D_IDEAL A C PARAMS: RS = 1 VTH = 0.7
+G1 A C VALUE { MAX(0, ( V(A) - V(C) - { VTH }) / { RS } ) }
+R1 A C 1G
+.ENDS D_IDEAL
+*$

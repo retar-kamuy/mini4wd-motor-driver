@@ -1,0 +1,24 @@
+DMP2008UFG low battery study
+.include DMP2008UFG-ngspice.lib
+Vbat s 0 2.4
+Vcommand cmd 0 PWL(0 5.208 1m 5.208 1.00002m 0.01 10m 0.01 10.00002m 5.208 12m 5.208)
+Rdriver cmd lead 1
+Ltrace lead g 20n
+Xq d g s DMP2008UFG
+Bds dsmon 0 V=V(d,s)
+Bgs gsmon 0 V=V(g,s)
+Vbemf s emf PWL(0 3 1m 3 10m 0.3 12m 0)
+Rmotor emf winding 0.5
+Lmotor winding d 0.0001
+Dfly d s freewheel
+Dnbody 0 d freewheel
+.model freewheel D(Is=1e-8 N=1 Rs=0.01)
+Bcurrent mon 0 V=abs(i(Lmotor))
+Bpower pmon 0 V=abs(v(d,s)*i(Vbat))
+.tran 100n 12m 0 100n
+.measure tran i_motor_peak MAX V(mon)
+.measure tran vgs_max MAX V(gsmon)
+.measure tran vgs_min MIN V(gsmon)
+.measure tran vds_max MAX V(dsmon)
+.measure tran vds_min MIN V(dsmon)
+.end

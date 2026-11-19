@@ -1,0 +1,286 @@
+{
+  "status": "manufacturer_typical_models_with_assumed_rails_and_parasitics_not_qualification",
+  "cases": [
+    {
+      "case": "pwm-1.8-0",
+      "scenario": "pwm",
+      "vbat_V": 1.8,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.06621e-11, timestep = 2.5e-21: trouble with dfree-instance dfly",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.06621e-11, timestep = 2.5e-21: trouble with dfree-instance dfly"
+      ]
+    },
+    {
+      "case": "pwm-1.8-4.7",
+      "scenario": "pwm",
+      "vbat_V": 1.8,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.68151e-11, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.68151e-11, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "pwm-2.4-0",
+      "scenario": "pwm",
+      "vbat_V": 2.4,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.30428e-11, timestep = 2.5e-21: trouble with node \"gp\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.30428e-11, timestep = 2.5e-21: trouble with node \"gp\""
+      ]
+    },
+    {
+      "case": "pwm-2.4-4.7",
+      "scenario": "pwm",
+      "vbat_V": 2.4,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.02278e-11, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.02278e-11, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "pwm-3.4-0",
+      "scenario": "pwm",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.0524e-11, timestep = 2.5e-21: trouble with node \"gp\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.0524e-11, timestep = 2.5e-21: trouble with node \"gp\""
+      ]
+    },
+    {
+      "case": "pwm-3.4-4.7",
+      "scenario": "pwm",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.03798e-11, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.03798e-11, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "vdd_loss-0",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 4.82129e-12, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 4.82129e-12, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "vdd_loss-4.7",
+      "scenario": "vdd_loss",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.90481e-12, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.90481e-12, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "mcu_loss-0",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 4.82129e-12, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 4.82129e-12, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "mcu_loss-4.7",
+      "scenario": "mcu_loss",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.90481e-12, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.90481e-12, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "startup-0",
+      "scenario": "startup",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.07929e-06, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.07929e-06, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "startup-4.7",
+      "scenario": "startup",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 1.73427e-06, timestep = 2.5e-21: trouble with node \"gp\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 1.73427e-06, timestep = 2.5e-21: trouble with node \"gp\""
+      ]
+    },
+    {
+      "case": "battery_loss-0",
+      "scenario": "battery_loss",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 4.82129e-12, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 4.82129e-12, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    },
+    {
+      "case": "battery_loss-4.7",
+      "scenario": "battery_loss",
+      "vbat_V": 3.4,
+      "external_gate_R_ohm": 4.7,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 1,
+      "measurements": {
+        "Stack": 0.0
+      },
+      "completed": false,
+      "warnings": [
+        "Warning: Value of resistor r.xp.rta is too small, set to 1.000000e-12",
+        "Warning: Model issue on line 47 :",
+        "unrecognized parameter (n) - ignored",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.90481e-12, timestep = 2.5e-21: trouble with node \"gn\"",
+        "doAnalyses: TRAN:  Timestep too small; time = 2.90481e-12, timestep = 2.5e-21: trouble with node \"gn\""
+      ]
+    }
+  ],
+  "sources": {
+    "UCC27524": "https://www.ti.com/lit/zip/slum510",
+    "SiSS64DN": "https://www.vishay.com/docs/78813/siss64dn_ps_revb.zip",
+    "DMP2008UFG": "https://www.diodes.com/spice/download/2274/DMP2008UFG.spice.txt"
+  },
+  "limitations": [
+    "UCC model is original UCC27524, not guaranteed UCC27524A/SOIC corners.",
+    "MOSFET models are typical, fixed temperature, no self heating or guaranteed maximum charge.",
+    "Rail waveforms, 0.5ohm/10uH motor and 100nH gate/5nH source L are explicit assumptions.",
+    "Generic flyback diode, ideal battery sources, no measured wiring parasitics.",
+    "Threshold overlap uses minimum data sheet thresholds at low test current, not a direct shoot-through current.",
+    "Cross-current indicator includes displacement/diode currents, not solely channel conduction.",
+    "UCC macro uses ideal internal supplies, so zero-VDD physical behavior is not proven.",
+    "4.7ohm external resistors are a circuit proposal, not present in canonical or prior candidate CAD."
+  ]
+}

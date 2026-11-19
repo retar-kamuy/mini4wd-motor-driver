@@ -1,0 +1,17 @@
+Hypothetical stationary RL motor - sensitivity case 9
+Vbat battery 0 1.8
+Rbattery battery bus 0.2
+Rpath bus motor_plus 0.01
+Rmotor motor_plus winding 0.2
+Lmotor winding motor_minus 0.0001
+Sdrive motor_minus 0 gate 0 drive
+Vgate gate 0 PWL(0 0 1m 0 1.001m 5 11m 5 11.001m 0 16m 0)
+Dfree motor_minus motor_plus clamp
+.model drive SW(Ron=0.00286 Roff=1e9 Vt=2.5 Vh=0.1)
+.model clamp D(Is=1e-8 N=1 Rs=0.01 Cjo=0)
+Bcurrent current_monitor 0 V=i(Lmotor)
+.tran 2u 16m 0 2u
+.measure tran i_peak MAX V(current_monitor)
+.measure tran i_before_off FIND V(current_monitor) AT=10.9m
+.measure tran i_after_deadtime FIND V(current_monitor) AT=11.011m
+.end

@@ -1,0 +1,20 @@
+{
+  "removed_tracks": [
+    "b243b3a9-35fc-4299-a3b2-d62bea3ba42f",
+    "b30f8280-72e8-46a7-8f14-11dfd5e9e4ad",
+    "fdfacba9-9c04-4869-824c-03d98a4a6f21",
+    "29469997-1f54-4e1b-833b-b6c4bc96ce9d",
+    "86a6d59b-4d9e-4ef9-89e8-88e914d7d618"
+  ],
+  "remapped_gate_tracks_vias": [
+    "b9196d44-85af-4d00-a3b1-884a69c5c4d4",
+    "d25d7ee9-ae4f-46ec-bb13-a61d763d8910",
+    "d6d65226-15ce-418e-9396-b0ed1abb37cb",
+    "527439ad-20cd-4dd5-8f56-d308efad2c12",
+    "73ad384d-eca4-4385-87d2-2180d198bba9",
+    "efbcf976-e801-4540-ad9d-034e727dd412",
+    "1daaddd8-b7d1-483d-8ece-0511bf3dc8f6",
+    "3313bae3-b17c-4b23-9137-e6c397af5d74"
+  ],
+  "all_other_pad_nets_prechecked": true
+}

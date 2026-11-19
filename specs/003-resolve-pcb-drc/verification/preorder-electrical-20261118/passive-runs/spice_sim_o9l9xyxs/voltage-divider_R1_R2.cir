@@ -1,0 +1,17 @@
+* Auto-generated testbench for voltage divider: R1/R2
+* Expected Vout = 3.3 * 0.120192 = 0.3966 V
+* Model: ideal passives (exact, unloaded)
+
+VIN BOOST_5V 0 DC 3.3
+R1 BOOST_5V FB_BOOST 732k
+R2 FB_BOOST 0 100k
+
+.control
+op 
+let vout_sim = v(FB_BOOST)
+let error_pct = abs(vout_sim - 0.3966336) / 0.3966336 * 100
+echo "vout_sim=$&vout_sim error_pct=$&error_pct expected=0.3966336" > voltage-divider_R1_R2.out
+quit
+.endc
+
+.end

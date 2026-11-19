@@ -1,0 +1,618 @@
+{
+  "status": "sensitivity_only_not_qualification",
+  "simulation_count": 36,
+  "inputs": {
+    "source_voltage_V": [
+      1.8,
+      2.4,
+      3.2
+    ],
+    "assumed_battery_series_resistance_ohm": [
+      0.05,
+      0.2
+    ],
+    "assumed_motor_resistance_ohm": [
+      0.05,
+      0.2,
+      0.5
+    ],
+    "assumed_motor_inductance_H": [
+      1e-05,
+      0.0001
+    ],
+    "assumed_extra_path_resistance_ohm": 0.01,
+    "assumed_driver_on_resistance_ohm": 0.00286
+  },
+  "delay_us": {
+    "nominal": 9.98,
+    "static_min": 9.3144338,
+    "static_max": 10.6517538,
+    "scope": "NDIV1 error and resistor tolerance only; not a bound on actual switch deadtime"
+  },
+  "conduction_5A_W_at_25C": {
+    "Q1_Rds_2_86mohm_Vgs4_5V": 0.07150000000000001,
+    "Q2_Si7137DP_Rds3_9mohm_Vgs_minus2_5V": 0.09749999999999999,
+    "candidate_DMP2008_Rds13mohm_Vgs_minus1_8V": 0.325
+  },
+  "frequency_sensitivity": [
+    {
+      "pwm_Hz": 500,
+      "two_deadtime_fraction_at_nominal_delay": 0.00998,
+      "D1_deadtime_loss_W_at_assumed_constant_5A_and_0_55V": 0.027444999999999997
+    },
+    {
+      "pwm_Hz": 1000,
+      "two_deadtime_fraction_at_nominal_delay": 0.01996,
+      "D1_deadtime_loss_W_at_assumed_constant_5A_and_0_55V": 0.054889999999999994
+    },
+    {
+      "pwm_Hz": 2000,
+      "two_deadtime_fraction_at_nominal_delay": 0.03992,
+      "D1_deadtime_loss_W_at_assumed_constant_5A_and_0_55V": 0.10977999999999999
+    },
+    {
+      "pwm_Hz": 10000,
+      "two_deadtime_fraction_at_nominal_delay": 0.1996,
+      "D1_deadtime_loss_W_at_assumed_constant_5A_and_0_55V": 0.5488999999999999
+    },
+    {
+      "pwm_Hz": 20000,
+      "two_deadtime_fraction_at_nominal_delay": 0.3992,
+      "D1_deadtime_loss_W_at_assumed_constant_5A_and_0_55V": 1.0977999999999999
+    }
+  ],
+  "max_peak_A": 28.35371,
+  "min_peak_A": 2.52504,
+  "cases_exceeding_5A": 24,
+  "max_relative_peak_error": 1.2747999999906058e-05,
+  "cases": [
+    {
+      "case": 0,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 15.948963317384369,
+      "simulated": {
+        "i_peak": 15.94896,
+        "i_before_off": 15.94896,
+        "i_after_deadtime": 14.42103
+      },
+      "relative_peak_error": 2.079999999352822e-07,
+      "bench_sha256": "74330991cd2375928a94a1bf43ce1df5355cbb19de9552d1f9a20664a9c52e12"
+    },
+    {
+      "case": 1,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 15.948963317384369,
+      "simulated": {
+        "i_peak": 15.94876,
+        "i_before_off": 15.94874,
+        "i_after_deadtime": 15.79147
+      },
+      "relative_peak_error": 1.2747999999906058e-05,
+      "bench_sha256": "2c0dcfd6472ac9b40a4329a7dae87e8af5651f884a1f248e465bf6ef21efbd91"
+    },
+    {
+      "case": 2,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 6.847751654873317,
+      "simulated": {
+        "i_peak": 6.847752,
+        "i_before_off": 6.847752,
+        "i_after_deadtime": 5.003587
+      },
+      "relative_peak_error": 5.039999990981888e-08,
+      "bench_sha256": "9b4a9cd9ea344ddf1ef8c3be2e7f40e06c4b68dcff6027336ffae527ab4d0caa"
+    },
+    {
+      "case": 3,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 6.847751654873317,
+      "simulated": {
+        "i_peak": 6.847752,
+        "i_before_off": 6.847752,
+        "i_after_deadtime": 6.644099
+      },
+      "relative_peak_error": 5.039999990981888e-08,
+      "bench_sha256": "9344e7f922330d476c1ff5e82383198f1a839ceea7ad8fe185be532b4d649afc"
+    },
+    {
+      "case": 4,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 3.1979533098816755,
+      "simulated": {
+        "i_peak": 3.197953,
+        "i_before_off": 3.197953,
+        "i_after_deadtime": 1.471077
+      },
+      "relative_peak_error": 9.689999990727394e-08,
+      "bench_sha256": "fcbca7c614176a94bc5d22288e1940fb1cce610568abc7760cacd513f1a3cafe"
+    },
+    {
+      "case": 5,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 3.1979533098816755,
+      "simulated": {
+        "i_peak": 3.197953,
+        "i_before_off": 3.197953,
+        "i_after_deadtime": 2.979837
+      },
+      "relative_peak_error": 9.689999990727394e-08,
+      "bench_sha256": "b74d2bbdea2346e2457ae3b2c7191ab954a66ffab45d956e74e425d70dceaceb"
+    },
+    {
+      "case": 6,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 6.847751654873317,
+      "simulated": {
+        "i_peak": 6.847752,
+        "i_before_off": 6.847752,
+        "i_after_deadtime": 5.89754
+      },
+      "relative_peak_error": 5.039999990981888e-08,
+      "bench_sha256": "944c048b5f6085819b0634f401240e228a3b5b3650c2138acf612de7d32bca10"
+    },
+    {
+      "case": 7,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 6.847751654873317,
+      "simulated": {
+        "i_peak": 6.847752,
+        "i_before_off": 6.847752,
+        "i_after_deadtime": 6.749827
+      },
+      "relative_peak_error": 5.039999990981888e-08,
+      "bench_sha256": "12a161cab606e8b463e2551ba2c93f5b096abb00a0f6c1d5e94b5f0bc4384db6"
+    },
+    {
+      "case": 8,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 4.359831419851766,
+      "simulated": {
+        "i_peak": 4.359831,
+        "i_before_off": 4.359831,
+        "i_after_deadtime": 3.018846
+      },
+      "relative_peak_error": 9.630000001526659e-08,
+      "bench_sha256": "4186672c4b068a6deddffca42369763da2ace3753d1c0a0d0de2bf9ed12a872a"
+    },
+    {
+      "case": 9,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 4.359831419851766,
+      "simulated": {
+        "i_peak": 4.359831,
+        "i_before_off": 4.359831,
+        "i_after_deadtime": 4.211574
+      },
+      "relative_peak_error": 9.630000001526659e-08,
+      "bench_sha256": "173a8810fda52dd0133957d04037987d5691cd6c93fbd9f230e5dcab25bff8f2"
+    },
+    {
+      "case": 10,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 2.5250399797996805,
+      "simulated": {
+        "i_peak": 2.52504,
+        "i_before_off": 2.52504,
+        "i_after_deadtime": 1.082453
+      },
+      "relative_peak_error": 7.999999921122952e-09,
+      "bench_sha256": "a98156fc0279b23d3dc486c4fd806ecf7166a7799948c5f39eebf939e9877a91"
+    },
+    {
+      "case": 11,
+      "vbat_V": 1.8,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 2.5250399797996805,
+      "simulated": {
+        "i_peak": 2.52504,
+        "i_before_off": 2.52504,
+        "i_after_deadtime": 2.342588
+      },
+      "relative_peak_error": 7.999999921122952e-09,
+      "bench_sha256": "09d8d9b8c198fcb875f13d096be708acdd88a0f86d58ec398dd9cb5722af4fd2"
+    },
+    {
+      "case": 12,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 21.265284423179157,
+      "simulated": {
+        "i_peak": 21.26528,
+        "i_before_off": 21.26528,
+        "i_after_deadtime": 19.40555
+      },
+      "relative_peak_error": 2.0799999982390464e-07,
+      "bench_sha256": "5c39b91c3b1544496768895bc5664a903b7c3bc88f41da56036ca2350c2ecd02"
+    },
+    {
+      "case": 13,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 21.265284423179157,
+      "simulated": {
+        "i_peak": 21.26502,
+        "i_before_off": 21.26499,
+        "i_after_deadtime": 21.07361
+      },
+      "relative_peak_error": 1.2434499999862238e-05,
+      "bench_sha256": "c08dcd654d1f0a02397c480e39718f988f0417ac73cca704bc933dc0b0186939"
+    },
+    {
+      "case": 14,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 9.130335539831089,
+      "simulated": {
+        "i_peak": 9.130336,
+        "i_before_off": 9.130336,
+        "i_after_deadtime": 6.8279
+      },
+      "relative_peak_error": 5.0399999974670705e-08,
+      "bench_sha256": "a2c9b05a53aa2231106d64ba5469525f1ea5c135080ab91adb85684bd1a9a4cd"
+    },
+    {
+      "case": 15,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 9.130335539831089,
+      "simulated": {
+        "i_peak": 9.130336,
+        "i_before_off": 9.130336,
+        "i_after_deadtime": 8.8762
+      },
+      "relative_peak_error": 5.0399999974670705e-08,
+      "bench_sha256": "1f7084848775fbaa0124a86e13226a9c1d15ab290a0b74e48720f6ec687d1468"
+    },
+    {
+      "case": 16,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 4.2639377465089,
+      "simulated": {
+        "i_peak": 4.263938,
+        "i_before_off": 4.263938,
+        "i_after_deadtime": 2.088989
+      },
+      "relative_peak_error": 5.945000004514701e-08,
+      "bench_sha256": "3254fdaf42effc4d8164d9ef1fbfdb42da5ec2e18f473583c565475e62f7ba10"
+    },
+    {
+      "case": 17,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 4.2639377465089,
+      "simulated": {
+        "i_peak": 4.263938,
+        "i_before_off": 4.263938,
+        "i_after_deadtime": 3.989557
+      },
+      "relative_peak_error": 5.945000004514701e-08,
+      "bench_sha256": "cad4f43a4d2500d79558d48d9cea64027fcaa3e98090900c89d8f7608de997c5"
+    },
+    {
+      "case": 18,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 9.130335539831089,
+      "simulated": {
+        "i_peak": 9.130336,
+        "i_before_off": 9.130336,
+        "i_after_deadtime": 8.033127
+      },
+      "relative_peak_error": 5.0399999974670705e-08,
+      "bench_sha256": "18149c16f598054c1d4926b903dea77be7688b7b58b22a4b702c0c717bcb3e56"
+    },
+    {
+      "case": 19,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 9.130335539831089,
+      "simulated": {
+        "i_peak": 9.130336,
+        "i_before_off": 9.130336,
+        "i_after_deadtime": 9.017316
+      },
+      "relative_peak_error": 5.0399999974670705e-08,
+      "bench_sha256": "62d1a329d80eb673ba76879166dc0ae728e249689273398beff6f38ad9019581"
+    },
+    {
+      "case": 20,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 5.813108559802354,
+      "simulated": {
+        "i_peak": 5.813109,
+        "i_before_off": 5.813109,
+        "i_after_deadtime": 4.177536
+      },
+      "relative_peak_error": 7.57249999578491e-08,
+      "bench_sha256": "273c0030a8e694de5bc60a805101a4b2fd12cfa5bf5687b9bf7828d556ba8a27"
+    },
+    {
+      "case": 21,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 5.813108559802354,
+      "simulated": {
+        "i_peak": 5.813109,
+        "i_before_off": 5.813109,
+        "i_after_deadtime": 5.632426
+      },
+      "relative_peak_error": 7.57249999578491e-08,
+      "bench_sha256": "1ecabee026ae1f6590ec17519d4c0e973a35e1a778224873634d5247d38f927f"
+    },
+    {
+      "case": 22,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 3.3667199730662403,
+      "simulated": {
+        "i_peak": 3.36672,
+        "i_before_off": 3.36672,
+        "i_after_deadtime": 1.568754
+      },
+      "relative_peak_error": 7.999999965091486e-09,
+      "bench_sha256": "56eb284eb0c29d6641eee3f04c910bc980656135f3bc2165b5b8f2c7312a3c1c"
+    },
+    {
+      "case": 23,
+      "vbat_V": 2.4,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 3.3667199730662403,
+      "simulated": {
+        "i_peak": 3.36672,
+        "i_before_off": 3.36672,
+        "i_after_deadtime": 3.13968
+      },
+      "relative_peak_error": 7.999999965091486e-09,
+      "bench_sha256": "1d44e98a9a1e06f4bbdfe271283c44b355f7f4efa68c56cc9ea79b26f8a72bed"
+    },
+    {
+      "case": 24,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 28.353712564238876,
+      "simulated": {
+        "i_peak": 28.35371,
+        "i_before_off": 28.35371,
+        "i_after_deadtime": 26.05415
+      },
+      "relative_peak_error": 9.043749987012185e-08,
+      "bench_sha256": "3e6076d76b26884075d92aa5f65c039c2475bff190181c46aa5c6cb820aa7ab8"
+    },
+    {
+      "case": 25,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 28.353712564238876,
+      "simulated": {
+        "i_peak": 28.35336,
+        "i_before_off": 28.35331,
+        "i_after_deadtime": 28.11671
+      },
+      "relative_peak_error": 1.2434499999904005e-05,
+      "bench_sha256": "26565cdf67bfe1f2651cef76f6fef76794ce11d6ab025e4ba872e557357d9325"
+    },
+    {
+      "case": 26,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 12.173780719774786,
+      "simulated": {
+        "i_peak": 12.17378,
+        "i_before_off": 12.17378,
+        "i_after_deadtime": 9.262811
+      },
+      "relative_peak_error": 5.912500004063847e-08,
+      "bench_sha256": "cb3e5beff157784870d9fb9b321ef5d0554dd1c45ae6480d360a959b285a9753"
+    },
+    {
+      "case": 27,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 12.173780719774786,
+      "simulated": {
+        "i_peak": 12.17378,
+        "i_before_off": 12.17378,
+        "i_after_deadtime": 11.85259
+      },
+      "relative_peak_error": 5.912500004063847e-08,
+      "bench_sha256": "4ac321af0052742493c33af18eee77d390da6044783a1daf851d4c5be0a193de"
+    },
+    {
+      "case": 28,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 5.685250328678535,
+      "simulated": {
+        "i_peak": 5.68525,
+        "i_before_off": 5.68525,
+        "i_after_deadtime": 2.915257
+      },
+      "relative_peak_error": 5.781250007539373e-08,
+      "bench_sha256": "127f0556deda70746142dec90a6ae280cffb35426bfab6440dad32edfa1a2131"
+    },
+    {
+      "case": 29,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.05,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 5.685250328678535,
+      "simulated": {
+        "i_peak": 5.68525,
+        "i_before_off": 5.68525,
+        "i_after_deadtime": 5.336105
+      },
+      "relative_peak_error": 5.781250007539373e-08,
+      "bench_sha256": "bb3fd51f25b2e635555c0d02c44125fa66ffe03ffcd8c312083b8953f305fb06"
+    },
+    {
+      "case": 30,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 12.173780719774786,
+      "simulated": {
+        "i_peak": 12.17378,
+        "i_before_off": 12.17378,
+        "i_after_deadtime": 10.88326
+      },
+      "relative_peak_error": 5.912500004063847e-08,
+      "bench_sha256": "5ffde013396a06b0399819957164d34189913ae25adfaaa89f65e61299fbc784"
+    },
+    {
+      "case": 31,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.05,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 12.173780719774786,
+      "simulated": {
+        "i_peak": 12.17378,
+        "i_before_off": 12.17378,
+        "i_after_deadtime": 12.04089
+      },
+      "relative_peak_error": 5.912500004063847e-08,
+      "bench_sha256": "81883d16a8091ff204b2d8732b84d835cacf23aea2928c04bab47a24b1a74c1f"
+    },
+    {
+      "case": 32,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 7.7508114130698065,
+      "simulated": {
+        "i_peak": 7.750811,
+        "i_before_off": 7.750811,
+        "i_after_deadtime": 5.725045
+      },
+      "relative_peak_error": 5.3293750136579325e-08,
+      "bench_sha256": "7431bc5dcb35c80417e3b2af65d4e5c2cf2b5080130d44b00c528d36d61ae746"
+    },
+    {
+      "case": 33,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.2,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 7.7508114130698065,
+      "simulated": {
+        "i_peak": 7.750811,
+        "i_before_off": 7.750811,
+        "i_after_deadtime": 7.527155
+      },
+      "relative_peak_error": 5.3293750136579325e-08,
+      "bench_sha256": "dd53b26ea3a597cfe6848139e81b53f0aa2d9d86b12cb793aaa8a30d2d2eaa03"
+    },
+    {
+      "case": 34,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 1e-05,
+      "analytical_stationary_current_A": 4.488959964088321,
+      "simulated": {
+        "i_peak": 4.48896,
+        "i_before_off": 4.48896,
+        "i_after_deadtime": 2.21966
+      },
+      "relative_peak_error": 7.999999833185888e-09,
+      "bench_sha256": "e02d5760101c61f8d58c286062b8f92692f5d66009b5ffc33d382ffe13598fb8"
+    },
+    {
+      "case": 35,
+      "vbat_V": 3.2,
+      "rbat_ohm": 0.2,
+      "rmotor_ohm": 0.5,
+      "inductance_H": 0.0001,
+      "analytical_stationary_current_A": 4.488959964088321,
+      "simulated": {
+        "i_peak": 4.48896,
+        "i_before_off": 4.48896,
+        "i_after_deadtime": 4.202727
+      },
+      "relative_peak_error": 7.999999833185888e-09,
+      "bench_sha256": "c246d10ad05ade50c6dd756a35313609e2b181b82518f900cbb1b94e72130611"
+    }
+  ],
+  "limitations": [
+    "Battery and motor values are hypothetical; they are not a measured load envelope.",
+    "No speed, torque, brush commutation, motor back EMF, mutual inductance, or temperature model.",
+    "The clamp model is not an SS54-HF model, and the switch is not a SiSS64DN gate model.",
+    "No Q2 braking switch, overlapping gates, power sequencing, or hardware current limiting is simulated.",
+    "D1 frequency sensitivity assumes 5 A throughout each blanking interval; it is not measured loss.",
+    "Results cannot prove any peak/stall rating, thermal safety, or universal motor compatibility."
+  ]
+}

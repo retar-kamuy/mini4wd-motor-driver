@@ -1,0 +1,21 @@
+{
+  "scope": "canonical limited hobby prototype CAD; electrical bench acceptance not yet performed",
+  "files_sha256": {
+    "mini4wd-motor-driver.kicad_pcb": "f08db05cf3e73aa4165bf1399ac8172568f59454d1888b83a02aa33275a57eb9",
+    "mini4wd-motor-driver.kicad_sch": "2076b543e7da85a3c056e5cf065159f749c07bea8cd76d38e96ad3344e02bbb8",
+    "gate-control.kicad_sch": "e8d257774fa3529854f456d5eb7a7b8c136459463ee50a1602f4e23ba3b87827",
+    "mini4wd-motor-driver.kicad_pro": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+    "board-routed.pretty/Diodes_PowerDI3333-8_DMP2008UFG.kicad_mod": "eb294d55375e7db00e9ff4b0dd6dc5f38e9984b919c85c97631ab2e4353b11cb",
+    "board-routed.pretty/R_0402_Gate_NoSilk.kicad_mod": "eb66997d4708f252ea38a66253996eab6374f3eba58ff5b807c8606af28b8add"
+  },
+  "new_component_references": [
+    "R105",
+    "R106"
+  ],
+  "Q2_MPN": "DMP2008UFG-7",
+  "resistor_MPNs": {
+    "R105": "CRCW04024R70FKED",
+    "R106": "CRCW040222R0FKED"
+  },
+  "project_settings_unchanged": true
+}

@@ -1,0 +1,6 @@
+{
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb": "514754f50fb7f77a5c9a6e01ddd9abdfa236c773fb83a3be6b39d33ad1f26724",
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pro": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch": "44f1c93561f4130e0eda929441b3dda7395c9d0fb4fbb5348ba569c1eaadc2ee",
+  "hardware/kicad/mini4wd-motor-driver/gate-control.kicad_sch": "1f14c83c396be4fb197aa3af6d67e848aad71d205f49be9d71f701de14542c3a"
+}

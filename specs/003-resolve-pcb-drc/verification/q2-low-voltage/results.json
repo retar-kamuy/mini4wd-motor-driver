@@ -1,0 +1,339 @@
+{
+  "status": "vendor_typical_model_and_explicit_assumptions_not_qualification",
+  "model_url": "https://www.diodes.com/spice/download/2274/DMP2008UFG.spice.txt",
+  "original_model_sha256": "b846cc28c2981f40b1f829b1e395e44980298e68a923b1dc101472e5866c8930",
+  "compatibility_change": "Only .SIMULATOR DEFAULT is commented; model and vendor license retained.",
+  "static_cases": [
+    {
+      "vbat_V": 1.8,
+      "current_A": 1,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.01105505,
+      "vds_on": -0.01105505,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": 1,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.01220951,
+      "vds_on": -0.01220951,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": 5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.011223506,
+      "vds_on": -0.05611753,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": 5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.012412049999999999,
+      "vds_on": -0.06206025,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": 10,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.0114576,
+      "vds_on": -0.114576,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": 10,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.012694430000000001,
+      "vds_on": -0.1269443,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": -5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.010817318,
+      "vds_on": 0.05408659,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 1.8,
+      "current_A": -5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.011922094,
+      "vds_on": 0.05961047,
+      "vgs_on": -1.79
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": 1,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.01019606,
+      "vds_on": -0.01019606,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": 1,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.01124927,
+      "vds_on": -0.01124927,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": 5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.010303766,
+      "vds_on": -0.05151883,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": 5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.011382316,
+      "vds_on": -0.05691158,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": 10,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.01044934,
+      "vds_on": -0.1044934,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": 10,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.01156278,
+      "vds_on": -0.1156278,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": -5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.010040694,
+      "vds_on": 0.05020347,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.0,
+      "current_A": -5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.01105635,
+      "vds_on": 0.05528175,
+      "vgs_on": -1.99
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": 1,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.009132449,
+      "vds_on": -0.009132449,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": 1,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.01002058,
+      "vds_on": -0.01002058,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": 5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.009186978,
+      "vds_on": -0.04593489,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": 5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.010089996,
+      "vds_on": -0.05044998,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": 10,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.009258632999999999,
+      "vds_on": -0.09258633,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": 10,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.01018148,
+      "vds_on": -0.1018148,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": -5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.009052116,
+      "vds_on": 0.04526058,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 2.4,
+      "current_A": -5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.009917744000000001,
+      "vds_on": 0.04958872,
+      "vgs_on": -2.39
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": 1,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.008079192,
+      "vds_on": -0.008079192,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": 1,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.008758242,
+      "vds_on": -0.008758242,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": 5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.008100928,
+      "vds_on": -0.04050464,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": 5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.00878662,
+      "vds_on": -0.0439331,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": 10,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.008128871,
+      "vds_on": -0.08128871,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": 10,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.008823168000000001,
+      "vds_on": -0.08823168,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": -5,
+      "temp_C": 25,
+      "r_on_model_ohm": 0.008046722000000001,
+      "vds_on": 0.04023361,
+      "vgs_on": -3.19
+    },
+    {
+      "vbat_V": 3.2,
+      "current_A": -5,
+      "temp_C": 85,
+      "r_on_model_ohm": 0.008715604,
+      "vds_on": 0.04357802,
+      "vgs_on": -3.19
+    }
+  ],
+  "transient_cases": [
+    {
+      "vbat_V": 1.8,
+      "assumed_motor_inductance_H": 1e-05,
+      "i_motor_peak": 5.798928,
+      "vgs_max": 3.419995,
+      "vgs_min": -1.790414,
+      "vds_max": 0.2867011,
+      "vds_min": -2.300093
+    },
+    {
+      "vbat_V": 1.8,
+      "assumed_motor_inductance_H": 0.0001,
+      "i_motor_peak": 5.444532,
+      "vgs_max": 3.410695,
+      "vgs_min": -1.79039,
+      "vds_max": 0.3375945,
+      "vds_min": -2.300093
+    },
+    {
+      "vbat_V": 2.4,
+      "assumed_motor_inductance_H": 1e-05,
+      "i_motor_peak": 5.819748,
+      "vgs_max": 2.819196,
+      "vgs_min": -2.390321,
+      "vds_max": 0.3790064,
+      "vds_min": -2.869815
+    },
+    {
+      "vbat_V": 2.4,
+      "assumed_motor_inductance_H": 0.0001,
+      "i_motor_peak": 5.440374,
+      "vgs_max": 2.811806,
+      "vgs_min": -2.390313,
+      "vds_max": 0.3471111,
+      "vds_min": -2.878027
+    },
+    {
+      "vbat_V": 3.2,
+      "assumed_motor_inductance_H": 1e-05,
+      "i_motor_peak": 5.831618,
+      "vgs_max": 2.024256,
+      "vgs_min": -3.190409,
+      "vds_max": 0.3652562,
+      "vds_min": -3.680193
+    },
+    {
+      "vbat_V": 3.2,
+      "assumed_motor_inductance_H": 0.0001,
+      "i_motor_peak": 5.445378,
+      "vgs_max": 2.013982,
+      "vgs_min": -3.190182,
+      "vds_max": 0.3541514,
+      "vds_min": -3.683914
+    }
+  ],
+  "boost_feedback_static_V": [
+    4.782403960396039,
+    5.207745454545454
+  ],
+  "DC_guaranteed_25C_loss_W_at_5A": {
+    "minus1_5V": 0.42500000000000004,
+    "minus1_8V": 0.325,
+    "minus2_5V": 0.245
+  },
+  "limitations": [
+    "Manufacturer typical MOSFET model is not a tolerance or SOA guarantee.",
+    "DC VOL=0.01V is an assumed driver level; actual UCC output and traces are not modeled.",
+    "Transient driver is a prescribed source plus 1ohm and 20nH; no UCC internal logic, UVLO or startup guarantee.",
+    "Transient motor is hypothetical 0.5ohm plus 10/100uH with a prescribed decaying 3V back EMF, not an identified motor.",
+    "Clamp diodes are generic; no measured layout parasitics, heating or real battery impedance.",
+    "Feedback output estimate includes resistor 1% and reference 2.5% only; startup/overshoot and faults are outside it.",
+    "ngspice ignores unsupported model parameter N on the LEVEL=3 MOSFET and clamps Rta=1e-20ohm to 1e-12ohm; results remain exploratory.",
+    "No claim of universal motor compatibility, PCBA readiness or measured temperature."
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "status": "typical_27C_model_energy_comparison_not_heat_or_PVT_guarantee",
+  "cases": [
+    {
+      "case": "stable-losscompare-22-3.4",
+      "scenario": "pwm",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.416609,
+        "vgn_min": -0.4923047,
+        "vgp_max": 1.980149,
+        "vgp_min": -3.401928,
+        "vdn_max": 7.038203,
+        "vdn_min": -0.002906605,
+        "vdp_max": 0.5476157,
+        "vdp_min": -7.539863
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.992915088,
+        "cross_current_indicator_charge_C": 3.2660230434633017e-08,
+        "full_waveform_points": 110058,
+        "final_time_s": 0.00011
+      },
+      "positive_terminal_energy_J": {
+        "Q1": 2.03371452341057e-06,
+        "Q2": 5.74578171563593e-06
+      },
+      "logic_nominal_V": 3.267
+    },
+    {
+      "case": "stable-losscompare-33-3.4",
+      "scenario": "pwm",
+      "vbat_V": 3.4,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.41667,
+        "vgn_min": -0.4924265,
+        "vgp_max": 2.00047,
+        "vgp_min": -3.401865,
+        "vdn_max": 7.043047,
+        "vdn_min": -0.002831081,
+        "vdp_max": 0.5476253,
+        "vdp_min": -7.490165
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.988371863,
+        "cross_current_indicator_charge_C": 3.208277821890797e-08,
+        "full_waveform_points": 110059,
+        "final_time_s": 0.00011
+      },
+      "positive_terminal_energy_J": {
+        "Q1": 2.0210518933934425e-06,
+        "Q2": 5.7779921489194165e-06
+      },
+      "logic_nominal_V": 3.267
+    },
+    {
+      "case": "stable-losscompare-22-1.8",
+      "scenario": "pwm",
+      "vbat_V": 1.8,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 22,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.094597,
+        "vgn_min": -0.4256022,
+        "vgp_max": 3.221008,
+        "vgp_min": -1.800936,
+        "vdn_max": 4.462308,
+        "vdn_min": -0.001780174,
+        "vdp_max": 0.5199188,
+        "vdp_min": -4.402834
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.736130856,
+        "cross_current_indicator_charge_C": 2.4855014696277098e-08,
+        "full_waveform_points": 110059,
+        "final_time_s": 0.00011
+      },
+      "positive_terminal_energy_J": {
+        "Q1": 6.970154218572989e-07,
+        "Q2": 2.1991480858076346e-06
+      },
+      "logic_nominal_V": 3.267
+    },
+    {
+      "case": "stable-losscompare-33-1.8",
+      "scenario": "pwm",
+      "vbat_V": 1.8,
+      "fixed_model_temperature_C": 27,
+      "UCC_model_file": "UCC27524.lib",
+      "external_gate_R_ohm": 4.7,
+      "external_Q2_gate_R_ohm": 33,
+      "extra_Q1_gate_C_F": 0,
+      "assumed_gate_L_H": 1e-07,
+      "returncode": 0,
+      "measurements": {
+        "vgn_max": 5.0941,
+        "vgn_min": -0.4235126,
+        "vgp_max": 3.203833,
+        "vgp_min": -1.800914,
+        "vdn_max": 4.468556,
+        "vdn_min": -0.001706821,
+        "vdp_max": 0.5198841,
+        "vdp_min": -4.292286
+      },
+      "completed": true,
+      "warnings": [
+        "Warning: Model issue on line 48 :",
+        "unrecognized parameter (n) - ignored"
+      ],
+      "postprocessed": {
+        "conservative_gate_overlap_s": 0,
+        "cross_current_indicator_peak_A": 0.712592864,
+        "cross_current_indicator_charge_C": 2.42157345988316e-08,
+        "full_waveform_points": 110058,
+        "final_time_s": 0.00011
+      },
+      "positive_terminal_energy_J": {
+        "Q1": 6.872724696960663e-07,
+        "Q2": 2.2239360275924355e-06
+      },
+      "logic_nominal_V": 3.267
+    }
+  ]
+}

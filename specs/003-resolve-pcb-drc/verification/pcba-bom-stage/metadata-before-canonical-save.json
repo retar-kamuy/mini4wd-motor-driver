@@ -1,0 +1,24 @@
+{
+  "source": ".cache/routing/pcba-preorder/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "bbe19527649e0b294176f81a35cec709c7dd3d357bc39ff5222e6787fc61473f",
+  "candidate": ".cache/pcba-bom-stage/final-board/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "848eeb08e57e969b99127dde64c8b579909f5e35d7137a6400f6554477f0a324",
+  "source_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "candidate_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "changed_fields": [
+    {
+      "reference": "J1",
+      "field": "SelectionStatus",
+      "old": "Selected candidate; supplier and assembly DFM pending; footprint correction in progress",
+      "new": "Selected; manufacturer land pattern checked; vendor DFM/sourcing pending"
+    },
+    {
+      "reference": "J2",
+      "field": "SelectionStatus",
+      "old": "Selected candidate; supplier and assembly DFM pending; footprint correction in progress",
+      "new": "Selected; manufacturer land pattern checked; vendor DFM/sourcing pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required"
+}

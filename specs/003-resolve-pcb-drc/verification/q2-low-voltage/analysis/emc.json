@@ -1,0 +1,1300 @@
+{
+  "analyzer_type": "emc",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      ".cache/sol-q2-lowvoltage/schematic.json",
+      ".cache/sol-q2-lowvoltage/pcb.json"
+    ],
+    "source_hashes": {
+      ".cache/sol-q2-lowvoltage/schematic.json": "f9c3c9513a2e06a50c7ea0d4e569333a0ab00fd73efc7416575c5758652923cd",
+      ".cache/sol-q2-lowvoltage/pcb.json": "594033941b5b07cb031dd3691d392302a8c45217846bd59a418434f86d8df1b5"
+    },
+    "run_id": "20261115T064617Z-d4e33f",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": ".cache/sol-q2-lowvoltage/schematic.json",
+        "sha256": "f9c3c9513a2e06a50c7ea0d4e569333a0ab00fd73efc7416575c5758652923cd",
+        "schema_version": "1.4.0",
+        "run_id": "20261115T064617Z-d4e33f"
+      },
+      "pcb": {
+        "path": ".cache/sol-q2-lowvoltage/pcb.json",
+        "sha256": "594033941b5b07cb031dd3691d392302a8c45217846bd59a418434f86d8df1b5",
+        "schema_version": "1.4.0",
+        "run_id": "20261115T064617Z-d4e33f"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "diagnostics": [],
+  "summary": {
+    "total_findings": 19,
+    "categories_checked": 6,
+    "active": 19,
+    "suppressed": 0,
+    "by_severity": {
+      "error": 2,
+      "warning": 10,
+      "info": 7
+    },
+    "emc_risk_score": 64.0
+  },
+  "target_standard": "fcc-class-b",
+  "findings": [
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-001",
+      "category": "ground_plane",
+      "summary": "Return path not checked: no ground or power plane fill",
+      "description": "The PCB analysis ran with --full but the board file holds no filled zone polygons to check traces against, so return path continuity was not evaluated.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Fill the ground or power zones (Edit > Fill All Zones), save the board and re-run the PCB analysis.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-001:6ef5e801955c"
+    },
+    {
+      "detector": "emc_ground_plane",
+      "rule_id": "GP-002",
+      "category": "ground_plane",
+      "summary": "No ground plane zones detected",
+      "description": "Board has 2 copper layers but no ground plane zones were found. A solid ground plane is the single most important EMC design feature.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "severity": "error",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground pour on B.Cu covering as much area as possible.",
+      "report_context": {
+        "section": "Ground Plane",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:GP-002:6ad3eb0974a3"
+    },
+    {
+      "detector": "emc_io_filtering",
+      "rule_id": "IO-001",
+      "category": "io_filtering",
+      "summary": "No EMC filtering near J1",
+      "description": "Connector J1 (Micro-Fit 3.0 B+/B-) has no ferrite bead, CM choke, or ESD protection within 25mm. Unfiltered I/O cables are the dominant source of radiated emissions \u2014 common-mode current as low as 5 \u00b5A can exceed FCC Class B.",
+      "components": [
+        "J1"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "J1 appears to be a power-only connector (all pins are power/ground rails). A board-level ferrite bead would saturate at typical power-supply currents. If radiated EMI is a concern on the cable, add a system-level common-mode choke or use shielded cable with chassis termination.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "ferrite_bead"
+          }
+        ],
+        "basis": "EMI filter on external I/O"
+      },
+      "report_context": {
+        "section": "Io Filtering",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "emc:IO-001:j1"
+    },
+    {
+      "detector": "emc_io_filtering",
+      "rule_id": "IO-001",
+      "category": "io_filtering",
+      "summary": "No EMC filtering near J2",
+      "description": "Connector J2 (Micro-Fit 3.0 M+/M-) has no ferrite bead, CM choke, or ESD protection within 25mm. Unfiltered I/O cables are the dominant source of radiated emissions \u2014 common-mode current as low as 5 \u00b5A can exceed FCC Class B.",
+      "components": [
+        "J2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Add a ferrite bead (e.g., BLM18AG601SN1D, 600\u03a9@100MHz) on signal lines near J2. Add ESD/TVS protection for external interfaces.",
+      "fix_params": {
+        "type": "add_component",
+        "components": [
+          {
+            "type": "ferrite_bead"
+          }
+        ],
+        "basis": "EMI filter on external I/O"
+      },
+      "report_context": {
+        "section": "Io Filtering",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "emc:IO-001:j2"
+    },
+    {
+      "detector": "emc_emission_estimate",
+      "rule_id": "EE-001",
+      "category": "emission_estimate",
+      "summary": "Board cavity resonance frequencies",
+      "description": "Board (55\u00d721mm, \u03b5r=4.4) cavity resonances: (1,0) at 1299 MHz; (2,0) at 2599 MHz. PDN impedance spikes at these frequencies. Ensure adequate decoupling at and around these frequencies.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Add decoupling capacitors with SRF near these frequencies.",
+      "report_context": {
+        "section": "Emission Estimate",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:EE-001:14ba23cdf0dc"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: MOTOR_MINUS",
+      "description": "Net MOTOR_MINUS has 11 layer transition(s) across B.Cu, F.Cu. 11 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "MOTOR_MINUS"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:motor_minus"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: DRIVE_ENABLE",
+      "description": "Net DRIVE_ENABLE has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "DRIVE_ENABLE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:drive_enable"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: GATE_N",
+      "description": "Net GATE_N has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "GATE_N"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:gate_n"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: PWM_DRIVE",
+      "description": "Net PWM_DRIVE has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "PWM_DRIVE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:pwm_drive"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: FB_BOOST",
+      "description": "Net FB_BOOST has 2 layer transition(s) across B.Cu, F.Cu. 1 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "FB_BOOST"
+      ],
+      "pins": [],
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:fb_boost"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: MID_SENSE",
+      "description": "Net MID_SENSE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "MID_SENSE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:mid_sense"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: PWM_QUALIFIED",
+      "description": "Net PWM_QUALIFIED has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "PWM_QUALIFIED"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:pwm_qualified"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: P_COMMAND",
+      "description": "Net P_COMMAND has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "P_COMMAND"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:p_command"
+    },
+    {
+      "detector": "emc_return_path",
+      "rule_id": "RP-001",
+      "category": "return_path",
+      "summary": "Missing stitching via at layer transition: VBAT_SENSE",
+      "description": "Net VBAT_SENSE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+      "components": [],
+      "nets": [
+        "VBAT_SENSE"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:RP-001:vbat_sense"
+    },
+    {
+      "detector": "emc_switching_emc",
+      "rule_id": "SW-001",
+      "category": "switching_emc",
+      "summary": "U2 harmonics in 30-88 MHz band",
+      "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 59 harmonics in the 30-88 MHz band (harmonics 30-88). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+      "report_context": {
+        "section": "Switching Emc",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:SW-001:u2"
+    },
+    {
+      "detector": "emc_switching_emc",
+      "rule_id": "SW-001",
+      "category": "switching_emc",
+      "summary": "U2 harmonics in 88-216 MHz band",
+      "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 129 harmonics in the 88-216 MHz band (harmonics 88-216). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+      "report_context": {
+        "section": "Switching Emc",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:SW-001:u2#1"
+    },
+    {
+      "detector": "emc_switching_emc",
+      "rule_id": "SW-001",
+      "category": "switching_emc",
+      "summary": "U2 harmonics in 216-960 MHz band",
+      "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 745 harmonics in the 216-960 MHz band (harmonics 216-960). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+      "report_context": {
+        "section": "Switching Emc",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:SW-001:u2#2"
+    },
+    {
+      "detector": "emc_emission_estimate",
+      "rule_id": "EE-002",
+      "category": "emission_estimate",
+      "summary": "U2 harmonic envelope",
+      "description": "U2 (TPS61023DRLR) switching at 1.00 MHz, duty \u224850%. Harmonic envelope: flat to 0.6 MHz, -20 dB/dec to 32 MHz, -40 dB/dec above. Harmonics extend into FCC test range starting at 30th harmonic.",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "severity": "info",
+      "confidence": "heuristic",
+      "evidence_source": "heuristic_rule",
+      "recommendation": "Minimize the hot loop area (input cap \u2192 high-side switch \u2192 inductor \u2192 low-side switch \u2192 input cap). Every halving of loop area reduces emissions by 6 dB.",
+      "report_context": {
+        "section": "Emission Estimate",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:EE-002:u2"
+    },
+    {
+      "detector": "emc_diff_pair",
+      "rule_id": "DP-003",
+      "category": "diff_pair",
+      "summary": "differential diff pair changes layers",
+      "description": "Net GATE_N (part of differential diff pair) transitions across 2 layers (B.Cu, F.Cu) with 4 via(s), not all with a ground via within 1mm. Each layer transition is a potential DM-to-CM conversion point.",
+      "components": [
+        "U104"
+      ],
+      "nets": [
+        "GATE_N"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Add a ground stitching via within 1mm of each signal via. Preferably route diff pairs on a single layer to avoid layer transitions entirely.",
+      "report_context": {
+        "section": "Diff Pair",
+        "impact": "",
+        "standard_ref": ""
+      },
+      "schema_era": "v3.0",
+      "suppressed": false,
+      "suppression_reason": "",
+      "stages": [
+        "layout"
+      ],
+      "finding_id": "emc:DP-003:u104"
+    }
+  ],
+  "assessments": [],
+  "per_net_scores": [
+    {
+      "net": "GATE_N",
+      "score": 85.0,
+      "finding_count": 2,
+      "rules": [
+        "DP-003",
+        "RP-001"
+      ]
+    },
+    {
+      "net": "MOTOR_MINUS",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "DRIVE_ENABLE",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "PWM_DRIVE",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "MID_SENSE",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "PWM_QUALIFIED",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "P_COMMAND",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "VBAT_SENSE",
+      "score": 97.0,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    },
+    {
+      "net": "FB_BOOST",
+      "score": 100,
+      "finding_count": 1,
+      "rules": [
+        "RP-001"
+      ]
+    }
+  ],
+  "test_plan": {
+    "frequency_bands": [
+      {
+        "band": "30-88 MHz",
+        "freq_min_hz": 30000000.0,
+        "freq_max_hz": 88000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 30-88"
+        ]
+      },
+      {
+        "band": "88-216 MHz",
+        "freq_min_hz": 88000000.0,
+        "freq_max_hz": 216000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 88-216"
+        ]
+      },
+      {
+        "band": "216-960 MHz",
+        "freq_min_hz": 216000000.0,
+        "freq_max_hz": 960000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 216-960"
+        ]
+      },
+      {
+        "band": "960-40000 MHz",
+        "freq_min_hz": 960000000.0,
+        "freq_max_hz": 40000000000.0,
+        "risk_level": "low",
+        "source_count": 1,
+        "sources": [
+          "U2 (TPS61023DRLR) harmonics 960-40000"
+        ]
+      }
+    ],
+    "interface_risks": [
+      {
+        "connector": "J1",
+        "value": "Micro-Fit 3.0 B+/B-",
+        "protocol": "unknown",
+        "risk_score": 5,
+        "reasons": [
+          "No EMC filtering detected"
+        ]
+      },
+      {
+        "connector": "J2",
+        "value": "Micro-Fit 3.0 M+/M-",
+        "protocol": "unknown",
+        "risk_score": 5,
+        "reasons": [
+          "No EMC filtering detected"
+        ]
+      }
+    ],
+    "probe_points": [
+      {
+        "x": 40.3,
+        "y": 8.5,
+        "type": "inductor",
+        "ref": "L1",
+        "reason": "Switching inductor \u2014 highest dI/dt source"
+      },
+      {
+        "x": 5.5,
+        "y": 10.5,
+        "type": "unfiltered_connector",
+        "ref": "J1",
+        "reason": "Unfiltered I/O \u2014 cable radiation risk"
+      },
+      {
+        "x": 49.5,
+        "y": 10.5,
+        "type": "unfiltered_connector",
+        "ref": "J2",
+        "reason": "Unfiltered I/O \u2014 cable radiation risk"
+      }
+    ]
+  },
+  "regulatory_coverage": {
+    "market": "us",
+    "applicable_standards": [
+      "FCC Part 15 Class B",
+      "FCC Part 15 Class B"
+    ],
+    "coverage_matrix": [
+      {
+        "standard": "FCC Part 15 Class B",
+        "test_type": "radiated",
+        "coverage": "minimal",
+        "checked_rules": [
+          "GP-001",
+          "GP-002",
+          "SW-001",
+          "IO-001",
+          "DP-003",
+          "EE-001",
+          "EE-002"
+        ],
+        "total_applicable_rules": 23,
+        "note": "Design rule checks identify common radiation sources. Cannot predict absolute emission levels."
+      },
+      {
+        "standard": "FCC Part 15 Class B",
+        "test_type": "conducted",
+        "coverage": "partial",
+        "checked_rules": [
+          "SW-001",
+          "EE-002"
+        ],
+        "total_applicable_rules": 4,
+        "note": "Switching harmonic analysis and decoupling checks. EMI filter verification not yet implemented."
+      }
+    ]
+  },
+  "category_summary": {
+    "ground_plane": {
+      "count": 2,
+      "max_severity": "error",
+      "severities": {
+        "error": 1,
+        "warning": 0,
+        "info": 1
+      },
+      "suppressed_count": 0
+    },
+    "io_filtering": {
+      "count": 2,
+      "max_severity": "info",
+      "severities": {
+        "error": 0,
+        "warning": 0,
+        "info": 2
+      },
+      "suppressed_count": 0
+    },
+    "emission_estimate": {
+      "count": 2,
+      "max_severity": "info",
+      "severities": {
+        "error": 0,
+        "warning": 0,
+        "info": 2
+      },
+      "suppressed_count": 0
+    },
+    "return_path": {
+      "count": 9,
+      "max_severity": "error",
+      "severities": {
+        "error": 1,
+        "warning": 7,
+        "info": 1
+      },
+      "suppressed_count": 0
+    },
+    "switching_emc": {
+      "count": 3,
+      "max_severity": "warning",
+      "severities": {
+        "error": 0,
+        "warning": 2,
+        "info": 1
+      },
+      "suppressed_count": 0
+    },
+    "diff_pair": {
+      "count": 1,
+      "max_severity": "warning",
+      "severities": {
+        "error": 0,
+        "warning": 1,
+        "info": 0
+      },
+      "suppressed_count": 0
+    }
+  },
+  "board_info": {
+    "board_width_mm": 55.0,
+    "board_height_mm": 21.0,
+    "layer_count": 2,
+    "footprint_count": 35,
+    "via_count": 66,
+    "has_stackup": false,
+    "total_components": 35,
+    "total_nets": 27,
+    "switching_frequencies_hz": [
+      1000000.0
+    ]
+  },
+  "elapsed_s": 0.011,
+  "audience_summary": {
+    "designer": {
+      "total_findings": 19,
+      "by_severity": {
+        "error": 2,
+        "warning": 10,
+        "info": 7
+      },
+      "by_category": {
+        "ground_plane": 2,
+        "io_filtering": 2,
+        "emission_estimate": 2,
+        "return_path": 9,
+        "switching_emc": 3,
+        "diff_pair": 1
+      },
+      "top_issues": [
+        {
+          "detector": "emc_ground_plane",
+          "rule_id": "GP-002",
+          "category": "ground_plane",
+          "summary": "No ground plane zones detected",
+          "description": "Board has 2 copper layers but no ground plane zones were found. A solid ground plane is the single most important EMC design feature.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "severity": "error",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground pour on B.Cu covering as much area as possible.",
+          "report_context": {
+            "section": "Ground Plane",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:GP-002:6ad3eb0974a3"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: GATE_N",
+          "description": "Net GATE_N has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "GATE_N"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:gate_n"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: MOTOR_MINUS",
+          "description": "Net MOTOR_MINUS has 11 layer transition(s) across B.Cu, F.Cu. 11 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "MOTOR_MINUS"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:motor_minus"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: DRIVE_ENABLE",
+          "description": "Net DRIVE_ENABLE has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "DRIVE_ENABLE"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:drive_enable"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: PWM_DRIVE",
+          "description": "Net PWM_DRIVE has 4 layer transition(s) across B.Cu, F.Cu. 4 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "PWM_DRIVE"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:pwm_drive"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: MID_SENSE",
+          "description": "Net MID_SENSE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "MID_SENSE"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:mid_sense"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: PWM_QUALIFIED",
+          "description": "Net PWM_QUALIFIED has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "PWM_QUALIFIED"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:pwm_qualified"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: P_COMMAND",
+          "description": "Net P_COMMAND has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "P_COMMAND"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:p_command"
+        },
+        {
+          "detector": "emc_return_path",
+          "rule_id": "RP-001",
+          "category": "return_path",
+          "summary": "Missing stitching via at layer transition: VBAT_SENSE",
+          "description": "Net VBAT_SENSE has 2 layer transition(s) across B.Cu, F.Cu. 2 transition(s) have no ground stitching via within 1.0mm. The return current must find an alternate path, creating a loop antenna.",
+          "components": [],
+          "nets": [
+            "VBAT_SENSE"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:RP-001:vbat_sense"
+        },
+        {
+          "detector": "emc_switching_emc",
+          "rule_id": "SW-001",
+          "category": "switching_emc",
+          "summary": "U2 harmonics in 30-88 MHz band",
+          "description": "U2 (TPS61023DRLR) switching at 1.0 MHz has 59 harmonics in the 30-88 MHz band (harmonics 30-88). Envelope rolloff at 32 MHz (-40 dB/decade above).",
+          "components": [
+            "U2"
+          ],
+          "nets": [],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "heuristic",
+          "evidence_source": "heuristic_rule",
+          "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+          "report_context": {
+            "section": "Switching Emc",
+            "impact": "",
+            "standard_ref": ""
+          },
+          "schema_era": "v3.0",
+          "suppressed": false,
+          "suppression_reason": "",
+          "stages": [
+            "layout"
+          ],
+          "finding_id": "emc:SW-001:u2"
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 12,
+      "by_category": {
+        "ground_plane": 1,
+        "return_path": 8,
+        "switching_emc": 2,
+        "diff_pair": 1
+      },
+      "top_issues": [
+        {
+          "rule_id": "GP-002",
+          "severity": "error",
+          "summary": "No ground plane zones detected",
+          "recommendation": "Add a ground pour on B.Cu covering as much area as possible.",
+          "category": "ground_plane"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "error",
+          "summary": "Missing stitching via at layer transition: GATE_N",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: MOTOR_MINUS",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: DRIVE_ENABLE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: PWM_DRIVE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: MID_SENSE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: PWM_QUALIFIED",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: P_COMMAND",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-001",
+          "severity": "warning",
+          "summary": "Missing stitching via at layer transition: VBAT_SENSE",
+          "recommendation": "Add a ground stitching via within 1.0mm of each signal via. Place the ground via adjacent to the signal via on the same pad cluster.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "SW-001",
+          "severity": "warning",
+          "summary": "U2 harmonics in 30-88 MHz band",
+          "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+          "category": "switching_emc"
+        },
+        {
+          "rule_id": "SW-001",
+          "severity": "warning",
+          "summary": "U2 harmonics in 88-216 MHz band",
+          "recommendation": "Minimize switching loop area for U2. Place input cap as close as possible. Consider spread-spectrum modulation if available.",
+          "category": "switching_emc"
+        },
+        {
+          "rule_id": "DP-003",
+          "severity": "warning",
+          "summary": "differential diff pair changes layers",
+          "recommendation": "Add a ground stitching via within 1mm of each signal via. Preferably route diff pairs on a single layer to avoid layer transitions entirely.",
+          "category": "diff_pair"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "moderate",
+      "blocker_count": 2,
+      "warning_count": 10,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "needs_work",
+        "pre_fab": "pass",
+        "bring_up": "pass"
+      },
+      "one_liner": "2 errors, 10 warnings across 4 categories. Layout stage has blockers."
+    }
+  },
+  "trust_summary": {
+    "total_findings": 19,
+    "trust_level": "mixed",
+    "by_confidence": {
+      "deterministic": 12,
+      "heuristic": 7,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 12,
+      "heuristic_rule": 7,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261115T064617Z-d4e33f"
+  }
+}

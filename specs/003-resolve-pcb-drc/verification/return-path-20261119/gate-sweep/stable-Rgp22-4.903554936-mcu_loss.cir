@@ -1,0 +1,51 @@
+Q1 Q2 UCC27524 switching validation: stable-Rgp22-4.903554936-mcu_loss
+.include UCC27524.lib
+.include SiSS64DN.lib
+.include DMP2008UFG-stable.lib
+Vbat batt 0 3.4
+Vdd dd 0 4.903554936
+Vlogic logic 0 PWL(0 3.3 60u 3.3 60.02u 0)
+Vena ena 0 PWL(0 3.3 59.98u 3.3 60u 0)
+Va a 0 PWL(0 3.3 60u 3.3 60.02u 0)
+Vb b 0 PWL(0 3.3 60u 3.3 60.02u 0)
+Xdrv a b oa ob dd ena logic 0 UCC27524
+Rgn oa lgn 4.7
+Rgp ob lgp 22
+Lgn lgn gn 1e-07
+Lgp lgp gp 1e-07
+Lsn sn snx 5n
+Rsn snx 0 .001
+Lsp sp spx 5n
+Rsp spx batt .001
+Vqn m dn 0
+Vqp m dp 0
+Xn dn gn sn SiSS64DN
+CextraN gn sn 1.8e-09
+Xp dp gp sp DMP2008UFG
+Rmotor batt wind .5
+Lmotor wind m 10u
+Dfly m batt Dfree
+.model Dfree D(Is=1e-8 N=1 Rs=.01 BV=40 Cjo=500p Tt=3n)
+BvgN vgn 0 V=V(gn,sn)
+BvgP vgp 0 V=V(gp,sp)
+BvdN vdn 0 V=V(dn,sn)
+BvdP vdp 0 V=V(dp,sp)
+.temp 27
+.options method=gear reltol=.005 abstol=1e-8 chgtol=1e-14 trtol=7
+.tran .2n 110u 0 .2n
+.measure tran vgn_max MAX V(vgn)
+.measure tran vgn_min MIN V(vgn)
+.measure tran vgp_max MAX V(vgp)
+.measure tran vgp_min MIN V(vgp)
+.measure tran vdn_max MAX V(vdn)
+.measure tran vdn_min MIN V(vdn)
+.measure tran vdp_max MAX V(vdp)
+.measure tran vdp_min MIN V(vdp)
+.control
+run
+set wr_singlescale
+set wr_vecnames
+wrdata stable-Rgp22-4.903554936-mcu_loss.dat v(vgn) v(vgp) v(vdn) v(vdp) i(vqn) i(vqp)
+quit
+.endc
+.end

@@ -1,0 +1,13 @@
+{
+  "boost_static_high_sensitivity_V": 5.212886364236815,
+  "charge_budget_each_C": 3e-07,
+  "PWM_budget_Hz": 20000,
+  "average_loss_budget_each_W": 0.03127731818542089,
+  "pulse_voltage_budget_V": 6,
+  "pulse_length_budget_s": 1e-06,
+  "R105_peak_resistive_W": 7.659574468085106,
+  "R106_peak_resistive_W": 1.6363636363636365,
+  "rated_0402_W_at70C": 0.063,
+  "linear_derating_100C_W": 0.04076470588235294,
+  "scope": "same prior explicit budget, not guaranteed actual charge/waveform; resistance tolerance, measured temperatures and pulse waveform remain acceptance checks"
+}

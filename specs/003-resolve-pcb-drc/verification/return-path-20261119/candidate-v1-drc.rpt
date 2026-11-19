@@ -1,0 +1,149 @@
+** Drc report for mini4wd-motor-driver.kicad_pcb **
+** Created on 2026-11-19T00:11:52 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 34 DRC violations **
+[shorting_items]: Items shorting two nets (nets GND and VBAT)
+    Local override; error
+    @(32.5550 mm, 8.6900 mm): Track [GND] on F.Cu, length 1.0950 mm
+    @(33.8948 mm, 8.4452 mm): Track [VBAT] on F.Cu, length 3.2782 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(32.5550 mm, 8.6900 mm): Track [GND] on F.Cu, length 1.0950 mm
+    @(33.5343 mm, 11.0807 mm): Track [FB_BOOST] on F.Cu, length 3.0464 mm
+[shorting_items]: Items shorting two nets (nets SW_BOOST and BOOST_5V)
+    Local override; error
+    @(36.5500 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 1.6263 mm
+    @(36.7400 mm, 7.0881 mm): Via [BOOST_5V] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0423 mm)
+    Rule: netclass 'Default'; error
+    @(37.7000 mm, 8.5000 mm): Track [SW_BOOST] on F.Cu, length 0.9750 mm
+    @(37.0095 mm, 8.8481 mm): Track [FB_BOOST] on F.Cu, length 0.4257 mm
+[shorting_items]: Items shorting two nets (nets VBAT and GND)
+    Local override; error
+    @(33.8948 mm, 8.4452 mm): Track [VBAT] on F.Cu, length 3.2782 mm
+    @(33.6500 mm, 8.6900 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(33.8948 mm, 8.4452 mm): Track [VBAT] on F.Cu, length 3.2782 mm
+    @(33.6500 mm, 8.6900 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets VBAT and GND)
+    Local override; error
+    @(34.4900 mm, 7.8500 mm): Track [VBAT] on F.Cu, length 0.8417 mm
+    @(33.6500 mm, 8.6900 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0962 mm)
+    Rule: board setup constraints hole; error
+    @(34.4900 mm, 7.8500 mm): Track [VBAT] on F.Cu, length 0.8417 mm
+    @(33.6500 mm, 8.6900 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets VBAT and GND)
+    Local override; error
+    @(34.4900 mm, 7.8500 mm): Track [VBAT] on F.Cu, length 0.8417 mm
+    @(32.5550 mm, 8.6900 mm): Track [GND] on F.Cu, length 1.0950 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(36.5500 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 1.6263 mm
+    @(36.7400 mm, 7.0881 mm): Via [BOOST_5V] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(36.5500 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 1.6263 mm
+    @(37.3105 mm, 8.5471 mm): Track [FB_BOOST] on F.Cu, length 1.6362 mm
+[shorting_items]: Items shorting two nets (nets SW_BOOST and FB_BOOST)
+    Local override; error
+    @(36.5500 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 1.6263 mm
+    @(37.0095 mm, 8.8481 mm): Track [FB_BOOST] on F.Cu, length 0.4257 mm
+[shorting_items]: Items shorting two nets (nets MOTOR_MINUS and GND)
+    Local override; error
+    @(47.7000 mm, 3.7000 mm): Track [MOTOR_MINUS] on B.Cu, length 2.7019 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(47.7000 mm, 3.7000 mm): Track [MOTOR_MINUS] on B.Cu, length 2.7019 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(48.1000 mm, 1.3500 mm): Track [VBAT] on F.Cu, length 7.8500 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets MOTOR_MINUS and GND)
+    Local override; error
+    @(37.0000 mm, 3.7000 mm): Track [MOTOR_MINUS] on B.Cu, length 10.7000 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(37.0000 mm, 3.7000 mm): Track [MOTOR_MINUS] on B.Cu, length 10.7000 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets FB_BOOST and GND)
+    Local override; error
+    @(33.5343 mm, 11.0807 mm): Track [FB_BOOST] on F.Cu, length 3.0464 mm
+    @(33.6500 mm, 8.6900 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(33.5343 mm, 11.0807 mm): Track [FB_BOOST] on F.Cu, length 3.0464 mm
+    @(33.6500 mm, 8.6900 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0395 mm)
+    Rule: netclass 'Default'; error
+    @(37.3105 mm, 8.5471 mm): Track [FB_BOOST] on F.Cu, length 1.6362 mm
+    @(37.7000 mm, 8.5000 mm): Track [SW_BOOST] on F.Cu, length 0.9750 mm
+[shorting_items]: Items shorting two nets (nets BOOST_5V and SW_BOOST)
+    Local override; error
+    @(36.7400 mm, 7.0881 mm): Via [BOOST_5V] on F.Cu - B.Cu
+    @(35.9700 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 0.5800 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0736 mm)
+    Rule: board setup constraints hole; error
+    @(35.9700 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 0.5800 mm
+    @(36.7400 mm, 7.0881 mm): Via [BOOST_5V] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets BOOST_5V and SW_BOOST)
+    Local override; error
+    @(36.5019 mm, 6.8500 mm): Track [BOOST_5V] on F.Cu, length 0.3367 mm
+    @(36.5500 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 1.6263 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.1236 mm)
+    Rule: netclass 'Default'; error
+    @(36.5019 mm, 6.8500 mm): Track [BOOST_5V] on F.Cu, length 0.3367 mm
+    @(35.9700 mm, 7.3500 mm): Track [SW_BOOST] on F.Cu, length 0.5800 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0316 mm)
+    Rule: netclass 'Default'; error
+    @(46.8000 mm, 3.7000 mm): Track [Q1_GATE] on F.Cu, length 0.2828 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1816 mm)
+    Rule: board setup constraints hole; error
+    @(46.8000 mm, 3.7000 mm): Track [Q1_GATE] on F.Cu, length 0.2828 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets Q1_GATE and GND)
+    Local override; error
+    @(46.8000 mm, 1.9500 mm): Track [Q1_GATE] on F.Cu, length 1.7500 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0750 mm)
+    Rule: board setup constraints hole; error
+    @(46.8000 mm, 1.9500 mm): Track [Q1_GATE] on F.Cu, length 1.7500 mm
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.1104 mm)
+    Rule: netclass 'Default'; error
+    @(47.1000 mm, 3.4250 mm): Via [GND] on F.Cu - B.Cu
+    @(47.0000 mm, 3.9000 mm): Track [Q1_GATE] on F.Cu, length 0.0500 mm
+[shorting_items]: Items shorting two nets (nets GND and GATE_P)
+    Local override; error
+    @(40.7000 mm, 5.2684 mm): Via [GND] on F.Cu - B.Cu
+    @(38.6000 mm, 5.4000 mm): Track [GATE_P] on B.Cu, length 4.6000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(38.6000 mm, 5.4000 mm): Track [GATE_P] on B.Cu, length 4.6000 mm
+    @(40.7000 mm, 5.2684 mm): Via [GND] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(46.0000 mm, 3.4250 mm): Track [GND] on F.Cu, length 1.1000 mm
+    @(46.8000 mm, 1.9500 mm): Track [Q1_GATE] on F.Cu, length 1.7500 mm
+[shorting_items]: Items shorting two nets (nets GND and Q1_GATE)
+    Local override; error
+    @(46.0000 mm, 3.4250 mm): Track [GND] on F.Cu, length 1.1000 mm
+    @(46.8000 mm, 3.7000 mm): Track [Q1_GATE] on F.Cu, length 0.2828 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(37.5453 mm, 9.5943 mm): Via [VBAT] on F.Cu - B.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - None
+
+** End of Report **

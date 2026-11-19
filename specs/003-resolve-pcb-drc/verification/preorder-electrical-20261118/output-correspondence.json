@@ -1,0 +1,12 @@
+{
+  "pcb_sha256": "e7152f915355a188716b45264bc74a34fdb6dc9e5e9074a5caea470124906ac7",
+  "cpl_rows": 37,
+  "bom_rows": 29,
+  "bom_components": 37,
+  "cpl_missing_references": [],
+  "bom_missing_references": [],
+  "cpl_pcb_mismatches": [],
+  "bom_pcb_mismatches": [],
+  "transform": "CPL X=PCB X, CPL Y=-PCB Y; rotation equivalent modulo360; all top/F.Cu",
+  "vendor_library_rotation_and_procurement": "unconfirmed"
+}

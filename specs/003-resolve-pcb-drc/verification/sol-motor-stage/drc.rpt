@@ -1,0 +1,38 @@
+** Drc report for mini4wd-motor-driver.kicad_pcb **
+** Created on 2026-11-15T15:07:29 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 8 Footprint errors **
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(49.4800 mm, 18.1800 mm): Footprint Q1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(33.8500 mm, 3.3500 mm): Footprint Q2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(35.2300 mm, 7.3500 mm): Footprint U2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(32.0000 mm, 16.8500 mm): Footprint U101
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.9000 mm, 8.2500 mm): Footprint U102
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.9000 mm, 12.5500 mm): Footprint U103
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(41.3000 mm, 3.3000 mm): Footprint U104
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(2.3000 mm, 18.3300 mm): Footprint U105
+
+** Ignored checks **
+    - None
+
+** End of Report **

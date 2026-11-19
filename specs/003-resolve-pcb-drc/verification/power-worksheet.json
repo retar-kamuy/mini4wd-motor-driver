@@ -1,0 +1,36 @@
+{
+  "pcb_sha256": "7cc2d8694f2d7c50decf81c6e64b0065434d00a87d77c2727acef66c479f77fa",
+  "assumptions": {
+    "copper_resistivity_ohm_m_at_20C": 1.724e-08,
+    "copper_thickness_um": 35,
+    "current_a": 5,
+    "nominal_drilled_diameter_mm": 0.4,
+    "assumed_plating_um": 25,
+    "via_length_mm": 1.6
+  },
+  "trace_ideal_dc": {
+    "0.6": {
+      "ohm_per_mm": 0.0008209523809523811,
+      "watt_per_mm_at_5A": 0.020523809523809527
+    },
+    "1.2": {
+      "ohm_per_mm": 0.00041047619047619054,
+      "watt_per_mm_at_5A": 0.010261904761904764
+    },
+    "1.5": {
+      "ohm_per_mm": 0.00032838095238095245,
+      "watt_per_mm_at_5A": 0.00820952380952381
+    },
+    "2.0": {
+      "ohm_per_mm": 0.0002462857142857143,
+      "watt_per_mm_at_5A": 0.0061571428571428576
+    }
+  },
+  "ideal_via": {
+    "cross_section_mm2": 0.02945243112740432,
+    "ohm_single": 0.0009365610560526592,
+    "ohm_three_identical_equal_sharing": 0.0003121870186842197,
+    "watt_three_at_5A_equal_sharing": 0.007804675467105494
+  },
+  "qualification": "ideal geometry only; excludes temperature, current crowding, joints and manufacturing tolerances"
+}

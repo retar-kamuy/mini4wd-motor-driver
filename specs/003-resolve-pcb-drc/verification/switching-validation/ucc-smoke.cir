@@ -1,0 +1,14 @@
+UCC27524 supplied model smoke test
+.include UCC27524.lib
+Vdd dd 0 5
+Vena ena 0 3.3
+Vin a 0 PULSE(0 3.3 1u 2n 2n 10u 20u)
+Xdrv a a oa ob dd ena ena 0 UCC27524
+Ca oa 0 3.5n
+Cb ob 0 6.9n
+.tran 1n 30u
+.measure tran max_oa MAX v(oa)
+.measure tran min_oa MIN v(oa)
+.measure tran max_ob MAX v(ob)
+.measure tran min_ob MIN v(ob)
+.end

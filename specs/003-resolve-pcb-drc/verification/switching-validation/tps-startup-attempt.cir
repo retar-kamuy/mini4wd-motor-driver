@@ -1,0 +1,17 @@
+TPS61023 original model smoke test
+.param SS=0
+.include TPS61023.lib
+Vbat raw 0 PWL(0 0 100u 2.4 2m 2.4)
+Rbat raw vin .1
+Cin vin 0 10u
+Rl vin li .02
+L1 li sw 1u
+Xboost vin fb 0 sw vin out TPS61023_Symbol
+Rtop out fb 732k
+Rbot fb 0 100k
+Cout out 0 32u
+Rload out 0 100
+.tran 20n 2m 0 20n
+.measure tran vo_max MAX v(out)
+.measure tran vo_end FIND v(out) AT=2m
+.end

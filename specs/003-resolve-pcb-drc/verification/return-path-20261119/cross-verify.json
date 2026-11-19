@@ -1,0 +1,129 @@
+{
+  "cross_verify_version": 1,
+  "schematic_file": "",
+  "pcb_file": "",
+  "component_matching": {
+    "schematic_count": 38,
+    "pcb_count": 38,
+    "matched": 38,
+    "orphans": [],
+    "missing": [],
+    "value_mismatches": [],
+    "reference_mismatches": [],
+    "dnp_conflicts": []
+  },
+  "diff_pair_routing": [
+    {
+      "type": "differential",
+      "positive": "GATE_P",
+      "negative": "GATE_N",
+      "tolerance_mm": 2.0,
+      "pos_length_mm": 17.93,
+      "neg_length_mm": 4.64,
+      "delta_mm": 13.29,
+      "status": "fail",
+      "message": "differential pair GATE_P/GATE_N: 13.3mm length mismatch (tolerance 2.0mm)",
+      "intra_pair_skew": {
+        "skew_mm": 13.29,
+        "tolerance_mm": 1.0,
+        "severity": "error",
+        "detail": "Differential pair GATE_P/GATE_N intra-pair skew 13.3mm exceeds differential tolerance (1.0mm)"
+      },
+      "layer_mismatch": {
+        "positive_layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "negative_layers": [
+          "F.Cu"
+        ]
+      }
+    }
+  ],
+  "power_trace_analysis": [
+    {
+      "regulator_ref": "U2",
+      "output_rail": "BOOST_5V",
+      "topology": "switching",
+      "estimated_vout": 5.058,
+      "min_trace_width_mm": 0.2,
+      "max_trace_width_mm": 0.2,
+      "total_length_mm": 93.2,
+      "track_count": 148,
+      "status": "warning",
+      "message": "BOOST_5V: minimum trace width 0.20mm is narrow for a power rail (switching \u2014 higher current demand)"
+    }
+  ],
+  "decoupling_placement": [
+    {
+      "ic_ref": "VBAT",
+      "cap_ref": "C1",
+      "cap_value": "10uF 10V",
+      "status": "info",
+      "message": "C1 or VBAT not found in PCB placement"
+    },
+    {
+      "ic_ref": "MCU_3V3",
+      "cap_ref": "C101",
+      "cap_value": "100nF 10V",
+      "status": "info",
+      "message": "C101 or MCU_3V3 not found in PCB placement"
+    },
+    {
+      "ic_ref": "MCU_3V3",
+      "cap_ref": "C102",
+      "cap_value": "100nF 10V",
+      "status": "info",
+      "message": "C102 or MCU_3V3 not found in PCB placement"
+    },
+    {
+      "ic_ref": "MCU_3V3",
+      "cap_ref": "C103",
+      "cap_value": "100nF 10V",
+      "status": "info",
+      "message": "C103 or MCU_3V3 not found in PCB placement"
+    },
+    {
+      "ic_ref": "MCU_3V3",
+      "cap_ref": "C106",
+      "cap_value": "100nF 10V",
+      "status": "info",
+      "message": "C106 or MCU_3V3 not found in PCB placement"
+    },
+    {
+      "ic_ref": "BOOST_5V",
+      "cap_ref": "C2",
+      "cap_value": "22uF 10V",
+      "status": "info",
+      "message": "C2 or BOOST_5V not found in PCB placement"
+    },
+    {
+      "ic_ref": "BOOST_5V",
+      "cap_ref": "C3",
+      "cap_value": "22uF 10V",
+      "status": "info",
+      "message": "C3 or BOOST_5V not found in PCB placement"
+    },
+    {
+      "ic_ref": "BOOST_5V",
+      "cap_ref": "C104",
+      "cap_value": "100nF 10V",
+      "status": "info",
+      "message": "C104 or BOOST_5V not found in PCB placement"
+    },
+    {
+      "ic_ref": "BOOST_5V",
+      "cap_ref": "C105",
+      "cap_value": "22uF 10V",
+      "status": "info",
+      "message": "C105 or BOOST_5V not found in PCB placement"
+    }
+  ],
+  "summary": {
+    "total_checks": 4,
+    "pass": 0,
+    "warning": 1,
+    "fail": 1,
+    "info": 9
+  }
+}

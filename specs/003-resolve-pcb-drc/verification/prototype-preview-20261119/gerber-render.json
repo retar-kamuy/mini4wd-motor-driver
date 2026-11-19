@@ -1,0 +1,17 @@
+{
+  "bottom_mask_objects": 0,
+  "layers": [
+    "('top', 'copper')",
+    "('top', 'mask')",
+    "('top', 'silk')",
+    "('top', 'paste')",
+    "('bottom', 'copper')",
+    "('bottom', 'mask')",
+    "('bottom', 'silk')",
+    "('mechanical', 'outline')"
+  ],
+  "rendered_sides": [
+    "top",
+    "bottom"
+  ]
+}

@@ -1,0 +1,17 @@
+* Auto-generated testbench for voltage divider: R3/R4
+* Expected Vout = 3.7 * 0.312500 = 1.1562 V
+* Model: ideal passives (exact, unloaded)
+
+VIN VBAT 0 DC 3.7
+R3 VBAT VBAT_SENSE 22k
+R4 VBAT_SENSE 0 10k
+
+.control
+op 
+let vout_sim = v(VBAT_SENSE)
+let error_pct = abs(vout_sim - 1.15625) / 1.15625 * 100
+echo "vout_sim=$&vout_sim error_pct=$&error_pct expected=1.15625" > voltage-divider_R3_R4.out
+quit
+.endc
+
+.end

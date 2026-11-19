@@ -1,0 +1,190 @@
+{
+  "source": "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "7cc2d8694f2d7c50decf81c6e64b0065434d00a87d77c2727acef66c479f77fa",
+  "candidate": ".cache/sol-design/metadata-sync/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "1a6c0cddae8f9678eb3b2359378659de82299dba98e5f2726fa1a0b9b7bdc2b9",
+  "changed_fields": [
+    {
+      "reference": "Q1",
+      "field": "MPN",
+      "old": "",
+      "new": "SiSS64DN-T1-GE3"
+    },
+    {
+      "reference": "Q1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "Q1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Existing design candidate; power/land/vendor acceptance pending"
+    },
+    {
+      "reference": "Q2",
+      "field": "MPN",
+      "old": "",
+      "new": "Si7137DP-T1-GE3"
+    },
+    {
+      "reference": "Q2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "Q2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Existing design candidate; VGS below -2.5V magnitude is unqualified"
+    },
+    {
+      "reference": "U2",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.ti.com/lit/ds/symlink/tps61023.pdf"
+    },
+    {
+      "reference": "U2",
+      "field": "MPN",
+      "old": "",
+      "new": "TPS61023DRLR"
+    },
+    {
+      "reference": "U2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Texas Instruments"
+    },
+    {
+      "reference": "U2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Existing design candidate; power/layout/vendor acceptance pending"
+    },
+    {
+      "reference": "U101",
+      "field": "MPN",
+      "old": "",
+      "new": "LTC6994IS6-2#TRMPBF"
+    },
+    {
+      "reference": "U101",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Analog Devices"
+    },
+    {
+      "reference": "U101",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "TSOT-23-6 candidate; timing/layout/vendor acceptance pending"
+    },
+    {
+      "reference": "U102",
+      "field": "MPN",
+      "old": "",
+      "new": "SN74LVC1G08DBVR"
+    },
+    {
+      "reference": "U102",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Texas Instruments"
+    },
+    {
+      "reference": "U102",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Existing design candidate; layout/vendor acceptance pending"
+    },
+    {
+      "reference": "U103",
+      "field": "Datasheet",
+      "old": "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf",
+      "new": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf"
+    },
+    {
+      "reference": "U103",
+      "field": "MPN",
+      "old": "",
+      "new": "SN74LVC1G32DBVR"
+    },
+    {
+      "reference": "U103",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Texas Instruments"
+    },
+    {
+      "reference": "U103",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Existing design candidate; layout/vendor acceptance pending"
+    },
+    {
+      "reference": "U104",
+      "field": "Datasheet",
+      "old": "https://www.ti.com/lit/ds/symlink/ucc27524.pdf",
+      "new": "https://www.ti.com/lit/ds/symlink/ucc27524a.pdf"
+    },
+    {
+      "reference": "U104",
+      "field": "MPN",
+      "old": "",
+      "new": "UCC27524ADR"
+    },
+    {
+      "reference": "U104",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Texas Instruments"
+    },
+    {
+      "reference": "U104",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "SOIC-8 D package; preserve A suffix; power/layout/vendor acceptance pending"
+    },
+    {
+      "reference": "U105",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+    },
+    {
+      "reference": "U105",
+      "field": "MPN",
+      "old": "",
+      "new": "TLV809EA30DBZR"
+    },
+    {
+      "reference": "U105",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Texas Instruments"
+    },
+    {
+      "reference": "U105",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Existing 3.08V 200ms supervisor candidate; startup/vendor acceptance pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required",
+  "canonical_sha256": "9a80c9646bf08f6803e79dfa157b7b7942aab570a7cec6d3d0a79a22b7fac519",
+  "canonical_all_non_metadata_sexpressions_equal": true,
+  "canonical_project_sha256_after_restoration": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "project_restoration_record": "pro-recovery-candidate.json",
+  "final_validation": {
+    "erc": 0,
+    "drc": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "compared_pads": 113,
+    "net_mismatches": 0
+  }
+}

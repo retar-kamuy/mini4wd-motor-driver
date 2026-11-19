@@ -1,0 +1,660 @@
+{
+  "source": ".cache/pcba-bom-stage/candidate/mini4wd-motor-driver.kicad_pcb",
+  "source_sha256": "15a8a575df7d32cadea00693f011ade3c03cd9f9ae4729d2d84635a3ae1a06fc",
+  "candidate": ".cache/pcba-bom-stage/metadata/mini4wd-motor-driver.kicad_pcb",
+  "candidate_sha256": "48f484fe7a3cea751f46b9899c443fd81fe99127c3b292fef5a14afb563646c6",
+  "source_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "candidate_project_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "changed_fields": [
+    {
+      "reference": "C1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A106MAAL%23"
+    },
+    {
+      "reference": "C1",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM188R61A106MAALD"
+    },
+    {
+      "reference": "C1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C2",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A226ME15%23"
+    },
+    {
+      "reference": "C2",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM188R61A226ME15D"
+    },
+    {
+      "reference": "C2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C3",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61A226ME15%23"
+    },
+    {
+      "reference": "C3",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM188R61A226ME15D"
+    },
+    {
+      "reference": "C3",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C3",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C101",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R61A104KA01%23"
+    },
+    {
+      "reference": "C101",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM155R61A104KA01D"
+    },
+    {
+      "reference": "C101",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C101",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C102",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R61A104KA01%23"
+    },
+    {
+      "reference": "C102",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM155R61A104KA01D"
+    },
+    {
+      "reference": "C102",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C102",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C103",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R61A104KA01%23"
+    },
+    {
+      "reference": "C103",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM155R61A104KA01D"
+    },
+    {
+      "reference": "C103",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C103",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C104",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R61A104KA01%23"
+    },
+    {
+      "reference": "C104",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM155R61A104KA01D"
+    },
+    {
+      "reference": "C104",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C104",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C105",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM188R61C225KE15%23"
+    },
+    {
+      "reference": "C105",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM188R61C225KE15D"
+    },
+    {
+      "reference": "C105",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C105",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "C106",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R61A104KA01%23"
+    },
+    {
+      "reference": "C106",
+      "field": "MPN",
+      "old": "",
+      "new": "GRM155R61A104KA01D"
+    },
+    {
+      "reference": "C106",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Murata"
+    },
+    {
+      "reference": "C106",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; effective capacitance margin pending"
+    },
+    {
+      "reference": "D1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.comchiptech.com/admin/files/product/20190806165140.pdf"
+    },
+    {
+      "reference": "D1",
+      "field": "MPN",
+      "old": "",
+      "new": "SS54-HF"
+    },
+    {
+      "reference": "D1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Comchip Technology"
+    },
+    {
+      "reference": "D1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "D2",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/88746/ss12.pdf"
+    },
+    {
+      "reference": "D2",
+      "field": "MPN",
+      "old": "",
+      "new": "SS14-E3/61T"
+    },
+    {
+      "reference": "D2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "D2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "J1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline="
+    },
+    {
+      "reference": "J1",
+      "field": "MPN",
+      "old": "",
+      "new": "43650-0214"
+    },
+    {
+      "reference": "J1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Molex"
+    },
+    {
+      "reference": "J1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; footprint correction in progress"
+    },
+    {
+      "reference": "J2",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500212_sd.pdf?inline="
+    },
+    {
+      "reference": "J2",
+      "field": "MPN",
+      "old": "",
+      "new": "43650-0214"
+    },
+    {
+      "reference": "J2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Molex"
+    },
+    {
+      "reference": "J2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; footprint correction in progress"
+    },
+    {
+      "reference": "L1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel4030/xel4030-102/"
+    },
+    {
+      "reference": "L1",
+      "field": "MPN",
+      "old": "",
+      "new": "XEL4030-102MEC"
+    },
+    {
+      "reference": "L1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Coilcraft"
+    },
+    {
+      "reference": "L1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "MCU1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://wiki.seeedstudio.com/xiao_mg24_getting_started/"
+    },
+    {
+      "reference": "MCU1",
+      "field": "MPN",
+      "old": "",
+      "new": "102010610"
+    },
+    {
+      "reference": "MCU1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Seeed Studio"
+    },
+    {
+      "reference": "MCU1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending; no pin headers; castellated assembly acceptance pending"
+    },
+    {
+      "reference": "R1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R1",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW0603732KFKEA"
+    },
+    {
+      "reference": "R1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R2",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R2",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW0603100KFKEA"
+    },
+    {
+      "reference": "R2",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R2",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R3",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R3",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW060322K0FKEA"
+    },
+    {
+      "reference": "R3",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R3",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R4",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R4",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW060310K0FKEA"
+    },
+    {
+      "reference": "R4",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R4",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R5",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R5",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW060322K0FKEA"
+    },
+    {
+      "reference": "R5",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R5",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R6",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R6",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW060310K0FKEA"
+    },
+    {
+      "reference": "R6",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R6",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R7",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R7",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW060310K0FKEA"
+    },
+    {
+      "reference": "R7",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R7",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R101",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
+    },
+    {
+      "reference": "R101",
+      "field": "MPN",
+      "old": "",
+      "new": "RT0603BRD07499KL"
+    },
+    {
+      "reference": "R101",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Yageo"
+    },
+    {
+      "reference": "R101",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R102",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R102",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW0402100KFKED"
+    },
+    {
+      "reference": "R102",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R102",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R103",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R103",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW04020000Z0ED"
+    },
+    {
+      "reference": "R103",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R103",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "R104",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+    },
+    {
+      "reference": "R104",
+      "field": "MPN",
+      "old": "",
+      "new": "CRCW04022K20FKED"
+    },
+    {
+      "reference": "R104",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "Vishay"
+    },
+    {
+      "reference": "R104",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    },
+    {
+      "reference": "TH1",
+      "field": "Datasheet",
+      "old": "",
+      "new": "https://product.tdk.com/en/search/sensor/ntc/chip-ntc-thermistor/info?part_no=NTCG104BH103JT1"
+    },
+    {
+      "reference": "TH1",
+      "field": "MPN",
+      "old": "",
+      "new": "NTCG104BH103JT1"
+    },
+    {
+      "reference": "TH1",
+      "field": "Manufacturer",
+      "old": "",
+      "new": "TDK"
+    },
+    {
+      "reference": "TH1",
+      "field": "SelectionStatus",
+      "old": "",
+      "new": "Selected candidate; supplier and assembly DFM pending"
+    }
+  ],
+  "all_non_metadata_sexpressions_equal": true,
+  "scope": "metadata candidate only; ERC/DRC and canonical MCP save remain required"
+}

@@ -1,0 +1,13 @@
+DMP2008UFG low battery study
+.include DMP2008UFG-ngspice.lib
+Vbat s 0 1.8
+Vdriver g 0 0.01
+Iload d 0 -5
+Xq d g s DMP2008UFG
+Bds dsmon 0 V=V(d,s)
+Bgs gsmon 0 V=V(g,s)
+.temp 25
+.tran 100n 1u
+.measure tran vds_on FIND V(dsmon) AT=1u
+.measure tran vgs_on FIND V(gsmon) AT=1u
+.end

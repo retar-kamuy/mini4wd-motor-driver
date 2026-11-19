@@ -1,0 +1,12 @@
+{
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb": "9a80c9646bf08f6803e79dfa157b7b7942aab570a7cec6d3d0a79a22b7fac519",
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pro": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sch": "e48593f0b339bf89ae78aba32c3809d11e9f7507ed26d9239f0bcba305956e2a",
+  "hardware/kicad/mini4wd-motor-driver/gate-control.kicad_sch": "1a85fc5ba3ebc6813373ea6a67c995feefc2009b8f1ff08907421c5e3fb2320f",
+  "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_sym": "5a1c67fee53a42f539938b90301ab9a42c1ae3b182df9be4778ef027d0eae26f",
+  "hardware/kicad/mini4wd-motor-driver/gate-study.kicad_sym": "6838449d909c63f05be2ff650fe296f55b8d1be5421e81c02522f6fddb08715f",
+  "specs/003-resolve-pcb-drc/verification/sol-motor-stage/drc-metadata.rpt": "4112c6fc430ccea0e1e37dba5c1c21b36e60e67cfe052256ad7dad51d2f9044c",
+  "specs/003-resolve-pcb-drc/verification/sol-motor-stage/erc-metadata.rpt": "3696c49e65affd1299e84c61360533a0b2786de174c8998055339db0f2e8b37e",
+  "specs/003-resolve-pcb-drc/verification/sol-motor-stage/netlist.xml": "3254c2287a9b780a1655d75bfdae73dc9f97aa8eaf75f8654699471cf0e69850",
+  "specs/003-resolve-pcb-drc/verification/sol-motor-stage/connectivity-metadata.json": "95d5146bd1e899688610c8066934650f87ccf4ce55eda98a6d407955314a2d69"
+}

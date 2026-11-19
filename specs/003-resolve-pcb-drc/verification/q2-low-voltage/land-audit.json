@@ -1,0 +1,92 @@
+{
+  "status": "exact_geometry_and_manufacturer_dimension_check",
+  "datasheet": "DS35694 Rev14-2 August2014 pp1,5; retrieved2026-11-15",
+  "manufacturer_pin_map": {
+    "1": "S",
+    "2": "S",
+    "3": "S",
+    "4": "G",
+    "5": "D",
+    "6": "D",
+    "7": "D",
+    "8": "D"
+  },
+  "standard_footprint_sha256": "e868e39c4329b02aca12e4f1e25421231fa667922dea0c90c50f585b5ab32d1a",
+  "candidate_footprint_sha256": "eb294d55375e7db00e9ff4b0dd6dc5f38e9984b919c85c97631ab2e4353b11cb",
+  "standard_shapes_pads_mask_paste_and_3D_unchanged_except_3_copper_only_identities": true,
+  "extra_pad_containment_proof": [
+    {
+      "number": "6",
+      "layers": [
+        "F.Cu"
+      ],
+      "rectangle_mm": [
+        1.15,
+        0.11500000000000002,
+        1.85,
+        0.535
+      ],
+      "contained_by_original_common_drain_pad": true
+    },
+    {
+      "number": "7",
+      "layers": [
+        "F.Cu"
+      ],
+      "rectangle_mm": [
+        1.15,
+        -0.535,
+        1.85,
+        -0.11500000000000002
+      ],
+      "contained_by_original_common_drain_pad": true
+    },
+    {
+      "number": "8",
+      "layers": [
+        "F.Cu"
+      ],
+      "rectangle_mm": [
+        1.15,
+        -1.185,
+        1.85,
+        -0.765
+      ],
+      "contained_by_original_common_drain_pad": true
+    }
+  ],
+  "unchanged_manufacturer_dimensions_mm": {
+    "pitch_C": 0.65,
+    "lead_land_Y3": 0.7,
+    "lead_land_X2": 0.42,
+    "overall_terminal_extent_Y": 3.7,
+    "drain_finger_envelope_X": 2.37,
+    "drain_extent_Y1": 2.25,
+    "drain_continuous_start_distance_Y2": 1.85,
+    "finger_gap_G": 0.23,
+    "drain_finger_width_G1": 0.42
+  },
+  "no_additional_F_Mask_opening": true,
+  "no_additional_F_Paste_opening": true,
+  "no_change_to_copper_union": true,
+  "alternative": "Single common-pad5 with a reduced-pin symbol was considered; explicit physical 1-8 traceability was retained without changing mask/paste or copper union.",
+  "not_verified": [
+    "Vendor stencil aperture acceptance and reflow profile",
+    "Actual solder joint reliability",
+    "Board-specific thermal resistance"
+  ],
+  "latest_package_information_url": "https://www.diodes.com/assets/Package-Files/PowerDI3333-8.pdf",
+  "latest_package_revision": "2022-04-29",
+  "latest_dimensions_mm": {
+    "C": 0.65,
+    "X": 0.42,
+    "X1": 0.42,
+    "X2": 0.23,
+    "X3": 2.37,
+    "Y": 0.7,
+    "Y1": 1.85,
+    "Y2": 2.25,
+    "Y3": 3.7,
+    "Y4": 0.54
+  }
+}
