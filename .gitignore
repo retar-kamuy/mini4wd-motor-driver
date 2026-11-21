@@ -71,3 +71,4 @@ _autosave-*
 
 # Downloaded component datasheets can be retrieved again
 /hardware/kicad/mini4wd-motor-driver/datasheets/*.pdf
+/hardware/kicad/mini4wd-motor-driver/datasheets/DMP2008UFG.spice.txt
