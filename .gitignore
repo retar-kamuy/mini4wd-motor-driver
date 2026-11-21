@@ -64,3 +64,10 @@ _autosave-*
 /releases/
 # Editor/local history repositories
 .history/
+
+# Spec Kit generates its command skills during setup
+/.agents/skills/speckit-*/
+/.specify/
+
+# Downloaded component datasheets can be retrieved again
+/hardware/kicad/mini4wd-motor-driver/datasheets/*.pdf
