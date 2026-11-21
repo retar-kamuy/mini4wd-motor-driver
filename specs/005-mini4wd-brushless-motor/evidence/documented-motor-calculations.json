@@ -1,0 +1,113 @@
+{
+  "status": "datasheet_arithmetic_and_truth_table_comparison_only",
+  "date": "2026-11-21",
+  "motor": "FAULHABER 1218S006B standard digital Hall",
+  "sources": {
+    "motor": "https://www.faulhaber.com/fileadmin/Import/Media/EN_1218_B_FMM.pdf",
+    "hall": "https://www.faulhaber.com/fileadmin/Import/Media/AN163_EN.pdf",
+    "driver": "https://www.ti.com/lit/ds/symlink/mct8316z.pdf",
+    "current_conversion": "https://www.faulhaber.com/fileadmin/Import/Media/AN190_EN.pdf"
+  },
+  "inputs": {
+    "voltage_V": 6,
+    "line_line_resistance_ohm": 3.14,
+    "line_line_inductance_H": 3.5e-05,
+    "rated_DC_equivalent_A": 0.663,
+    "rated_speed_rpm": 18280,
+    "no_load_speed_rpm": 30500,
+    "max_speed_rpm": 79000,
+    "pole_pairs": 1,
+    "rotor_inertia_g_cm2": 0.08
+  },
+  "calculated": {
+    "electrical_time_constant_us": 11.146496815286623,
+    "rated_phase_RMS_trapezoidal_A": 0.54366,
+    "DC_resistive_locked_current_A_not_thermal_rating": 1.910828025477707,
+    "rated_electrical_Hz": 304.6666666666667,
+    "no_load_electrical_Hz": 508.3333333333333,
+    "max_electrical_Hz": 1316.6666666666667,
+    "max_combined_Hall_transition_Hz": 7900.0,
+    "rotor_only_energy_at_no_load_J": 0.04080533108494834
+  },
+  "hall_state_rows": [
+    {
+      "Hall_ABC": "001",
+      "faulhaber_CW_source_sink": [
+        "C",
+        "B"
+      ],
+      "TI_DIR0_source_sink": [
+        "C",
+        "B"
+      ],
+      "matches": true
+    },
+    {
+      "Hall_ABC": "010",
+      "faulhaber_CW_source_sink": [
+        "B",
+        "A"
+      ],
+      "TI_DIR0_source_sink": [
+        "B",
+        "A"
+      ],
+      "matches": true
+    },
+    {
+      "Hall_ABC": "011",
+      "faulhaber_CW_source_sink": [
+        "C",
+        "A"
+      ],
+      "TI_DIR0_source_sink": [
+        "C",
+        "A"
+      ],
+      "matches": true
+    },
+    {
+      "Hall_ABC": "100",
+      "faulhaber_CW_source_sink": [
+        "A",
+        "C"
+      ],
+      "TI_DIR0_source_sink": [
+        "A",
+        "C"
+      ],
+      "matches": true
+    },
+    {
+      "Hall_ABC": "101",
+      "faulhaber_CW_source_sink": [
+        "A",
+        "B"
+      ],
+      "TI_DIR0_source_sink": [
+        "A",
+        "B"
+      ],
+      "matches": true
+    },
+    {
+      "Hall_ABC": "110",
+      "faulhaber_CW_source_sink": [
+        "B",
+        "C"
+      ],
+      "TI_DIR0_source_sink": [
+        "B",
+        "C"
+      ],
+      "matches": true
+    }
+  ],
+  "all_six_states_match": true,
+  "limitations": [
+    "No circuit simulation, bench timing, load torque or thermal qualification performed.",
+    "RMS conversion is not a peak-current-limit setting.",
+    "Rotor energy excludes pinion, gears, wheels and vehicle motion.",
+    "Rated current assumes manufacturer cooling and ambient conditions."
+  ]
+}

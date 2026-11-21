@@ -1,0 +1,88 @@
+{
+  "scope": "artifact inventory only; presence/hash does not validate contents",
+  "manufacturing_approval": "NOT_GRANTED_BY_THIS_TOOL",
+  "artifacts": [
+    {
+      "path": "hardware/kicad/mini4wd-brushless-motor/mini4wd-brushless-motor.kicad_sch",
+      "status": "missing"
+    },
+    {
+      "path": "hardware/kicad/mini4wd-brushless-motor/mini4wd-brushless-motor.kicad_pcb",
+      "status": "missing"
+    },
+    {
+      "path": "hardware/kicad/mini4wd-brushless-motor/mini4wd-brushless-motor.kicad_pro",
+      "status": "missing"
+    },
+    {
+      "path": "specs/005-mini4wd-brushless-motor/manufacturer-evidence.md",
+      "status": "present",
+      "bytes": 5875,
+      "sha256": "d69b662f8bce7ad026221d7a27588a9d8076f213b9329c7ddf48cfbd8d0adcc7"
+    },
+    {
+      "path": "specs/005-mini4wd-brushless-motor/controller-compatibility.md",
+      "status": "present",
+      "bytes": 6257,
+      "sha256": "d7fe2ae3af95d842f42de3e75814f900c24f65594e8c7e6c70bdda6d4da36020"
+    },
+    {
+      "path": "specs/005-mini4wd-brushless-motor/mechanical-envelope.md",
+      "status": "present",
+      "bytes": 3232,
+      "sha256": "2fc361cbf25fa4414911fded1511f79a8bc20187deec3c7c9769b43e3ec3b2d5"
+    },
+    {
+      "path": "specs/005-mini4wd-brushless-motor/power-budget.md",
+      "status": "present",
+      "bytes": 3288,
+      "sha256": "55be56a75e166f549cb98bed02b7d36737bb96c1ee8d129a9b346425df71d8cc"
+    },
+    {
+      "path": "specs/005-mini4wd-brushless-motor/validation-log.md",
+      "status": "present",
+      "bytes": 4936,
+      "sha256": "8e956ce4ea9ec36453bcb5132217a654d7358ae6360a4cb8d1f9cfbca161b805"
+    },
+    {
+      "path": "hardware/kicad/mini4wd-brushless-motor/design-review.md",
+      "status": "missing"
+    }
+  ],
+  "check_evidence": {
+    "erc": [],
+    "drc": [],
+    "schematic-pcb-parity": [],
+    "connectivity": [],
+    "datasheet-pin-pad": [],
+    "spice": [],
+    "emc": [],
+    "thermal": [],
+    "mechanical-fit": [],
+    "prototype-test": [],
+    "supplier-dfm": []
+  },
+  "revision_package_files": [],
+  "missing_artifact_count": 4,
+  "checks_without_evidence": [
+    "erc",
+    "drc",
+    "schematic-pcb-parity",
+    "connectivity",
+    "datasheet-pin-pad",
+    "spice",
+    "emc",
+    "thermal",
+    "mechanical-fit",
+    "prototype-test",
+    "supplier-dfm"
+  ],
+  "open_design_inputs": [
+    "XSPEED sensor pinout/type/levels",
+    "motor voltage/current/R-L/pole pairs",
+    "motor geometry",
+    "selected supply topology and ratings",
+    "XIAO Sense schematic/core IMU bus mismatch"
+  ],
+  "release_rule": "All native reports and raw source/datasheet checks must be reviewed for the same revision; user approval and supplier DFM remain separate."
+}

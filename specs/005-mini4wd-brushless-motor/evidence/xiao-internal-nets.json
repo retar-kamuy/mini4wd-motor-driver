@@ -1,0 +1,151 @@
+{
+  "source": "https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_v1.0_KiCad_260114.zip",
+  "download_sha256": "159126a47d860c280e76d52b77adacd6a31bb296a3eee2e62ed887e9772ad70a",
+  "method": "kicad-cli sch export netlist --format kicadxml; selected net names and node attributes extracted with ElementTree",
+  "license": "Seeed Studio source schematic: CC BY-SA 4.0; extracted connectivity attributed to Seeed Studio",
+  "status": "manufacturer connectivity evidence, not Spec 005 design validation",
+  "nets": [
+    {
+      "name": "PA00/A17/D17/SCK1",
+      "nodes": [
+        {
+          "ref": "TP10",
+          "pin": "1",
+          "pinfunction": "T_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U5",
+          "pin": "26",
+          "pinfunction": "PA00_26",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U8",
+          "pin": "6",
+          "pinfunction": "CLK_6",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "PB00/A15/D15/MOSI1",
+      "nodes": [
+        {
+          "ref": "TP14",
+          "pin": "1",
+          "pinfunction": "T_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U5",
+          "pin": "23",
+          "pinfunction": "PB00_23",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U8",
+          "pin": "5",
+          "pinfunction": "DI(IO0)_5",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "PB01/A16/D16/MISO1",
+      "nodes": [
+        {
+          "ref": "TP12",
+          "pin": "1",
+          "pinfunction": "T_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U5",
+          "pin": "22",
+          "pinfunction": "PB01_22",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U8",
+          "pin": "2",
+          "pinfunction": "DO(IO1)_2",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "PB02/A13/D13/SDA1",
+      "nodes": [
+        {
+          "ref": "R1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP11",
+          "pin": "1",
+          "pinfunction": "T_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U5",
+          "pin": "21",
+          "pinfunction": "PB02_21",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U7",
+          "pin": "14",
+          "pinfunction": "SDA_14",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "PB03/A14/D14/SCL1",
+      "nodes": [
+        {
+          "ref": "R2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP13",
+          "pin": "1",
+          "pinfunction": "T_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U5",
+          "pin": "20",
+          "pinfunction": "PB03_20",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U7",
+          "pin": "13",
+          "pinfunction": "SCL_13",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "name": "PD02/A18/D18",
+      "nodes": [
+        {
+          "ref": "TP8",
+          "pin": "1",
+          "pinfunction": "T_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U5",
+          "pin": "46",
+          "pinfunction": "PD02_46",
+          "pintype": "passive"
+        }
+      ]
+    }
+  ]
+}

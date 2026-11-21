@@ -6,7 +6,7 @@
 
 ## Content Quality
 
-- [x] No implementation details (languages, frameworks, APIs)
+- [ ] No implementation details (languages, frameworks, APIs)
 - [x] Focused on user value and business needs
 - [x] Written for non-technical stakeholders, with domain terms used only where needed
 - [x] All mandatory sections completed
@@ -28,7 +28,7 @@
 - [x] Functional requirements have corresponding acceptance scenarios or success criteria
 - [x] User scenarios cover driving, mechanical installation, and manufacturing handoff
 - [x] Feature is ready for planning — compare motor candidates and derive the battery operating envelope and control-interface feasibility
-- [x] No implementation details leak into the specification
+- [ ] No implementation details leak into the specification
 
 ## Notes
 

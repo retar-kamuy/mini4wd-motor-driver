@@ -14,9 +14,9 @@ description: "Ordered implementation tasks for the Mini 4WD brushless motor feat
 
 **Purpose**: Prepare traceable records and a separate workspace for this BLDC design.
 
-- [ ] T001 [P] Create the motor, chassis, battery, and controller candidate record with source links and unresolved fields in `specs/005-mini4wd-brushless-motor/candidate-register.md`
-- [ ] T002 [P] Create the design revision and validation evidence log template in `specs/005-mini4wd-brushless-motor/validation-log.md`
-- [ ] T003 Create the isolated hardware project directory and record the approved project naming/revision convention in `hardware/kicad/mini4wd-brushless-motor/README.md`
+- [X] T001 [P] Create the motor, chassis, battery, and controller candidate record with source links and unresolved fields in `specs/005-mini4wd-brushless-motor/candidate-register.md`
+- [X] T002 [P] Create the design revision and validation evidence log template in `specs/005-mini4wd-brushless-motor/validation-log.md`
+- [X] T003 Create the isolated hardware project directory and record the approved project naming/revision convention in `hardware/kicad/mini4wd-brushless-motor/README.md`
 
 ---
 
@@ -24,11 +24,11 @@ description: "Ordered implementation tasks for the Mini 4WD brushless motor feat
 
 **Purpose**: Establish evidence needed before independent implementation of mechanical fit, motor control, and fabrication stories.
 
-- [ ] T004 Record a comparison matrix for commercial BLDC candidates using primary-source drawings and electrical/sensor data in `specs/005-mini4wd-brushless-motor/candidate-register.md`
-- [ ] T005 Record one or more commercially available chassis candidates, their stock motor mounts, battery bays, gear interfaces, and available internal envelopes in `specs/005-mini4wd-brushless-motor/candidate-register.md`
-- [ ] T006 Record lithium battery candidates with dimensions, cell count, full/nominal/cutoff voltage, current capability, and protection behavior in `specs/005-mini4wd-brushless-motor/candidate-register.md`
-- [ ] T007 Compare integrated BLDC controller, external ESC, and XIAO commutation options against candidate motor voltage, electrical speed, winding R/L, phase current, sensors, startup, and stop behavior in `specs/005-mini4wd-brushless-motor/research.md`
-- [ ] T008 Update the XIAO-to-controller contract with selected signal levels, protocol/timing, safe-off default, timeout, fault, and stop/coast/brake semantics in `specs/005-mini4wd-brushless-motor/contracts/xiao-to-bldc-controller.md`
+- [X] T004 Record the primary Kyosho XSPEED 85/56/41 candidates using published manufacturer data; list missing drawing/electrical/sensor evidence and the planned shaft-adapter fit checks in `specs/005-mini4wd-brushless-motor/candidate-register.md`; do not treat an incomplete candidate as qualified
+- [X] T005 Record commercially available chassis candidates, published dimensions/drive layouts/gear data, and explicitly mark undocumented battery-bay and internal-envelope dimensions for physical measurement in `specs/005-mini4wd-brushless-motor/candidate-register.md`
+- [X] T006 Record lithium battery candidates with dimensions, cell count, full/nominal/cutoff voltage, current capability, and protection behavior in `specs/005-mini4wd-brushless-motor/candidate-register.md`
+- [X] T007 Compare integrated BLDC controller, external ESC (including MCT8316ZR, DRV8306, HOBBYWING MINI28 and the BLHeli firmware family), and XIAO commutation options against candidate motor voltage, electrical speed, winding R/L, phase current, sensors, startup, and stop behavior in `specs/005-mini4wd-brushless-motor/research.md`
+- [ ] T008 Qualify the provisional MCT8316ZR ESC against XSPEED sensor signals and electrical limits, then finalize XIAO PWM/SPI timing, I/O budget, safe-off, timeout, fault and stop/brake semantics in `specs/005-mini4wd-brushless-motor/contracts/xiao-to-bldc-controller.md`; use alternatives in `controller-selection.md` if a gate fails
 
 **Checkpoint**: Proceed to the user story phases only when motor, chassis, battery, and controller candidates have enough evidence to test against their acceptance criteria. Unknown critical dimensions or ratings remain blockers; do not fill them by assumption.
 
@@ -40,8 +40,8 @@ description: "Ordered implementation tasks for the Mini 4WD brushless motor feat
 
 **Independent Test**: Assemble the selected motor and gear set in the chassis, place the PCB and battery in the available envelope, verify pinion mesh and clearances through full chassis assembly, and record all interferences and any minimum chassis modification.
 
-- [ ] T009 [US2] Select one commercial motor candidate and one stock chassis/gear set using manufacturer dimensions, shaft/pinion compatibility, and mounting evidence; record the decision and rejected alternatives in `specs/005-mini4wd-brushless-motor/candidate-register.md`
-- [ ] T010 [US2] Measure or derive the maximum usable PCB outline and height inside the fully assembled chassis, including motor, battery, gears, cover, road clearance, XIAO antenna/USB, connectors, and service access; record dimensions and reference photos in `specs/005-mini4wd-brushless-motor/mechanical-envelope.md`
+- [ ] T009 [US2] Evaluate XSPEED candidates and representative stock chassis/gear arrangements within the 003 scope (front-motor FM-A/SFM excluded), using manufacturer dimensions, shaft/pinion compatibility, and mounting evidence; record the decision and rejected alternatives in `specs/005-mini4wd-brushless-motor/candidate-register.md`
+- [ ] T010 [US2] Measure or derive the maximum usable PCB outline and height inside the fully assembled chassis, including motor, battery, gears, cover, road clearance, XIAO antenna, USB Type-C plug/cable access, connectors, and service access; record dimensions and reference photos in `specs/005-mini4wd-brushless-motor/mechanical-envelope.md` (check the USB insertion path in the outward-facing orientation; do not assume interference)
 - [ ] T011 [US2] Create a dimensioned placement drawing for motor, battery, XIAO, power stage, phase wiring, and connectors within the measured chassis envelope in `specs/005-mini4wd-brushless-motor/mechanical-envelope.md`
 - [ ] T012 [US2] Identify the minimum required chassis modifications, state why part selection or board placement cannot avoid each one, and document a stock-chassis alternative before proposing custom chassis work in `specs/005-mini4wd-brushless-motor/mechanical-envelope.md`
 - [ ] T013 [US2] Verify the mechanical assembly for pinion mesh, shaft retention, gear rotation, battery replacement, cover fit, wiring strain relief, and zero unintended chassis/road interference in `specs/005-mini4wd-brushless-motor/validation-log.md`
@@ -57,7 +57,7 @@ description: "Ordered implementation tasks for the Mini 4WD brushless motor feat
 **Independent Test**: With current-limited bench power and the selected motor, verify disabled outputs at boot, loaded startup, command changes, stop modes, command-loss/fault shutdown, no unintended restart, and agreed voltage/current/temperature limits; then repeat in the selected chassis.
 
 - [ ] T014 [US1] Select the lithium pack configuration and define operating voltage, continuous/transient current, cutoff, protection trip/recovery, and brake-energy conditions in `specs/005-mini4wd-brushless-motor/power-budget.md`
-- [ ] T015 [US1] Calculate maximum motor electrical speed as `f_e = rpm × pole_pairs / 60` and compare motor voltage, R/L, speed, current, and startup requirements against the selected controller datasheet in `specs/005-mini4wd-brushless-motor/controller-compatibility.md`
+- [ ] T015 [US1] Calculate maximum motor electrical speed as `f_e = rpm × pole_pairs / 60` and compare motor voltage, R/L, speed, current, sensor interface, and startup requirements against the selected sensored controller datasheet in `specs/005-mini4wd-brushless-motor/controller-compatibility.md`
 - [ ] T016 [US1] Define power-stage current limits, battery/XIAO logic rails, transient suppression, reverse-current paths, thermal budget, and hardware fault shutdown in `specs/005-mini4wd-brushless-motor/power-budget.md`
 - [ ] T017 [US1] Create the new KiCad project, symbols, footprints, schematic sheets, and project rules for the selected design in `hardware/kicad/mini4wd-brushless-motor/`
 - [ ] T018 [US1] Implement the battery input, protected logic supply, BLDC controller/power stage, sensing, connectors, and hardware-safe enable/fault paths in `hardware/kicad/mini4wd-brushless-motor/mini4wd-brushless-motor.kicad_sch`
@@ -154,3 +154,26 @@ Resolve motor/chassis/battery feasibility first; implement the smallest safe con
 - The tasks describe future work; no CAD, ERC/DRC, hardware test, sourcing order, or manufacturer request was performed by task generation.
 - Do not reuse the existing 003 brushed board’s footprint, current targets, connector, or power assumptions without fresh evidence.
 - [P] tasks operate on separate files or research records and do not depend on incomplete implementation tasks.
+
+
+## Implementation progress — 2026-11-20
+
+- T008 partial: host signal allocation, control states, SPI/PWM timing candidates, safe bias and watchdog requirement recorded in `controller-compatibility.md` and the interface contract. Sensor compatibility and bench timing remain unqualified.
+- T009–T013 preparation: `mechanical-envelope.md` defines measurement references and shaft-adapter checks; MA/MS double-shaft classification corrected. Exact motor, kit and placement remain open.
+- T014–T016 partial: `power-budget.md` records topology options and inputs required for current/thermal/braking calculations; no operating limits selected.
+- T017–T019 cannot be frozen before motor voltage/current/sensor data and chassis measurements are available. No CAD files or manufactured-ready claim introduced by this update.
+
+- 2026-11-20: 003と同じシャーシ対象範囲を継承し、メーカー資料調査を `manufacturer-evidence.md` へ記録。京商最新版T05取説を取得・該当図/部品表を確認。センサー配列・信号電圧・モーター単体定格・缶/軸寸法は今回の公開資料で未取得。T008/T009/T014–T016の適合ゲートは未完了。
+
+- 2026-11-21: T008/T016 partial: `hardware-inhibit-design.md` にTPS3431候補の独立watchdog、外部再armラッチ、電源監視、DRVOFF駆動論理、起動復帰手順、故障注入条件を記録。WDOの自動解除だけで再駆動を許可しない構成とした。300-ms lease＋230-ms watchdogの時間積算を明示。追加GPIO2本・部品値・電源監視閾値・最悪条件の回路検証が未完了であり、完了マークは増やしていない。T017–T019のCAD着手ゲートは維持。
+
+
+## 2026-11-21 製造準備の部分進捗
+
+- T008: 公式Seeed KiCadをnetlist化しSense内部配線を照合。旧D13/D14制御信号案を撤回し、D4 ARM_EDGE / D5 nFAULT / D18 WDI / hardware wakeを提案。メーカーKiCadと公式coreのIMU SDA/SCL不一致は未解決。
+- T028–T033: `hardware/kicad/mini4wd-brushless-motor/manufacturing/README.md` に003相当の成果物と停止条件を具体化。`tools/pcb/audit_spec005_release.py` で現状インベントリを生成。回路/PCB/検査/発注パッケージ未作成のためタスク完了にはしない。
+
+
+## 2026-11-21 公開仕様の別モーターを基準とする設計
+
+T008/T009/T014–T016部分進捗: `documented-motor-design.md` を追加し、FAULHABER 1218S006B標準digital Hallを詳細設計基準、1226S006Bを高トルク比較とした。公式寸法/電気値、AN163のセンサー電源/配列、全6状態のTI DIR=0との通電相一致を取得・算術照合。AN190の低インダクタンス巻線条件から旧20 kHz案を100 kHz候補に訂正。`evidence/documented-motor-calculations.json`に計算結果を記録。調達価格/納期、取付、ILIM精度、電源IC、実機の駆動/温度が未完了でタスク完了数は増やさない。CAD/ERC/DRC/SPICE/EMC/熱解析は今回未実施。
