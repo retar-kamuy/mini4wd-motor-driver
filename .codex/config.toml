@@ -1,2 +1,9 @@
 [agents]
 enabled = true
+
+[plugins."kicad-happy@mini4wd-motor-driver"]
+enabled = true
+
+[plugins."typescript@mini4wd-motor-driver"]
+enabled = true
+

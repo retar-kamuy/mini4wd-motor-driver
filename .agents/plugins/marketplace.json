@@ -1,0 +1,32 @@
+{
+  "name": "mini4wd-motor-driver",
+  "interface": {
+    "displayName": "Mini 4WD Motor Driver"
+  },
+  "plugins": [
+    {
+      "name": "kicad-happy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kicad-happy"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development & Code Tools"
+    },
+    {
+      "name": "typescript",
+      "source": {
+        "source": "local",
+        "path": "./plugins/typescript"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development & Code Tools"
+    }
+  ]
+}

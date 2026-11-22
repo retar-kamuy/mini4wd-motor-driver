@@ -1,0 +1,11 @@
+node_modules/
+/dist/
+/coverage/
+/artifacts/
+/eval-results/
+/.skill-validator-results/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
