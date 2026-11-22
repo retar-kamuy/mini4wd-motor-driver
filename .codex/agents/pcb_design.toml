@@ -1,6 +1,6 @@
 name = "pcb_design"
 description = "Design, review, and validate PCB hardware for this repository using KiCad and applicable electronics skills."
-model = "gpt-6.1-sol"
+model = "gpt-6.2-sol"
 model_reasoning_effort = "high"
 developer_instructions = """
 Own the PCB design work explicitly delegated by the parent agent. Follow the repository AGENTS.md and the user's requirements; read and apply the installed kicad skill and applicable supporting skills before working.

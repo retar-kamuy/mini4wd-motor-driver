@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "id": "VEHICLE-CAM",
+      "scope": "006 vehicle board rev 1",
+      "method": "KiCad ERC/DRC, schematic parity, XML netlist comparison and Gerber analysis",
+      "pass_condition": "prepare_jlcpcb_006.py completes for the same schematic, board, and project hashes",
+      "evidence": "manufacturing output manifest.json and associated reports"
+    },
+    {
+      "id": "VEHICLE-VENDOR",
+      "scope": "006 vehicle board rev 1",
+      "method": "Compare JLCPCB preview against local CAM",
+      "pass_condition": "Layer count, outline and plated/unplated drill interpretation agree",
+      "required_input": "JLCPCB preview or engineering feedback"
+    },
+    {
+      "id": "VEHICLE-INHIBIT",
+      "scope": "006 vehicle board rev 1",
+      "method": "Capture drive-inhibit output through USB power-up, MCU reset and removal of each permit",
+      "pass_condition": "Drive stays inhibited at startup and reset, and disables on BLE timeout until an explicit restart",
+      "required_input": "assembled vehicle board, current-limited power supply, and logic traces",
+      "blocked_action": "record measured startup and stop behaviour before the first course run"
+    },
+    {
+      "id": "DRIVE-HALL",
+      "scope": "006 vehicle board",
+      "method": "Verify exact 1525 model and Hall wiring against manufacturer evidence or pin and phase measurements",
+      "pass_condition": "Supply, logic levels, pin order and valid Hall sequence map to the selected drive stage",
+      "required_input": "manufacturer pinout and electrical limits, plus Hall/phase evidence for the sample"
+    },
+    {
+      "id": "DRIVE-LOAD",
+      "scope": "006 vehicle board",
+      "method": "Check phase and pack current, speed and temperature at the reference load",
+      "pass_condition": "Assess 21200 rpm at the 3.5:1 reference and 1.4\u20131.9 mNm with the verified rail and component limits",
+      "required_input": "fixture CSV with speed, torque, supply voltage, phase and pack currents, temperatures, and duration",
+      "notes": "This is a screening reference from drive-performance.md; it is separate from on-course acceptance."
+    },
+    {
+      "id": "DRIVE-FIT",
+      "scope": "006 vehicle board",
+      "method": "Check VZ mechanical envelope using dimensions from a complete chassis",
+      "pass_condition": "Motor, battery, board, harness, cover and gears fit without interference",
+      "required_input": "measured envelope, pinion datum and connector clearance"
+    }
+  ]
+}

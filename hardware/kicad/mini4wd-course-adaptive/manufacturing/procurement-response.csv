@@ -1,0 +1,11 @@
+MPN,Manufacturer,LCSC Part #,Catalog status,Rev1 assembly proposal,Check date,Source,Remaining
+MCT8316Z0RRGFR,Texas Instruments,C3681249,"VQFN-40 (5 × 7 mm); Extended; listed for Economic and Standard SMT",JLCPCB SMT,2026-11-22,https://jlcpcb.com/partdetail/TexasInstruments-MCT8316Z0RRGFR/C3681249,"Verify quote quantity, exact footprint, exposed-pad process and pin-1 preview"
+102010610,Seeed Studio,C43343258,Extended listing showed stock 0,Manual installation if stock or placement is unavailable,2026-11-22,https://jlcpcb.com/parts/2nd/IoT_Communication_Modules/Bluetooth_Modules_2282?Manufacturer=Seeed,"Verify stock and exact variant; do not substitute non-Sense or pre-soldered SKU"
+AP63205WU-7,Diodes Incorporated,C2071056,TSOT-23-6; Extended,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/AP63205WU-7/C2071056,Quote stock and footprint verification pending
+SN74LVC1G74DCUR,Texas Instruments,C70285,VSSOP-8; Extended,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC1G74DCUR/C70285,Quote stock and footprint verification pending
+SN74LVC2G17DBVR,Texas Instruments,C10429,SOT-23-6; Extended,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC2G17DBVR/C10429,Quote stock and footprint verification pending
+SN74LVC125APWR,Texas Instruments,C7813,Exact MPN listed,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC125APWR/C7813,Quote stock and footprint verification pending
+SN74LVC1G08DBVR,Texas Instruments,C7666,SOT-23-5; Extended,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC1G08DBVR/C7666,Quote stock and footprint verification pending
+AO3400A,Alpha & Omega Semiconductor,C20917,SOT-23; Basic,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3400A/C20917,Quote stock and footprint verification pending
+SI7137DP-T1-GE3,Vishay,C784367,Exact MPN listed,JLCPCB SMT candidate,2026-11-22,https://jlcpcb.com/partdetail/VishayIntertech-SI7137DP_T1GE3/C784367,Quote stock and footprint verification pending
+TPS3431SDRBR,Texas Instruments,C702145,LCSC catalog match; JLCPCB acceptance unconfirmed,Confirm PCBA sourcing path,2026-11-22,https://www.lcsc.com/product-image/C702145.html,Confirm stock and assembly path or qualify a compatible replacement

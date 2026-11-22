@@ -1,0 +1,9 @@
+[
+  {
+    "pattern": [{"type":"STRAIGHT","length":5}],
+    "actions": [{"type":2,"durationMs":0,"strength":200}],
+    "triggerMode": 0,
+    "priority": 100
+  }
+]
+

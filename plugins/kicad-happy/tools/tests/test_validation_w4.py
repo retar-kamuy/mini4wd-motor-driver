@@ -1,0 +1,449 @@
+"""FS-001 compensation and divider impedance, VM-001 regulator enable pins, PS-001 cycle key.
+
+Expected values come from the datasheets and the arithmetic:
+- LM2596 is internally compensated and has no COMP pin (LM2596 datasheet, pinout: VIN, OUTPUT,
+  GND, FEEDBACK, ON/OFF); UC3843 has a COMP pin for the error-amplifier network.
+- LM317 needs >= 3.5-10 mA minimum load, so its datasheet divider is R1 = 240 ohm (OUT-ADJ);
+  240 || 720 = 180 ohm is the intended value, not a wasteful divider.
+- 100 || 100 = 50 ohm < 1 kohm on a part without that requirement is still worth an info.
+- LM2596 places R1 (FB to ground) at 240 ohm to 1.5 kohm, "approximately 1 kohm" (SNVS124);
+  LM2576 at 1 kohm to 5 kohm (SNVS107). 3k / 1k (750 ohm) is the datasheet divider; R1 = 220 ohm
+  sits below the LM2596 range and keeps the info.
+- The compensation warning names no part value: a 10 nF FB/COMP-to-ground cap is not a safe default.
+- VM-001 threshold table (validation_detectors._VOLTAGE_THRESHOLDS): a 3.3 V-class input has a
+  3.6 V absolute maximum, a 1.8 V-class input 2.0 V, so 5.0 V into 3.3 V and 3.3 V into 1.8 V are errors.
+- Open-drain outputs: BQ25185 STAT1/STAT2 (SLUSF65A) and BQ24075 PGOOD/CHG are open-drain, so their
+  level is the pull-up rail; MCP73831 STAT is a tri-state output that drives high to its supply.
+"""
+import sys
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "skills" / "kicad" / "scripts"))
+
+import validation_detectors as vd  # noqa: E402
+from kicad_types import build_analysis_context  # noqa: E402
+
+
+def ctx_of(components, nets, rails, power_rails_config=None):
+    full = {n: {"name": n, "pins": [dict(component=r, pin_number=p, pin_name=pn, pin_type=t)
+                                    for r, p, pn, t in pins],
+                "point_count": 0, "no_connect": False, "has_pwr_flag": False, "labels": []}
+            for n, pins in nets.items()}
+    for c in components:
+        c.setdefault("lib_id", "")
+        c.setdefault("pins", [])
+        c.setdefault("footprint", "")
+    return build_analysis_context(components, full, {}, known_power_rails=set(rails),
+                                  power_rails_config=power_rails_config)
+
+
+def ic(ref, value):
+    return {"reference": ref, "type": "ic", "value": value}
+
+
+def res(ref, value):
+    return {"reference": ref, "type": "resistor", "value": value}
+
+
+def rule(findings, rule_id):
+    return [f for f in findings if f.get("rule_id") == rule_id]
+
+
+def regulator(ref, r_top, r_bottom, reference=None):
+    fb = {"r_top": {"ref": r_top[0], "ohms": r_top[1], "value": str(r_top[1])},
+          "r_bottom": {"ref": r_bottom[0], "ohms": r_bottom[1], "value": str(r_bottom[1])},
+          "ratio": r_bottom[1] / (r_top[1] + r_bottom[1])}
+    if reference:
+        fb["reference"] = reference
+    return {"ref": ref, "output_rail": "VOUT", "feedback_divider": fb}
+
+
+class FeedbackCompensation(unittest.TestCase):
+    def test_lm2596_feedback_node_gets_no_compensation_finding(self):
+        # LM2596-ADJ: divider 10k / 3.3k on FB (2.48 kohm, inside the window), no capacitor.
+        comps = [ic("U1", "LM2596S-ADJ"), res("R1", "10k"), res("R2", "3.3k")]
+        nets = {"VOUT": [("U1", "2", "OUTPUT", "output"), ("R1", "1", "~", "passive")],
+                "FB": [("U1", "4", "FB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "GND": [("U1", "3", "GND", "power_in"), ("R2", "2", "~", "passive")]}
+        got = vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                             [regulator("U1", ("R1", 10000), ("R2", 3300))])
+        self.assertEqual(rule(got, "FS-001"), [])
+
+    def test_uc3843_bare_comp_pin_is_reported_on_the_comp_net(self):
+        comps = [ic("U1", "UC3843"), res("R1", "10k"), res("R2", "2.5k")]
+        nets = {"VOUT": [("R1", "1", "~", "passive")],
+                "FB": [("U1", "2", "VFB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "COMP": [("U1", "1", "COMP", "output")],
+                "GND": [("U1", "5", "GND", "power_in"), ("R2", "2", "~", "passive")]}
+        (f,) = rule(vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                                   [regulator("U1", ("R1", 10000), ("R2", 2500))]), "FS-001")
+        self.assertEqual(f["summary"], "Regulator U1: missing compensation capacitor")
+        self.assertEqual(f["nets"], ["COMP"])
+
+    def test_uc3842_compensation_warning_prescribes_no_component(self):
+        comps = [ic("U1", "UC3842"), res("R1", "10k"), res("R2", "2.5k")]
+        nets = {"VOUT": [("R1", "1", "~", "passive")],
+                "FB": [("U1", "2", "VFB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "COMP": [("U1", "1", "COMP", "output")],
+                "GND": [("U1", "5", "GND", "power_in"), ("R2", "2", "~", "passive")]}
+        (f,) = rule(vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                                   [regulator("U1", ("R1", 10000), ("R2", 2500))]), "FS-001")
+        self.assertEqual(f["summary"], "Regulator U1: missing compensation capacitor")
+        self.assertNotIn("fix_params", f)
+
+    def test_uc3843_comp_with_capacitor_is_silent(self):
+        comps = [ic("U1", "UC3843"), res("R1", "10k"), res("R2", "2.5k"),
+                 {"reference": "C1", "type": "capacitor", "value": "100n"}]
+        nets = {"VOUT": [("R1", "1", "~", "passive")],
+                "FB": [("U1", "2", "VFB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "COMP": [("U1", "1", "COMP", "output"), ("C1", "1", "~", "passive")],
+                "GND": [("U1", "5", "GND", "power_in"), ("R2", "2", "~", "passive"), ("C1", "2", "~", "passive")]}
+        got = vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                             [regulator("U1", ("R1", 10000), ("R2", 2500))])
+        self.assertEqual(rule(got, "FS-001"), [])
+
+    def test_uc3845_comp_network_behind_a_bridged_solder_jumper_is_found(self):
+        comps = [ic("U1", "UC3845"), res("R1", "10k"), res("R2", "2.5k"),
+                 {"reference": "JP1", "type": "jumper", "value": "SolderJumper_2_Bridged",
+                  "lib_id": "Jumper:SolderJumper_2_Bridged"},
+                 {"reference": "C1", "type": "capacitor", "value": "470p"}]
+        nets = {"VOUT": [("R1", "1", "~", "passive")],
+                "FB": [("U1", "2", "VFB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive"),
+                       ("C1", "2", "~", "passive")],
+                "__unnamed_2": [("U1", "1", "COMP", "output"), ("JP1", "1", "A", "passive")],
+                "__unnamed_3": [("JP1", "2", "B", "passive"), ("C1", "1", "~", "passive")],
+                "GND": [("U1", "5", "GND", "power_in"), ("R2", "2", "~", "passive")]}
+        got = vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                             [regulator("U1", ("R1", 10000), ("R2", 2500))])
+        self.assertEqual(rule(got, "FS-001"), [])
+
+
+class FeedbackImpedance(unittest.TestCase):
+    def _run(self, value, reference=None):
+        comps = [ic("U1", value), res("R1", "240"), res("R2", "720")]
+        nets = {"VOUT": [("U1", "2", "VO", "output"), ("R1", "1", "~", "passive")],
+                "ADJ": [("U1", "1", "ADJ", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "GND": [("R2", "2", "~", "passive")]}
+        return rule(vd.validate_feedback_stability(
+            ctx_of(comps, nets, {"VOUT", "GND"}),
+            [regulator("U1", ("R1", 240), ("R2", 720), reference)]), "FS-001")
+
+    def test_lm317_240_720_gets_no_low_impedance_info(self):
+        self.assertEqual(self._run("LM317", "out_adj"), [])
+
+    def test_min_load_keyword_alone_exempts(self):
+        self.assertEqual(self._run("AMS1117-ADJ"), [])
+
+    def test_out_adj_marker_alone_exempts(self):
+        self.assertEqual(self._run("LT1585-ADJ", "out_adj"), [])
+
+    def test_generic_100_100_divider_still_gets_info(self):
+        comps = [ic("U1", "AP3012"), res("R1", "100"), res("R2", "100")]
+        nets = {"VOUT": [("R1", "1", "~", "passive")],
+                "FB": [("U1", "3", "FB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "GND": [("R2", "2", "~", "passive")]}
+        (f,) = rule(vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                                   [regulator("U1", ("R1", 100), ("R2", 100))]), "FS-001")
+        self.assertEqual(f["summary"], "Regulator U1: feedback divider impedance too low (50R)")
+
+    def _simple_switcher(self, value, r_top, r_bottom):
+        comps = [ic("U1", value), res("R1", str(r_top)), res("R2", str(r_bottom))]
+        nets = {"VOUT": [("U1", "2", "OUTPUT", "output"), ("R1", "1", "~", "passive")],
+                "FB": [("U1", "4", "FB", "input"), ("R1", "2", "~", "passive"), ("R2", "1", "~", "passive")],
+                "GND": [("U1", "3", "GND", "power_in"), ("R2", "2", "~", "passive")]}
+        return rule(vd.validate_feedback_stability(ctx_of(comps, nets, {"VOUT", "GND"}),
+                                                   [regulator("U1", ("R1", r_top), ("R2", r_bottom))]), "FS-001")
+
+    def test_lm2596_datasheet_divider_gets_no_low_impedance_info(self):
+        self.assertEqual(self._simple_switcher("LM2596S-ADJ", 3000, 1000), [])
+
+    def test_lm2576_datasheet_divider_gets_no_low_impedance_info(self):
+        self.assertEqual(self._simple_switcher("LM2576HVS-ADJ", 3300, 1000), [])
+
+    def test_lm2596_r1_below_datasheet_range_still_gets_info(self):
+        (f,) = self._simple_switcher("LM2596S-ADJ", 680, 220)
+        self.assertEqual(f["summary"], "Regulator U1: feedback divider impedance too low (166R)")
+
+
+VM_NETS_POWER = {"+5V": [("U5", "1", "VDD", "power_in")],
+                 "+3V3": [("U6", "1", "VDD", "power_in"), ("U7", "1", "VIN", "power_in")],
+                 "GND": [("U5", "2", "GND", "power_in"), ("U6", "2", "GND", "power_in"),
+                         ("U7", "2", "GND", "power_in")]}
+
+
+def vm001(ctx):
+    with patch.object(vd, "get_regulator_features", return_value=None):
+        return rule(vd.validate_voltage_levels(ctx), "VM-001")
+
+
+class EnableEndpoints(unittest.TestCase):
+    def test_en_endpoint_drops_out_and_the_other_pair_is_checked(self):
+        comps = [ic("U5", "MCU5V"), ic("U6", "MCU3V3"), ic("U7", "TPS62130")]
+        nets = dict(VM_NETS_POWER, SIG=[("U5", "3", "PA0", "output"), ("U6", "3", "PB0", "input"),
+                                        ("U7", "3", "EN", "input")])
+        (f,) = vm001(ctx_of(comps, nets, {"+5V", "+3V3", "GND"}))
+        self.assertEqual(f["summary"], "Net SIG: 5.0V / 3.3V domain crossing without level shifter")
+        self.assertEqual(f["components"], ["U5", "U6"])
+        self.assertEqual(f["severity"], "error")
+
+    def test_remaining_endpoints_in_one_domain_stay_silent(self):
+        # A 3.3 V GPIO drives a 5 V-supplied regulator's EN and a second 3.3 V IC.
+        comps = [ic("U5", "TPS62130"), ic("U6", "MCU3V3"), ic("U7", "SENSOR3V3")]
+        nets = {"+5V": [("U5", "1", "VIN", "power_in")],
+                "+3V3": [("U6", "1", "VDD", "power_in"), ("U7", "1", "VDD", "power_in")],
+                "SIG": [("U5", "3", "EN", "input"), ("U6", "3", "PB0", "output"),
+                        ("U7", "3", "INT", "input")]}
+        self.assertEqual(vm001(ctx_of(comps, nets, {"+5V", "+3V3"})), [])
+
+    def test_two_pin_enable_net_stays_silent(self):
+        # 3.3 V MCU IO on a TPS61023 boost EN, the boost supplied from +5V: one endpoint remains.
+        comps = [ic("U1", "ESP32-S3"), ic("U2", "TPS61023DRLR"), res("R12", "10k")]
+        nets = {"+3V3": [("U1", "1", "3V3", "power_in")], "+BATT": [("U2", "3", "VIN", "power_in")],
+                "+5V": [("U2", "6", "VOUT", "power_out")],
+                "GND": [("U1", "2", "GND", "power_in"), ("U2", "1", "GND", "power_in"),
+                        ("R12", "2", "~", "passive")],
+                "EN_5V": [("U1", "3", "IO8", "bidirectional"), ("U2", "2", "EN", "input"),
+                          ("R12", "1", "~", "passive")]}
+        self.assertEqual(vm001(ctx_of(comps, nets, {"+3V3", "+BATT", "+5V", "GND"})), [])
+
+
+class RegulatorStatusPins(unittest.TestCase):
+    # A 5 V-supplied regulator's open-drain power-good output and its active-low shutdown input
+    # on a 3.3 V MCU net: the pull-up sets PG's level, and nSHDN is an enable input.
+    def _vm(self, reg_value, pin, pin_type="open_collector"):
+        comps = [ic("U7", reg_value), ic("U6", "MCU3V3")]
+        nets = {"+5V": [("U7", "1", "VIN", "power_in")], "+3V3": [("U6", "1", "VDD", "power_in")],
+                "SIG": [("U7", "3", pin, pin_type), ("U6", "3", "PB0", "input")]}
+        return vm001(ctx_of(comps, nets, {"+5V", "+3V3"}))
+
+    def test_power_good_pin_is_a_compatible_endpoint(self):
+        for pin in ("PG", "PGOOD", "PWRGD", "nPG"):
+            self.assertEqual(self._vm("TPS62130", pin), [], pin)
+
+    def test_active_low_shutdown_pin_is_a_compatible_endpoint(self):
+        self.assertEqual(self._vm("TPS62130", "nSHDN"), [])
+
+    def test_pg_named_pin_on_a_non_regulator_is_still_checked(self):
+        (f,) = self._vm("MCU5V", "PG", "output")
+        self.assertEqual(f["severity"], "error")
+
+
+def _pulled(pin, pin_type, supply, pull_up, value="TPS2051", reader="MCU3V3"):
+    """U1 (*value*, supplied from *supply*) drives SIG through *pin* into a 3.3 V reader;
+    R1 pulls SIG up to *pull_up* (None: no pull-up)."""
+    comps = [ic("U1", value), ic("U2", reader), res("R1", "10k")]
+    nets = {"+5V": [], "+3V3": [], "GND": [("U1", "2", "GND", "power_in"),
+                                           ("U2", "2", "GND", "power_in")]}
+    nets[supply].append(("U1", "1", "VIN", "power_in"))
+    nets["+3V3"].append(("U2", "1", "VDD", "power_in"))
+    nets["SIG"] = [("U1", "3", pin, pin_type), ("U2", "3", "PB0", "input"),
+                   ("R1", "1", "~", "passive")]
+    nets[pull_up or "GND"].append(("R1", "2", "~", "passive"))
+    return vm001(ctx_of(comps, nets, {"+5V", "+3V3", "GND"}))
+
+
+class OpenDrainEndpoints(unittest.TestCase):
+    # An open-drain output swings to its pull-up rail, not to its IC's supply.
+    def test_open_collector_pulled_to_5v_into_3v3_input_is_an_error(self):
+        (f,) = _pulled("FLG", "open_collector", "+3V3", "+5V")
+        self.assertEqual(f["summary"], "Net SIG: 5.0V / 3.3V domain crossing without level shifter")
+        self.assertEqual(f["severity"], "error")
+
+    def test_open_collector_pulled_to_3v3_is_silent(self):
+        self.assertEqual(_pulled("FLG", "open_collector", "+5V", "+3V3"), [])
+
+    def test_open_collector_with_no_pull_up_is_silent(self):
+        self.assertEqual(_pulled("FLG", "open_collector", "+5V", None), [])
+
+    def test_open_collector_pulled_below_the_readers_rail_is_not_an_overdriven_input(self):
+        # A 3.3 V part's open-drain flag pulled to +3V3 into a 5 V part's input: the flag only
+        # pulls low, so the 5 V domain does not overdrive it.
+        comps = [ic("U1", "TPS2051"), ic("U2", "MCU5V"), res("R1", "10k")]
+        nets = {"+3V3": [("U1", "1", "VIN", "power_in"), ("R1", "2", "~", "passive")],
+                "+5V": [("U2", "1", "VDD", "power_in")],
+                "GND": [("U1", "2", "GND", "power_in"), ("U2", "2", "GND", "power_in")],
+                "SIG": [("U1", "3", "FLG", "open_collector"), ("U2", "3", "PB0", "input"),
+                        ("R1", "1", "~", "passive")]}
+        self.assertEqual(vm001(ctx_of(comps, nets, {"+5V", "+3V3", "GND"})), [])
+
+    def test_regulator_power_good_pulled_to_lower_rail_is_silent(self):
+        self.assertEqual(_pulled("PG", "output", "+5V", "+3V3", value="TPS62130"), [])
+
+    def test_regulator_power_good_pulled_to_5v_into_3v3_input_is_an_error(self):
+        (f,) = _pulled("PG", "output", "+5V", "+5V", value="TPS62130")
+        self.assertEqual(f["severity"], "error")
+
+    def test_push_pull_output_into_lower_rail_input_still_fires(self):
+        (f,) = _pulled("PA0", "output", "+5V", "+3V3", value="MCU5V")
+        self.assertEqual(f["severity"], "error")
+
+    def test_charger_status_output_is_judged_at_its_pull_up(self):
+        for pin in ("STAT", "STAT1", "~{CHG}", "CHRG", "nSTAT2"):
+            self.assertEqual(_pulled(pin, "output", "+5V", "+3V3", value="BQ25185"), [], pin)
+            self.assertEqual(_pulled(pin, "output", "+5V", None, value="BQ25185"), [], pin)
+
+    def test_tri_state_charger_status_is_still_checked(self):
+        # MCP73831 STAT is a tri-state output that drives high to its supply.
+        (f,) = _pulled("STAT", "tri_state", "+5V", "+3V3", value="MCP73831")
+        self.assertEqual(f["severity"], "error")
+
+
+def _into_1v8(driver, supply, pin, pin_type, reader, reader_pin):
+    """*driver* (supplied from *supply*) drives SIG through *pin*, pulled up to +3V3 by R1, into
+    *reader_pin* of *reader*, which is supplied from +1V8."""
+    comps = [ic("U1", driver), ic("U2", reader), res("R1", "100k")]
+    nets = {"+5V": [], "+3V3": [("R1", "2", "~", "passive")],
+            "+1V8": [("U2", "1", "VIN", "power_in")],
+            "GND": [("U1", "2", "GND", "power_in"), ("U2", "2", "GND", "power_in")],
+            "SIG": [("U1", "3", pin, pin_type), ("U2", "3", reader_pin, "input"),
+                    ("R1", "1", "~", "passive")]}
+    nets[supply].append(("U1", "1", "VIN", "power_in"))
+    return vm001(ctx_of(comps, nets, {"+5V", "+3V3", "+1V8", "GND"}))
+
+
+class LoadSwitchEnable(unittest.TestCase):
+    # TPS2297x: the ON pin is a logic input rated independently of VIN, so a 3.3 V pull-up
+    # into ON on a 1.8 V switch is its intended use.
+    def test_power_good_pulled_to_3v3_into_a_load_switch_on_pin_is_silent(self):
+        self.assertEqual(_into_1v8("TPS53355", "+5V", "PGOOD", "open_collector", "TPS22971", "ON"), [])
+
+    def test_push_pull_3v3_output_into_a_plain_1v8_input_still_fires(self):
+        (f,) = _into_1v8("MCU3V3", "+3V3", "PA0", "output", "MCU1V8", "PB0")
+        self.assertEqual(f["severity"], "error")
+
+
+def _gpio_into_en(value, description="", en_pin="EN"):
+    """A 3.3 V MCU output drives *en_pin* of U2 (*value*, supplied from +5V)."""
+    comps = [ic("U1", "MCU3V3"), dict(ic("U2", value), description=description)]
+    nets = {"+3V3": [("U1", "1", "VDD", "power_in")], "+5V": [("U2", "1", "VIN", "power_in")],
+            "GND": [("U1", "2", "GND", "power_in"), ("U2", "2", "GND", "power_in")],
+            "SIG": [("U1", "3", "PA0", "output"), ("U2", "3", en_pin, "input")]}
+    return vm001(ctx_of(comps, nets, {"+5V", "+3V3", "GND"}))
+
+
+class LoadSwitchFamilyEnable(unittest.TestCase):
+    # SiP32510 and similar load switches: EN is a logic input rated independently of VIN.
+    def test_gpio_into_a_sip32510_enable_is_silent(self):
+        self.assertEqual(_gpio_into_en("SIP32510DT-T1-GE3"), [])
+
+    def test_gpio_into_a_part_described_as_a_load_switch_is_silent(self):
+        for description in ("Current-limited load switch", "USB power distribution switch"):
+            self.assertEqual(_gpio_into_en("XYZ123", description), [], description)
+
+    def test_gpio_into_an_mcu_enable_is_still_checked(self):
+        (f,) = _gpio_into_en("MCU5V")
+        self.assertEqual(f["severity"], "error")
+
+    def test_a_buck_describing_light_load_switching_is_not_a_load_switch(self):
+        (f,) = _gpio_into_en("XYZ2305", "Buck Regulator with HyperLight Load Switching Scheme")
+        self.assertEqual(f["severity"], "error")
+
+
+class OnePartNet(unittest.TestCase):
+    # MC34063A: the switch and driver collectors (open-collector) tie to the part's own Ipk
+    # sense input, pulled to +5V through the sense resistor.
+    def _net(self, with_reader):
+        comps = [ic("U1", "MC34063AP"), ic("U2", "MCU3V3"), res("R1", "1")]
+        nets = {"+3V3": [("U1", "6", "VCC", "power_in"), ("U2", "1", "VDD", "power_in")],
+                "+5V": [("R1", "2", "~", "passive")],
+                "GND": [("U1", "4", "GND", "power_in"), ("U2", "2", "GND", "power_in")],
+                "SW": [("U1", "1", "SwC", "open_collector"), ("U1", "8", "DC", "open_collector"),
+                       ("U1", "7", "Ipk", "input"), ("R1", "1", "~", "passive")]}
+        if with_reader:
+            nets["SW"].append(("U2", "3", "PB0", "input"))
+        return vm001(ctx_of(comps, nets, {"+5V", "+3V3", "GND"}))
+
+    def test_one_parts_own_pins_are_not_a_domain_crossing(self):
+        self.assertEqual(self._net(with_reader=False), [])
+
+    def test_a_second_part_on_the_net_is_still_checked(self):
+        (f,) = self._net(with_reader=True)
+        self.assertEqual(f["components"], ["U1", "U2"])
+
+
+class SupplyPinEndpoints(unittest.TestCase):
+    def test_regulator_cascade_net_is_silent(self):
+        # L7809 OUT feeds L7805 IN: the net between them is a rail, not a logic level.
+        comps = [ic("U1", "L7809"), ic("U2", "L7805")]
+        nets = {"+12V": [("U1", "1", "IN", "power_in")],
+                "+5V": [("U2", "3", "OUT", "power_out")],
+                "GND": [("U1", "2", "GND", "power_in"), ("U2", "2", "GND", "power_in")],
+                "Net-(U1-OUT)": [("U1", "3", "OUT", "power_out"), ("U2", "1", "IN", "power_in")]}
+        self.assertEqual(vm001(ctx_of(comps, nets, {"+12V", "+5V", "GND"})), [])
+
+
+class MinLoadAdjustable(unittest.TestCase):
+    # Minimum-load adjustable linears whose datasheet OUT-ADJ resistor is 120-240 ohm, as the
+    # LM317's, so 240 || 720 = 180 ohm is intended.
+    def test_min_load_adjustables_get_no_low_impedance_info(self):
+        for value in ("LM1084IT-ADJ", "LM1085IS-ADJ", "LT1117CST", "LT317AT", "LM117K",
+                      "LM217T", "LD1085V", "LD1086D2T"):
+            self.assertEqual(FeedbackImpedance._run(self, value), [], value)
+
+
+class UsbDataNets(unittest.TestCase):
+    # USB D+/D- swing at most 3.6 V whatever the device supply (USB 2.0, 7.1.1), so a 5 V-
+    # supplied device and a 3.3 V device on D+/D- are no domain crossing.
+    def _nets(self, name):
+        return dict(VM_NETS_POWER, **{name: [("U5", "3", "D+", "bidirectional"),
+                                             ("U6", "3", "USB_DP", "bidirectional")]})
+
+    def test_usb_data_net_is_not_a_domain_crossing(self):
+        comps = [ic("U5", "MCU5V"), ic("U6", "MCU3V3")]
+        for name in ("USB_D+", "/USB/D-", "USBDP", "/usb_c/USB_DN", "USB_DATA_P"):
+            self.assertEqual(vm001(ctx_of(comps, self._nets(name), {"+5V", "+3V3", "GND"})), [],
+                             name)
+
+    def test_non_usb_net_between_the_same_ics_is_still_an_error(self):
+        # USB_DTR (a UART modem line, cheyao icepi-zero FT231X DTR) and USB_DET are not D+/D-
+        comps = [ic("U5", "MCU5V"), ic("U6", "MCU3V3")]
+        for name in ("DATA", "~{USB_DTR}", "USB_DET", "USB_DP_PU", "USB_DM_EN"):
+            (f,) = vm001(ctx_of(comps, self._nets(name), {"+5V", "+3V3", "GND"}))
+            self.assertEqual(f["severity"], "error", name)
+
+
+class IgnoredSupply(unittest.TestCase):
+    def test_ic_with_a_supply_on_an_ignored_rail_has_no_domain(self):
+        # U1 VDD on +5V (ignored) and VIO on +3V3; U2 on +1V8. Without the rule U1 would read
+        # 3.3 V from VIO and 3.3 V into a 1.8 V input (2.0 V abs max) would be an error.
+        comps = [ic("U1", "MCU"), ic("U2", "SENSOR")]
+        nets = {"+5V": [("U1", "1", "VDD", "power_in")], "+3V3": [("U1", "2", "VIO", "power_in")],
+                "+1V8": [("U2", "1", "VDD", "power_in")],
+                "SIG": [("U1", "3", "IO", "bidirectional"), ("U2", "3", "IO", "bidirectional")]}
+        rails = {"+5V", "+3V3", "+1V8"}
+        self.assertEqual(len(vm001(ctx_of(comps, nets, rails))), 1)
+        self.assertEqual(vm001(ctx_of(comps, nets, rails, {"ignore": ["+5V"]})), [])
+
+
+def _regs(*pairs):
+    return [{"ref": r, "output_rail": out} for r, out in pairs]
+
+
+class EnableCycle(unittest.TestCase):
+    def test_two_regulators_enabling_each_other_are_one_cycle(self):
+        comps = [ic("U1", "REGA"), ic("U2", "REGB")]
+        nets = {"RAIL_A": [("U1", "2", "VOUT", "output"), ("U2", "3", "EN", "input")],
+                "RAIL_B": [("U2", "2", "VOUT", "output"), ("U1", "3", "EN", "input")]}
+        got = vd.validate_power_sequencing(ctx_of(comps, nets, set()),
+                                           _regs(("U1", "RAIL_A"), ("U2", "RAIL_B")))
+        cycles = [f for f in rule(got, "PS-001") if f["summary"].startswith("Circular")]
+        self.assertEqual([f["components"] for f in cycles], [["U1", "U2"]])
+
+    def test_two_separate_cycles_are_two_findings(self):
+        comps = [ic(r, "REG") for r in ("U1", "U2", "U3", "U4")]
+        nets = {"RAIL_A": [("U1", "2", "VOUT", "output"), ("U2", "3", "EN", "input")],
+                "RAIL_B": [("U2", "2", "VOUT", "output"), ("U1", "3", "EN", "input")],
+                "RAIL_C": [("U3", "2", "VOUT", "output"), ("U4", "3", "EN", "input")],
+                "RAIL_D": [("U4", "2", "VOUT", "output"), ("U3", "3", "EN", "input")]}
+        got = vd.validate_power_sequencing(
+            ctx_of(comps, nets, set()),
+            _regs(("U1", "RAIL_A"), ("U2", "RAIL_B"), ("U3", "RAIL_C"), ("U4", "RAIL_D")))
+        cycles = [f for f in rule(got, "PS-001") if f["summary"].startswith("Circular")]
+        self.assertEqual([f["components"] for f in cycles], [["U1", "U2"], ["U3", "U4"]])
+
+
+if __name__ == "__main__":
+    unittest.main()
