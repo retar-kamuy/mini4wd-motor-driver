@@ -36,6 +36,7 @@ obj/
 out/
 Dist/
 /dist/
+web/.vite/
 
 # Environment / secrets
 .env*
@@ -45,6 +46,7 @@ Dist/
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *.kicad_prl
+~*.kicad_pro.lck
 fp-info-cache
 _autosave-*
 \#auto_saved_files\#

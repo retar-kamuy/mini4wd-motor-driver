@@ -22,3 +22,11 @@ Also use the installed supporting skills when their scope applies:
 - `spice` when simulating or validating analog subcircuits.
 
 Installed skill files are available under `~/.codex/skills/<skill-name>/SKILL.md`. Select the relevant supporting skills for each task and read their instructions before using them. Do not claim DRC/ERC, simulation, sourcing, or manufacturing readiness without actually running the applicable checks and reporting their results.
+
+## Web application and TypeScript workflow
+
+- Keep `web/index.html` as the existing Mini 4WD console entry. Add new React screens through a separate entry point defined by the relevant feature specification.
+- Before React work, read the applicable project skills under `.agents/skills/`, such as `react-best-practices`, `composition-patterns`, or `react-view-transitions`. Use `web-design-guidelines` for UI reviews and `react-native-skills` only for React Native or Expo work.
+- Before TypeScript work, read the relevant skill under `.agents/skills/`: `typescript-project-setup`, `typescript-strict`, `typescript-build-references`, `typescript-publish-types`, `typescript-update`, or `typescript-report-issue`.
+- Read `.agents/skills/electron/SKILL.md` when automating or testing an Electron application.
+- Follow the applicable vehicle protocol contract and verify binary compatibility before connecting a new web UI to hardware. Do not treat JSON examples or placeholder components as a complete implementation.
