@@ -14,8 +14,8 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "types": ["@types/web-bluetooth"]
+    "types": ["@types/web-bluetooth", "@types/react", "@types/react-dom"],
+    "jsx": "react-jsx"
   },
   "include": ["src/**/*"]
 }
-
