@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-26",
+  "Q1": {
+    "part": "SiSS64DN-T1-GE3",
+    "model_file": "Vishay_PowerPAK_1212-8_Single.step",
+    "model_source": "https://gitlab.com/api/v4/projects/22625679/repository/files/Package_SO.3dshapes%2FVishay_PowerPAK_1212-8_Single.step/raw?ref=63a0448d28eb03efdd98421758a0afb5e0db5b4f",
+    "review_status": "KiCad proposed model MR813; not merged and not manufacturer-certified",
+    "source_MR": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/merge_requests/813",
+    "sha256": "1822ec9844e518b4deb6b86b37e05381b0dbf2dbea016576c7647b3bcc108da2",
+    "vertex_extents_mm": {
+      "X": [
+        -1.65,
+        1.65
+      ],
+      "Y": [
+        -1.625,
+        1.625
+      ],
+      "Z": [
+        0,
+        0.8
+      ]
+    },
+    "manufacturer_drawing": "https://www.vishay.com/docs/63919/ppak1212-8s.pdf",
+    "manufacturer_limits_mm": {
+      "D": [
+        3.2,
+        3.4
+      ],
+      "E": [
+        3.2,
+        3.4
+      ],
+      "A": [
+        0.67,
+        0.83
+      ],
+      "pitch": 0.65
+    },
+    "transform": {
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "L1": {
+    "part_value": "1.0uH 9A (XEL4030-102ME)",
+    "model_file": "L1_XEL4030_102_MAX_ENVELOPE.step",
+    "model_type": "Generated maximum envelope only, not a downloaded manufacturer model",
+    "dimensions_mm": [
+      4.3,
+      4.3,
+      3.1
+    ],
+    "source": "https://www.coilcraft.com/getattachment/53a07e14-2bbc-455d-8f84-80e6f9e135be/xel4030d.gif?lang=en-US",
+    "basis": "Manufacturer drawing 4.0 +/-0.3 mm square, -102 maximum mounted height 3.10 mm",
+    "omitted": [
+      "terminal detail",
+      "markings",
+      "body radius/chamfer",
+      "electrical properties"
+    ],
+    "detailed_model_access": "Manufacturer Altium ZIP returned 403; alternative CAD sites require login.",
+    "transform": {
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "changes": [
+    {
+      "file": "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb",
+      "sha256_before": "79b2109c841049c092ca82a1b14101ecac3cbcc43cfab98848e544bbeba5f772",
+      "sha256_after": "44d08e79606a014aaa0109626e096b40ad787dea66c39abaa3d3228f4f04623b",
+      "model_only_change": true
+    },
+    {
+      "file": "hardware/kicad/mini4wd-motor-driver/board-routed.pretty/Coilcraft_XEL4030.kicad_mod",
+      "sha256_before": "0dfe9dc2729c821b68c8cddb1c5d0483f302d7088d53bb94dd593aedbf117cb6",
+      "sha256_after": "860973f1a03b12203e3635c1ca09bb894bbccc711e1347ebaef5de49ecfc8e6a",
+      "model_only_change": true
+    }
+  ]
+}

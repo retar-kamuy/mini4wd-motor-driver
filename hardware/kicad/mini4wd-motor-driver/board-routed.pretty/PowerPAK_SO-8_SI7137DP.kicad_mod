@@ -243,7 +243,7 @@
 		(uuid "e2c7d93b-eb34-4d5f-a309-d34f13f04bb7")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.step"
+	(model "${KIPRJMOD}/3dmodels/PQFN-8-EP_6x5mm_P1.27mm_Generic.step"
 		(offset
 			(xyz 0 0 0)
 		)

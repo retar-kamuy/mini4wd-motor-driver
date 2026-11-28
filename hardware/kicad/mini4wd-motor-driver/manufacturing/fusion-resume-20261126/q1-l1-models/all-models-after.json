@@ -1,0 +1,227 @@
+{
+  "footprint_count": 22,
+  "with_model_count": 22,
+  "missing_models": [],
+  "components": [
+    {
+      "ref": "R_FB_H",
+      "value": "732k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "R_MID_H",
+      "value": "22k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "R_VBAT_H",
+      "value": "22k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "R_FB_L",
+      "value": "100k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "TPS61023DRLR",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-563.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "MCU1",
+      "value": "XIAO MG24 Sense",
+      "models": [
+        {
+          "path": "${KIPRJMOD}/3dmodels/Seeed Studio-XIAO-MG24_.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "R_MID_L",
+      "value": "10k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "D_XIAO",
+      "value": "SS14-E3",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "C_BYP",
+      "value": "0.1uF 10V",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "CIN",
+      "value": "10uF 10V",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "COUT1",
+      "value": "22uF 10V",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "Micro-Fit 3.0 B+/B-",
+      "models": [
+        {
+          "path": "${KIPRJMOD}/3dmodels/436500214.stp",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "value": "UCC27511DBVR",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "Micro-Fit 3.0 M+/M-",
+      "models": [
+        {
+          "path": "${KIPRJMOD}/3dmodels/436500214.stp",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "SiSS64DN-T1-GE3",
+      "models": [
+        {
+          "path": "${KIPRJMOD}/3dmodels/Vishay_PowerPAK_1212-8_Single.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "R_NTC",
+      "value": "10k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "COUT2",
+      "value": "22uF 10V",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "TH1",
+      "value": "NTCG104BH103JT1",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "R_VBAT_L",
+      "value": "10k 1%",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "Q2",
+      "value": "SI7137DP-T1-GE3",
+      "models": [
+        {
+          "path": "${KIPRJMOD}/3dmodels/PQFN-8-EP_6x5mm_P1.27mm_Generic.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "1.0uH 9A (XEL4030-102ME)",
+      "models": [
+        {
+          "path": "${KIPRJMOD}/3dmodels/L1_XEL4030_102_MAX_ENVELOPE.step",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "ref": "D_FLY",
+      "value": "SS54-HF",
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+          "exists": true
+        }
+      ]
+    }
+  ]
+}

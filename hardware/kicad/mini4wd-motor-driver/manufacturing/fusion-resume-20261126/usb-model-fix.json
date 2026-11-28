@@ -1,0 +1,39 @@
+{
+  "changes": [
+    {
+      "path": "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb",
+      "sha256_before": "ce23dc85f33fe134db3e98970085693d78e88277d97168f0cb873830bb2fc5a1",
+      "sha256_after": "8b2448736544b018b07352d3ec20d4a220d42ea01727ccd5b51b28dc3108b7e6",
+      "electrical_geometry_identical_excluding_models": true
+    },
+    {
+      "path": "hardware/kicad/mini4wd-motor-driver/candidates/pre-switch-ecad-20261126/mini4wd-motor-driver.kicad_pcb",
+      "sha256_before": "873247a5b3e3a713a446780d8dc06e3ed1a232f4be8b1f111e1b5833455bd771",
+      "sha256_after": "d2cf6904e84be6a65749863b61426b18dfd7205e2050b39b0d2bfa5e536407ae",
+      "electrical_geometry_identical_excluding_models": true
+    },
+    {
+      "path": "hardware/kicad/mini4wd-motor-driver/board-routed.pretty/XIAO_MG24_Castellated_14P.kicad_mod",
+      "sha256_before": "bf130c0f6e73b571eef9da7c9d71f802ef3eccd716bba725dd3b1846592408f8",
+      "sha256_after": "7fd8d9c9bf29545aea36df6d43bf561e6d7cce60905d56c7ffd1c07ebd22ddc1",
+      "electrical_geometry_identical_excluding_models": true
+    },
+    {
+      "path": "hardware/kicad/mini4wd-motor-driver/candidates/pre-switch-ecad-20261126/board-routed.pretty/XIAO_MG24_Castellated_14P.kicad_mod",
+      "sha256_before": "b8b10c2cbbb89c2de9a20a2bf70adcaf677537158c3994a089ff816dc78d7f9f",
+      "sha256_after": "debee687d8d5c56cc1c8395a05455b8a94c61be941a42a0bc5f17d67550bc29f",
+      "electrical_geometry_identical_excluding_models": true
+    }
+  ],
+  "reason": "Official top pinout: USB end is adjacent to 5V and D0. Footprint pad1=5V and pad14=D0 are at left; restore STEP was displayed in opposite direction.",
+  "offset_mm": [
+    1.8,
+    5.3,
+    0
+  ],
+  "rotation_degrees": [
+    -90,
+    0,
+    180
+  ]
+}

@@ -923,7 +923,7 @@
 			(uuid "fdae3605-ac53-4e18-b2a4-ec74b810a015")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/Texas_R-PDSO-N6_DRL-6.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-563.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1132,6 +1132,17 @@
 			(uuid "e02ebf3a-d773-4bc3-9b9e-a9fe640e9fc5")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3dmodels/Seeed Studio-XIAO-MG24_.step"
+			(offset
+				(xyz 1.8 5.3 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 180)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
@@ -2098,6 +2109,17 @@
 			(uuid "ce56f5cd-b133-4d33-9572-209e0618b7b8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3dmodels/436500214.stp"
+			(offset
+				(xyz 0 -7 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
@@ -2554,6 +2576,17 @@
 			(uuid "fc41af04-4e58-4946-9745-b9f172feebfa")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3dmodels/436500214.stp"
+			(offset
+				(xyz 0 -7 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Package_SO:Vishay_PowerPAK_1212-8_Single"
 		(layer "F.Cu")
@@ -2837,7 +2870,7 @@
 			(uuid "3b2d0876-7738-47ae-8a8e-935becbdf264")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Vishay_PowerPAK_1212-8_Single.step"
+		(model "${KIPRJMOD}/3dmodels/Vishay_PowerPAK_1212-8_Single.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3686,7 +3719,7 @@
 			(uuid "e2c7d93b-eb34-4d5f-a309-d34f13f04bb7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.step"
+		(model "${KIPRJMOD}/3dmodels/PQFN-8-EP_6x5mm_P1.27mm_Generic.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3799,6 +3832,11 @@
 			(uuid "75af23bd-aaf9-4970-a86d-ada66ebe5316")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3dmodels/L1_XEL4030_102_MAX_ENVELOPE.step"
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
+		)
 	)
 	(footprint "Diode_SMD:D_SMA"
 		(layer "F.Cu")

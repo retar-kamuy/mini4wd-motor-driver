@@ -1,0 +1,22 @@
+{
+  "source_archive": "C:\\Users\\hoshi\\Downloads\\ul_SI7137DP-T1-GE3.zip",
+  "archive_sha256": "4ace37d7cfb3f0b4b3e3e9a69dda5c3253c0949d440a2850f86edab879a2f6a5",
+  "archive_members": [
+    "ImportGuides.html",
+    "readme.txt",
+    "KiCADv6/2026-11-26_13-33-55.kicad_sym",
+    "KiCADv6/ImportGuide.html",
+    "KiCADv6/footprints.pretty/MOSFET_7DP-T1-GE3_VIS.kicad_mod"
+  ],
+  "model_files": [],
+  "changes": [
+    "Footprint property prefixed with project library nickname"
+  ],
+  "existing_Q2_replaced": false,
+  "files_sha256": {
+    "UltraLibrarian_SI7137DP.kicad_sym": "4d821ae4f9123aa69b90150f4109a321874144d9852caa7c25064646bb10c8bb",
+    "vendor-readme.txt": "42c49e0b7d58cc7852873aeafccfb5b6e1bf70f5d7aec2da8bf94545b8fd6c91",
+    "original.kicad_sym": "046939d1ce204e061982b483bfbfb9ff4792e4be9387c0f9613323a516206720",
+    "footprints.pretty/MOSFET_7DP-T1-GE3_VIS.kicad_mod": "00abf5a6683d3e410d35e0920cbb37d5c67f44610f702ec9d182932b624d424a"
+  }
+}

@@ -182,4 +182,15 @@
 		(uuid "e02ebf3a-d773-4bc3-9b9e-a9fe640e9fc5")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Seeed Studio-XIAO-MG24_.step"
+		(offset
+			(xyz 1.8 5.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
 )

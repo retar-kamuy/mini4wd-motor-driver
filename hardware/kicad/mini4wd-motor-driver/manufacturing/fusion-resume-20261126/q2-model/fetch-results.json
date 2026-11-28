@@ -1,0 +1,31 @@
+[
+  {
+    "name": "ultralibrarian.html",
+    "url": "https://vendor.ultralibrarian.com/vishay/embedded?docId=69063&q=library%2Fecad%2F&vdrSearch=SI7137DP-T1-GE3",
+    "status": 200,
+    "bytes": 53078,
+    "start": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"wi"
+  },
+  {
+    "name": "kicad-step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_SO.3dshapes/PowerPAK_SO-8_Single.step",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "kicad-wrl",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_SO.3dshapes/PowerPAK_SO-8_Single.wrl",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "github-step",
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Package_SO.3dshapes/PowerPAK_SO-8_Single.step",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "vishay-package.pdf",
+    "url": "https://www.vishay.com/docs/71655/powerpak.pdf",
+    "status": 200,
+    "bytes": 67463,
+    "start": "%PDF-1.5\r%\ufffd\ufffd\ufffd\ufffd\r414 0 obj\r<<\r/Linearized 1.0\r/L 67463    \r/H [ 34570     193       ]\r/O 419      \r/E "
+  }
+]

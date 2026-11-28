@@ -1,0 +1,161 @@
+(kicad_symbol_lib
+  (version 20241209)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (symbol "TLV803EA30DBZR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "TLV803EA30DBZR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "3.08V open-drain reset supervisor, 200ms candidate"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "TLV803EA30DBZR_0_1"
+      (rectangle
+        (start -5.08 -5.08)
+        (end 5.08 5.08)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "TLV803EA30DBZR_1_1"
+      (pin power_in line
+        (at 0 -7.62 90)
+        (length 2.54)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin open_collector line
+        (at 7.62 0 180)
+        (length 2.54)
+        (name "~{RESET}"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 7.62 270)
+        (length 2.54)
+        (name "VDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "TLV809EA30DBZR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "TLV809EA30DBZR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "3.08V push-pull reset supervisor, 200ms candidate"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "TLV809EA30DBZR_0_1"
+      (rectangle
+        (start -5.08 -5.08)
+        (end 5.08 5.08)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "TLV809EA30DBZR_1_1"
+      (pin power_in line
+        (at 0 -7.62 90)
+        (length 2.54)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 7.62 0 180)
+        (length 2.54)
+        (name "~{RESET}"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 7.62 270)
+        (length 2.54)
+        (name "VDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+)

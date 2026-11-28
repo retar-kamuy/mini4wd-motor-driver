@@ -1,0 +1,32 @@
+{
+  "canonical_electrical_geometry_identical_excluding_model": true,
+  "model_refs_added": [
+    "MCU1",
+    "J1",
+    "J2"
+  ],
+  "candidate_files": [
+    "board-routed.pretty/Coilcraft_XEL4030.kicad_mod",
+    "board-routed.pretty/D_SMA_Edge_Assembly.kicad_mod",
+    "board-routed.pretty/Diodes_PowerDI3333-8_DMP2008UFG.kicad_mod",
+    "board-routed.pretty/Molex_MicroFit30_43650-0214.kicad_mod",
+    "board-routed.pretty/PowerPAK_SO-8_SI7137DP.kicad_mod",
+    "board-routed.pretty/R_0402_Gate_NoSilk.kicad_mod",
+    "board-routed.pretty/XIAO_MG24_Castellated_14P.kicad_mod",
+    "fp-lib-table",
+    "gate-control.kicad_sch",
+    "gate-study.kicad_sym",
+    "mini4wd-motor-driver.kicad_pcb",
+    "mini4wd-motor-driver.kicad_pro",
+    "mini4wd-motor-driver.kicad_sch",
+    "mini4wd-motor-driver.kicad_sym",
+    "mini4wd-motor-driver.pretty/Coilcraft_XEL4030.kicad_mod",
+    "mini4wd-motor-driver.pretty/Molex_MicroFit30_43650-0214.kicad_mod",
+    "mini4wd-motor-driver.pretty/PowerPAK_SO-8_SI7137DP.kicad_mod",
+    "mini4wd-motor-driver.pretty/XIAO_MG24_Castellated_14P.kicad_mod",
+    "mini8wd-motor-driver.pretty/Molex_MicroFit30_43650-0214.kicad_mod",
+    "sym-lib-table"
+  ],
+  "canonical_pcb_sha256_before": "c6a4986c8ed964493ffa553796c3ffb24a09a53b488ef7e7627080b6e3c0da67",
+  "canonical_pcb_sha256_after": "ce23dc85f33fe134db3e98970085693d78e88277d97168f0cb873830bb2fc5a1"
+}

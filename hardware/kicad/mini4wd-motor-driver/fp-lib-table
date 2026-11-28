@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "mini4wd-motor-driver")(type "KiCad")(uri "${KIPRJMOD}/mini4wd-motor-driver.pretty")(options "")(descr ""))
   (lib (name "board-routed")(type "KiCad")(uri "${KIPRJMOD}/board-routed.pretty")(options "")(descr "Footprints derived from the routed board"))
+  (lib (name "UltraLibrarian_SI7137DP")(type "KiCad")(uri "${KIPRJMOD}/vendor/ultralibrarian/si7137dp/footprints.pretty")(options "")(descr "User supplied Ultra Librarian SI7137DP footprint; not applied to Q2"))
 )

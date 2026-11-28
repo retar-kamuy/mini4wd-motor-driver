@@ -1,0 +1,799 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-27T22:12:56",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "mini4wd-motor-driver.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 11.0000 mm",
+                    "pos": {
+                        "x": 49.3,
+                        "y": 6.5
+                    },
+                    "uuid": "124aabb1-7bf8-4612-8eb1-d98d712c960e"
+                },
+                {
+                    "description": "Track [VBAT] on F.Cu, length 2.3000 mm",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 17.5
+                    },
+                    "uuid": "8b17a4ba-b254-4c3c-86e9-1311c0653cee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 0.4100 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 9.73
+                    },
+                    "uuid": "261705fc-0987-4882-aa43-0240bc1ab674"
+                },
+                {
+                    "description": "Pad 3 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 9.5
+                    },
+                    "uuid": "9b23e4c7-8b23-494d-ac46-2ea76e82c1d6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 11.64
+                    },
+                    "uuid": "ec52e504-f8fa-4dbd-8e8c-f9afc0349cec"
+                },
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 2.5100 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 11.64
+                    },
+                    "uuid": "2be80aec-b46a-4072-98d3-db0a206a2856"
+                },
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 1.5000 mm",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 11.64
+                    },
+                    "uuid": "59211601-40a1-4b4f-ad39-88b2ddddddce"
+                },
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [MOTOR_MINUS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 47.4,
+                        "y": 11.64
+                    },
+                    "uuid": "acf07090-e8a5-4e0f-a189-bcae714a93fb"
+                },
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.2500 mm; actual 0.2150 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 1.0
+                    },
+                    "uuid": "f9126015-8648-4973-a8e0-2b11855a9858"
+                },
+                {
+                    "description": "Pad MP [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 53.335,
+                        "y": 16.395
+                    },
+                    "uuid": "0da94d67-5923-4866-a3b0-e73d4f4b1a4f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.2500 mm; actual 0.2150 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 1.0
+                    },
+                    "uuid": "f9126015-8648-4973-a8e0-2b11855a9858"
+                },
+                {
+                    "description": "Pad MP [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 53.335,
+                        "y": 4.605
+                    },
+                    "uuid": "042f75dd-71c3-4e26-8cf7-8ea60e8e516c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 50.7,
+                        "y": 10.5
+                    },
+                    "uuid": "28522be7-4490-4f91-8f0c-972b2f3f8d02"
+                },
+                {
+                    "description": "Footprint Q2",
+                    "pos": {
+                        "x": 43.3,
+                        "y": 11.64
+                    },
+                    "uuid": "e6b8a924-5935-41ed-b10e-93fb83815c4e"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Items shorting two nets (nets MOTOR_MINUS and VBAT)",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 2.5100 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 11.64
+                    },
+                    "uuid": "2be80aec-b46a-4072-98d3-db0a206a2856"
+                },
+                {
+                    "description": "Track [VBAT] on F.Cu, length 1.9600 mm",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "a7008fff-2f8b-429d-a698-a0b7000af5ec"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT and MOTOR_MINUS)",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 1.9600 mm",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "a7008fff-2f8b-429d-a698-a0b7000af5ec"
+                },
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 11.64
+                    },
+                    "uuid": "ec52e504-f8fa-4dbd-8e8c-f9afc0349cec"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 11.0000 mm",
+                    "pos": {
+                        "x": 49.3,
+                        "y": 6.5
+                    },
+                    "uuid": "124aabb1-7bf8-4612-8eb1-d98d712c960e"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 48.1,
+                        "y": 9.5
+                    },
+                    "uuid": "dd32cbe7-5a8b-4abf-a742-139afcc01ce4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT and MOTOR_MINUS)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                },
+                {
+                    "description": "Via [MOTOR_MINUS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 47.4,
+                        "y": 11.64
+                    },
+                    "uuid": "acf07090-e8a5-4e0f-a189-bcae714a93fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT and MOTOR_MINUS)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                },
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 11.64
+                    },
+                    "uuid": "ec52e504-f8fa-4dbd-8e8c-f9afc0349cec"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0516 mm)",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 1.5000 mm",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 11.64
+                    },
+                    "uuid": "59211601-40a1-4b4f-ad39-88b2ddddddce"
+                },
+                {
+                    "description": "Track [VBAT] on F.Cu, length 1.9600 mm",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "a7008fff-2f8b-429d-a698-a0b7000af5ec"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets MOTOR_MINUS and GND)",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on F.Cu, length 0.4100 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 9.73
+                    },
+                    "uuid": "261705fc-0987-4882-aa43-0240bc1ab674"
+                },
+                {
+                    "description": "Pad 3 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 9.5
+                    },
+                    "uuid": "9b23e4c7-8b23-494d-ac46-2ea76e82c1d6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets MOTOR_MINUS and GND)",
+            "items": [
+                {
+                    "description": "Track [MOTOR_MINUS] on B.Cu, length 3.6400 mm",
+                    "pos": {
+                        "x": 47.4,
+                        "y": 11.64
+                    },
+                    "uuid": "c5185e9b-c5aa-4a56-aceb-e0c9bdcde891"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 48.1,
+                        "y": 9.5
+                    },
+                    "uuid": "dd32cbe7-5a8b-4abf-a742-139afcc01ce4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0100 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                },
+                {
+                    "description": "Pad 7 [MOTOR_MINUS] of Q2 on F.Cu",
+                    "pos": {
+                        "x": 46.095,
+                        "y": 11.005
+                    },
+                    "uuid": "9a8f021f-9814-47d7-a2dd-9f58110190b0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0606 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                },
+                {
+                    "description": "Pad 6 [MOTOR_MINUS] of Q2 on F.Cu",
+                    "pos": {
+                        "x": 46.095,
+                        "y": 12.275
+                    },
+                    "uuid": "9969a154-2f33-4640-867c-03e87e027959"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 11.5
+                    },
+                    "uuid": "56a3ab60-dd3e-4f6c-b9fe-c868078c696c"
+                },
+                {
+                    "description": "Via [MOTOR_MINUS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 47.4,
+                        "y": 11.64
+                    },
+                    "uuid": "acf07090-e8a5-4e0f-a189-bcae714a93fb"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0100 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 9.5
+                    },
+                    "uuid": "9b23e4c7-8b23-494d-ac46-2ea76e82c1d6"
+                },
+                {
+                    "description": "Pad 8 [MOTOR_MINUS] of Q2 on F.Cu",
+                    "pos": {
+                        "x": 46.095,
+                        "y": 9.735
+                    },
+                    "uuid": "e2c7d93b-eb34-4d5f-a309-d34f13f04bb7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of J1",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 3.5
+                    },
+                    "uuid": "a79828d7-73d4-46aa-a216-5f20415cf89a"
+                },
+                {
+                    "description": "PCB text 'B-' on F.Silkscreen",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 3.5
+                    },
+                    "uuid": "aaf546c4-c603-4118-b249-ad1f4c4b5b16"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'B+' on F.Silkscreen",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 6.5
+                    },
+                    "uuid": "3303fb75-b8cd-4371-9271-095a77526483"
+                },
+                {
+                    "description": "Segment of J1 on F.Silkscreen",
+                    "pos": {
+                        "x": 52.975,
+                        "y": 6.41
+                    },
+                    "uuid": "a90eee6f-03aa-4d53-ba46-4a947056c557"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J1 on F.Silkscreen",
+                    "pos": {
+                        "x": 54.975,
+                        "y": 14.59
+                    },
+                    "uuid": "59705352-4502-43b1-87aa-d3d5b8293351"
+                },
+                {
+                    "description": "PCB text 'M-' on F.Silkscreen",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 14.5
+                    },
+                    "uuid": "6dcfbaac-4fdc-4e21-9869-4b69de0b446f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'B-' on F.Silkscreen",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 3.5
+                    },
+                    "uuid": "aaf546c4-c603-4118-b249-ad1f4c4b5b16"
+                },
+                {
+                    "description": "Pad MP [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 53.335,
+                        "y": 4.605
+                    },
+                    "uuid": "042f75dd-71c3-4e26-8cf7-8ea60e8e516c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of J1",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 3.5
+                    },
+                    "uuid": "a79828d7-73d4-46aa-a216-5f20415cf89a"
+                },
+                {
+                    "description": "Pad MP [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 53.335,
+                        "y": 4.605
+                    },
+                    "uuid": "042f75dd-71c3-4e26-8cf7-8ea60e8e516c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'M+' on F.Silkscreen",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 17.5
+                    },
+                    "uuid": "14be5166-5482-4d34-af1e-e8dc9a4c572e"
+                },
+                {
+                    "description": "Pad MP [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 53.335,
+                        "y": 16.395
+                    },
+                    "uuid": "0da94d67-5923-4866-a3b0-e73d4f4b1a4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of J1",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 3.5
+                    },
+                    "uuid": "a79828d7-73d4-46aa-a216-5f20415cf89a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 1.0
+                    },
+                    "uuid": "f9126015-8648-4973-a8e0-2b11855a9858"
+                },
+                {
+                    "description": "Segment of J1 on F.Silkscreen",
+                    "pos": {
+                        "x": 52.975,
+                        "y": 6.41
+                    },
+                    "uuid": "a90eee6f-03aa-4d53-ba46-4a947056c557"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 1.0
+                    },
+                    "uuid": "f9126015-8648-4973-a8e0-2b11855a9858"
+                },
+                {
+                    "description": "Segment of J1 on F.Silkscreen",
+                    "pos": {
+                        "x": 54.975,
+                        "y": 6.41
+                    },
+                    "uuid": "341602aa-d4d2-42d0-a221-f5c67880a015"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 1.0
+                    },
+                    "uuid": "f9126015-8648-4973-a8e0-2b11855a9858"
+                },
+                {
+                    "description": "Segment of J1 on F.Silkscreen",
+                    "pos": {
+                        "x": 54.975,
+                        "y": 14.59
+                    },
+                    "uuid": "59705352-4502-43b1-87aa-d3d5b8293351"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 1.0
+                    },
+                    "uuid": "f9126015-8648-4973-a8e0-2b11855a9858"
+                },
+                {
+                    "description": "Segment of J1 on F.Silkscreen",
+                    "pos": {
+                        "x": 54.975,
+                        "y": 15.46
+                    },
+                    "uuid": "50051029-f77a-445a-b69e-737159a285b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 2.3000 mm",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 17.5
+                    },
+                    "uuid": "8b17a4ba-b254-4c3c-86e9-1311c0653cee"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 11.0000 mm",
+                    "pos": {
+                        "x": 49.3,
+                        "y": 6.5
+                    },
+                    "uuid": "124aabb1-7bf8-4612-8eb1-d98d712c960e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.9600 mm",
+                    "pos": {
+                        "x": 47.34,
+                        "y": 9.5
+                    },
+                    "uuid": "9a555848-9fc0-4e22-b6a1-1c823bc4946e"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 48.1,
+                        "y": 9.5
+                    },
+                    "uuid": "dd32cbe7-5a8b-4abf-a742-139afcc01ce4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        }
+    ]
+}

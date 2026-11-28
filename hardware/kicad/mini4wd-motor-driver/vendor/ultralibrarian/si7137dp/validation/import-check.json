@@ -1,0 +1,20 @@
+{
+  "kicad_version": "10.0.8",
+  "symbol_native_svg_export": "pass",
+  "footprint_pcbnew_load": "pass",
+  "pad_numbers": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "model_count": 0,
+  "canonical_erc_violations": 0,
+  "existing_schematic_and_pcb_changed": false,
+  "native_DRC_rerun": false,
+  "DRC_note": "Existing board layout was not modified by this library import. Previous final DRC results remain separate."
+}

@@ -1,0 +1,65 @@
+{
+  "component": "Q2",
+  "selected_value": "SI7137DP-T1-GE3",
+  "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_DFN_QFN.3dshapes/PQFN-8-EP_6x5mm_P1.27mm_Generic.step",
+  "downloaded_on": "2026-11-26",
+  "sha256": "f036ed2d7a96099dc284af473b8142d0b018b343071238ab9b1625affb31a675",
+  "bytes": 246392,
+  "STEP_PRODUCT": "Vishay_PowerPAK_SO-8",
+  "model_status": "KiCad package-level mechanical model, not a manufacturer-issued per-MPN model",
+  "Vishay_package_drawing": "https://www.vishay.com/docs/71655/powerpak.pdf",
+  "drawing_nominal_mm": {
+    "E": 6.15,
+    "D": 5.15,
+    "A": 1.04,
+    "A_max": 1.12,
+    "pitch": 1.27
+  },
+  "STEP_vertex_coordinate_extents_mm": {
+    "X": [
+      -3.075,
+      3.075
+    ],
+    "Y": [
+      -2.575,
+      2.575
+    ],
+    "Z": [
+      0,
+      1.09
+    ]
+  },
+  "extent_limit": "Extents measured on STEP BREP vertices; B-spline control points excluded. Not a complete CAD interference or tolerance analysis.",
+  "transform": {
+    "offset_mm": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ]
+  },
+  "orientation_basis": "KiCad matching generic footprint and existing Q2 both put pins1-4 on negative-X side with pin1 at negative-Y.",
+  "changes": [
+    {
+      "file": "hardware/kicad/mini4wd-motor-driver/mini4wd-motor-driver.kicad_pcb",
+      "sha256_before": "601dd9f127c48be599b78cd8186b19ff68523ef895c6d8b8ff1fd4dea0f7a852",
+      "sha256_after": "79b2109c841049c092ca82a1b14101ecac3cbcc43cfab98848e544bbeba5f772",
+      "model_only_change": true
+    },
+    {
+      "file": "hardware/kicad/mini4wd-motor-driver/board-routed.pretty/PowerPAK_SO-8_SI7137DP.kicad_mod",
+      "sha256_before": "72aa40f6e4cbf1edc4bb67e62b4afbd752d700422d26bda9e5e7d16af06a2224",
+      "sha256_after": "644f24bd28a4c2ffe5f7b1df24c295db438f6994bd3fafab1782f63194fdc784",
+      "model_only_change": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-26T22:21:40",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f136800b-632f-4d6c-be5f-f29d533fdb52",
+            "violations": []
+        },
+        {
+            "path": "/GateControl/",
+            "uuid_path": "/f136800b-632f-4d6c-be5f-f29d533fdb52/e89a7c8b-5277-4820-a071-a54e3bb71c65",
+            "violations": []
+        }
+    ],
+    "source": "mini4wd-motor-driver.kicad_sch"
+}

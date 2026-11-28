@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-26T23:16:45",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f136800b-632f-4d6c-be5f-f29d533fdb52",
+            "violations": []
+        }
+    ],
+    "source": "mini4wd-motor-driver.kicad_sch"
+}

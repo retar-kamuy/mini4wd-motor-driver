@@ -1,0 +1,25 @@
+{
+  "status": "routed engineering candidate, not released",
+  "source_project_settings_sha256": "b45ff3ffb2cd60255fbebd5003f734b688c7f039a4a8e7bfefa4b957977899f2",
+  "pinout": {
+    "1": "MOTOR_MINUS",
+    "2": "VBAT",
+    "3": "GND",
+    "4": "VBAT"
+  },
+  "contact_rating_A": 5.5,
+  "wire": "AWG20 only for 5A target",
+  "footprints": 21,
+  "source_project_unchanged": true,
+  "board_dimensions_mm": [
+    60.5,
+    21.0
+  ],
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "connector_3d": "user-provided 2053380004.stp; visually aligned",
+  "silkscreen_pin_labels": "B+, B-, M+, M- on F.SilkS",
+  "current_and_thermal": "not verified"
+}

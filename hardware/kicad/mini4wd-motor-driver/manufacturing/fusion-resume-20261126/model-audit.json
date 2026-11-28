@@ -1,0 +1,310 @@
+[
+  {
+    "directory": "/home/ubuntu/Repositories/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver",
+    "footprints": 22,
+    "models": [
+      {
+        "ref": "R_FB_H",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R_MID_H",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R_VBAT_H",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R_FB_L",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "U2",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/Texas_R-PDSO-N6_DRL-6.step",
+        "exists": false
+      },
+      {
+        "ref": "MCU1",
+        "path": "${KIPRJMOD}/3dmodels/Seeed Studio-XIAO-MG24_.step",
+        "exists": true
+      },
+      {
+        "ref": "R_MID_L",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "D_XIAO",
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+        "exists": true
+      },
+      {
+        "ref": "C_BYP",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "CIN",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "COUT1",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "J1",
+        "path": "${KIPRJMOD}/3dmodels/436500214.stp",
+        "exists": true
+      },
+      {
+        "ref": "U1",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+        "exists": true
+      },
+      {
+        "ref": "J2",
+        "path": "${KIPRJMOD}/3dmodels/436500214.stp",
+        "exists": true
+      },
+      {
+        "ref": "Q1",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Vishay_PowerPAK_1212-8_Single.step",
+        "exists": false
+      },
+      {
+        "ref": "R_NTC",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "COUT2",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "TH1",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R_VBAT_L",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "Q2",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/PowerPAK_SO-8_Single.step",
+        "exists": false
+      },
+      {
+        "ref": "D_FLY",
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+        "exists": true
+      }
+    ],
+    "unmodeled_refs": [
+      "L1"
+    ]
+  },
+  {
+    "directory": "/home/ubuntu/Repositories/mini4wd-motor-driver/hardware/kicad/mini4wd-motor-driver/candidates/pre-switch-ecad-20261126",
+    "footprints": 38,
+    "models": [
+      {
+        "ref": "U101",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+        "exists": true
+      },
+      {
+        "ref": "R105",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R1",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R5",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R3",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R102",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R106",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R2",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "C101",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "U2",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/Texas_R-PDSO-N6_DRL-6.step",
+        "exists": false
+      },
+      {
+        "ref": "U104",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+        "exists": true
+      },
+      {
+        "ref": "R6",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "J1",
+        "path": "${KIPRJMOD}/3dmodels/436500214.stp",
+        "exists": true
+      },
+      {
+        "ref": "D2",
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+        "exists": true
+      },
+      {
+        "ref": "J2",
+        "path": "${KIPRJMOD}/3dmodels/436500214.stp",
+        "exists": true
+      },
+      {
+        "ref": "C104",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "C102",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "C105",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "MCU1",
+        "path": "${KIPRJMOD}/3dmodels/Seeed Studio-XIAO-MG24_.step",
+        "exists": true
+      },
+      {
+        "ref": "C1",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "U103",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+        "exists": true
+      },
+      {
+        "ref": "U102",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+        "exists": true
+      },
+      {
+        "ref": "C2",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "Q2",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Diodes_PowerDI3333-8.step",
+        "exists": true
+      },
+      {
+        "ref": "Q1",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Vishay_PowerPAK_1212-8_Single.step",
+        "exists": false
+      },
+      {
+        "ref": "C103",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R103",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R7",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "C3",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "TH1",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R107",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R4",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "U105",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+        "exists": true
+      },
+      {
+        "ref": "D1",
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+        "exists": true
+      },
+      {
+        "ref": "R104",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "C106",
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "exists": true
+      },
+      {
+        "ref": "R101",
+        "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "exists": true
+      }
+    ],
+    "unmodeled_refs": [
+      "L1"
+    ]
+  }
+]
